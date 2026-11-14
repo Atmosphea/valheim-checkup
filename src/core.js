@@ -62,5 +62,10 @@ function evaluate(category,item,save,mode='achievement',override){
  if(override!==undefined)status=override?'done':'missing';
  return {status,count,discovery,manual:override!==undefined};
 }
-const api={parseSave,evaluate};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.ValheimCore=api;
+function survival(save){
+ if(!save)return [];
+ const names=['Overall · all recorded play','Overall · achievement credit','Hammer','Casual','Very easy','Easy','Normal','Hard','Very hard','Hardcore'];
+ return names.map((name,index)=>({name,index,current:save.buckets[index].stats[128],best:save.buckets[index].stats[129]}));
+}
+const api={parseSave,evaluate,survival};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.ValheimCore=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

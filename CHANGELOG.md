@@ -1,3 +1,11 @@
+# 1.3.0 — Survival records
+
+- Add Survival under Your Viking and the mobile page selector.
+- Show all-play and credited overall current/best streaks, the 30-day target, and all eight stored combat-difficulty rows.
+- Display exact saved counters without summing, substituting global bests, or treating stale rows as independent continuous streaks.
+- Explain world switching, death resets, best-record behavior, and the official 1.0.21 Survivor difficulty fix.
+- Existing saves and progress exports already contain these counters; no new import fields are required.
+
 # 1.2.1 — Valheim 1.0.20 save compatibility
 
 - Support profile 47, player data 34, and inventory 110 alongside existing formats.
