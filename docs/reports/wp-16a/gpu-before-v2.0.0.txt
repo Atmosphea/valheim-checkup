@@ -1,0 +1,6 @@
+GPU {"baselineUtilPct":37.5,"still":{"fps":60.1,"gpuMsAvg":21.53,"gpuMsP95":32.62,"sceneMs":14.38,"veilMs":7.15,"gpuMsPerSec":1294,"samples":300,"tier":"high","gpuUtilPct":85.8},"moving":{"fps":60.1,"gpuMsAvg":16.38,"gpuMsP95":45.33,"sceneMs":12.05,"veilMs":4.33,"gpuMsPerSec":985,"samples":301,"tier":"high","gpuUtilPct":79.8},"view":{"fps":51.9,"gpuMsAvg":16.3,"gpuMsP95":22.94,"sceneMs":11.66,"veilMs":4.64,"gpuMsPerSec":846,"samples":153,"tier":"high","gpuUtilPct":92.6}}
+PASS  gpu: moving pointer keeps ≥ 55 frames/s  — 60.1 fps
+PASS  no page or console errors
+
+2/2 checks pass
+NUMBERS {"gpu":{"baselineUtilPct":37.5,"still":{"fps":60.1,"gpuMsAvg":21.53,"gpuMsP95":32.62,"sceneMs":14.38,"veilMs":7.15,"gpuMsPerSec":1294,"samples":300,"tier":"high","gpuUtilPct":85.8},"moving":{"fps":60.1,"gpuMsAvg":16.38,"gpuMsP95":45.33,"sceneMs":12.05,"veilMs":4.33,"gpuMsPerSec":985,"samples":301,"tier":"high","gpuUtilPct":79.8},"view":{"fps":51.9,"gpuMsAvg":16.3,"gpuMsP95":22.94,"sceneMs":11.66,"veilMs":4.64,"gpuMsPerSec":846,"samples":153,"tier":"high","gpuUtilPct":92.6}}}

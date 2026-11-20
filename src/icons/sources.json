@@ -1,0 +1,4332 @@
+{
+ "_about": "Where each token's icon came from (written by tools/harvest-icons.mjs; read back on re-runs so B/C are not fetched again).",
+ "tokens": {
+  "$animal_fish1": {
+   "source": "A",
+   "image": "items/Fish1"
+  },
+  "$animal_fish10": {
+   "source": "A",
+   "image": "items/Fish10"
+  },
+  "$animal_fish11": {
+   "source": "A",
+   "image": "items/Fish11"
+  },
+  "$animal_fish12": {
+   "source": "A",
+   "image": "items/Fish12"
+  },
+  "$animal_fish2": {
+   "source": "A",
+   "image": "items/Fish2"
+  },
+  "$animal_fish3": {
+   "source": "A",
+   "image": "items/Fish3"
+  },
+  "$animal_fish4": {
+   "source": "A",
+   "image": "items/Fish4_cave"
+  },
+  "$animal_fish5": {
+   "source": "A",
+   "image": "items/Fish5"
+  },
+  "$animal_fish6": {
+   "source": "A",
+   "image": "items/Fish6"
+  },
+  "$animal_fish7": {
+   "source": "A",
+   "image": "items/Fish7"
+  },
+  "$animal_fish8": {
+   "source": "A",
+   "image": "items/Fish8"
+  },
+  "$animal_fish9": {
+   "source": "A",
+   "image": "items/Fish9"
+  },
+  "$enemy_abomination": {
+   "source": "A",
+   "image": "items/TrophyAbomination"
+  },
+  "$enemy_asksvin": {
+   "source": "A",
+   "image": "items/TrophyAsksvin"
+  },
+  "$enemy_asksvin_hatchling": {
+   "source": "A",
+   "image": "characters/Asksvin_hatchling"
+  },
+  "$enemy_aspect_bonemass": {
+   "source": "A-override",
+   "image": "items/TrophyBonemass",
+   "treatment": "spectral"
+  },
+  "$enemy_aspect_dragon": {
+   "source": "A-override",
+   "image": "items/TrophyDragonQueen",
+   "treatment": "spectral"
+  },
+  "$enemy_aspect_eikthyr": {
+   "source": "A-override",
+   "image": "items/TrophyEikthyr",
+   "treatment": "spectral"
+  },
+  "$enemy_aspect_fader": {
+   "source": "A-override",
+   "image": "items/TrophyFader",
+   "treatment": "spectral"
+  },
+  "$enemy_aspect_gdking": {
+   "source": "A-override",
+   "image": "items/TrophyTheElder",
+   "treatment": "spectral"
+  },
+  "$enemy_aspect_goblinking": {
+   "source": "A-override",
+   "image": "items/TrophyGoblinKing",
+   "treatment": "spectral"
+  },
+  "$enemy_aspect_seekerqueen": {
+   "source": "A-override",
+   "image": "items/TrophySeekerQueen",
+   "treatment": "spectral"
+  },
+  "$enemy_babyseeker": {
+   "source": "A-override",
+   "image": "characters/SeekerBrood"
+  },
+  "$enemy_barka": {
+   "source": "A",
+   "image": "items/TrophyBarka"
+  },
+  "$enemy_bat": {
+   "source": "A",
+   "image": "characters/Bat"
+  },
+  "$enemy_bjorn": {
+   "source": "A",
+   "image": "items/TrophyBjorn"
+  },
+  "$enemy_blob": {
+   "source": "A",
+   "image": "items/TrophyBlob"
+  },
+  "$enemy_blobelite": {
+   "source": "A",
+   "image": "characters/BlobElite"
+  },
+  "$enemy_blobfrost": {
+   "source": "A",
+   "image": "characters/BlobFrost"
+  },
+  "$enemy_bloblava": {
+   "source": "A",
+   "image": "characters/BlobLava"
+  },
+  "$enemy_blobmork": {
+   "source": "A",
+   "image": "characters/BlobMork"
+  },
+  "$enemy_blobmorkmini": {
+   "source": "A",
+   "image": "characters/BlobMorkMini"
+  },
+  "$enemy_blobtar": {
+   "source": "A",
+   "image": "characters/BlobTar"
+  },
+  "$enemy_boar": {
+   "source": "A",
+   "image": "items/TrophyBoar"
+  },
+  "$enemy_boarpiggy": {
+   "source": "A",
+   "image": "characters/Boar_piggy"
+  },
+  "$enemy_bonemass": {
+   "source": "A",
+   "image": "items/TrophyBonemass"
+  },
+  "$enemy_bonemawserpent": {
+   "source": "A",
+   "image": "characters/BonemawSerpent"
+  },
+  "$enemy_charred_archer": {
+   "source": "A",
+   "image": "characters/Charred_Archer"
+  },
+  "$enemy_charred_mage": {
+   "source": "A",
+   "image": "characters/Charred_Mage"
+  },
+  "$enemy_charred_melee": {
+   "source": "A",
+   "image": "characters/Charred_Melee"
+  },
+  "$enemy_charred_melee_Dyrnwyn": {
+   "source": "A",
+   "image": "characters/Charred_Melee_Dyrnwyn"
+  },
+  "$enemy_charred_melee_Fader": {
+   "source": "A",
+   "image": "characters/Charred_Melee_Fader"
+  },
+  "$enemy_charred_twitcher": {
+   "source": "A",
+   "image": "characters/Charred_Twitcher"
+  },
+  "$enemy_charred_twitcher_summoned": {
+   "source": "A",
+   "image": "characters/Charred_Twitcher_Summoned"
+  },
+  "$enemy_chicken": {
+   "source": "A",
+   "image": "characters/Chicken"
+  },
+  "$enemy_deathsquito": {
+   "source": "A",
+   "image": "items/TrophyDeathsquito"
+  },
+  "$enemy_deer": {
+   "source": "A",
+   "image": "items/TrophyDeer"
+  },
+  "$enemy_dragon": {
+   "source": "A-override",
+   "image": "items/TrophyDragonQueen"
+  },
+  "$enemy_drake": {
+   "source": "A-override",
+   "image": "items/TrophyHatchling"
+  },
+  "$enemy_draugr": {
+   "source": "A",
+   "image": "items/TrophyDraugr"
+  },
+  "$enemy_draugrelite": {
+   "source": "A",
+   "image": "items/TrophyDraugrElite"
+  },
+  "$enemy_dvergr": {
+   "source": "A",
+   "image": "items/TrophyDvergr"
+  },
+  "$enemy_dvergr_deepnorth": {
+   "source": "A-override",
+   "image": "characters/DvergerDeepNorth"
+  },
+  "$enemy_dvergr_mage": {
+   "source": "A-override",
+   "image": "characters/DvergerMage"
+  },
+  "$enemy_eikthyr": {
+   "source": "A",
+   "image": "items/TrophyEikthyr"
+  },
+  "$enemy_elaking": {
+   "source": "A",
+   "image": "items/TrophyElaking"
+  },
+  "$enemy_elakingmole": {
+   "source": "A",
+   "image": "characters/ElakingMole"
+  },
+  "$enemy_fader": {
+   "source": "A",
+   "image": "items/TrophyFader"
+  },
+  "$enemy_fallenvalkyrie": {
+   "source": "A",
+   "image": "items/TrophyFallenValkyrie"
+  },
+  "$enemy_fallenwarrior": {
+   "source": "A",
+   "image": "characters/FallenWarrior"
+  },
+  "$enemy_fenring": {
+   "source": "A",
+   "image": "items/TrophyFenring"
+  },
+  "$enemy_fenringcultist": {
+   "source": "A",
+   "image": "characters/Fenring_Cultist"
+  },
+  "$enemy_fenringcultist_hildir": {
+   "source": "A-override",
+   "image": "items/TrophyCultist_Hildir"
+  },
+  "$enemy_frozenking": {
+   "source": "A",
+   "image": "characters/FrozenKing"
+  },
+  "$enemy_frozenking_p3": {
+   "source": "A",
+   "image": "characters/FrozenKing_p3"
+  },
+  "$enemy_gdking": {
+   "source": "A-override",
+   "image": "items/TrophyTheElder"
+  },
+  "$enemy_ghost": {
+   "source": "A",
+   "image": "items/TrophyGhost"
+  },
+  "$enemy_gjall": {
+   "source": "A",
+   "image": "items/TrophyGjall"
+  },
+  "$enemy_goblin": {
+   "source": "A",
+   "image": "items/TrophyGoblin"
+  },
+  "$enemy_goblin_deepnorth": {
+   "source": "A",
+   "image": "characters/GoblinDeepNorth"
+  },
+  "$enemy_goblin_hildir": {
+   "source": "A-override",
+   "image": "items/TrophyGoblinBruteBrosShaman"
+  },
+  "$enemy_goblinbrute": {
+   "source": "A",
+   "image": "items/TrophyGoblinBrute"
+  },
+  "$enemy_goblinbrute_hildircombined": {
+   "source": "A-override",
+   "image": "items/TrophyGoblinBruteBrosBrute"
+  },
+  "$enemy_goblinking": {
+   "source": "A",
+   "image": "items/TrophyGoblinKing"
+  },
+  "$enemy_goblinshaman": {
+   "source": "A",
+   "image": "items/TrophyGoblinShaman"
+  },
+  "$enemy_greydwarf": {
+   "source": "A",
+   "image": "items/TrophyGreydwarf"
+  },
+  "$enemy_greydwarfbrute": {
+   "source": "A",
+   "image": "items/TrophyGreydwarfBrute"
+  },
+  "$enemy_greydwarfshaman": {
+   "source": "A",
+   "image": "items/TrophyGreydwarfShaman"
+  },
+  "$enemy_greyling": {
+   "source": "A",
+   "image": "characters/Greyling"
+  },
+  "$enemy_hare": {
+   "source": "A",
+   "image": "items/TrophyHare"
+  },
+  "$enemy_hen": {
+   "source": "A",
+   "image": "characters/Hen"
+  },
+  "$enemy_jotun_warrior": {
+   "source": "A",
+   "image": "characters/JotunWarrior"
+  },
+  "$enemy_jotun_witch": {
+   "source": "A",
+   "image": "characters/JotunWitch"
+  },
+  "$enemy_kvastur": {
+   "source": "A",
+   "image": "items/TrophyKvastur"
+  },
+  "$enemy_leech": {
+   "source": "A",
+   "image": "items/TrophyLeech"
+  },
+  "$enemy_lox": {
+   "source": "A",
+   "image": "items/TrophyLox"
+  },
+  "$enemy_loxcalf": {
+   "source": "A",
+   "image": "characters/Lox_Calf"
+  },
+  "$enemy_moose": {
+   "source": "A",
+   "image": "items/TrophyMoose"
+  },
+  "$enemy_moosecalf": {
+   "source": "A",
+   "image": "characters/Moose_calf"
+  },
+  "$enemy_morgen": {
+   "source": "A",
+   "image": "items/TrophyMorgen"
+  },
+  "$enemy_neck": {
+   "source": "A",
+   "image": "items/TrophyNeck"
+  },
+  "$enemy_root": {
+   "source": "A-override",
+   "image": "characters/TentaRoot"
+  },
+  "$enemy_seal": {
+   "source": "A",
+   "image": "items/TrophySeal"
+  },
+  "$enemy_seal_baby": {
+   "source": "A-override",
+   "image": "characters/Seal_Pup"
+  },
+  "$enemy_seeker": {
+   "source": "A",
+   "image": "items/TrophySeeker"
+  },
+  "$enemy_seekerbrute": {
+   "source": "A",
+   "image": "characters/SeekerBrute"
+  },
+  "$enemy_seekerqueen": {
+   "source": "A",
+   "image": "items/TrophySeekerQueen"
+  },
+  "$enemy_serpent": {
+   "source": "A",
+   "image": "items/TrophySerpent"
+  },
+  "$enemy_skeleton": {
+   "source": "A",
+   "image": "items/TrophySkeleton"
+  },
+  "$enemy_skeleton_summoned": {
+   "source": "A-override",
+   "image": "characters/Skeleton_Friendly"
+  },
+  "$enemy_skeletonfire": {
+   "source": "A-override",
+   "image": "items/TrophySkeletonHildir"
+  },
+  "$enemy_skeletonpoison": {
+   "source": "A",
+   "image": "items/TrophySkeletonPoison"
+  },
+  "$enemy_stonegolem": {
+   "source": "A",
+   "image": "characters/StoneGolem"
+  },
+  "$enemy_summonedtroll": {
+   "source": "A-override",
+   "image": "characters/Troll_Summoned"
+  },
+  "$enemy_surtling": {
+   "source": "A",
+   "image": "items/TrophySurtling"
+  },
+  "$enemy_tick": {
+   "source": "A",
+   "image": "items/TrophyTick"
+  },
+  "$enemy_troll": {
+   "source": "C",
+   "file": "C/enemytroll.png",
+   "url": "https://valheim.weirdgloop.org/images/Troll.png?cd20e",
+   "how": "page image"
+  },
+  "$enemy_trollfrost": {
+   "source": "A",
+   "image": "characters/TrollFrost"
+  },
+  "$enemy_ulv": {
+   "source": "A",
+   "image": "items/TrophyUlv"
+  },
+  "$enemy_unbjorn": {
+   "source": "A",
+   "image": "characters/Unbjorn"
+  },
+  "$enemy_volture": {
+   "source": "A",
+   "image": "items/TrophyVolture"
+  },
+  "$enemy_wolf": {
+   "source": "A",
+   "image": "items/TrophyWolf"
+  },
+  "$enemy_wolfcub": {
+   "source": "A",
+   "image": "characters/Wolf_cub"
+  },
+  "$enemy_wraith": {
+   "source": "A",
+   "image": "items/TrophyWraith"
+  },
+  "$enemy_writhan": {
+   "source": "A",
+   "image": "items/TrophyWrithan"
+  },
+  "$item_arrow_bloodgold": {
+   "source": "A",
+   "image": "items/ArrowBloodGold"
+  },
+  "$item_arrow_bronze": {
+   "source": "A",
+   "image": "items/ArrowBronze"
+  },
+  "$item_arrow_carapace": {
+   "source": "A",
+   "image": "items/ArrowCarapace"
+  },
+  "$item_arrow_charred": {
+   "source": "A",
+   "image": "items/ArrowCharred"
+  },
+  "$item_arrow_fire": {
+   "source": "A",
+   "image": "items/ArrowFire"
+  },
+  "$item_arrow_flint": {
+   "source": "A",
+   "image": "items/ArrowFlint"
+  },
+  "$item_arrow_frost": {
+   "source": "A",
+   "image": "items/ArrowFrost"
+  },
+  "$item_arrow_iron": {
+   "source": "A",
+   "image": "items/ArrowIron"
+  },
+  "$item_arrow_needle": {
+   "source": "A",
+   "image": "items/ArrowNeedle"
+  },
+  "$item_arrow_obsidian": {
+   "source": "A",
+   "image": "items/ArrowObsidian"
+  },
+  "$item_arrow_poison": {
+   "source": "A",
+   "image": "items/ArrowPoison"
+  },
+  "$item_arrow_silver": {
+   "source": "A",
+   "image": "items/ArrowSilver"
+  },
+  "$item_arrow_wood": {
+   "source": "A",
+   "image": "items/ArrowWood"
+  },
+  "$item_asksvin_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedAsksvinMeat"
+  },
+  "$item_atgeir_blackmetal": {
+   "source": "A",
+   "image": "items/AtgeirBlackmetal"
+  },
+  "$item_atgeir_bronze": {
+   "source": "A",
+   "image": "items/AtgeirBronze"
+  },
+  "$item_atgeir_gold": {
+   "source": "A",
+   "image": "items/AtgeirGold"
+  },
+  "$item_atgeir_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/AtgeirGold_BloodLightning"
+  },
+  "$item_atgeir_gold_frostfire": {
+   "source": "A",
+   "image": "items/AtgeirGold_FrostFire"
+  },
+  "$item_atgeir_gold_uncooked": {
+   "source": "A",
+   "image": "items/AtgeirGoldUncooked"
+  },
+  "$item_atgeir_himminafl": {
+   "source": "A",
+   "image": "items/AtgeirHimminAfl"
+  },
+  "$item_atgeir_iron": {
+   "source": "A",
+   "image": "items/AtgeirIron"
+  },
+  "$item_axe2h_gold": {
+   "source": "A",
+   "image": "items/BattleaxeGold"
+  },
+  "$item_axe2h_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/BattleaxeGold_BloodLightning"
+  },
+  "$item_axe2h_gold_frostfire": {
+   "source": "A",
+   "image": "items/BattleaxeGold_FrostFire"
+  },
+  "$item_axe2h_gold_uncooked": {
+   "source": "A-override",
+   "image": "items/BattleaxeGoldUncooked"
+  },
+  "$item_axe_berzerkr": {
+   "source": "A",
+   "image": "items/AxeBerzerkr"
+  },
+  "$item_axe_berzerkr_blood": {
+   "source": "A",
+   "image": "items/AxeBerzerkrBlood"
+  },
+  "$item_axe_berzerkr_lightning": {
+   "source": "A",
+   "image": "items/AxeBerzerkrLightning"
+  },
+  "$item_axe_berzerkr_nature": {
+   "source": "A",
+   "image": "items/AxeBerzerkrNature"
+  },
+  "$item_axe_blackmetal": {
+   "source": "A",
+   "image": "items/AxeBlackMetal"
+  },
+  "$item_axe_bronze": {
+   "source": "A",
+   "image": "items/AxeBronze"
+  },
+  "$item_axe_early": {
+   "source": "A",
+   "image": "items/AxeEarly"
+  },
+  "$item_axe_flint": {
+   "source": "A",
+   "image": "items/AxeFlint"
+  },
+  "$item_axe_gold": {
+   "source": "A",
+   "image": "items/AxeGold"
+  },
+  "$item_axe_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/AxeGold_BloodLightning"
+  },
+  "$item_axe_gold_frostfire": {
+   "source": "A",
+   "image": "items/AxeGold_FrostFire"
+  },
+  "$item_axe_gold_uncooked": {
+   "source": "A",
+   "image": "items/AxeGoldUncooked"
+  },
+  "$item_axe_iron": {
+   "source": "A",
+   "image": "items/AxeIron"
+  },
+  "$item_axe_jotunbane": {
+   "source": "A",
+   "image": "items/AxeJotunBane"
+  },
+  "$item_axe_stone": {
+   "source": "A",
+   "image": "items/AxeStone"
+  },
+  "$item_bakedpoteitr": {
+   "source": "A",
+   "image": "items/BakedPoteitr"
+  },
+  "$item_bakedpoteitr_uncooked": {
+   "source": "A",
+   "image": "items/BakedPoteitrUncooked"
+  },
+  "$item_barleywinebase": {
+   "source": "A",
+   "image": "items/BarleyWineBase"
+  },
+  "$item_battleaxe": {
+   "source": "A",
+   "image": "items/Battleaxe"
+  },
+  "$item_battleaxe_blackmetal": {
+   "source": "A",
+   "image": "items/BattleaxeBlackmetal"
+  },
+  "$item_battleaxe_crystal": {
+   "source": "A",
+   "image": "items/BattleaxeCrystal"
+  },
+  "$item_battleaxe_gold_uncooked": {
+   "source": "A",
+   "image": "items/BattleaxeGoldUncooked"
+  },
+  "$item_battleaxe_skullsplittur": {
+   "source": "A",
+   "image": "items/BattleaxeSkullSplittur"
+  },
+  "$item_bell": {
+   "source": "A",
+   "image": "items/Bell"
+  },
+  "$item_bilebomb": {
+   "source": "A",
+   "image": "items/BombBile"
+  },
+  "$item_bjorn_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedBjornMeat"
+  },
+  "$item_blacksoup": {
+   "source": "A",
+   "image": "items/BlackSoup"
+  },
+  "$item_bloodpudding": {
+   "source": "A",
+   "image": "items/BloodPudding"
+  },
+  "$item_blubber_cooked": {
+   "source": "A",
+   "image": "items/CookedSealBlubber"
+  },
+  "$item_blueberries": {
+   "source": "A",
+   "image": "items/Blueberries"
+  },
+  "$item_boar_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedMeat"
+  },
+  "$item_boarjerky": {
+   "source": "A",
+   "image": "items/BoarJerky"
+  },
+  "$item_bolt_blackmetal": {
+   "source": "A",
+   "image": "items/BoltBlackmetal"
+  },
+  "$item_bolt_bloodgold": {
+   "source": "A",
+   "image": "items/BoltBloodGold"
+  },
+  "$item_bolt_bone": {
+   "source": "A",
+   "image": "items/BoltBone"
+  },
+  "$item_bolt_carapace": {
+   "source": "A",
+   "image": "items/BoltCarapace"
+  },
+  "$item_bolt_charred": {
+   "source": "A",
+   "image": "items/BoltCharred"
+  },
+  "$item_bolt_iron": {
+   "source": "A",
+   "image": "items/BoltIron"
+  },
+  "$item_bomb_dynamite": {
+   "source": "A",
+   "image": "items/BombDynamite"
+  },
+  "$item_bombblob_frost": {
+   "source": "A",
+   "image": "items/BombBlob_Frost"
+  },
+  "$item_bombblob_lava": {
+   "source": "A",
+   "image": "items/BombBlob_Lava"
+  },
+  "$item_bombblob_morkhalla": {
+   "source": "A",
+   "image": "items/BombBlob_Morkhalla"
+  },
+  "$item_bombblob_poison": {
+   "source": "A",
+   "image": "items/BombBlob_Poison"
+  },
+  "$item_bombblob_poisonelite": {
+   "source": "A",
+   "image": "items/BombBlob_PoisonElite"
+  },
+  "$item_bombblob_tar": {
+   "source": "A",
+   "image": "items/BombBlob_Tar"
+  },
+  "$item_bonemawmeat_cooked": {
+   "source": "A",
+   "image": "items/CookedBoneMawSerpentMeat"
+  },
+  "$item_bow": {
+   "source": "A",
+   "image": "items/Bow"
+  },
+  "$item_bow_ashlands": {
+   "source": "A",
+   "image": "items/BowAshlands"
+  },
+  "$item_bow_ashlandsblood": {
+   "source": "A",
+   "image": "items/BowAshlandsBlood"
+  },
+  "$item_bow_ashlandsroot": {
+   "source": "A",
+   "image": "items/BowAshlandsRoot"
+  },
+  "$item_bow_ashlandsstorm": {
+   "source": "A",
+   "image": "items/BowAshlandsStorm"
+  },
+  "$item_bow_draugrfang": {
+   "source": "A",
+   "image": "items/BowDraugrFang"
+  },
+  "$item_bow_finewood": {
+   "source": "A",
+   "image": "items/BowFineWood"
+  },
+  "$item_bow_gold": {
+   "source": "A",
+   "image": "items/BowGold"
+  },
+  "$item_bow_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/BowGold_BloodLightning"
+  },
+  "$item_bow_gold_frostfire": {
+   "source": "A",
+   "image": "items/BowGold_FrostFire"
+  },
+  "$item_bow_gold_uncooked": {
+   "source": "A",
+   "image": "items/BowGoldUncooked"
+  },
+  "$item_bow_huntsman": {
+   "source": "A",
+   "image": "items/BowHuntsman"
+  },
+  "$item_bow_snipesnap": {
+   "source": "A",
+   "image": "items/BowSpineSnap"
+  },
+  "$item_bread": {
+   "source": "A",
+   "image": "items/Bread"
+  },
+  "$item_breaddough": {
+   "source": "A",
+   "image": "items/BreadDough"
+  },
+  "$item_bronze": {
+   "source": "A",
+   "image": "items/Bronze"
+  },
+  "$item_bronzenails": {
+   "source": "A",
+   "image": "items/BronzeNails"
+  },
+  "$item_bug_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedBugMeat"
+  },
+  "$item_cape_ash": {
+   "source": "A",
+   "image": "items/CapeAsh"
+  },
+  "$item_cape_asksvin": {
+   "source": "A",
+   "image": "items/CapeAsksvin"
+  },
+  "$item_cape_deepnorth": {
+   "source": "A",
+   "image": "items/CapeDeepNorth"
+  },
+  "$item_cape_deepnorth_mage": {
+   "source": "A",
+   "image": "items/CapeDeepNorthMage"
+  },
+  "$item_cape_deerhide": {
+   "source": "A",
+   "image": "items/CapeDeerHide"
+  },
+  "$item_cape_feather": {
+   "source": "A",
+   "image": "items/CapeFeather"
+  },
+  "$item_cape_linen": {
+   "source": "A",
+   "image": "items/CapeLinen"
+  },
+  "$item_cape_lox": {
+   "source": "A",
+   "image": "items/CapeLox"
+  },
+  "$item_cape_trollhide": {
+   "source": "A",
+   "image": "items/CapeTrollHide"
+  },
+  "$item_cape_wolf": {
+   "source": "A",
+   "image": "items/CapeWolf"
+  },
+  "$item_carrot": {
+   "source": "A",
+   "image": "items/Carrot"
+  },
+  "$item_carrotsoup": {
+   "source": "A",
+   "image": "items/CarrotSoup"
+  },
+  "$item_catapult_ammo": {
+   "source": "A",
+   "image": "items/BombSiege"
+  },
+  "$item_catapult_bloodgold_ammo": {
+   "source": "A",
+   "image": "items/Catapult_Ammo_BloodGold"
+  },
+  "$item_catapult_training_ammo": {
+   "source": "A",
+   "image": "items/Catapult_ammo"
+  },
+  "$item_ceramicplate": {
+   "source": "A",
+   "image": "items/CeramicPlate"
+  },
+  "$item_chest_berserker": {
+   "source": "A",
+   "image": "items/ArmorBerserkerChest"
+  },
+  "$item_chest_berserker_undead": {
+   "source": "A",
+   "image": "items/ArmorBerserkerUndeadChest"
+  },
+  "$item_chest_bronze": {
+   "source": "A",
+   "image": "items/ArmorBronzeChest"
+  },
+  "$item_chest_carapace": {
+   "source": "A",
+   "image": "items/ArmorCarapaceChest"
+  },
+  "$item_chest_fenris": {
+   "source": "A",
+   "image": "items/ArmorFenringChest"
+  },
+  "$item_chest_flametal": {
+   "source": "A",
+   "image": "items/ArmorFlametalChest"
+  },
+  "$item_chest_heavy_deepnorth": {
+   "source": "A",
+   "image": "items/ArmorDeepNorthHeavyChest"
+  },
+  "$item_chest_heavy_gold_uncooked": {
+   "source": "A",
+   "image": "items/ArmorGoldHeavyChestUncooked"
+  },
+  "$item_chest_iron": {
+   "source": "A",
+   "image": "items/ArmorIronChest"
+  },
+  "$item_chest_leather": {
+   "source": "A",
+   "image": "items/ArmorLeatherChest"
+  },
+  "$item_chest_lox": {
+   "source": "A",
+   "image": "items/ArmorLoxChest"
+  },
+  "$item_chest_mage": {
+   "source": "A",
+   "image": "items/ArmorMageChest"
+  },
+  "$item_chest_mage_ashlands": {
+   "source": "A",
+   "image": "items/ArmorMageChest_Ashlands"
+  },
+  "$item_chest_mage_deepnorth": {
+   "source": "A",
+   "image": "items/ArmorDeepNorthMageChest"
+  },
+  "$item_chest_mage_gold_uncooked": {
+   "source": "A",
+   "image": "items/ArmorGoldMageChestUncooked"
+  },
+  "$item_chest_medium_ashlands": {
+   "source": "A",
+   "image": "items/ArmorAshlandsMediumChest"
+  },
+  "$item_chest_medium_deepnorth": {
+   "source": "A",
+   "image": "items/ArmorDeepNorthMediumChest"
+  },
+  "$item_chest_medium_gold_uncooked": {
+   "source": "A",
+   "image": "items/ArmorGoldMediumChestUncooked"
+  },
+  "$item_chest_pcuirass": {
+   "source": "A",
+   "image": "items/ArmorPaddedCuirass"
+  },
+  "$item_chest_rags": {
+   "source": "A",
+   "image": "items/ArmorRagsChest"
+  },
+  "$item_chest_root": {
+   "source": "A",
+   "image": "items/ArmorRootChest"
+  },
+  "$item_chest_trollleather": {
+   "source": "A",
+   "image": "items/ArmorTrollLeatherChest"
+  },
+  "$item_chest_wolf": {
+   "source": "A",
+   "image": "items/ArmorWolfChest"
+  },
+  "$item_chicken_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedChickenMeat"
+  },
+  "$item_cloudberries": {
+   "source": "A",
+   "image": "items/Cloudberry"
+  },
+  "$item_club": {
+   "source": "A",
+   "image": "items/Club"
+  },
+  "$item_crossbow_arbalest": {
+   "source": "A",
+   "image": "items/CrossbowArbalest"
+  },
+  "$item_crossbow_bloodlightning_gold": {
+   "source": "A",
+   "image": "items/CrossbowGold_BloodLightning"
+  },
+  "$item_crossbow_frostfire_gold": {
+   "source": "A",
+   "image": "items/CrossbowGold_FrostFire"
+  },
+  "$item_crossbow_gold": {
+   "source": "A",
+   "image": "items/CrossbowGold"
+  },
+  "$item_crossbow_gold_uncooked": {
+   "source": "A",
+   "image": "items/CrossbowGoldUncooked"
+  },
+  "$item_crossbow_ripper": {
+   "source": "A",
+   "image": "items/CrossbowRipper"
+  },
+  "$item_crossbow_ripper_blood": {
+   "source": "A",
+   "image": "items/CrossbowRipperBlood"
+  },
+  "$item_crossbow_ripper_lightning": {
+   "source": "A",
+   "image": "items/CrossbowRipperLightning"
+  },
+  "$item_crossbow_ripper_nature": {
+   "source": "A",
+   "image": "items/CrossbowRipperNature"
+  },
+  "$item_cultivator": {
+   "source": "A",
+   "image": "items/Cultivator"
+  },
+  "$item_deer_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedDeerMeat"
+  },
+  "$item_deerstew": {
+   "source": "A",
+   "image": "items/DeerStew"
+  },
+  "$item_demister": {
+   "source": "A",
+   "image": "items/Demister"
+  },
+  "$item_dvergrkey": {
+   "source": "A",
+   "image": "items/DvergrKey"
+  },
+  "$item_egg_cooked": {
+   "source": "A",
+   "image": "items/CookedEgg"
+  },
+  "$item_eyescream": {
+   "source": "A",
+   "image": "items/Eyescream"
+  },
+  "$item_feastashlands": {
+   "source": "A",
+   "image": "items/FeastAshlands"
+  },
+  "$item_feastblackforest": {
+   "source": "A",
+   "image": "items/FeastBlackforest"
+  },
+  "$item_feastdeepnorth": {
+   "source": "A",
+   "image": "items/FeastDeepNorth"
+  },
+  "$item_feastmeadows": {
+   "source": "A",
+   "image": "items/FeastMeadows"
+  },
+  "$item_feastmistlands": {
+   "source": "A",
+   "image": "items/FeastMistlands"
+  },
+  "$item_feastmountains": {
+   "source": "A",
+   "image": "items/FeastMountains"
+  },
+  "$item_feastoceans": {
+   "source": "A",
+   "image": "items/FeastOceans"
+  },
+  "$item_feastplains": {
+   "source": "A",
+   "image": "items/FeastPlains"
+  },
+  "$item_feastswamps": {
+   "source": "A",
+   "image": "items/FeastSwamps"
+  },
+  "$item_fiddleheadfern": {
+   "source": "A",
+   "image": "items/Fiddleheadfern"
+  },
+  "$item_fierysvinstew": {
+   "source": "A",
+   "image": "items/FierySvinstew"
+  },
+  "$item_fireworkrocket_blue": {
+   "source": "A",
+   "image": "items/FireworksRocket_Blue"
+  },
+  "$item_fireworkrocket_cyan": {
+   "source": "A",
+   "image": "items/FireworksRocket_Cyan"
+  },
+  "$item_fireworkrocket_green": {
+   "source": "A",
+   "image": "items/FireworksRocket_Green"
+  },
+  "$item_fireworkrocket_purple": {
+   "source": "A",
+   "image": "items/FireworksRocket_Purple"
+  },
+  "$item_fireworkrocket_red": {
+   "source": "A",
+   "image": "items/FireworksRocket_Red"
+  },
+  "$item_fireworkrocket_yellow": {
+   "source": "A",
+   "image": "items/FireworksRocket_Yellow"
+  },
+  "$item_fish_cooked": {
+   "source": "A",
+   "image": "items/FishCooked"
+  },
+  "$item_fish_raw": {
+   "source": "A",
+   "image": "items/FishAnglerRaw"
+  },
+  "$item_fishandbread": {
+   "source": "A",
+   "image": "items/FishAndBread"
+  },
+  "$item_fishandbreaduncooked": {
+   "source": "A",
+   "image": "items/FishAndBreadUncooked"
+  },
+  "$item_fishingbait_ashlands": {
+   "source": "A",
+   "image": "items/FishingBaitAshlands"
+  },
+  "$item_fishingbait_cave": {
+   "source": "A",
+   "image": "items/FishingBaitCave"
+  },
+  "$item_fishingbait_deepnorth": {
+   "source": "A",
+   "image": "items/FishingBaitDeepNorth"
+  },
+  "$item_fishingbait_forest": {
+   "source": "A",
+   "image": "items/FishingBaitForest"
+  },
+  "$item_fishingbait_mistlands": {
+   "source": "A",
+   "image": "items/FishingBaitMistlands"
+  },
+  "$item_fishingbait_ocean": {
+   "source": "A",
+   "image": "items/FishingBaitOcean"
+  },
+  "$item_fishingbait_plains": {
+   "source": "A",
+   "image": "items/FishingBaitPlains"
+  },
+  "$item_fishingbait_swamp": {
+   "source": "A",
+   "image": "items/FishingBaitSwamp"
+  },
+  "$item_fishsoup": {
+   "source": "A",
+   "image": "items/FishSoup"
+  },
+  "$item_fishwraps": {
+   "source": "A",
+   "image": "items/FishWraps"
+  },
+  "$item_fistweapon_bjorn": {
+   "source": "A",
+   "image": "items/FistBjornClaw"
+  },
+  "$item_fistweapon_bjorn_undead": {
+   "source": "A",
+   "image": "items/FistBjornUndeadClaw"
+  },
+  "$item_fistweapon_fenris": {
+   "source": "A",
+   "image": "items/FistFenrirClaw"
+  },
+  "$item_fistweapon_frostfire_gold": {
+   "source": "A",
+   "image": "items/FistGold_FrostFire"
+  },
+  "$item_fistweapon_gold": {
+   "source": "A",
+   "image": "items/FistGold"
+  },
+  "$item_fistweapon_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/FistGold_BloodLightning"
+  },
+  "$item_fistweapon_gold_uncooked": {
+   "source": "A",
+   "image": "items/FistGoldUncooked"
+  },
+  "$item_frostorbs_uncooked": {
+   "source": "A",
+   "image": "items/StaffFrostOrbsUncooked"
+  },
+  "$item_glowworm": {
+   "source": "A",
+   "image": "items/GlowWorm"
+  },
+  "$item_graplinghook": {
+   "source": "A",
+   "image": "items/GrapplingHook"
+  },
+  "$item_hardrock": {
+   "source": "A",
+   "image": "pieces/Placeable_HardRock"
+  },
+  "$item_hare_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedHareMeat"
+  },
+  "$item_helmet_berserker": {
+   "source": "A",
+   "image": "items/HelmetBerserkerHood"
+  },
+  "$item_helmet_berserker_undead": {
+   "source": "A",
+   "image": "items/HelmetBerserkerUndead"
+  },
+  "$item_helmet_bronze": {
+   "source": "A",
+   "image": "items/FW_HelmetBronze"
+  },
+  "$item_helmet_carapace": {
+   "source": "A",
+   "image": "items/HelmetCarapace"
+  },
+  "$item_helmet_celebration": {
+   "source": "A",
+   "image": "items/HelmetCelebration"
+  },
+  "$item_helmet_crown_of_valheim": {
+   "source": "A",
+   "image": "items/HelmetCrownofValheim"
+  },
+  "$item_helmet_drake": {
+   "source": "A",
+   "image": "items/HelmetDrake"
+  },
+  "$item_helmet_fenris": {
+   "source": "A",
+   "image": "items/HelmetFenring"
+  },
+  "$item_helmet_fishinghat": {
+   "source": "A",
+   "image": "items/HelmetFishingHat"
+  },
+  "$item_helmet_flametal": {
+   "source": "A",
+   "image": "items/HelmetFlametal"
+  },
+  "$item_helmet_heavy_deepnorth": {
+   "source": "A",
+   "image": "items/HelmetDNHeavy"
+  },
+  "$item_helmet_heavy_gold_uncooked": {
+   "source": "A",
+   "image": "items/ArmorGoldHeavyHelmetUncooked"
+  },
+  "$item_helmet_iron": {
+   "source": "A",
+   "image": "items/HelmetIron"
+  },
+  "$item_helmet_leather": {
+   "source": "A",
+   "image": "items/HelmetLeather"
+  },
+  "$item_helmet_lox": {
+   "source": "A",
+   "image": "items/HelmetLox"
+  },
+  "$item_helmet_mage": {
+   "source": "A",
+   "image": "items/HelmetMage"
+  },
+  "$item_helmet_mage_ashlands": {
+   "source": "A",
+   "image": "items/HelmetMage_Ashlands"
+  },
+  "$item_helmet_mage_deepnorth": {
+   "source": "A",
+   "image": "items/HelmetDNMage"
+  },
+  "$item_helmet_mage_gold_uncooked": {
+   "source": "A",
+   "image": "items/ArmorGoldMageHelmetUncooked"
+  },
+  "$item_helmet_medium_ashlands": {
+   "source": "A",
+   "image": "items/HelmetAshlandsMediumHood"
+  },
+  "$item_helmet_medium_deepnorth": {
+   "source": "A",
+   "image": "items/HelmetDNMediumHood"
+  },
+  "$item_helmet_medium_gold_uncooked": {
+   "source": "A",
+   "image": "items/ArmorGoldMediumHelmetUncooked"
+  },
+  "$item_helmet_padded": {
+   "source": "A",
+   "image": "items/HelmetPadded"
+  },
+  "$item_helmet_root": {
+   "source": "A",
+   "image": "items/HelmetRoot"
+  },
+  "$item_helmet_trollleather": {
+   "source": "A",
+   "image": "items/HelmetTrollLeather"
+  },
+  "$item_hoe": {
+   "source": "A",
+   "image": "items/Hoe"
+  },
+  "$item_honey": {
+   "source": "A",
+   "image": "items/Honey"
+  },
+  "$item_honeyglazedchicken": {
+   "source": "A",
+   "image": "items/HoneyGlazedChicken"
+  },
+  "$item_honeyglazedchickenuncooked": {
+   "source": "A",
+   "image": "items/HoneyGlazedChickenUncooked"
+  },
+  "$item_ironnails": {
+   "source": "A",
+   "image": "items/IronNails"
+  },
+  "$item_jotunpuffs": {
+   "source": "A",
+   "image": "items/MushroomJotunPuffs"
+  },
+  "$item_kale": {
+   "source": "A",
+   "image": "items/Kale"
+  },
+  "$item_kalechips": {
+   "source": "A",
+   "image": "items/KaleChips"
+  },
+  "$item_kalechips_uncooked": {
+   "source": "A",
+   "image": "items/KaleChipsUncooked"
+  },
+  "$item_keys_gold_uncooked": {
+   "source": "A",
+   "image": "items/KeysGoldUncooked"
+  },
+  "$item_knife_blackmetal": {
+   "source": "A",
+   "image": "items/KnifeBlackMetal"
+  },
+  "$item_knife_butcher": {
+   "source": "A",
+   "image": "items/KnifeButcher"
+  },
+  "$item_knife_chitin": {
+   "source": "A",
+   "image": "items/KnifeChitin"
+  },
+  "$item_knife_copper": {
+   "source": "A",
+   "image": "items/KnifeCopper"
+  },
+  "$item_knife_flint": {
+   "source": "A",
+   "image": "items/KnifeFlint"
+  },
+  "$item_knife_gold": {
+   "source": "A",
+   "image": "items/KnifeGold"
+  },
+  "$item_knife_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/KnifeGold_BloodLightning"
+  },
+  "$item_knife_gold_frostfire": {
+   "source": "A",
+   "image": "items/KnifeGold_FrostFire"
+  },
+  "$item_knife_gold_uncooked": {
+   "source": "A",
+   "image": "items/KnifeGoldUncooked"
+  },
+  "$item_knife_silver": {
+   "source": "A",
+   "image": "items/FW_KnifeSilver"
+  },
+  "$item_knife_skollandhati": {
+   "source": "A",
+   "image": "items/FW_KnifeSkollAndHati"
+  },
+  "$item_legs_berserker": {
+   "source": "A",
+   "image": "items/ArmorBerserkerLegs"
+  },
+  "$item_legs_berserker_undead": {
+   "source": "A",
+   "image": "items/ArmorBerserkerUndeadLegs"
+  },
+  "$item_legs_bronze": {
+   "source": "A",
+   "image": "items/ArmorBronzeLegs"
+  },
+  "$item_legs_carapace": {
+   "source": "A",
+   "image": "items/ArmorCarapaceLegs"
+  },
+  "$item_legs_fenris": {
+   "source": "A",
+   "image": "items/ArmorFenringLegs"
+  },
+  "$item_legs_flametal": {
+   "source": "A",
+   "image": "items/ArmorFlametalLegs"
+  },
+  "$item_legs_heavy_deepnorth": {
+   "source": "A",
+   "image": "items/ArmorDeepNorthHeavylegs"
+  },
+  "$item_legs_heavy_gold_uncooked": {
+   "source": "A",
+   "image": "items/ArmorGoldHeavyLegsUncooked"
+  },
+  "$item_legs_iron": {
+   "source": "A",
+   "image": "items/ArmorIronLegs"
+  },
+  "$item_legs_leather": {
+   "source": "A",
+   "image": "items/ArmorLeatherLegs"
+  },
+  "$item_legs_lox": {
+   "source": "A",
+   "image": "items/ArmorLoxLegs"
+  },
+  "$item_legs_mage": {
+   "source": "A",
+   "image": "items/ArmorMageLegs"
+  },
+  "$item_legs_mage_ashlands": {
+   "source": "A",
+   "image": "items/ArmorMageLegs_Ashlands"
+  },
+  "$item_legs_mage_deepnorth": {
+   "source": "A",
+   "image": "items/ArmorDeepNorthMagelegs"
+  },
+  "$item_legs_mage_gold_uncooked": {
+   "source": "A",
+   "image": "items/ArmorGoldMageLegsUncooked"
+  },
+  "$item_legs_medium_ashlands": {
+   "source": "A",
+   "image": "items/ArmorAshlandsMediumlegs"
+  },
+  "$item_legs_medium_deepnorth": {
+   "source": "A",
+   "image": "items/ArmorDeepNorthMediumlegs"
+  },
+  "$item_legs_medium_gold_uncooked": {
+   "source": "A",
+   "image": "items/ArmorGoldMediumLegsUncooked"
+  },
+  "$item_legs_pgreaves": {
+   "source": "A",
+   "image": "items/ArmorPaddedGreaves"
+  },
+  "$item_legs_rags": {
+   "source": "A",
+   "image": "items/ArmorRagsLegs"
+  },
+  "$item_legs_root": {
+   "source": "A",
+   "image": "items/ArmorRootLegs"
+  },
+  "$item_legs_trollleather": {
+   "source": "A",
+   "image": "items/ArmorTrollLeatherLegs"
+  },
+  "$item_legs_wolf": {
+   "source": "A",
+   "image": "items/ArmorWolfLegs"
+  },
+  "$item_lingonberries": {
+   "source": "C",
+   "file": "C/itemlingonberries.png",
+   "url": "https://valheim.weirdgloop.org/images/Lingonberries.png?f549f",
+   "how": "page image"
+  },
+  "$item_lingondricka": {
+   "source": "A",
+   "image": "items/Lingondricka"
+  },
+  "$item_loxmeat_cooked": {
+   "source": "A",
+   "image": "items/CookedLoxMeat"
+  },
+  "$item_loxpie": {
+   "source": "A",
+   "image": "items/LoxPie"
+  },
+  "$item_loxpie_uncooked": {
+   "source": "A",
+   "image": "items/LoxPieUncooked"
+  },
+  "$item_mace2h_gold": {
+   "source": "A-override",
+   "image": "items/SledgeGold"
+  },
+  "$item_mace2h_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/SledgeGold_BloodLightning"
+  },
+  "$item_mace2h_gold_frostfire": {
+   "source": "A",
+   "image": "items/SledgeGold_FrostFire"
+  },
+  "$item_mace2h_gold_uncooked": {
+   "source": "A-override",
+   "image": "items/SledgeGoldUncooked"
+  },
+  "$item_mace_bronze": {
+   "source": "A",
+   "image": "items/MaceBronze"
+  },
+  "$item_mace_eldner": {
+   "source": "A",
+   "image": "items/MaceEldner"
+  },
+  "$item_mace_eldner_blood": {
+   "source": "A",
+   "image": "items/MaceEldnerBlood"
+  },
+  "$item_mace_eldner_lightning": {
+   "source": "A",
+   "image": "items/MaceEldnerLightning"
+  },
+  "$item_mace_eldner_nature": {
+   "source": "A",
+   "image": "items/MaceEldnerNature"
+  },
+  "$item_mace_gold": {
+   "source": "A",
+   "image": "items/MaceGold"
+  },
+  "$item_mace_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/MaceGold_BloodLightning"
+  },
+  "$item_mace_gold_frostfire": {
+   "source": "A",
+   "image": "items/MaceGold_FrostFire"
+  },
+  "$item_mace_gold_uncooked": {
+   "source": "A",
+   "image": "items/MaceGoldUncooked"
+  },
+  "$item_mace_iron": {
+   "source": "A",
+   "image": "items/MaceIron"
+  },
+  "$item_mace_needle": {
+   "source": "A",
+   "image": "items/MaceNeedle"
+  },
+  "$item_mace_silver": {
+   "source": "A",
+   "image": "items/MaceSilver"
+  },
+  "$item_magecap": {
+   "source": "A",
+   "image": "items/MushroomMagecap"
+  },
+  "$item_magicallystuffedmushroom": {
+   "source": "A",
+   "image": "items/MagicallyStuffedShroom"
+  },
+  "$item_magicallystuffedmushroomuncooked": {
+   "source": "A",
+   "image": "items/MagicallyStuffedShroomUncooked"
+  },
+  "$item_marinatedgreens": {
+   "source": "A",
+   "image": "items/MarinatedGreens"
+  },
+  "$item_mashedmeat": {
+   "source": "A",
+   "image": "items/MashedMeat"
+  },
+  "$item_meadbasebugrepellent": {
+   "source": "A",
+   "image": "items/MeadBaseBugRepellent"
+  },
+  "$item_meadbasebzerker": {
+   "source": "A",
+   "image": "items/MeadBaseBzerker"
+  },
+  "$item_meadbaseeitr": {
+   "source": "A",
+   "image": "items/MeadBaseEitrMinor"
+  },
+  "$item_meadbaseeitr_lingering": {
+   "source": "A",
+   "image": "items/MeadBaseEitrLingering"
+  },
+  "$item_meadbasefrostresist": {
+   "source": "A",
+   "image": "items/MeadBaseFrostResist"
+  },
+  "$item_meadbasehasty": {
+   "source": "A",
+   "image": "items/MeadBaseHasty"
+  },
+  "$item_meadbasehealth": {
+   "source": "A",
+   "image": "items/MeadBaseHealthMinor"
+  },
+  "$item_meadbasehealth_lingering": {
+   "source": "A",
+   "image": "items/MeadBaseHealthLingering"
+  },
+  "$item_meadbasehealth_major": {
+   "source": "A",
+   "image": "items/MeadBaseHealthMajor"
+  },
+  "$item_meadbasehealth_medium": {
+   "source": "A",
+   "image": "items/MeadBaseHealthMedium"
+  },
+  "$item_meadbaselightfoot": {
+   "source": "A",
+   "image": "items/MeadBaseLightFoot"
+  },
+  "$item_meadbasepoisonresist": {
+   "source": "A",
+   "image": "items/MeadBasePoisonResist"
+  },
+  "$item_meadbasestamina": {
+   "source": "A",
+   "image": "items/MeadBaseStaminaMinor"
+  },
+  "$item_meadbasestamina_lingering": {
+   "source": "A",
+   "image": "items/MeadBaseStaminaLingering"
+  },
+  "$item_meadbasestamina_medium": {
+   "source": "A",
+   "image": "items/MeadBaseStaminaMedium"
+  },
+  "$item_meadbasestrength": {
+   "source": "A",
+   "image": "items/MeadBaseStrength"
+  },
+  "$item_meadbaseswimmer": {
+   "source": "A",
+   "image": "items/MeadBaseSwimmer"
+  },
+  "$item_meadbasetamer": {
+   "source": "A",
+   "image": "items/MeadBaseTamer"
+  },
+  "$item_meadbasetasty": {
+   "source": "A",
+   "image": "items/MeadBaseTasty"
+  },
+  "$item_meatballsmashedpoteitr": {
+   "source": "A",
+   "image": "items/MeatballsMashedPoteitr"
+  },
+  "$item_meatplatter": {
+   "source": "A",
+   "image": "items/MeatPlatter"
+  },
+  "$item_meatplatteruncooked": {
+   "source": "A",
+   "image": "items/MeatPlatterUncooked"
+  },
+  "$item_mechanicalspring": {
+   "source": "A",
+   "image": "items/MechanicalSpring"
+  },
+  "$item_mincemeatsauce": {
+   "source": "A",
+   "image": "items/MinceMeatSauce"
+  },
+  "$item_mistharesupreme": {
+   "source": "A",
+   "image": "items/MisthareSupreme"
+  },
+  "$item_mistharesupremeuncooked": {
+   "source": "A",
+   "image": "items/MisthareSupremeUncooked"
+  },
+  "$item_moose_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedMooseMeat"
+  },
+  "$item_moosekebab": {
+   "source": "A",
+   "image": "items/MooseKebab"
+  },
+  "$item_mushroomblue": {
+   "source": "A",
+   "image": "items/MushroomBlue"
+  },
+  "$item_mushroomcommon": {
+   "source": "A",
+   "image": "items/Mushroom"
+  },
+  "$item_mushroomomelette": {
+   "source": "A",
+   "image": "items/MushroomOmelette"
+  },
+  "$item_mushroomyellow": {
+   "source": "A",
+   "image": "items/MushroomYellow"
+  },
+  "$item_necktailgrilled": {
+   "source": "C",
+   "file": "C/itemnecktailgrilled.png",
+   "url": "https://valheim.weirdgloop.org/images/Grilled_Neck_Tail.png?6b79f",
+   "how": "file"
+  },
+  "$item_oat": {
+   "source": "A",
+   "image": "items/Oat"
+  },
+  "$item_oatmeallingonberryjam": {
+   "source": "A",
+   "image": "items/OatmealLingonberryJam"
+  },
+  "$item_oatmilk": {
+   "source": "A",
+   "image": "items/OatMilk"
+  },
+  "$item_onion": {
+   "source": "A",
+   "image": "items/Onion"
+  },
+  "$item_onionsoup": {
+   "source": "A",
+   "image": "items/OnionSoup"
+  },
+  "$item_oozebomb": {
+   "source": "A",
+   "image": "items/BombOoze"
+  },
+  "$item_ovenpancake": {
+   "source": "A",
+   "image": "items/OvenPancake"
+  },
+  "$item_ovenpancake_uncooked": {
+   "source": "A",
+   "image": "items/OvenPancakeUncooked"
+  },
+  "$item_pancakes": {
+   "source": "A",
+   "image": "items/Pancakes"
+  },
+  "$item_pickaxe_antler": {
+   "source": "A",
+   "image": "items/PickaxeAntler"
+  },
+  "$item_pickaxe_blackmetal": {
+   "source": "A",
+   "image": "items/PickaxeBlackMetal"
+  },
+  "$item_pickaxe_bronze": {
+   "source": "A",
+   "image": "items/PickaxeBronze"
+  },
+  "$item_pickaxe_iron": {
+   "source": "A",
+   "image": "items/PickaxeIron"
+  },
+  "$item_piquantpie": {
+   "source": "A",
+   "image": "items/PiquantPie"
+  },
+  "$item_piquantpie_uncooked": {
+   "source": "A",
+   "image": "items/PiquantPieUncooked"
+  },
+  "$item_poteitr": {
+   "source": "A",
+   "image": "items/Poteitr"
+  },
+  "$item_pulledbear": {
+   "source": "A",
+   "image": "items/PulledBear"
+  },
+  "$item_queensjam": {
+   "source": "A",
+   "image": "items/QueensJam"
+  },
+  "$item_raspberries": {
+   "source": "A",
+   "image": "items/Raspberry"
+  },
+  "$item_roastedcrustpie": {
+   "source": "A",
+   "image": "items/RoastedCrustPie"
+  },
+  "$item_roastedcrustpie_uncooked": {
+   "source": "A",
+   "image": "items/RoastedCrustPieUncooked"
+  },
+  "$item_royaljelly": {
+   "source": "A",
+   "image": "items/RoyalJelly"
+  },
+  "$item_saddleasksvin": {
+   "source": "A",
+   "image": "items/SaddleAsksvin"
+  },
+  "$item_saddlelox": {
+   "source": "A",
+   "image": "items/SaddleLox"
+  },
+  "$item_saddlemoose": {
+   "source": "A",
+   "image": "items/SaddleMoose"
+  },
+  "$item_salad": {
+   "source": "A",
+   "image": "items/Salad"
+  },
+  "$item_sausages": {
+   "source": "A",
+   "image": "items/Sausages"
+  },
+  "$item_scorchingmedley": {
+   "source": "A",
+   "image": "items/ScorchingMedley"
+  },
+  "$item_scythe": {
+   "source": "A",
+   "image": "items/Scythe"
+  },
+  "$item_sealsoup": {
+   "source": "A",
+   "image": "items/SealSoup"
+  },
+  "$item_seekeraspic": {
+   "source": "A",
+   "image": "items/SeekerAspic"
+  },
+  "$item_serpentmeatcooked": {
+   "source": "A",
+   "image": "items/SerpentMeatCooked"
+  },
+  "$item_serpentstew": {
+   "source": "A",
+   "image": "items/SerpentStew"
+  },
+  "$item_sharpeningstone": {
+   "source": "A",
+   "image": "items/SharpeningStone"
+  },
+  "$item_shield_banded": {
+   "source": "A",
+   "image": "items/ShieldBanded"
+  },
+  "$item_shield_blackmetal": {
+   "source": "A",
+   "image": "items/ShieldBlackmetal"
+  },
+  "$item_shield_blackmetal_tower": {
+   "source": "A",
+   "image": "items/FW_ShieldBlackmetalTower"
+  },
+  "$item_shield_bonetower": {
+   "source": "A",
+   "image": "items/ShieldBoneTower"
+  },
+  "$item_shield_bronzebuckler": {
+   "source": "A",
+   "image": "items/ShieldBronzeBuckler"
+  },
+  "$item_shield_buckler_gold_uncooked": {
+   "source": "A",
+   "image": "items/ShieldBucklerGoldUncooked"
+  },
+  "$item_shield_carapace": {
+   "source": "A",
+   "image": "items/ShieldCarapace"
+  },
+  "$item_shield_carapacebuckler": {
+   "source": "A",
+   "image": "items/ShieldCarapaceBuckler"
+  },
+  "$item_shield_flametal": {
+   "source": "A",
+   "image": "items/ShieldFlametal"
+  },
+  "$item_shield_flametal_tower": {
+   "source": "A",
+   "image": "items/ShieldFlametalTower"
+  },
+  "$item_shield_gold": {
+   "source": "A",
+   "image": "items/ShieldGold"
+  },
+  "$item_shield_gold_tower": {
+   "source": "A",
+   "image": "items/ShieldGoldTower"
+  },
+  "$item_shield_goldbuckler": {
+   "source": "A",
+   "image": "items/ShieldGoldBuckler"
+  },
+  "$item_shield_iron_tower": {
+   "source": "A",
+   "image": "items/ShieldIronTower"
+  },
+  "$item_shield_ironbuckler": {
+   "source": "A",
+   "image": "items/ShieldIronBuckler"
+  },
+  "$item_shield_roots": {
+   "source": "A",
+   "image": "items/ShieldRoots"
+  },
+  "$item_shield_round_gold_uncooked": {
+   "source": "A",
+   "image": "items/ShieldRoundGoldUncooked"
+  },
+  "$item_shield_serpentscale": {
+   "source": "A",
+   "image": "items/ShieldSerpentscale"
+  },
+  "$item_shield_silver": {
+   "source": "A",
+   "image": "items/ShieldSilver"
+  },
+  "$item_shield_tower_gold_uncooked": {
+   "source": "A",
+   "image": "items/ShieldTowerGoldUncooked"
+  },
+  "$item_shield_wood": {
+   "source": "A",
+   "image": "items/ShieldWood"
+  },
+  "$item_shield_woodtower": {
+   "source": "A",
+   "image": "items/ShieldWoodTower"
+  },
+  "$item_shieldcore": {
+   "source": "A",
+   "image": "items/ShieldCore"
+  },
+  "$item_shocklatesmoothie": {
+   "source": "A",
+   "image": "items/ShocklateSmoothie"
+  },
+  "$item_sizzlingberrybroth": {
+   "source": "A",
+   "image": "items/SizzlingBerryBroth"
+  },
+  "$item_sledge_demolisher": {
+   "source": "A",
+   "image": "items/SledgeDemolisher"
+  },
+  "$item_sledge_gold": {
+   "source": "A",
+   "image": "items/SledgeGold"
+  },
+  "$item_sledge_gold_uncooked": {
+   "source": "A",
+   "image": "items/SledgeGoldUncooked"
+  },
+  "$item_sledge_iron": {
+   "source": "A",
+   "image": "items/SledgeIron"
+  },
+  "$item_smokedfish": {
+   "source": "A",
+   "image": "items/SmokedFish"
+  },
+  "$item_smokedmoosemeat": {
+   "source": "A",
+   "image": "items/SmokedMooseMeat"
+  },
+  "$item_smokepuff": {
+   "source": "A",
+   "image": "items/MushroomSmokePuff"
+  },
+  "$item_sparklingshroomshake": {
+   "source": "A",
+   "image": "items/SparklingShroomshake"
+  },
+  "$item_spear_ancientbark": {
+   "source": "A",
+   "image": "items/SpearElderbark"
+  },
+  "$item_spear_bronze": {
+   "source": "A",
+   "image": "items/SpearBronze"
+  },
+  "$item_spear_carapace": {
+   "source": "A",
+   "image": "items/SpearCarapace"
+  },
+  "$item_spear_chitin": {
+   "source": "A",
+   "image": "items/SpearChitin"
+  },
+  "$item_spear_flint": {
+   "source": "A",
+   "image": "items/SpearFlint"
+  },
+  "$item_spear_gold": {
+   "source": "A",
+   "image": "items/SpearGold"
+  },
+  "$item_spear_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/SpearGold_BloodLightning"
+  },
+  "$item_spear_gold_frostfire": {
+   "source": "A",
+   "image": "items/SpearGold_FrostFire"
+  },
+  "$item_spear_gold_uncooked": {
+   "source": "A",
+   "image": "items/SpearGoldUncooked"
+  },
+  "$item_spear_splitner": {
+   "source": "A",
+   "image": "items/SpearSplitner"
+  },
+  "$item_spear_splitner_blood": {
+   "source": "A",
+   "image": "items/SpearSplitner_Blood"
+  },
+  "$item_spear_splitner_lightning": {
+   "source": "A",
+   "image": "items/SpearSplitner_Lightning"
+  },
+  "$item_spear_splitner_nature": {
+   "source": "A",
+   "image": "items/SpearSplitner_Nature"
+  },
+  "$item_spear_wolffang": {
+   "source": "A",
+   "image": "items/SpearWolfFang"
+  },
+  "$item_spicymarmalade": {
+   "source": "A",
+   "image": "items/SpicyMarmalade"
+  },
+  "$item_staff_frostorbs": {
+   "source": "A",
+   "image": "items/StaffFrostOrbs"
+  },
+  "$item_staff_lightning": {
+   "source": "A",
+   "image": "items/FW_StaffLightning"
+  },
+  "$item_staff_orbofahri": {
+   "source": "A",
+   "image": "items/StaffOrbofAhri"
+  },
+  "$item_staff_orbofahri_uncooked": {
+   "source": "A",
+   "image": "items/StaffOrbofAhriUncooked"
+  },
+  "$item_staff_spiritcaller": {
+   "source": "A",
+   "image": "items/StaffSpiritCaller"
+  },
+  "$item_staff_spiritcaller_uncooked": {
+   "source": "A",
+   "image": "items/StaffSpiritCallerUncooked"
+  },
+  "$item_staff_thunderblood": {
+   "source": "A",
+   "image": "items/StaffThunderBlood"
+  },
+  "$item_staff_thunderblood_uncooked": {
+   "source": "A",
+   "image": "items/StaffThunderbloodUncooked"
+  },
+  "$item_staffclusterbomb": {
+   "source": "A",
+   "image": "items/StaffClusterbomb"
+  },
+  "$item_stafffireball": {
+   "source": "A",
+   "image": "items/FW_StaffFireball"
+  },
+  "$item_staffgreenroots": {
+   "source": "A",
+   "image": "items/StaffGreenRoots"
+  },
+  "$item_stafficeshards": {
+   "source": "A",
+   "image": "items/StaffIceShards"
+  },
+  "$item_staffredlightning": {
+   "source": "C",
+   "file": "C/itemstaffredlightning.png",
+   "url": "https://valheim.weirdgloop.org/images/Dundr.png?f9859",
+   "how": "page image"
+  },
+  "$item_staffredtroll": {
+   "source": "A",
+   "image": "items/StaffRedTroll"
+  },
+  "$item_staffshield": {
+   "source": "A",
+   "image": "items/StaffShield"
+  },
+  "$item_staffskeleton": {
+   "source": "A",
+   "image": "items/StaffSkeleton"
+  },
+  "$item_stagbreaker": {
+   "source": "A",
+   "image": "items/SledgeStagbreaker"
+  },
+  "$item_sword2h_gold": {
+   "source": "A",
+   "image": "items/THSwordGold"
+  },
+  "$item_sword2h_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/THSwordGold_BloodLightning"
+  },
+  "$item_sword2h_gold_frostfire": {
+   "source": "A",
+   "image": "items/THSwordGold_FrostFire"
+  },
+  "$item_sword2h_gold_uncooked": {
+   "source": "A",
+   "image": "items/THSwordGoldUncooked"
+  },
+  "$item_sword_blackmetal": {
+   "source": "A",
+   "image": "items/FW_SwordBlackmetal"
+  },
+  "$item_sword_bronze": {
+   "source": "A",
+   "image": "items/SwordBronze"
+  },
+  "$item_sword_dyrnwyn": {
+   "source": "A",
+   "image": "items/SwordDyrnwyn"
+  },
+  "$item_sword_fire": {
+   "source": "A",
+   "image": "items/SwordIronFire"
+  },
+  "$item_sword_gold": {
+   "source": "A",
+   "image": "items/SwordGold"
+  },
+  "$item_sword_gold_bloodlightning": {
+   "source": "A",
+   "image": "items/SwordGold_BloodLightning"
+  },
+  "$item_sword_gold_frostfire": {
+   "source": "A",
+   "image": "items/SwordGold_FrostFire"
+  },
+  "$item_sword_gold_uncooked": {
+   "source": "A",
+   "image": "items/SwordGoldUncooked"
+  },
+  "$item_sword_iron": {
+   "source": "A",
+   "image": "items/SwordIron"
+  },
+  "$item_sword_krom": {
+   "source": "A",
+   "image": "items/THSwordKrom"
+  },
+  "$item_sword_mistwalker": {
+   "source": "A",
+   "image": "items/SwordMistwalker"
+  },
+  "$item_sword_niedhogg": {
+   "source": "A",
+   "image": "items/SwordNiedhogg"
+  },
+  "$item_sword_niedhogg_blood": {
+   "source": "A",
+   "image": "items/SwordNiedhoggBlood"
+  },
+  "$item_sword_niedhogg_lightning": {
+   "source": "A",
+   "image": "items/SwordNiedhoggLightning"
+  },
+  "$item_sword_niedhogg_nature": {
+   "source": "A",
+   "image": "items/SwordNiedhoggNature"
+  },
+  "$item_sword_silver": {
+   "source": "A",
+   "image": "items/SwordSilver"
+  },
+  "$item_sword_slayer": {
+   "source": "A",
+   "image": "items/THSwordSlayer"
+  },
+  "$item_sword_slayer_blood": {
+   "source": "A",
+   "image": "items/THSwordSlayerBlood"
+  },
+  "$item_sword_slayer_lightning": {
+   "source": "A",
+   "image": "items/THSwordSlayerLightning"
+  },
+  "$item_sword_slayer_nature": {
+   "source": "A",
+   "image": "items/THSwordSlayerNature"
+  },
+  "$item_sword_wood": {
+   "source": "A",
+   "image": "items/SwordWood"
+  },
+  "$item_torch": {
+   "source": "A",
+   "image": "items/Torch"
+  },
+  "$item_trinketblackdamagedealth": {
+   "source": "A",
+   "image": "items/TrinketBlackDamageHealth"
+  },
+  "$item_trinketblackdtamina": {
+   "source": "A",
+   "image": "items/TrinketBlackStamina"
+  },
+  "$item_trinketbloodgoldhealth": {
+   "source": "A",
+   "image": "items/TrinketBloodGoldHealth"
+  },
+  "$item_trinketbloodgoldstamina": {
+   "source": "A",
+   "image": "items/TrinketBloodGoldStamina"
+  },
+  "$item_trinketbronzehealth": {
+   "source": "A",
+   "image": "items/TrinketBronzeHealth"
+  },
+  "$item_trinketbronzestamina": {
+   "source": "A",
+   "image": "items/TrinketBronzeStamina"
+  },
+  "$item_trinketcarapaceeitr": {
+   "source": "A",
+   "image": "items/TrinketCarapaceEitr"
+  },
+  "$item_trinketchitinswim": {
+   "source": "A",
+   "image": "items/TrinketChitinSwim"
+  },
+  "$item_trinketflametaleitr": {
+   "source": "A",
+   "image": "items/TrinketFlametalEitr"
+  },
+  "$item_trinketflametalstaminahealth": {
+   "source": "A",
+   "image": "items/TrinketFlametalStaminaHealth"
+  },
+  "$item_trinketironhealth": {
+   "source": "A",
+   "image": "items/TrinketIronHealth"
+  },
+  "$item_trinketironstamina": {
+   "source": "A",
+   "image": "items/TrinketIronStamina"
+  },
+  "$item_trinketscalestaminadamage": {
+   "source": "A",
+   "image": "items/TrinketScaleStaminaDamage"
+  },
+  "$item_trinketsilverdamage": {
+   "source": "A",
+   "image": "items/TrinketSilverDamage"
+  },
+  "$item_trinketsilverresist": {
+   "source": "A",
+   "image": "items/TrinketSilverResist"
+  },
+  "$item_trophy_abomination": {
+   "source": "A",
+   "image": "items/TrophyAbomination"
+  },
+  "$item_trophy_asksvin": {
+   "source": "A",
+   "image": "items/TrophyAsksvin"
+  },
+  "$item_trophy_barka": {
+   "source": "A",
+   "image": "items/TrophyBarka"
+  },
+  "$item_trophy_bjorn": {
+   "source": "A",
+   "image": "items/TrophyBjorn"
+  },
+  "$item_trophy_bjorn_undead": {
+   "source": "A",
+   "image": "items/TrophyBjornUndead"
+  },
+  "$item_trophy_blob": {
+   "source": "A",
+   "image": "items/TrophyBlob"
+  },
+  "$item_trophy_blob_frost": {
+   "source": "A",
+   "image": "items/TrophyBlob_Frost"
+  },
+  "$item_trophy_blob_lava": {
+   "source": "A",
+   "image": "items/TrophyBlob_Lava"
+  },
+  "$item_trophy_blob_morkhalla": {
+   "source": "A",
+   "image": "items/TrophyBlob_Morkhalla"
+  },
+  "$item_trophy_boar": {
+   "source": "A",
+   "image": "items/TrophyBoar"
+  },
+  "$item_trophy_bonemass": {
+   "source": "A",
+   "image": "items/TrophyBonemass"
+  },
+  "$item_trophy_bonemaw": {
+   "source": "A",
+   "image": "items/TrophyBonemawSerpent"
+  },
+  "$item_trophy_brutebro": {
+   "source": "A",
+   "image": "items/TrophyGoblinBruteBrosBrute"
+  },
+  "$item_trophy_charredarcher": {
+   "source": "A",
+   "image": "items/TrophyCharredArcher"
+  },
+  "$item_trophy_charredmage": {
+   "source": "A",
+   "image": "items/TrophyCharredMage"
+  },
+  "$item_trophy_charredmelee": {
+   "source": "A",
+   "image": "items/TrophyCharredMelee"
+  },
+  "$item_trophy_cultist": {
+   "source": "A",
+   "image": "items/TrophyCultist"
+  },
+  "$item_trophy_cultist_hildir": {
+   "source": "A",
+   "image": "items/TrophyCultist_Hildir"
+  },
+  "$item_trophy_deathsquito": {
+   "source": "A",
+   "image": "items/TrophyDeathsquito"
+  },
+  "$item_trophy_deer": {
+   "source": "A",
+   "image": "items/TrophyDeer"
+  },
+  "$item_trophy_dragonqueen": {
+   "source": "A",
+   "image": "items/TrophyDragonQueen"
+  },
+  "$item_trophy_draugr": {
+   "source": "A",
+   "image": "items/TrophyDraugr"
+  },
+  "$item_trophy_draugrelite": {
+   "source": "A",
+   "image": "items/TrophyDraugrElite"
+  },
+  "$item_trophy_dvergr": {
+   "source": "A",
+   "image": "items/TrophyDvergr"
+  },
+  "$item_trophy_eikthyr": {
+   "source": "A",
+   "image": "items/TrophyEikthyr"
+  },
+  "$item_trophy_elaking": {
+   "source": "A",
+   "image": "items/TrophyElaking"
+  },
+  "$item_trophy_elder": {
+   "source": "A",
+   "image": "items/TrophyTheElder"
+  },
+  "$item_trophy_fader": {
+   "source": "A",
+   "image": "items/TrophyFader"
+  },
+  "$item_trophy_fallenvalkyrie": {
+   "source": "A",
+   "image": "items/TrophyFallenValkyrie"
+  },
+  "$item_trophy_fenring": {
+   "source": "A",
+   "image": "items/TrophyFenring"
+  },
+  "$item_trophy_ghost": {
+   "source": "A",
+   "image": "items/TrophyGhost"
+  },
+  "$item_trophy_gjall": {
+   "source": "A",
+   "image": "items/TrophyGjall"
+  },
+  "$item_trophy_goblin": {
+   "source": "A",
+   "image": "items/TrophyGoblin"
+  },
+  "$item_trophy_goblinbrute": {
+   "source": "A",
+   "image": "items/TrophyGoblinBrute"
+  },
+  "$item_trophy_goblinking": {
+   "source": "A",
+   "image": "items/TrophyGoblinKing"
+  },
+  "$item_trophy_goblinshaman": {
+   "source": "A",
+   "image": "items/TrophyGoblinShaman"
+  },
+  "$item_trophy_greydwarf": {
+   "source": "A",
+   "image": "items/TrophyGreydwarf"
+  },
+  "$item_trophy_greydwarfbrute": {
+   "source": "A",
+   "image": "items/TrophyGreydwarfBrute"
+  },
+  "$item_trophy_greydwarfshaman": {
+   "source": "A",
+   "image": "items/TrophyGreydwarfShaman"
+  },
+  "$item_trophy_growth": {
+   "source": "A",
+   "image": "items/TrophyGrowth"
+  },
+  "$item_trophy_hare": {
+   "source": "A",
+   "image": "items/TrophyHare"
+  },
+  "$item_trophy_hatchling": {
+   "source": "A",
+   "image": "items/TrophyHatchling"
+  },
+  "$item_trophy_jotunwarrior": {
+   "source": "A",
+   "image": "items/TrophyJotunWarrior"
+  },
+  "$item_trophy_jotunwitch": {
+   "source": "A",
+   "image": "items/TrophyJotunWitch"
+  },
+  "$item_trophy_leech": {
+   "source": "A",
+   "image": "items/TrophyLeech"
+  },
+  "$item_trophy_lox": {
+   "source": "A",
+   "image": "items/TrophyLox"
+  },
+  "$item_trophy_mole": {
+   "source": "A",
+   "image": "items/TrophyMole"
+  },
+  "$item_trophy_moose": {
+   "source": "A",
+   "image": "items/TrophyMoose"
+  },
+  "$item_trophy_morgen": {
+   "source": "A",
+   "image": "items/TrophyMorgen"
+  },
+  "$item_trophy_neck": {
+   "source": "A",
+   "image": "items/TrophyNeck"
+  },
+  "$item_trophy_seal": {
+   "source": "A",
+   "image": "items/TrophySeal"
+  },
+  "$item_trophy_seeker": {
+   "source": "A",
+   "image": "items/TrophySeeker"
+  },
+  "$item_trophy_seeker_brute": {
+   "source": "A",
+   "image": "items/TrophySeekerBrute"
+  },
+  "$item_trophy_seekerqueen": {
+   "source": "A",
+   "image": "items/TrophySeekerQueen"
+  },
+  "$item_trophy_serpent": {
+   "source": "A",
+   "image": "items/TrophySerpent"
+  },
+  "$item_trophy_sgolem": {
+   "source": "A",
+   "image": "items/TrophySGolem"
+  },
+  "$item_trophy_shamanbro": {
+   "source": "A",
+   "image": "items/TrophyGoblinBruteBrosShaman"
+  },
+  "$item_trophy_skeleton": {
+   "source": "A",
+   "image": "items/TrophySkeleton"
+  },
+  "$item_trophy_skeleton_hildir": {
+   "source": "A",
+   "image": "items/TrophySkeletonHildir"
+  },
+  "$item_trophy_skeletonpoison": {
+   "source": "A",
+   "image": "items/TrophySkeletonPoison"
+  },
+  "$item_trophy_surtling": {
+   "source": "A",
+   "image": "items/TrophySurtling"
+  },
+  "$item_trophy_tick": {
+   "source": "A",
+   "image": "items/TrophyTick"
+  },
+  "$item_trophy_ulv": {
+   "source": "A",
+   "image": "items/TrophyUlv"
+  },
+  "$item_trophy_volture": {
+   "source": "A",
+   "image": "items/TrophyVolture"
+  },
+  "$item_trophy_wolf": {
+   "source": "A",
+   "image": "items/TrophyWolf"
+  },
+  "$item_trophy_wraith": {
+   "source": "A",
+   "image": "items/TrophyWraith"
+  },
+  "$item_trophy_writhan": {
+   "source": "A",
+   "image": "items/TrophyWrithan"
+  },
+  "$item_turnipstew": {
+   "source": "A",
+   "image": "items/TurnipStew"
+  },
+  "$item_turretbolt": {
+   "source": "A",
+   "image": "items/TurretBolt"
+  },
+  "$item_turretbolt_bloodgold": {
+   "source": "A",
+   "image": "items/TurretBoltBloodgold"
+  },
+  "$item_turretbolt_flametal": {
+   "source": "A",
+   "image": "items/TurretBoltFlametal"
+  },
+  "$item_turretboltwood": {
+   "source": "A",
+   "image": "items/TurretBoltWood"
+  },
+  "$item_upgrader_tier1": {
+   "source": "A-override",
+   "image": "items/Bronze"
+  },
+  "$item_vikingcupcake": {
+   "source": "A",
+   "image": "items/VikingCupcake"
+  },
+  "$item_vikingcupcake_uncooked": {
+   "source": "A",
+   "image": "items/VikingCupcakeUncooked"
+  },
+  "$item_vineberry": {
+   "source": "A",
+   "image": "items/Vineberry"
+  },
+  "$item_volture_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedVoltureMeat"
+  },
+  "$item_wolf_meat_cooked": {
+   "source": "A",
+   "image": "items/CookedWolfMeat"
+  },
+  "$item_wolf_skewer": {
+   "source": "A",
+   "image": "items/WolfMeatSkewer"
+  },
+  "$item_wolfjerky": {
+   "source": "A",
+   "image": "items/WolfJerky"
+  },
+  "$item_yggdrasilporridge": {
+   "source": "A",
+   "image": "items/YggdrasilPorridge"
+  },
+  "$piece_BlackwoodStakewall": {
+   "source": "A",
+   "image": "pieces/piece_stakewall_blackwood"
+  },
+  "$piece_archerytarget": {
+   "source": "A",
+   "image": "pieces/piece_ArcheryTarget"
+  },
+  "$piece_armorstand": {
+   "source": "A",
+   "image": "pieces/ArmorStand"
+  },
+  "$piece_artisan_ext1": {
+   "source": "A",
+   "image": "pieces/artisan_ext1"
+  },
+  "$piece_artisanstation": {
+   "source": "A",
+   "image": "pieces/piece_artisanstation"
+  },
+  "$piece_ashwood_archedwall": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_arch"
+  },
+  "$piece_ashwood_beam_1m": {
+   "source": "A",
+   "image": "pieces/ashwood_beam_1m"
+  },
+  "$piece_ashwood_beam_2m": {
+   "source": "A",
+   "image": "pieces/ashwood_beam_2m"
+  },
+  "$piece_ashwood_bed": {
+   "source": "A",
+   "image": "pieces/ashwood_bed"
+  },
+  "$piece_ashwood_decowall": {
+   "source": "A",
+   "image": "pieces/ashwood_decowall_2x2"
+  },
+  "$piece_ashwood_decowall_divider": {
+   "source": "A",
+   "image": "pieces/ashwood_decowall_divider"
+  },
+  "$piece_ashwood_decowall_tree": {
+   "source": "A",
+   "image": "pieces/ashwood_decowall_tree"
+  },
+  "$piece_ashwood_door": {
+   "source": "A",
+   "image": "pieces/ashwood_door"
+  },
+  "$piece_ashwood_floor_1x1": {
+   "source": "A",
+   "image": "pieces/ashwood_floor_1x1"
+  },
+  "$piece_ashwood_floor_2x2": {
+   "source": "A",
+   "image": "pieces/ashwood_floor_2x2"
+  },
+  "$piece_ashwood_floor_deco": {
+   "source": "A",
+   "image": "pieces/ashwood_deco_floor"
+  },
+  "$piece_ashwood_halfwall": {
+   "source": "A",
+   "image": "pieces/ashwood_halfwall_1x2"
+  },
+  "$piece_ashwood_pole_1m": {
+   "source": "A",
+   "image": "pieces/ashwood_pole_1m"
+  },
+  "$piece_ashwood_pole_2m": {
+   "source": "A",
+   "image": "pieces/ashwood_pole_2m"
+  },
+  "$piece_ashwood_quarterwall": {
+   "source": "A",
+   "image": "pieces/ashwood_quarterwall_1x1"
+  },
+  "$piece_ashwood_wall": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_2x2"
+  },
+  "$piece_ashwoodarch_big": {
+   "source": "A",
+   "image": "pieces/ashwood_arch_big"
+  },
+  "$piece_ashwoodbeam26": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_beam_26"
+  },
+  "$piece_ashwoodbeam45": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_beam_45"
+  },
+  "$piece_ashwoodbeam67": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_beam_67"
+  },
+  "$piece_ashwoodcross26": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_cross_26"
+  },
+  "$piece_ashwoodcross45": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_cross_45"
+  },
+  "$piece_ashwoodstair": {
+   "source": "A",
+   "image": "pieces/ashwood_stair"
+  },
+  "$piece_ashwoodwallroof67": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_roof_67_a"
+  },
+  "$piece_ashwoodwallroof67upsidedown": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_roof_67_upsidedown"
+  },
+  "$piece_ashwoodwallroof_26": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_roof_26"
+  },
+  "$piece_ashwoodwallroof_26_upsidedown": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_roof_26_upsidedown"
+  },
+  "$piece_ashwoodwallroof_45": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_roof_45"
+  },
+  "$piece_ashwoodwallroof_45_upsidedown": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_roof_45_upsidedown"
+  },
+  "$piece_ashwoodwallrooftop67": {
+   "source": "A",
+   "image": "pieces/ashwood_wall_cross_67"
+  },
+  "$piece_asksvinskeleton": {
+   "source": "A",
+   "image": "pieces/piece_asksvinskeleton"
+  },
+  "$piece_banner01": {
+   "source": "A",
+   "image": "pieces/piece_banner01"
+  },
+  "$piece_banner02": {
+   "source": "A",
+   "image": "pieces/piece_banner02"
+  },
+  "$piece_banner03": {
+   "source": "A",
+   "image": "pieces/piece_banner03"
+  },
+  "$piece_banner04": {
+   "source": "A",
+   "image": "pieces/piece_banner04"
+  },
+  "$piece_banner05": {
+   "source": "A",
+   "image": "pieces/piece_banner05"
+  },
+  "$piece_banner06": {
+   "source": "A",
+   "image": "pieces/piece_banner06"
+  },
+  "$piece_banner07": {
+   "source": "A",
+   "image": "pieces/piece_banner07"
+  },
+  "$piece_banner08": {
+   "source": "A",
+   "image": "pieces/piece_banner08"
+  },
+  "$piece_banner09": {
+   "source": "A",
+   "image": "pieces/piece_banner09"
+  },
+  "$piece_banner10": {
+   "source": "A",
+   "image": "pieces/piece_banner10"
+  },
+  "$piece_banner11": {
+   "source": "A",
+   "image": "pieces/piece_banner11"
+  },
+  "$piece_barber": {
+   "source": "A",
+   "image": "pieces/piece_barber"
+  },
+  "$piece_bathtub": {
+   "source": "A",
+   "image": "pieces/piece_bathtub"
+  },
+  "$piece_bed": {
+   "source": "A",
+   "image": "pieces/bed"
+  },
+  "$piece_bed02": {
+   "source": "A",
+   "image": "pieces/piece_bed02"
+  },
+  "$piece_beehive": {
+   "source": "A",
+   "image": "pieces/piece_beehive"
+  },
+  "$piece_bench01": {
+   "source": "A",
+   "image": "pieces/piece_bench01"
+  },
+  "$piece_bench_runed": {
+   "source": "A",
+   "image": "pieces/piece_bench_runed"
+  },
+  "$piece_benchlog": {
+   "source": "A",
+   "image": "pieces/piece_logbench01"
+  },
+  "$piece_birdnest": {
+   "source": "A",
+   "image": "pieces/piece_birdnest"
+  },
+  "$piece_blackforge": {
+   "source": "A",
+   "image": "pieces/blackforge"
+  },
+  "$piece_blackforge_ext1": {
+   "source": "A",
+   "image": "pieces/blackforge_ext1"
+  },
+  "$piece_blackforge_ext2": {
+   "source": "A",
+   "image": "pieces/blackforge_ext2_vise"
+  },
+  "$piece_blackforge_ext3": {
+   "source": "A",
+   "image": "pieces/blackforge_ext3_metalcutter"
+  },
+  "$piece_blackforge_ext4": {
+   "source": "A",
+   "image": "pieces/blackforge_ext4_gemcutter"
+  },
+  "$piece_blackforge_ext5": {
+   "source": "A",
+   "image": "pieces/blackforge_ext5_apron"
+  },
+  "$piece_blackmarble1x1": {
+   "source": "A",
+   "image": "pieces/blackmarble_1x1"
+  },
+  "$piece_blackmarble2x1x1": {
+   "source": "A",
+   "image": "pieces/blackmarble_2x1x1"
+  },
+  "$piece_blackmarble2x2x2": {
+   "source": "A",
+   "image": "pieces/blackmarble_2x2x2"
+  },
+  "$piece_blackmarble_arch": {
+   "source": "A",
+   "image": "pieces/blackmarble_arch"
+  },
+  "$piece_blackmarble_base1": {
+   "source": "A",
+   "image": "pieces/blackmarble_base_1"
+  },
+  "$piece_blackmarble_basecorner": {
+   "source": "A",
+   "image": "pieces/blackmarble_basecorner"
+  },
+  "$piece_blackmarble_bench": {
+   "source": "A",
+   "image": "pieces/piece_blackmarble_bench"
+  },
+  "$piece_blackmarble_column_1": {
+   "source": "A",
+   "image": "pieces/blackmarble_column_1"
+  },
+  "$piece_blackmarble_column_2": {
+   "source": "A",
+   "image": "pieces/blackmarble_column_2"
+  },
+  "$piece_blackmarble_floor": {
+   "source": "A",
+   "image": "pieces/blackmarble_floor"
+  },
+  "$piece_blackmarble_floor_triangle": {
+   "source": "A",
+   "image": "pieces/blackmarble_floor_triangle"
+  },
+  "$piece_blackmarble_out1": {
+   "source": "A",
+   "image": "pieces/blackmarble_out_1"
+  },
+  "$piece_blackmarble_outcorner": {
+   "source": "A",
+   "image": "pieces/blackmarble_outcorner"
+  },
+  "$piece_blackmarble_stair": {
+   "source": "A",
+   "image": "pieces/blackmarble_stair"
+  },
+  "$piece_blackmarble_table": {
+   "source": "A",
+   "image": "pieces/piece_blackmarble_table"
+  },
+  "$piece_blackmarble_throne": {
+   "source": "A",
+   "image": "pieces/piece_blackmarble_throne"
+  },
+  "$piece_blackmarble_tip": {
+   "source": "A",
+   "image": "pieces/blackmarble_tip"
+  },
+  "$piece_blackmetalbarstack": {
+   "source": "A",
+   "image": "pieces/bar_blackmetal_stack"
+  },
+  "$piece_blackwoodbench01": {
+   "source": "A",
+   "image": "pieces/piece_blackwood_bench01"
+  },
+  "$piece_blackwoodstack": {
+   "source": "A",
+   "image": "pieces/blackwood_stack"
+  },
+  "$piece_blastfurnace": {
+   "source": "A",
+   "image": "pieces/blastfurnace"
+  },
+  "$piece_bloodgoldbarstack": {
+   "source": "A",
+   "image": "pieces/bar_gold_stack"
+  },
+  "$piece_bone_throne": {
+   "source": "A",
+   "image": "pieces/piece_bone_throne"
+  },
+  "$piece_bonestack": {
+   "source": "A",
+   "image": "pieces/bone_stack"
+  },
+  "$piece_bonfire": {
+   "source": "A",
+   "image": "pieces/bonfire"
+  },
+  "$piece_brazierceiling01": {
+   "source": "A",
+   "image": "pieces/piece_brazierceiling01"
+  },
+  "$piece_brazierfloor01": {
+   "source": "A",
+   "image": "pieces/piece_brazierfloor01"
+  },
+  "$piece_brazierfloor02": {
+   "source": "A",
+   "image": "pieces/piece_brazierfloor02"
+  },
+  "$piece_bronzebarstack": {
+   "source": "A",
+   "image": "pieces/bar_bronze_stack"
+  },
+  "$piece_candle": {
+   "source": "A",
+   "image": "pieces/Candle_resin"
+  },
+  "$piece_cartographytable": {
+   "source": "A",
+   "image": "pieces/piece_cartographytable"
+  },
+  "$piece_cauldron": {
+   "source": "A",
+   "image": "pieces/piece_cauldron"
+  },
+  "$piece_cauldron_ext1_spice": {
+   "source": "A",
+   "image": "pieces/cauldron_ext1_spice"
+  },
+  "$piece_cauldron_ext3_butchertable": {
+   "source": "A",
+   "image": "pieces/cauldron_ext3_butchertable"
+  },
+  "$piece_cauldron_ext4_pans": {
+   "source": "A",
+   "image": "pieces/cauldron_ext4_pots"
+  },
+  "$piece_cauldron_ext5_mortarandpestle": {
+   "source": "A",
+   "image": "pieces/cauldron_ext5_mortarandpestle"
+  },
+  "$piece_cauldron_ext6_rollingpins": {
+   "source": "A",
+   "image": "pieces/cauldron_ext6_rollingpins"
+  },
+  "$piece_cauldron_ext7_smoker": {
+   "source": "A",
+   "image": "pieces/cauldron_ext7_smoker"
+  },
+  "$piece_celebrationgarland": {
+   "source": "A",
+   "image": "pieces/piece_CelebrationGarland"
+  },
+  "$piece_chair": {
+   "source": "A",
+   "image": "pieces/piece_chair02"
+  },
+  "$piece_chair_runed": {
+   "source": "A",
+   "image": "pieces/piece_chair_runed"
+  },
+  "$piece_charcoalkiln": {
+   "source": "A",
+   "image": "pieces/charcoal_kiln"
+  },
+  "$piece_chest": {
+   "source": "A",
+   "image": "pieces/piece_chest"
+  },
+  "$piece_chestbarrel": {
+   "source": "A",
+   "image": "pieces/piece_chest_barrel"
+  },
+  "$piece_chestblackmetal": {
+   "source": "A",
+   "image": "pieces/piece_chest_blackmetal"
+  },
+  "$piece_chestgrausten": {
+   "source": "A",
+   "image": "pieces/piece_chest_grausten"
+  },
+  "$piece_chestprivate": {
+   "source": "A",
+   "image": "pieces/piece_chest_private"
+  },
+  "$piece_chesttreasure": {
+   "source": "A",
+   "image": "pieces/piece_chest_treasure"
+  },
+  "$piece_chestwarderobe": {
+   "source": "A",
+   "image": "pieces/piece_chest_warderobe"
+  },
+  "$piece_chestwood": {
+   "source": "A",
+   "image": "pieces/piece_chest_wood"
+  },
+  "$piece_clothdoor": {
+   "source": "A",
+   "image": "pieces/piece_cloth_hanging_door"
+  },
+  "$piece_coalpile": {
+   "source": "A",
+   "image": "pieces/coal_pile"
+  },
+  "$piece_cookingstation": {
+   "source": "A",
+   "image": "pieces/piece_cookingstation"
+  },
+  "$piece_cookingstation_iron": {
+   "source": "A",
+   "image": "pieces/piece_cookingstation_iron"
+  },
+  "$piece_copperbarstack": {
+   "source": "A",
+   "image": "pieces/bar_copper_stack"
+  },
+  "$piece_crystalwall1x1": {
+   "source": "A",
+   "image": "pieces/crystal_wall_1x1"
+  },
+  "$piece_darkwoodarch": {
+   "source": "A",
+   "image": "pieces/darkwood_arch"
+  },
+  "$piece_darkwoodbeam": {
+   "source": "A",
+   "image": "pieces/darkwood_beam"
+  },
+  "$piece_darkwoodbeam4": {
+   "source": "A",
+   "image": "pieces/darkwood_beam4x4"
+  },
+  "$piece_darkwoodbeam67": {
+   "source": "A",
+   "image": "pieces/darkwood_beam_67"
+  },
+  "$piece_darkwoodbeam_26": {
+   "source": "A",
+   "image": "pieces/darkwood_beam_26"
+  },
+  "$piece_darkwoodbeam_45": {
+   "source": "A",
+   "image": "pieces/darkwood_beam_45"
+  },
+  "$piece_darkwoodchair": {
+   "source": "A",
+   "image": "pieces/piece_chair03"
+  },
+  "$piece_darkwooddecowall": {
+   "source": "A",
+   "image": "pieces/darkwood_decowall"
+  },
+  "$piece_darkwoodgate": {
+   "source": "A",
+   "image": "pieces/darkwood_gate"
+  },
+  "$piece_darkwoodpole": {
+   "source": "A",
+   "image": "pieces/darkwood_pole"
+  },
+  "$piece_darkwoodpole4": {
+   "source": "A",
+   "image": "pieces/darkwood_pole4"
+  },
+  "$piece_darkwoodraven": {
+   "source": "A",
+   "image": "pieces/darkwood_raven"
+  },
+  "$piece_darkwoodroof26": {
+   "source": "A",
+   "image": "pieces/darkwood_roof"
+  },
+  "$piece_darkwoodroof45": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_45"
+  },
+  "$piece_darkwoodroof67": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_67"
+  },
+  "$piece_darkwoodrooficorner": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_icorner"
+  },
+  "$piece_darkwoodrooficorner45": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_icorner_45"
+  },
+  "$piece_darkwoodrooficorner67": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_icorner_67"
+  },
+  "$piece_darkwoodroofocorner": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_ocorner"
+  },
+  "$piece_darkwoodroofocorner45": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_ocorner_45"
+  },
+  "$piece_darkwoodroofocorner67": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_ocorner_67"
+  },
+  "$piece_darkwoodrooftop": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_top"
+  },
+  "$piece_darkwoodrooftop45": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_top_45"
+  },
+  "$piece_darkwoodrooftop67": {
+   "source": "A",
+   "image": "pieces/darkwood_roof_top_67"
+  },
+  "$piece_darkwoodwolf": {
+   "source": "A",
+   "image": "pieces/darkwood_wolf"
+  },
+  "$piece_deco_stave_wall": {
+   "source": "A",
+   "image": "pieces/stave_deco_wall_2x2"
+  },
+  "$piece_drawbridge_dn": {
+   "source": "A",
+   "image": "pieces/piece_drawbridge"
+  },
+  "$piece_drawbridge_log": {
+   "source": "A",
+   "image": "pieces/piece_drawbridge_log"
+  },
+  "$piece_dvergr_lantern": {
+   "source": "A",
+   "image": "pieces/piece_dvergr_lantern"
+  },
+  "$piece_dvergr_lantern_pole": {
+   "source": "A",
+   "image": "pieces/piece_dvergr_lantern_pole"
+  },
+  "$piece_dvergr_metal_wall": {
+   "source": "A",
+   "image": "pieces/piece_dvergr_metal_wall_2x2"
+  },
+  "$piece_dvergr_sharpstakes": {
+   "source": "A",
+   "image": "pieces/piece_dvergr_sharpstakes"
+  },
+  "$piece_dvergr_spiralstair": {
+   "source": "A",
+   "image": "pieces/piece_dvergr_spiralstair"
+  },
+  "$piece_dvergr_spiralstair_right": {
+   "source": "A",
+   "image": "pieces/piece_dvergr_spiralstair_right"
+  },
+  "$piece_dvergr_stake_wall": {
+   "source": "A",
+   "image": "pieces/piece_dvergr_stake_wall"
+  },
+  "$piece_eitrrefinery": {
+   "source": "A",
+   "image": "pieces/eitrrefinery"
+  },
+  "$piece_faderember": {
+   "source": "A",
+   "image": "pieces/piece_EternalPyre"
+  },
+  "$piece_fairylightgarland": {
+   "source": "A",
+   "image": "pieces/piece_FairylightGarland"
+  },
+  "$piece_fermenter": {
+   "source": "A",
+   "image": "pieces/fermenter"
+  },
+  "$piece_firepit": {
+   "source": "A",
+   "image": "pieces/fire_pit"
+  },
+  "$piece_firepit_iron": {
+   "source": "A",
+   "image": "pieces/fire_pit_iron"
+  },
+  "$piece_flametal_beam": {
+   "source": "A",
+   "image": "pieces/Piece_flametal_beam"
+  },
+  "$piece_flametal_pillar": {
+   "source": "A",
+   "image": "pieces/Piece_flametal_pillar"
+  },
+  "$piece_flametalbarstack": {
+   "source": "A",
+   "image": "pieces/bar_flametal_stack"
+  },
+  "$piece_flametalgate": {
+   "source": "A",
+   "image": "pieces/flametal_gate"
+  },
+  "$piece_flintpile": {
+   "source": "A",
+   "image": "pieces/flint_pile"
+  },
+  "$piece_forge": {
+   "source": "A",
+   "image": "pieces/forge"
+  },
+  "$piece_forge_ext1": {
+   "source": "A",
+   "image": "pieces/forge_ext1"
+  },
+  "$piece_forge_ext2": {
+   "source": "A",
+   "image": "pieces/forge_ext2"
+  },
+  "$piece_forge_ext3": {
+   "source": "A",
+   "image": "pieces/forge_ext3"
+  },
+  "$piece_forge_ext4": {
+   "source": "A",
+   "image": "pieces/forge_ext4"
+  },
+  "$piece_forge_ext5": {
+   "source": "A",
+   "image": "pieces/forge_ext5"
+  },
+  "$piece_forge_ext6": {
+   "source": "A",
+   "image": "pieces/forge_ext6"
+  },
+  "$piece_frostfoundry": {
+   "source": "A",
+   "image": "pieces/piece_FrostFoundry"
+  },
+  "$piece_frostkiln": {
+   "source": "A",
+   "image": "pieces/piece_FrostKiln"
+  },
+  "$piece_grausten_archmedium": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_pillar_arch"
+  },
+  "$piece_grausten_archsmall": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_pillar_arch_small"
+  },
+  "$piece_grausten_beammedium": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_pillarbeam_medium"
+  },
+  "$piece_grausten_beamsmall": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_pillarbeam_small"
+  },
+  "$piece_grausten_floor1x1": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_floor_1x1"
+  },
+  "$piece_grausten_floor2x2": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_floor_2x2"
+  },
+  "$piece_grausten_floor4x4": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_floor_4x4"
+  },
+  "$piece_grausten_pillarmedium": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_pillarbase_medium"
+  },
+  "$piece_grausten_pillarsmall": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_pillarbase_small"
+  },
+  "$piece_grausten_pillartapered": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_pillarbase_tapered"
+  },
+  "$piece_grausten_pillartaperedinverted": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_pillarbase_tapered_inverted"
+  },
+  "$piece_grausten_roof45": {
+   "source": "A",
+   "image": "pieces/piece_grausten_roof_45"
+  },
+  "$piece_grausten_roof45_arch": {
+   "source": "A",
+   "image": "pieces/piece_grausten_roof_45_arch"
+  },
+  "$piece_grausten_roof45_archcorner": {
+   "source": "A",
+   "image": "pieces/piece_grausten_roof_45_arch_corner"
+  },
+  "$piece_grausten_roof45_archcorner2": {
+   "source": "A",
+   "image": "pieces/piece_grausten_roof_45_arch_corner2"
+  },
+  "$piece_grausten_roof45_corner": {
+   "source": "A",
+   "image": "pieces/piece_grausten_roof_45_corner"
+  },
+  "$piece_grausten_roof45_corner2": {
+   "source": "A",
+   "image": "pieces/piece_grausten_roof_45_corner2"
+  },
+  "$piece_grausten_stair": {
+   "source": "A",
+   "image": "pieces/piece_grausten_stonestair"
+  },
+  "$piece_grausten_stoneladder": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_stone_ladder"
+  },
+  "$piece_grausten_wall1x2": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_wall_1x2"
+  },
+  "$piece_grausten_wall2x2": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_wall_2x2"
+  },
+  "$piece_grausten_wall4x2": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_wall_4x2"
+  },
+  "$piece_grausten_wallarch": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_wall_arch"
+  },
+  "$piece_grausten_wallarchinv": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_wall_arch_inverted"
+  },
+  "$piece_grausten_window2x2": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_window_2x2"
+  },
+  "$piece_grausten_window4x2": {
+   "source": "A",
+   "image": "pieces/Piece_grausten_window_4x2"
+  },
+  "$piece_graustenpile": {
+   "source": "A",
+   "image": "pieces/grausten_pile"
+  },
+  "$piece_groundtorch": {
+   "source": "A",
+   "image": "pieces/piece_groundtorch"
+  },
+  "$piece_groundtorchblue": {
+   "source": "A",
+   "image": "pieces/piece_groundtorch_blue"
+  },
+  "$piece_groundtorchdemister": {
+   "source": "A",
+   "image": "pieces/piece_groundtorch_mist"
+  },
+  "$piece_groundtorchgreen": {
+   "source": "A",
+   "image": "pieces/piece_groundtorch_green"
+  },
+  "$piece_groundtorchwood": {
+   "source": "A",
+   "image": "pieces/piece_groundtorch_wood"
+  },
+  "$piece_guardstone": {
+   "source": "A",
+   "image": "pieces/guard_stone"
+  },
+  "$piece_hanging_cloth_blue1": {
+   "source": "A",
+   "image": "pieces/piece_cloth_hanging_door_blue"
+  },
+  "$piece_hanging_cloth_blue2": {
+   "source": "A",
+   "image": "pieces/piece_cloth_hanging_door_blue2"
+  },
+  "$piece_hearth": {
+   "source": "A",
+   "image": "pieces/hearth"
+  },
+  "$piece_hexagonalgate": {
+   "source": "A",
+   "image": "pieces/piece_hexagonal_door"
+  },
+  "$piece_hoodedlantern": {
+   "source": "A",
+   "image": "items/Lantern_hooded"
+  },
+  "$piece_icecube": {
+   "source": "A",
+   "image": "pieces/piece_icecube"
+  },
+  "$piece_incinerator": {
+   "source": "A",
+   "image": "pieces/incinerator"
+  },
+  "$piece_ironbarstack": {
+   "source": "A",
+   "image": "pieces/bar_iron_stack"
+  },
+  "$piece_ironfloor": {
+   "source": "A",
+   "image": "pieces/iron_floor_2x2"
+  },
+  "$piece_ironfloorSmall": {
+   "source": "A",
+   "image": "pieces/iron_floor_1x1_v2"
+  },
+  "$piece_irongate": {
+   "source": "A",
+   "image": "pieces/iron_grate"
+  },
+  "$piece_ironwall": {
+   "source": "A",
+   "image": "pieces/iron_wall_2x2"
+  },
+  "$piece_ironwallSmall": {
+   "source": "A",
+   "image": "pieces/iron_wall_1x1"
+  },
+  "$piece_ironwoodbeam67": {
+   "source": "A",
+   "image": "pieces/woodiron_beam_67"
+  },
+  "$piece_itemstand": {
+   "source": "A",
+   "image": "pieces/itemstand"
+  },
+  "$piece_jackoturnip": {
+   "source": "A",
+   "image": "pieces/piece_jackoturnip"
+  },
+  "$piece_jute_carpet": {
+   "source": "A",
+   "image": "pieces/jute_carpet"
+  },
+  "$piece_juteblue_carpet": {
+   "source": "A",
+   "image": "pieces/jute_carpet_blue"
+  },
+  "$piece_lavalantern": {
+   "source": "A",
+   "image": "pieces/piece_Lavalantern"
+  },
+  "$piece_logbeam2": {
+   "source": "A",
+   "image": "pieces/wood_wall_log"
+  },
+  "$piece_logbeam4": {
+   "source": "A",
+   "image": "pieces/wood_wall_log_4x0.5"
+  },
+  "$piece_logpole2": {
+   "source": "A",
+   "image": "pieces/wood_pole_log"
+  },
+  "$piece_logpole4": {
+   "source": "A",
+   "image": "pieces/wood_pole_log_4"
+  },
+  "$piece_magetable": {
+   "source": "A",
+   "image": "pieces/piece_magetable"
+  },
+  "$piece_magetable_ext": {
+   "source": "A",
+   "image": "pieces/piece_magetable_ext"
+  },
+  "$piece_magetable_ext2": {
+   "source": "A",
+   "image": "pieces/piece_magetable_ext2"
+  },
+  "$piece_magetable_ext3": {
+   "source": "A",
+   "image": "pieces/piece_magetable_ext3"
+  },
+  "$piece_magetable_ext4": {
+   "source": "A",
+   "image": "pieces/piece_magetable_ext4"
+  },
+  "$piece_marblepile": {
+   "source": "A",
+   "image": "pieces/blackmarble_pile"
+  },
+  "$piece_maypole": {
+   "source": "A",
+   "image": "pieces/piece_maypole"
+  },
+  "$piece_meadcauldron": {
+   "source": "A",
+   "image": "pieces/piece_MeadCauldron"
+  },
+  "$piece_mistletoe": {
+   "source": "A",
+   "image": "pieces/piece_mistletoe"
+  },
+  "$piece_moose_throne": {
+   "source": "A",
+   "image": "pieces/piece_moose_throne"
+  },
+  "$piece_oven": {
+   "source": "A",
+   "image": "pieces/piece_oven"
+  },
+  "$piece_portal": {
+   "source": "A",
+   "image": "pieces/portal_wood"
+  },
+  "$piece_portal_stone": {
+   "source": "A",
+   "image": "pieces/portal_stone"
+  },
+  "$piece_pot_large_green": {
+   "source": "A",
+   "image": "pieces/piece_pot2"
+  },
+  "$piece_pot_medium_green": {
+   "source": "A",
+   "image": "pieces/piece_pot1"
+  },
+  "$piece_pot_small_green": {
+   "source": "A",
+   "image": "pieces/piece_pot3"
+  },
+  "$piece_preptable": {
+   "source": "A",
+   "image": "pieces/piece_preptable"
+  },
+  "$piece_rug_asksvin": {
+   "source": "A",
+   "image": "pieces/rug_asksvin"
+  },
+  "$piece_rug_bjorn": {
+   "source": "A",
+   "image": "pieces/rug_Bjorn"
+  },
+  "$piece_rug_deer": {
+   "source": "A",
+   "image": "pieces/rug_deer"
+  },
+  "$piece_rug_hare": {
+   "source": "A",
+   "image": "pieces/rug_hare"
+  },
+  "$piece_rug_lox": {
+   "source": "A",
+   "image": "pieces/rug_fur"
+  },
+  "$piece_rug_moose": {
+   "source": "A",
+   "image": "pieces/rug_moose"
+  },
+  "$piece_rug_seal": {
+   "source": "A",
+   "image": "pieces/rug_seal"
+  },
+  "$piece_rug_straw": {
+   "source": "A",
+   "image": "pieces/rug_straw"
+  },
+  "$piece_rug_wolf": {
+   "source": "A",
+   "image": "pieces/rug_wolf"
+  },
+  "$piece_sapcollector": {
+   "source": "A",
+   "image": "pieces/piece_sapcollector"
+  },
+  "$piece_scale_26": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_26"
+  },
+  "$piece_scale_26_flipped": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_26_flipped"
+  },
+  "$piece_scale_26_upsidedown": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_26_upsidedown"
+  },
+  "$piece_scale_26_upsidedown_flipped": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_26_upsidedown_flipped"
+  },
+  "$piece_scale_45": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_45"
+  },
+  "$piece_scale_45_flipped": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_45_flipped"
+  },
+  "$piece_scale_45_upsidedown": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_45_upsidedown"
+  },
+  "$piece_scale_45_upsidedown_flipped": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_45_upsidedown_flipped"
+  },
+  "$piece_scale_67": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_67"
+  },
+  "$piece_scale_67_flipped": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_67_flipped"
+  },
+  "$piece_scale_67_upsidedown": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_67_upsidedown"
+  },
+  "$piece_scale_67_upsidedown_flipped": {
+   "source": "A",
+   "image": "pieces/scale_wall_roof_67_upsidedown_flipped"
+  },
+  "$piece_scale_halfwall": {
+   "source": "A",
+   "image": "pieces/scale_halfwall_1x2"
+  },
+  "$piece_scale_quarterwall": {
+   "source": "A",
+   "image": "pieces/scale_quarterwall_1x1"
+  },
+  "$piece_scale_wall": {
+   "source": "A",
+   "image": "pieces/scale_wall_2x2"
+  },
+  "$piece_sconce": {
+   "source": "A",
+   "image": "pieces/piece_walltorch"
+  },
+  "$piece_sharpstakes": {
+   "source": "A",
+   "image": "pieces/piece_sharpstakes"
+  },
+  "$piece_shieldgenerator": {
+   "source": "A",
+   "image": "pieces/piece_shieldgenerator"
+  },
+  "$piece_sign": {
+   "source": "A",
+   "image": "pieces/sign"
+  },
+  "$piece_silverbarstack": {
+   "source": "A",
+   "image": "pieces/bar_silver_stack"
+  },
+  "$piece_skullpile": {
+   "source": "A",
+   "image": "pieces/skull_pile"
+  },
+  "$piece_smelter": {
+   "source": "A",
+   "image": "pieces/smelter"
+  },
+  "$piece_snowlantern": {
+   "source": "A",
+   "image": "pieces/piece_snowlantern"
+  },
+  "$piece_spinningwheel": {
+   "source": "A",
+   "image": "pieces/piece_spinningwheel"
+  },
+  "$piece_stakewall": {
+   "source": "A",
+   "image": "pieces/stake_wall"
+  },
+  "$piece_stave_deco_beam_2m": {
+   "source": "A",
+   "image": "pieces/stave_deco_beam_2m"
+  },
+  "$piece_stave_deco_pole_2m": {
+   "source": "A",
+   "image": "pieces/stave_deco_pole_2m"
+  },
+  "$piece_stave_pole_2m": {
+   "source": "A",
+   "image": "pieces/stave_pole_2m"
+  },
+  "$piece_stave_pole_4m": {
+   "source": "A",
+   "image": "pieces/stave_pole_4m"
+  },
+  "$piece_stave_wall": {
+   "source": "A",
+   "image": "pieces/stave_wall_2x2"
+  },
+  "$piece_stavebeam2": {
+   "source": "A",
+   "image": "pieces/stave_beam_2m"
+  },
+  "$piece_stavebeam26": {
+   "source": "A",
+   "image": "pieces/stave_beam_26"
+  },
+  "$piece_stavebeam4": {
+   "source": "A",
+   "image": "pieces/stave_beam_4m"
+  },
+  "$piece_stavebeam45": {
+   "source": "A",
+   "image": "pieces/stave_beam_45"
+  },
+  "$piece_stavebeam67": {
+   "source": "A",
+   "image": "pieces/stave_beam_67"
+  },
+  "$piece_stavecross26": {
+   "source": "A",
+   "image": "pieces/stave_wall_cross_26"
+  },
+  "$piece_stavecross45": {
+   "source": "A",
+   "image": "pieces/stave_wall_cross_45"
+  },
+  "$piece_stavedecobeam26": {
+   "source": "A",
+   "image": "pieces/stave_deco_beam_26"
+  },
+  "$piece_stavedecobeam45": {
+   "source": "A",
+   "image": "pieces/stave_deco_beam_45"
+  },
+  "$piece_stavedecobeam67": {
+   "source": "A",
+   "image": "pieces/stave_deco_beam_67"
+  },
+  "$piece_stavegate": {
+   "source": "A",
+   "image": "pieces/stave_gate"
+  },
+  "$piece_stavewallrooftop67": {
+   "source": "A",
+   "image": "pieces/stave_wall_cross_67"
+  },
+  "$piece_stonearch": {
+   "source": "A",
+   "image": "pieces/stone_arch"
+  },
+  "$piece_stonecutter": {
+   "source": "A",
+   "image": "pieces/piece_stonecutter"
+  },
+  "$piece_stonefence": {
+   "source": "A",
+   "image": "pieces/stone_fence"
+  },
+  "$piece_stonefloor2x2": {
+   "source": "A",
+   "image": "pieces/stone_floor_2x2"
+  },
+  "$piece_stonepile": {
+   "source": "A",
+   "image": "pieces/stone_pile"
+  },
+  "$piece_stonepillar": {
+   "source": "A",
+   "image": "pieces/stone_pillar"
+  },
+  "$piece_stonestair": {
+   "source": "A",
+   "image": "pieces/stone_stair"
+  },
+  "$piece_stonethrone": {
+   "source": "A",
+   "image": "pieces/piece_throne02"
+  },
+  "$piece_stonewall1x1": {
+   "source": "A",
+   "image": "pieces/stone_wall_1x1"
+  },
+  "$piece_stonewall2x1": {
+   "source": "A",
+   "image": "pieces/stone_wall_2x1"
+  },
+  "$piece_stonewall4x2": {
+   "source": "A",
+   "image": "pieces/stone_wall_4x2"
+  },
+  "$piece_stool": {
+   "source": "A",
+   "image": "pieces/piece_chair"
+  },
+  "$piece_table": {
+   "source": "A",
+   "image": "pieces/piece_table"
+  },
+  "$piece_table_oak": {
+   "source": "A",
+   "image": "pieces/piece_table_oak"
+  },
+  "$piece_table_round": {
+   "source": "A",
+   "image": "pieces/piece_table_round"
+  },
+  "$piece_table_runed": {
+   "source": "A",
+   "image": "pieces/piece_table_runed"
+  },
+  "$piece_table_runed_small": {
+   "source": "A",
+   "image": "pieces/piece_table_runed_small"
+  },
+  "$piece_throne01": {
+   "source": "A",
+   "image": "pieces/piece_throne01"
+  },
+  "$piece_tinbarstack": {
+   "source": "A",
+   "image": "pieces/bar_tin_stack"
+  },
+  "$piece_trainingdummy": {
+   "source": "A",
+   "image": "pieces/piece_TrainingDummy"
+  },
+  "$piece_trap": {
+   "source": "A",
+   "image": "pieces/piece_trap_troll"
+  },
+  "$piece_treasure_pile": {
+   "source": "A",
+   "image": "pieces/treasure_pile"
+  },
+  "$piece_treasure_stack": {
+   "source": "A",
+   "image": "pieces/treasure_stack"
+  },
+  "$piece_turret": {
+   "source": "A",
+   "image": "pieces/piece_turret"
+  },
+  "$piece_windmill": {
+   "source": "A",
+   "image": "pieces/windmill"
+  },
+  "$piece_wisplure": {
+   "source": "A",
+   "image": "pieces/piece_wisplure"
+  },
+  "$piece_woodbeam1": {
+   "source": "A",
+   "image": "pieces/wood_beam_1"
+  },
+  "$piece_woodbeam2": {
+   "source": "A",
+   "image": "pieces/wood_beam"
+  },
+  "$piece_woodbeam26": {
+   "source": "A",
+   "image": "pieces/wood_beam_26"
+  },
+  "$piece_woodbeam45": {
+   "source": "A",
+   "image": "pieces/wood_beam_45"
+  },
+  "$piece_woodbeam67": {
+   "source": "A",
+   "image": "pieces/wood_beam_67"
+  },
+  "$piece_woodcorestack": {
+   "source": "A",
+   "image": "pieces/wood_core_stack"
+  },
+  "$piece_wooddoor": {
+   "source": "A",
+   "image": "pieces/wood_door"
+  },
+  "$piece_wooddragon": {
+   "source": "A",
+   "image": "pieces/wood_dragon1"
+  },
+  "$piece_woodfence": {
+   "source": "A",
+   "image": "pieces/wood_fence"
+  },
+  "$piece_woodfencegate": {
+   "source": "A",
+   "image": "pieces/wood_fence_gate"
+  },
+  "$piece_woodfinestack": {
+   "source": "A",
+   "image": "pieces/wood_fine_stack"
+  },
+  "$piece_woodfloor1x1": {
+   "source": "A",
+   "image": "pieces/wood_floor_1x1"
+  },
+  "$piece_woodfloor2x2": {
+   "source": "A",
+   "image": "pieces/wood_floor"
+  },
+  "$piece_woodfroststack": {
+   "source": "A",
+   "image": "pieces/wood_frost_stack"
+  },
+  "$piece_woodgate": {
+   "source": "A",
+   "image": "pieces/wood_gate"
+  },
+  "$piece_woodironbeam": {
+   "source": "A",
+   "image": "pieces/woodiron_beam"
+  },
+  "$piece_woodironbeam_26": {
+   "source": "A",
+   "image": "pieces/woodiron_beam_26"
+  },
+  "$piece_woodironbeam_45": {
+   "source": "A",
+   "image": "pieces/woodiron_beam_45"
+  },
+  "$piece_woodironpole": {
+   "source": "A",
+   "image": "pieces/woodiron_pole"
+  },
+  "$piece_woodlog26": {
+   "source": "A",
+   "image": "pieces/wood_log_26"
+  },
+  "$piece_woodlog45": {
+   "source": "A",
+   "image": "pieces/wood_log_45"
+  },
+  "$piece_woodlog67": {
+   "source": "A",
+   "image": "pieces/wood_log_67"
+  },
+  "$piece_woodpole": {
+   "source": "A",
+   "image": "pieces/wood_pole"
+  },
+  "$piece_woodpole2": {
+   "source": "A",
+   "image": "pieces/wood_pole2"
+  },
+  "$piece_woodroof26": {
+   "source": "A",
+   "image": "pieces/wood_roof"
+  },
+  "$piece_woodroof45": {
+   "source": "A",
+   "image": "pieces/wood_roof_45"
+  },
+  "$piece_woodroof67": {
+   "source": "A",
+   "image": "pieces/wood_roof_67"
+  },
+  "$piece_woodrooficorner": {
+   "source": "A",
+   "image": "pieces/wood_roof_icorner"
+  },
+  "$piece_woodrooficorner45": {
+   "source": "A",
+   "image": "pieces/wood_roof_icorner_45"
+  },
+  "$piece_woodrooficorner67": {
+   "source": "A",
+   "image": "pieces/wood_roof_icorner_67"
+  },
+  "$piece_woodroofocorner": {
+   "source": "A",
+   "image": "pieces/wood_roof_ocorner"
+  },
+  "$piece_woodroofocorner45": {
+   "source": "A",
+   "image": "pieces/wood_roof_ocorner_45"
+  },
+  "$piece_woodroofocorner67": {
+   "source": "A",
+   "image": "pieces/wood_roof_ocorner_67"
+  },
+  "$piece_woodrooftop": {
+   "source": "A",
+   "image": "pieces/wood_roof_top"
+  },
+  "$piece_woodrooftop45": {
+   "source": "A",
+   "image": "pieces/wood_roof_top_45"
+  },
+  "$piece_woodrooftop67": {
+   "source": "A",
+   "image": "pieces/wood_roof_top_67"
+  },
+  "$piece_woodstack": {
+   "source": "A",
+   "image": "pieces/wood_stack"
+  },
+  "$piece_woodstair": {
+   "source": "A",
+   "image": "pieces/wood_stair"
+  },
+  "$piece_woodstepladder": {
+   "source": "A",
+   "image": "pieces/wood_stepladder"
+  },
+  "$piece_woodwall": {
+   "source": "A",
+   "image": "pieces/woodwall"
+  },
+  "$piece_woodwallhalf": {
+   "source": "A",
+   "image": "pieces/wood_wall_half"
+  },
+  "$piece_woodwallquarter": {
+   "source": "A",
+   "image": "pieces/wood_wall_quarter"
+  },
+  "$piece_woodwallroof": {
+   "source": "A",
+   "image": "pieces/wood_wall_roof_a"
+  },
+  "$piece_woodwallroof45": {
+   "source": "A",
+   "image": "pieces/wood_wall_roof_45"
+  },
+  "$piece_woodwallroof45_upsidedown": {
+   "source": "A",
+   "image": "pieces/wood_wall_roof_45_upsidedown"
+  },
+  "$piece_woodwallroof67": {
+   "source": "A",
+   "image": "pieces/wood_wall_roof_67_a"
+  },
+  "$piece_woodwallroof67upsidedown": {
+   "source": "A",
+   "image": "pieces/wood_wall_roof_67_upsidedown"
+  },
+  "$piece_woodwallroof_upsidedown": {
+   "source": "A",
+   "image": "pieces/wood_wall_roof_upsidedown"
+  },
+  "$piece_woodwallrooftop": {
+   "source": "A",
+   "image": "pieces/wood_wall_roof_top"
+  },
+  "$piece_woodwallrooftop45": {
+   "source": "A",
+   "image": "pieces/wood_wall_roof_top_45"
+  },
+  "$piece_woodwallrooftop67": {
+   "source": "A",
+   "image": "pieces/wood_wall_roof_top_67"
+  },
+  "$piece_woodwindowshutter": {
+   "source": "A",
+   "image": "pieces/wood_window"
+  },
+  "$piece_workbench": {
+   "source": "A",
+   "image": "pieces/piece_workbench"
+  },
+  "$piece_workbench_ext1": {
+   "source": "A",
+   "image": "pieces/piece_workbench_ext1"
+  },
+  "$piece_workbench_ext2": {
+   "source": "A",
+   "image": "pieces/piece_workbench_ext2"
+  },
+  "$piece_workbench_ext3": {
+   "source": "A",
+   "image": "pieces/piece_workbench_ext3"
+  },
+  "$piece_workbench_ext4": {
+   "source": "A",
+   "image": "pieces/piece_workbench_ext4"
+  },
+  "$piece_yggdrasilstack": {
+   "source": "A",
+   "image": "pieces/wood_yggdrasil_stack"
+  },
+  "$piece_yulecrown": {
+   "source": "A",
+   "image": "pieces/piece_xmascrown"
+  },
+  "$piece_yulegarland": {
+   "source": "A",
+   "image": "pieces/piece_xmasgarland"
+  },
+  "$piece_yuleklapp": {
+   "source": "A",
+   "image": "pieces/piece_gift1"
+  },
+  "$piece_yuletree": {
+   "source": "A",
+   "image": "pieces/piece_xmastree"
+  },
+  "$ship_karve": {
+   "source": "A",
+   "image": "pieces/Karve"
+  },
+  "$ship_longship": {
+   "source": "A",
+   "image": "pieces/VikingShip"
+  },
+  "$ship_longship_ashlands": {
+   "source": "A",
+   "image": "pieces/VikingShip_Ashlands"
+  },
+  "$ship_raft": {
+   "source": "A",
+   "image": "pieces/Raft"
+  },
+  "$spiritcaller_bjorn": {
+   "source": "A",
+   "image": "items/TrophyBjorn"
+  },
+  "$spiritcaller_boar": {
+   "source": "A",
+   "image": "items/TrophyBoar"
+  },
+  "$spiritcaller_moose": {
+   "source": "A",
+   "image": "items/TrophyMoose"
+  },
+  "$spiritcaller_wolf": {
+   "source": "A",
+   "image": "items/TrophyWolf"
+  },
+  "$tool_batteringram": {
+   "source": "A",
+   "image": "pieces/BatteringRam"
+  },
+  "$tool_cart": {
+   "source": "A",
+   "image": "pieces/Cart"
+  },
+  "$tool_catapult": {
+   "source": "A",
+   "image": "pieces/Catapult"
+  },
+  "DeathByAshlandsLava": {
+   "source": "E",
+   "glyph": "DeathByAshlandsLava"
+  },
+  "DeathByAshlandsOcean": {
+   "source": "E",
+   "glyph": "DeathByAshlandsOcean"
+  },
+  "DeathByBurning": {
+   "source": "E",
+   "glyph": "DeathByBurning"
+  },
+  "DeathByCatapult": {
+   "source": "E",
+   "glyph": "DeathByCatapult"
+  },
+  "DeathByDrawBridge": {
+   "source": "E",
+   "glyph": "DeathByDrawBridge"
+  },
+  "DeathByDrowning": {
+   "source": "E",
+   "glyph": "DeathByDrowning"
+  },
+  "DeathByEdgeOfWorld": {
+   "source": "E",
+   "glyph": "DeathByEdgeOfWorld"
+  },
+  "DeathByEnemyHit": {
+   "source": "E",
+   "glyph": "DeathByEnemyHit"
+  },
+  "DeathByFall": {
+   "source": "E",
+   "glyph": "DeathByFall"
+  },
+  "DeathByFreezing": {
+   "source": "E",
+   "glyph": "DeathByFreezing"
+  },
+  "DeathByIncinerator": {
+   "source": "E",
+   "glyph": "DeathByIncinerator"
+  },
+  "DeathByPoisoned": {
+   "source": "E",
+   "glyph": "DeathByPoisoned"
+  },
+  "DeathBySmoke": {
+   "source": "E",
+   "glyph": "DeathBySmoke"
+  },
+  "DeathByStalagtite": {
+   "source": "E",
+   "glyph": "DeathByStalagtite"
+  },
+  "DeathByTree": {
+   "source": "E",
+   "glyph": "DeathByTree"
+  },
+  "DeathByTurret": {
+   "source": "E",
+   "glyph": "DeathByTurret"
+  },
+  "TreeAshlands": {
+   "source": "E",
+   "glyph": "TreeAshlands"
+  },
+  "TreeBeech": {
+   "source": "E",
+   "glyph": "TreeBeech"
+  },
+  "TreeBirch": {
+   "source": "E",
+   "glyph": "TreeBirch"
+  },
+  "TreeFir": {
+   "source": "E",
+   "glyph": "TreeFir"
+  },
+  "TreeOak": {
+   "source": "E",
+   "glyph": "TreeOak"
+  },
+  "TreePine": {
+   "source": "E",
+   "glyph": "TreePine"
+  },
+  "TreeSnowFir": {
+   "source": "E",
+   "glyph": "TreeSnowFir"
+  },
+  "TreeSnowPine": {
+   "source": "E",
+   "glyph": "TreeSnowPine"
+  },
+  "TreeSwamp": {
+   "source": "E",
+   "glyph": "TreeSwamp"
+  },
+  "TreeYggdrasilShoot": {
+   "source": "E",
+   "glyph": "TreeYggdrasilShoot"
+  }
+ }
+}

@@ -1,0 +1,16 @@
+Trophy drop chances and uses (src/data/trophy-drops.json)
+
+Source: Valheim Wiki, "Trophies", https://valheim.weirdgloop.org/w/Trophies
+(hosted by Weird Gloop), retrieved 2026-11-11, by the Valheim Wiki contributors.
+
+Licence: Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+https://creativecommons.org/licenses/by-sa/3.0/
+Full legal code: https://creativecommons.org/licenses/by-sa/3.0/legalcode
+
+Changes: the page's table was reduced to the creature, biome, drop chance and usage of each
+trophy and stored as JSON, keyed by the game's prefab id. The JSON file is a derivative work and
+is shared under the same licence (CC BY-SA 3.0). The rest of this application is not.
+
+You are free to share and adapt this data under the terms of the licence, provided you give
+appropriate credit, link to the licence, indicate changes, and distribute contributions under
+the same licence.

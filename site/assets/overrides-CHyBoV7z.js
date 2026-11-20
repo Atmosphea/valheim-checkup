@@ -1,0 +1,1 @@
+var e=Object.fromEntries(Object.entries(Object.assign({})).map(([e,t])=>[e.split(`/`).pop().replace(/\.(ogg|wav)$/i,``),t]));export{e as overrides};

@@ -1,0 +1,32 @@
+/* WP-18C (Paul, WP-18 items 18–19): Bosses and Viking records in Highlights.
+   Base (the original app's dark page), then flat parchment, then the desk's printed page. */
+.vc-boss-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin-bottom: 18px; }
+.vc-boss { aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 10px; border: 1px solid #a88b58; border-radius: 8px; text-align: center; }
+.vc-boss .vc-icon { width: 58%; height: 58%; }
+.vc-boss strong { display: block; font: 18px Georgia, serif; }
+.vc-boss span { display: block; font-size: 12px; color: var(--muted); }
+.vc-boss--undefeated { opacity: 0.38; border-style: dashed; }
+.vc-boss--undefeated .vc-icon { filter: grayscale(1) brightness(0.8); }
+.vc-recs { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 4px 18px; }
+.vc-recs p { display: grid; grid-template-columns: minmax(4ch, auto) 1fr; align-items: baseline; gap: 10px; margin: 0; font-size: 13px; color: var(--muted); }
+.vc-recs b { justify-self: end; font: 24px Georgia, serif; color: var(--gold); font-variant-numeric: lining-nums tabular-nums; }
+.vc-records-title { margin: 28px 0 0; font: 26px Georgia, serif; }
+.vc-records-grid { grid-template-columns: 1fr 1fr; }
+.vc-records > .sub, .vc-bosses > .sub { font-size: 12px; color: var(--muted); }
+
+body.mode-flat .vc-boss { border-color: var(--vc-ink-faint); background: rgba(255, 248, 230, 0.3); }
+body.mode-flat .vc-boss strong, body.mode-flat .vc-records-title { font-family: 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat .vc-recs b { font-family: 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat .vc-recs p, body.mode-flat .vc-boss span { color: var(--vc-ink-soft); }
+@media (max-width: 760px) { .vc-records-grid { grid-template-columns: 1fr; } .vc-boss-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); } }
+
+body.mode-desk #print .vc-boss-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: calc(0.5 * var(--cm)); margin-bottom: calc(0.6 * var(--cm)); }
+body.mode-desk #print .vc-boss { gap: calc(0.25 * var(--cm)); padding: calc(0.35 * var(--cm)); border: calc(0.05 * var(--cm)) solid rgba(43, 29, 20, 0.55); border-radius: calc(0.15 * var(--cm)); }
+body.mode-desk #print .vc-boss strong { font: 400 calc(1 * var(--cm)) / 1.1 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-desk #print .vc-boss span { font-size: calc(0.68 * var(--cm)); color: var(--vc-ink-soft); }
+body.mode-desk #print .vc-boss--undefeated { border-style: dashed; }
+body.mode-desk #print .vc-recs { grid-template-columns: repeat(auto-fill, minmax(calc(9 * var(--cm)), 1fr)); gap: calc(0.1 * var(--cm)) calc(0.8 * var(--cm)); }
+body.mode-desk #print .vc-recs p { gap: calc(0.35 * var(--cm)); font-size: calc(0.62 * var(--cm)); color: var(--vc-ink-soft); }
+body.mode-desk #print .vc-recs b { font: 400 calc(1.2 * var(--cm)) / 1.1 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-desk #print .vc-records-title { margin: calc(1 * var(--cm)) 0 0; font: 400 calc(1.4 * var(--cm)) / 1.15 'IM Fell English SC', Georgia, serif; color: var(--vc-ink); }
+body.mode-desk #print .vc-records > .sub, body.mode-desk #print .vc-bosses > .sub { font-size: calc(0.6 * var(--cm)); color: var(--vc-ink-soft); }

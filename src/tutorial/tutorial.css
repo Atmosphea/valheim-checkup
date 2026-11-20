@@ -1,0 +1,150 @@
+/* WP-03: How-to control, "Find your Valheim character" popup, tour.
+   Only new classes; nothing of the original is restyled except the toast's stacking while a
+   popup or the tour is open (body.vc-modal-open, DECISIONS point 26). Desk styling is WP-06/11. */
+
+:root {
+  --vc-slip-paper: #f1e6cd;
+  --vc-slip-paper-2: #e6d6b3;
+  --vc-slip-ink: #2a1f14;
+  --vc-slip-ink-soft: #54432f;
+  --vc-slip-rule: #a08a64;
+  --vc-slip-accent: #6b3d0c;
+}
+
+/* How-to control: same height as the icon buttons beside it, text plus an open-book glyph. */
+.vc-howto-button {
+  display: inline-flex; align-items: center; gap: 6px;
+  min-height: 44px; padding: 0 12px; background: transparent; font-size: 14px; white-space: nowrap;
+}
+.vc-howto-button svg { flex: none; }
+/* Phones (round 2). Adding How to must never squeeze the brand, which keeps its original
+   wrapping (never inside a word).
+   - 481–760 px: one row, How to stacked (icon over label) like Load.
+   - up to 480 px: the original already wraps Load under Import and Export here. With How to the
+     block stays the same width and height: Import and Export on top (right), How to + Load
+     together underneath, How to directly left of Load. DOM and Tab order are unchanged. */
+@media (max-width: 760px) {
+  .top-actions .vc-howto-button { flex-direction: column; justify-content: center; gap: 1px; min-height: 75px; padding: 4px; font-size: 11px; }
+  .top-actions .vc-howto-button svg { width: 18px; height: 18px; }
+}
+@media (max-width: 480px) {
+  .top-actions:has(.vc-howto-button) { display: grid; grid-template-columns: min-content minmax(0, 1fr) auto; gap: 5px; width: 100%; align-items: stretch; }
+  .top-actions:has(.vc-howto-button) > #importProgress { grid-area: 1 / 2; justify-self: end; }
+  .top-actions:has(.vc-howto-button) > #exportProgress { grid-area: 1 / 3; }
+  .top-actions:has(.vc-howto-button) > .vc-howto-button { grid-area: 2 / 1; }
+  .top-actions:has(.vc-howto-button) > #loadTop { grid-area: 2 / 2 / 3 / 4; white-space: nowrap; }
+  /* "Load another save" is longer: let it wrap inside the space left (the original wraps too). */
+  .top-actions:has(.vc-howto-button) > #loadTop.has-save { white-space: normal; }
+  /* Narrowest: "How" / "to" under the icon, so How to + Load fit the original 140 px. */
+  .top-actions:has(.vc-howto-button) > .vc-howto-button { white-space: normal; line-height: 1.2; padding: 4px 3px; }
+}
+
+/* The paper slip look, shared by the popup and the tour slips. */
+.vc-paper-slip {
+  background: linear-gradient(160deg, var(--vc-slip-paper), var(--vc-slip-paper-2));
+  color: var(--vc-slip-ink);
+  border: 1px solid var(--vc-slip-rule);
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #fff8 inset, 0 14px 38px #000a, 0 2px 6px #0006;
+}
+.vc-paper-slip a { color: var(--vc-slip-accent); }
+.vc-paper-slip :focus-visible { outline-color: var(--vc-slip-accent); }
+.vc-paper-slip button:not(.primary) {
+  background: #fbf5e6; color: var(--vc-slip-ink); border-color: var(--vc-slip-rule);
+}
+.vc-paper-slip button:not(.primary):hover { border-color: var(--vc-slip-accent); }
+
+/* Popup */
+body.vc-modal-open #toast { z-index: 1100; }
+/* During the tour the toast stays visible above the dim but lets clicks through to the capture
+   layer, so a click on it still advances (round 2, fix 3). */
+body.vc-tour-open #toast { pointer-events: none; }
+.vc-howto-layer {
+  position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 16px;
+  background: rgb(5 9 14 / 0.62);
+}
+.vc-howto-layer[hidden] { display: none; }
+.vc-howto {
+  width: min(680px, 100%); max-height: calc(100vh - 32px); overflow: auto;
+  padding: 22px 26px 18px; font-size: 14px; line-height: 1.5;
+}
+.vc-howto h2 { margin: 0 0 14px; font: 700 24px Georgia, serif; }
+.vc-howto h3 { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: .3px; color: var(--vc-slip-ink-soft); }
+.vc-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--vc-slip-rule); margin-bottom: 14px; }
+.vc-paper-slip .vc-tab {
+  border: 1px solid transparent; border-bottom: 0; border-radius: 4px 4px 0 0; background: transparent;
+  padding: 7px 14px; margin-bottom: -1px; color: var(--vc-slip-ink-soft);
+}
+.vc-paper-slip .vc-tab[aria-selected="true"] {
+  background: #fbf5e6; border-color: var(--vc-slip-rule); color: var(--vc-slip-ink); font-weight: 700;
+}
+.vc-tabpanel[hidden] { display: none; }
+.vc-path-row { margin: 0 0 14px; }
+.vc-path { display: flex; gap: 8px; align-items: stretch; }
+.vc-path code {
+  flex: 1; min-width: 0; overflow-wrap: anywhere; padding: 8px 10px; border-radius: 3px;
+  background: #fffaf0; border: 1px solid var(--vc-slip-rule); font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  user-select: all;
+}
+.vc-paper-slip .vc-copy { padding: 6px 12px; font-size: 13px; }
+.vc-path-how { margin: 5px 0 0; color: var(--vc-slip-ink-soft); }
+.vc-howto-choose { margin: 16px 0 6px; }
+.vc-howto-steam { margin: 0 0 14px; }
+.vc-howto-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid var(--vc-slip-rule); padding-top: 14px; }
+.vc-paper-slip .vc-howto-close { width: 40px; height: 40px; padding: 0; font-size: 22px; line-height: 1; }
+.vc-copy-buffer { position: fixed; left: -9999px; top: 0; opacity: 0; }
+
+/* Tour: a transparent capture layer over everything. */
+.vc-tour { position: fixed; inset: 0; z-index: 1000; cursor: pointer; }
+.vc-tour-hole {
+  position: fixed; pointer-events: none; border-radius: var(--vc-tour-radius, 12px);
+  box-shadow: 0 0 0 200vmax rgb(6 4 2 / var(--vc-tour-dim, .65));
+  filter: blur(var(--vc-tour-soft, 10px));
+  transition: left var(--vc-tour-move) ease, top var(--vc-tour-move) ease, width var(--vc-tour-move) ease, height var(--vc-tour-move) ease;
+}
+.vc-tour-hole--none { border-radius: 0; }
+/* Desk mode: the lamp does the dimming (WP-11). */
+.vc-tour--desk .vc-tour-hole { box-shadow: none; filter: none; }
+
+.vc-slip {
+  position: fixed; width: min(var(--vc-slip-w, 320px), calc(100vw - 24px)); padding: 14px 16px 12px;
+  font-size: 14px; line-height: 1.5; cursor: pointer;
+  transition: left var(--vc-tour-move) ease, top var(--vc-tour-move) ease;
+}
+.vc-slip:focus { outline: none; }
+.vc-slip:focus-visible { outline: 3px solid var(--gold, #edbd70); outline-offset: 3px; }
+.vc-slip-count { margin: 0; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--vc-slip-ink-soft); }
+.vc-slip-title { margin: 2px 0 6px; font: 700 20px Georgia, serif; }
+.vc-slip-text { margin: 0 0 8px; }
+.vc-slip-hint { margin: 0; font-size: 12px; color: var(--vc-slip-ink-soft); border-top: 1px dashed var(--vc-slip-rule); padding-top: 6px; }
+/* Arrow toward the target: a turned square of the same paper on the side facing it. */
+.vc-slip::before {
+  content: ""; position: absolute; width: 14px; height: 14px; background: var(--vc-slip-paper);
+  border: 1px solid var(--vc-slip-rule); transform: rotate(45deg);
+}
+.vc-slip[data-side="right"]::before { left: -8px; top: calc(var(--vc-arrow, 24px) - 7px); border-top: 0; border-right: 0; }
+.vc-slip[data-side="left"]::before { right: -8px; top: calc(var(--vc-arrow, 24px) - 7px); border-bottom: 0; border-left: 0; }
+.vc-slip[data-side="above"]::before { bottom: -8px; left: calc(var(--vc-arrow, 24px) - 7px); border-top: 0; border-left: 0; }
+.vc-slip[data-side="below"]::before { top: -8px; left: calc(var(--vc-arrow, 24px) - 7px); border-bottom: 0; border-right: 0; }
+.vc-slip[data-side="inside"]::before, .vc-slip[data-side="none"]::before { display: none; }
+
+/* Layouts caused by resize or scroll jump straight to their place; only step changes glide
+   (round 2, fix 4). */
+.vc-tour--snap .vc-tour-hole, .vc-tour--snap .vc-slip { transition: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .vc-tour-hole, .vc-slip { transition: none; }
+}
+
+/* Screen-reader-only text (same recipe as the original .visually-hidden, which P39 expects to
+   appear exactly once). */
+.vc-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+/* Below 381 px there is no room for How to beside a one-line brand (the original itself
+   overflows at 320 px). Let Load's label wrap as the original does, and let the brand wrap at
+   its space only ("Valheim / Checkup"), never inside a word. */
+@media (max-width: 380px) {
+  .top-actions:has(.vc-howto-button) > #loadTop { white-space: normal; }
+  .top:has(.vc-howto-button) { grid-template-columns: minmax(0, 1fr) auto; }
+  .top:has(.vc-howto-button) .brand { white-space: normal; overflow-wrap: normal; word-break: normal; }
+}

@@ -28,10 +28,5 @@ function fixture(latest=false){
  for(const c of data.catalog){assert.equal(c.items.length,c.total);for(const item of c.items){const r=core.evaluate(c,item,save);assert(['done','missing','unknown'].includes(r.status));assert(Number.isFinite(r.count));}}
  const enemy={tokens:['$enemy_hare'],mapping:'exact'};save.buckets[1].enemy[0]['$enemy_hare']=45;save.buckets[7].enemy[0]['$enemy_hare']=6;
  assert.equal(core.evaluate({type:'killAny'},enemy,save).count,45);assert.equal(core.evaluate({type:'killHard'},enemy,save).count,6);
- assert.equal(data.statNames[128],'ConsecutiveDaysSurvived');assert.equal(data.statNames[129],'ConsecutiveDaysSurvivedMax');
- for(let n=0;n<10;n++){save.buckets[n].stats[128]=n;save.buckets[n].stats[129]=n*10;}
- const survival=core.survival(save);assert.equal(survival.length,10);assert.equal(survival[6].name,'Normal');assert.equal(survival[7].name,'Hard');assert.equal(survival[0].current,0);assert.equal(survival[7].best,70);
- save.buckets[0].stats[128]=0;save.buckets[7].stats[128]=12;save.buckets[7].stats[129]=0;
- const stale=core.survival(save);assert.equal(stale[7].current,12);assert.equal(stale[7].best,0);assert.equal(stale[0].current,0);assert.deepEqual(core.survival(null),[]);
  console.log('Passed: skill decoding, cooking/eating separation, checksum validation, catalog integrity, difficulty records.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

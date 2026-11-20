@@ -1,0 +1,297 @@
+{
+ "meta": {
+  "label": "ab-before-1",
+  "html": "work/wp18p/named-before/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "sampled": false,
+  "framesOnly": true,
+  "at": "2026-11-13T00:16:22.466Z",
+  "errors": [],
+  "tierEnd": "low",
+  "qualityLog": null
+ },
+ "rows": [
+  {
+   "name": "view Artisan · drag",
+   "frames": 331,
+   "worstMs": 33.4,
+   "over16": 2,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5564,
+   "gpuMs": 2379,
+   "gpuWorst": 55.9,
+   "gpuFrames": 320,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     4789,
+     33.4
+    ],
+    [
+     4355,
+     33.3
+    ],
+    [
+     2305,
+     16.8
+    ],
+    [
+     2505,
+     16.8
+    ],
+    [
+     2605,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Artisan · release",
+   "frames": 134,
+   "worstMs": 116.6,
+   "over16": 35,
+   "over33": 2,
+   "mainMs": null,
+   "loafMs": 112,
+   "jsMs": 0,
+   "windowMs": 2945,
+   "gpuMs": 828,
+   "gpuWorst": 41,
+   "gpuFrames": 124,
+   "loaf": [
+    {
+     "t": 20,
+     "d": 112,
+     "sl": 10,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     146,
+     116.6
+    ],
+    [
+     1313,
+     50.1
+    ],
+    [
+     213,
+     33.4
+    ],
+    [
+     729,
+     33.4
+    ],
+    [
+     813,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · drag",
+   "frames": 313,
+   "worstMs": 100,
+   "over16": 22,
+   "over33": 2,
+   "mainMs": null,
+   "loafMs": 91,
+   "jsMs": 0,
+   "windowMs": 5695,
+   "gpuMs": 1931,
+   "gpuWorst": 22.8,
+   "gpuFrames": 293,
+   "loaf": [
+    {
+     "t": 4458,
+     "d": 91,
+     "sl": 3,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     4559,
+     100
+    ],
+    [
+     4659,
+     50
+    ],
+    [
+     2426,
+     33.4
+    ],
+    [
+     4326,
+     33.4
+    ],
+    [
+     4726,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · release",
+   "frames": 143,
+   "worstMs": 166.7,
+   "over16": 40,
+   "over33": 10,
+   "mainMs": null,
+   "loafMs": 313,
+   "jsMs": 0,
+   "windowMs": 3470,
+   "gpuMs": 857,
+   "gpuWorst": 26.5,
+   "gpuFrames": 133,
+   "loaf": [
+    {
+     "t": 22,
+     "d": 166,
+     "sl": 8,
+     "top": []
+    },
+    {
+     "t": 208,
+     "d": 146,
+     "sl": 3,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     192,
+     166.7
+    ],
+    [
+     359,
+     166.6
+    ],
+    [
+     1759,
+     50.1
+    ],
+    [
+     1542,
+     50.1
+    ],
+    [
+     1625,
+     50.1
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · drag",
+   "frames": 319,
+   "worstMs": 33.4,
+   "over16": 4,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5414,
+   "gpuMs": 1995,
+   "gpuWorst": 20.3,
+   "gpuFrames": 276,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     4566,
+     33.4
+    ],
+    [
+     2499,
+     33.3
+    ],
+    [
+     4466,
+     33.3
+    ],
+    [
+     3882,
+     33.3
+    ],
+    [
+     1032,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · release",
+   "frames": 155,
+   "worstMs": 100,
+   "over16": 10,
+   "over33": 2,
+   "mainMs": null,
+   "loafMs": 177,
+   "jsMs": 0,
+   "windowMs": 2873,
+   "gpuMs": 1390,
+   "gpuWorst": 31,
+   "gpuFrames": 143,
+   "loaf": [
+    {
+     "t": 24,
+     "d": 77,
+     "sl": 5,
+     "top": []
+    },
+    {
+     "t": 111,
+     "d": 100,
+     "sl": 0,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     210,
+     100
+    ],
+    [
+     93,
+     66.7
+    ],
+    [
+     1026,
+     33.4
+    ],
+    [
+     1226,
+     33.4
+    ],
+    [
+     1276,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  }
+ ]
+}

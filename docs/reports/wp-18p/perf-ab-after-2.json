@@ -1,0 +1,371 @@
+{
+ "meta": {
+  "label": "ab-after-2",
+  "html": "work/wp18p/named-after/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "sampled": false,
+  "framesOnly": true,
+  "at": "2026-11-13T00:18:59.148Z",
+  "errors": [],
+  "tierEnd": "low",
+  "qualityLog": null
+ },
+ "rows": [
+  {
+   "name": "view Artisan · drag",
+   "frames": 280,
+   "worstMs": 833.3,
+   "over16": 21,
+   "over33": 9,
+   "mainMs": null,
+   "loafMs": 2368,
+   "jsMs": 0,
+   "windowMs": 7784,
+   "gpuMs": 1906,
+   "gpuWorst": 53.7,
+   "gpuFrames": 262,
+   "loaf": [
+    {
+     "t": 482,
+     "d": 51,
+     "sl": 1,
+     "top": []
+    },
+    {
+     "t": 1371,
+     "d": 407,
+     "sl": 1,
+     "top": []
+    },
+    {
+     "t": 2046,
+     "d": 365,
+     "sl": 1,
+     "top": []
+    },
+    {
+     "t": 2414,
+     "d": 422,
+     "sl": 1,
+     "top": []
+    },
+    {
+     "t": 2850,
+     "d": 440,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 4000,
+     "d": 298,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 4299,
+     "d": 220,
+     "sl": 1,
+     "top": []
+    },
+    {
+     "t": 5666,
+     "d": 90,
+     "sl": 1,
+     "top": []
+    },
+    {
+     "t": 6999,
+     "d": 76,
+     "sl": 2,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     1360,
+     833.3
+    ],
+    [
+     2826,
+     416.7
+    ],
+    [
+     3276,
+     416.7
+    ],
+    [
+     1776,
+     416.7
+    ],
+    [
+     2410,
+     350
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Artisan · release",
+   "frames": 154,
+   "worstMs": 183.3,
+   "over16": 15,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 185,
+   "jsMs": 0,
+   "windowMs": 2983,
+   "gpuMs": 1106,
+   "gpuWorst": 26.8,
+   "gpuFrames": 144,
+   "loaf": [
+    {
+     "t": 10,
+     "d": 185,
+     "sl": 9,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     202,
+     183.3
+    ],
+    [
+     1002,
+     33.4
+    ],
+    [
+     1236,
+     33.4
+    ],
+    [
+     1352,
+     33.4
+    ],
+    [
+     1419,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · drag",
+   "frames": 294,
+   "worstMs": 66.6,
+   "over16": 2,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 89,
+   "jsMs": 0,
+   "windowMs": 4986,
+   "gpuMs": 2328,
+   "gpuWorst": 23.9,
+   "gpuFrames": 289,
+   "loaf": [
+    {
+     "t": 4100,
+     "d": 89,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     4176,
+     66.6
+    ],
+    [
+     4210,
+     33.4
+    ],
+    [
+     560,
+     16.8
+    ],
+    [
+     960,
+     16.8
+    ],
+    [
+     1727,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · release",
+   "frames": 127,
+   "worstMs": 266.7,
+   "over16": 34,
+   "over33": 5,
+   "mainMs": null,
+   "loafMs": 435,
+   "jsMs": 0,
+   "windowMs": 3063,
+   "gpuMs": 706,
+   "gpuWorst": 19.7,
+   "gpuFrames": 119,
+   "loaf": [
+    {
+     "t": 19,
+     "d": 260,
+     "sl": 8,
+     "top": []
+    },
+    {
+     "t": 378,
+     "d": 116,
+     "sl": 1,
+     "top": []
+    },
+    {
+     "t": 1149,
+     "d": 59,
+     "sl": 15,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     285,
+     266.7
+    ],
+    [
+     468,
+     99.9
+    ],
+    [
+     1202,
+     66.7
+    ],
+    [
+     1452,
+     50.1
+    ],
+    [
+     368,
+     50
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · drag",
+   "frames": 293,
+   "worstMs": 66.7,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 83,
+   "jsMs": 0,
+   "windowMs": 4948,
+   "gpuMs": 2244,
+   "gpuWorst": 36.5,
+   "gpuFrames": 286,
+   "loaf": [
+    {
+     "t": 4060,
+     "d": 83,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     4136,
+     66.7
+    ],
+    [
+     87,
+     16.8
+    ],
+    [
+     337,
+     16.8
+    ],
+    [
+     737,
+     16.8
+    ],
+    [
+     1903,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · release",
+   "frames": 161,
+   "worstMs": 66.6,
+   "over16": 5,
+   "over33": 2,
+   "mainMs": null,
+   "loafMs": 181,
+   "jsMs": 0,
+   "windowMs": 2830,
+   "gpuMs": 1193,
+   "gpuWorst": 25.2,
+   "gpuFrames": 149,
+   "loaf": [
+    {
+     "t": 8,
+     "d": 56,
+     "sl": 5,
+     "top": []
+    },
+    {
+     "t": 77,
+     "d": 66,
+     "sl": 1,
+     "top": []
+    },
+    {
+     "t": 181,
+     "d": 59,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     135,
+     66.6
+    ],
+    [
+     235,
+     50
+    ],
+    [
+     52,
+     33.4
+    ],
+    [
+     1252,
+     33.3
+    ],
+    [
+     1135,
+     33.2
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  }
+ ]
+}

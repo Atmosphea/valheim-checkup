@@ -1,0 +1,81 @@
+{
+ "tolerance": "a 16 px block differs when its mean grey level differs by more than 8/255; pass = at most 1 % of blocks differ",
+ "errors": {
+  "before": [],
+  "after": []
+ },
+ "rows": [
+  {
+   "name": "load save, mid-wash",
+   "blocks": 5040,
+   "over": 0,
+   "sharePct": 0,
+   "worstBlock": 4.3,
+   "meanBlock": 0.31,
+   "pass": true
+  },
+  {
+   "name": "view The Carpenter, mid-wash",
+   "blocks": 5040,
+   "over": 1,
+   "sharePct": 0.02,
+   "worstBlock": 12.1,
+   "meanBlock": 0.32,
+   "pass": true
+  },
+  {
+   "name": "view The Gourmet, mid-wash",
+   "blocks": 5040,
+   "over": 0,
+   "sharePct": 0,
+   "worstBlock": 4.3,
+   "meanBlock": 0.29,
+   "pass": true
+  },
+  {
+   "name": "view Highlights, mid-wash",
+   "blocks": 5040,
+   "over": 0,
+   "sharePct": 0,
+   "worstBlock": 2.2,
+   "meanBlock": 0.32,
+   "pass": true
+  },
+  {
+   "name": "view The Master Hunter, mid-wash",
+   "blocks": 5040,
+   "over": 0,
+   "sharePct": 0,
+   "worstBlock": 1.3,
+   "meanBlock": 0.28,
+   "pass": true
+  },
+  {
+   "name": "details open, mid-unfold",
+   "blocks": 5040,
+   "over": 0,
+   "sharePct": 0,
+   "worstBlock": 1.8,
+   "meanBlock": 0.35,
+   "pass": true
+  },
+  {
+   "name": "details close, mid-burn",
+   "blocks": 5040,
+   "over": 24,
+   "sharePct": 0.48,
+   "worstBlock": 15.8,
+   "meanBlock": 0.46,
+   "pass": true
+  },
+  {
+   "name": "row-height rescale, mid-burn",
+   "blocks": 5040,
+   "over": 0,
+   "sharePct": 0,
+   "worstBlock": 2.5,
+   "meanBlock": 0.3,
+   "pass": true
+  }
+ ]
+}

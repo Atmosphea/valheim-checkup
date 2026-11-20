@@ -1,0 +1,1813 @@
+{
+ "source": "https://valheim.weirdgloop.org/w/Food",
+ "license": "CC BY-SA 3.0 (Valheim Wiki, weirdgloop)",
+ "fetched": "2026-11-12",
+ "note": "stationLevel = minimum station upgrade level where the wiki lists one",
+ "foods": {
+  "Raspberries": {
+   "biome": "Meadows",
+   "health": 7,
+   "stamina": 20,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Honey": {
+   "biome": "Meadows",
+   "health": 8,
+   "stamina": 35,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Mushroom": {
+   "biome": "Meadows",
+   "health": 15,
+   "stamina": 15,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Grilled Neck Tail": {
+   "biome": "Meadows",
+   "health": 25,
+   "stamina": 8,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Neck Tail"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cooking Station",
+   "stationLevel": null
+  },
+  "Cooked Boar Meat": {
+   "biome": "Meadows",
+   "health": 30,
+   "stamina": 10,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Boar Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cooking Station",
+   "stationLevel": null
+  },
+  "Cooked Deer Meat": {
+   "biome": "Meadows",
+   "health": 35,
+   "stamina": 12,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Deer Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cooking Station",
+   "stationLevel": null
+  },
+  "Blueberries": {
+   "biome": "Black Forest",
+   "health": 8,
+   "stamina": 25,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Yellow Mushroom": {
+   "biome": "Black Forest",
+   "health": 10,
+   "stamina": 30,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Carrot": {
+   "biome": "Black Forest",
+   "health": 10,
+   "stamina": 32,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Queen's Jam": {
+   "biome": "Black Forest",
+   "health": 14,
+   "stamina": 40,
+   "ingredients": [
+    {
+     "qty": 8,
+     "name": "Raspberries"
+    },
+    {
+     "qty": 6,
+     "name": "Blueberries"
+    }
+   ],
+   "yield": 4,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 1
+  },
+  "Carrot Soup": {
+   "biome": "Black Forest",
+   "health": 15,
+   "stamina": 45,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Mushroom"
+    },
+    {
+     "qty": 3,
+     "name": "Carrot"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 1
+  },
+  "Boar Jerky": {
+   "biome": "Black Forest",
+   "health": 23,
+   "stamina": 23,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Boar Meat"
+    },
+    {
+     "qty": 1,
+     "name": "Honey"
+    }
+   ],
+   "yield": 2,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 1
+  },
+  "Pulled Bear": {
+   "biome": "Black Forest",
+   "health": 37,
+   "stamina": 16,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Cooked Bear Meat"
+    },
+    {
+     "qty": 2,
+     "name": "Carrot"
+    },
+    {
+     "qty": 1,
+     "name": "Blueberries"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 1
+  },
+  "Cooked Bear Meat": {
+   "biome": "Black Forest",
+   "health": 40,
+   "stamina": 13,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Bear Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cooking Station",
+   "stationLevel": null
+  },
+  "Minced Meat Sauce": {
+   "biome": "Black Forest",
+   "health": 40,
+   "stamina": 13,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Boar Meat"
+    },
+    {
+     "qty": 1,
+     "name": "Neck Tail"
+    },
+    {
+     "qty": 1,
+     "name": "Carrot"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 1
+  },
+  "Deer Stew": {
+   "biome": "Black Forest",
+   "health": 45,
+   "stamina": 15,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Blueberries"
+    },
+    {
+     "qty": 1,
+     "name": "Carrot"
+    },
+    {
+     "qty": 1,
+     "name": "Cooked Deer Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 1
+  },
+  "Muckshake": {
+   "biome": "Swamp",
+   "health": 16,
+   "stamina": 50,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Ooze"
+    },
+    {
+     "qty": 2,
+     "name": "Raspberries"
+    },
+    {
+     "qty": 2,
+     "name": "Blueberries"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 2
+  },
+  "Turnip Stew": {
+   "biome": "Swamp",
+   "health": 18,
+   "stamina": 55,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Boar Meat"
+    },
+    {
+     "qty": 3,
+     "name": "Turnip"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 2
+  },
+  "Whole Roasted Meadow Boar": {
+   "biome": "Swamp",
+   "health": 35,
+   "stamina": 35,
+   "ingredients": [
+    {
+     "qty": 2,
+     "name": "Cooked Deer Meat"
+    },
+    {
+     "qty": 5,
+     "name": "Cooked Boar Meat"
+    },
+    {
+     "qty": 4,
+     "name": "Dandelion"
+    },
+    {
+     "qty": 1,
+     "name": "Woodland Herb Blend"
+    }
+   ],
+   "yield": null,
+   "uses": 10,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Black Forest Buffet Platter": {
+   "biome": "Swamp",
+   "health": 35,
+   "stamina": 35,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Deer Stew"
+    },
+    {
+     "qty": 5,
+     "name": "Thistle"
+    },
+    {
+     "qty": 4,
+     "name": "Queen's Jam"
+    },
+    {
+     "qty": 1,
+     "name": "Woodland Herb Blend"
+    }
+   ],
+   "yield": null,
+   "uses": 10,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Swamp Dweller's Delight": {
+   "biome": "Swamp",
+   "health": 35,
+   "stamina": 35,
+   "ingredients": [
+    {
+     "qty": 8,
+     "name": "Sausages"
+    },
+    {
+     "qty": 4,
+     "name": "Bloodbag"
+    },
+    {
+     "qty": 2,
+     "name": "Turnip Stew"
+    },
+    {
+     "qty": 1,
+     "name": "Woodland Herb Blend"
+    }
+   ],
+   "yield": null,
+   "uses": 10,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Cooked Fish": {
+   "biome": "Swamp",
+   "health": 45,
+   "stamina": 15,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Raw Fish"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cooking Station",
+   "stationLevel": null
+  },
+  "Sailor's Bounty": {
+   "biome": "Swamp",
+   "health": 45,
+   "stamina": 45,
+   "ingredients": [
+    {
+     "qty": 5,
+     "name": "Cooked Fish"
+    },
+    {
+     "qty": 4,
+     "name": "Thistle"
+    },
+    {
+     "qty": 2,
+     "name": "Cooked Serpent Meat"
+    },
+    {
+     "qty": 1,
+     "name": "Seafarer's Herbs"
+    }
+   ],
+   "yield": null,
+   "uses": 10,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Black Soup": {
+   "biome": "Swamp",
+   "health": 50,
+   "stamina": 17,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Bloodbag"
+    },
+    {
+     "qty": 1,
+     "name": "Honey"
+    },
+    {
+     "qty": 1,
+     "name": "Turnip"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 2
+  },
+  "Sausages": {
+   "biome": "Swamp",
+   "health": 55,
+   "stamina": 18,
+   "ingredients": [
+    {
+     "qty": 4,
+     "name": "Entrails"
+    },
+    {
+     "qty": 1,
+     "name": "Boar Meat"
+    },
+    {
+     "qty": 1,
+     "name": "Thistle"
+    }
+   ],
+   "yield": 4,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 2
+  },
+  "Cooked Serpent Meat": {
+   "biome": "Swamp",
+   "health": 70,
+   "stamina": 23,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Serpent Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Iron cooking station",
+   "stationLevel": null
+  },
+  "Serpent Stew": {
+   "biome": "Swamp",
+   "health": 80,
+   "stamina": 26,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Mushroom"
+    },
+    {
+     "qty": 1,
+     "name": "Cooked Serpent Meat"
+    },
+    {
+     "qty": 2,
+     "name": "Honey"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 2
+  },
+  "Onion": {
+   "biome": "Mountain",
+   "health": 13,
+   "stamina": 40,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Onion Soup": {
+   "biome": "Mountain",
+   "health": 20,
+   "stamina": 60,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Onion"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 2
+  },
+  "Eyescream": {
+   "biome": "Mountain",
+   "health": 21,
+   "stamina": 65,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Greydwarf Eye"
+    },
+    {
+     "qty": 1,
+     "name": "Freeze Gland"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 3
+  },
+  "Wolf Jerky": {
+   "biome": "Mountain",
+   "health": 33,
+   "stamina": 33,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Wolf Meat"
+    },
+    {
+     "qty": 1,
+     "name": "Honey"
+    }
+   ],
+   "yield": 2,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 3
+  },
+  "Cooked Wolf Meat": {
+   "biome": "Mountain",
+   "health": 45,
+   "stamina": 15,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Wolf Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cooking Station",
+   "stationLevel": null
+  },
+  "Wolf Skewer": {
+   "biome": "Mountain",
+   "health": 65,
+   "stamina": 21,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Wolf Meat"
+    },
+    {
+     "qty": 2,
+     "name": "Mushroom"
+    },
+    {
+     "qty": 1,
+     "name": "Onion"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 3
+  },
+  "Cloudberries": {
+   "biome": "Plains",
+   "health": 13,
+   "stamina": 40,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Bread": {
+   "biome": "Plains",
+   "health": 23,
+   "stamina": 70,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Bread Dough"
+    }
+   ],
+   "yield": 2,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Blood Pudding": {
+   "biome": "Plains",
+   "health": 25,
+   "stamina": 75,
+   "ingredients": [
+    {
+     "qty": 2,
+     "name": "Thistle"
+    },
+    {
+     "qty": 2,
+     "name": "Bloodbag"
+    },
+    {
+     "qty": 4,
+     "name": "Barley Flour"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 4
+  },
+  "Cooked Egg": {
+   "biome": "Plains",
+   "health": 35,
+   "stamina": 12,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Egg"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 1
+  },
+  "Frosted Sweetbread": {
+   "biome": "Plains",
+   "health": 43,
+   "stamina": 43,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Unbaked Sweetbread"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Hearty Mountain Logger's Stew": {
+   "biome": "Plains",
+   "health": 45,
+   "stamina": 45,
+   "ingredients": [
+    {
+     "qty": 2,
+     "name": "Wolf Skewer"
+    },
+    {
+     "qty": 3,
+     "name": "Onion Soup"
+    },
+    {
+     "qty": 4,
+     "name": "Carrot"
+    },
+    {
+     "qty": 1,
+     "name": "Mountain Peak Pepper Powder"
+    }
+   ],
+   "yield": null,
+   "uses": 10,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Cooked Lox Meat": {
+   "biome": "Plains",
+   "health": 50,
+   "stamina": 16,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Lox Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Iron cooking station",
+   "stationLevel": null
+  },
+  "Cooked Chicken Meat": {
+   "biome": "Plains",
+   "health": 60,
+   "stamina": 20,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Chicken Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Iron cooking station",
+   "stationLevel": null
+  },
+  "Fish Wraps": {
+   "biome": "Plains",
+   "health": 70,
+   "stamina": 23,
+   "ingredients": [
+    {
+     "qty": 2,
+     "name": "Cooked Fish"
+    },
+    {
+     "qty": 4,
+     "name": "Barley Flour"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 4
+  },
+  "Lox Meat Pie": {
+   "biome": "Plains",
+   "health": 75,
+   "stamina": 24,
+   "ingredients": [
+    {
+     "qty": 4,
+     "name": "Barley Flour"
+    },
+    {
+     "qty": 2,
+     "name": "Cloudberries"
+    },
+    {
+     "qty": 2,
+     "name": "Lox Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Royal Jelly": {
+   "biome": "Mistlands",
+   "health": 15,
+   "stamina": 15,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Stuffed Mushroom": {
+   "biome": "Mistlands",
+   "health": 25,
+   "stamina": 12,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Magecap"
+    },
+    {
+     "qty": 1,
+     "name": "Blood Clot"
+    },
+    {
+     "qty": 2,
+     "name": "Turnip"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Jotun Puffs": {
+   "biome": "Mistlands",
+   "health": 25,
+   "stamina": 25,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Magecap": {
+   "biome": "Mistlands",
+   "health": 25,
+   "stamina": 25,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Salad": {
+   "biome": "Mistlands",
+   "health": 26,
+   "stamina": 80,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Jotun Puffs"
+    },
+    {
+     "qty": 3,
+     "name": "Onion"
+    },
+    {
+     "qty": 3,
+     "name": "Cloudberries"
+    }
+   ],
+   "yield": 3,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 5
+  },
+  "Yggdrasil Porridge": {
+   "biome": "Mistlands",
+   "health": 27,
+   "stamina": 13,
+   "ingredients": [
+    {
+     "qty": 4,
+     "name": "Sap"
+    },
+    {
+     "qty": 3,
+     "name": "Barley"
+    },
+    {
+     "qty": 2,
+     "name": "Royal Jelly"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 5
+  },
+  "Seeker Aspic": {
+   "biome": "Mistlands",
+   "health": 28,
+   "stamina": 14,
+   "ingredients": [
+    {
+     "qty": 2,
+     "name": "Seeker Meat"
+    },
+    {
+     "qty": 2,
+     "name": "Magecap"
+    },
+    {
+     "qty": 2,
+     "name": "Royal Jelly"
+    }
+   ],
+   "yield": 2,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 5
+  },
+  "Mushroom Omelette": {
+   "biome": "Mistlands",
+   "health": 28,
+   "stamina": 85,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Egg"
+    },
+    {
+     "qty": 3,
+     "name": "Jotun Puffs"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 5
+  },
+  "Fish 'n' Bread": {
+   "biome": "Mistlands",
+   "health": 30,
+   "stamina": 90,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Anglerfish"
+    },
+    {
+     "qty": 2,
+     "name": "Bread Dough"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Plains Pie Picnic": {
+   "biome": "Mistlands",
+   "health": 55,
+   "stamina": 55,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Bread"
+    },
+    {
+     "qty": 2,
+     "name": "Lox Meat Pie"
+    },
+    {
+     "qty": 5,
+     "name": "Cloudberries"
+    },
+    {
+     "qty": 1,
+     "name": "Grasslands Herbalist Harvest"
+    }
+   ],
+   "yield": null,
+   "uses": 10,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Cooked Seeker Meat": {
+   "biome": "Mistlands",
+   "health": 60,
+   "stamina": 20,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Seeker Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Iron cooking station",
+   "stationLevel": null
+  },
+  "Cooked Hare Meat": {
+   "biome": "Mistlands",
+   "health": 60,
+   "stamina": 20,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Hare Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Iron cooking station",
+   "stationLevel": null
+  },
+  "Meat Platter": {
+   "biome": "Mistlands",
+   "health": 80,
+   "stamina": 26,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Seeker Meat"
+    },
+    {
+     "qty": 1,
+     "name": "Lox Meat"
+    },
+    {
+     "qty": 1,
+     "name": "Hare Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Honey Glazed Chicken": {
+   "biome": "Mistlands",
+   "health": 80,
+   "stamina": 26,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Chicken Meat"
+    },
+    {
+     "qty": 3,
+     "name": "Honey"
+    },
+    {
+     "qty": 2,
+     "name": "Jotun Puffs"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Misthare Supreme": {
+   "biome": "Mistlands",
+   "health": 85,
+   "stamina": 28,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Hare Meat"
+    },
+    {
+     "qty": 3,
+     "name": "Jotun Puffs"
+    },
+    {
+     "qty": 2,
+     "name": "Carrot"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Smoke Puff": {
+   "biome": "Ashlands",
+   "health": 15,
+   "stamina": 15,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Sizzling Berry Broth": {
+   "biome": "Ashlands",
+   "health": 28,
+   "stamina": 14,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Sap"
+    },
+    {
+     "qty": 2,
+     "name": "Vineberry Cluster"
+    },
+    {
+     "qty": 2,
+     "name": "Fiddlehead"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 5
+  },
+  "Sparkling Shroomshake": {
+   "biome": "Ashlands",
+   "health": 30,
+   "stamina": 15,
+   "ingredients": [
+    {
+     "qty": 4,
+     "name": "Sap"
+    },
+    {
+     "qty": 2,
+     "name": "Magecap"
+    },
+    {
+     "qty": 2,
+     "name": "Vineberry Cluster"
+    },
+    {
+     "qty": 2,
+     "name": "Smoke Puff"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 6
+  },
+  "Fiddlehead": {
+   "biome": "Ashlands",
+   "health": 30,
+   "stamina": 30,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Vineberry Cluster": {
+   "biome": "Ashlands",
+   "health": 30,
+   "stamina": 30,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Spicy Marmalade": {
+   "biome": "Ashlands",
+   "health": 30,
+   "stamina": 90,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Vineberry Cluster"
+    },
+    {
+     "qty": 1,
+     "name": "Honey"
+    },
+    {
+     "qty": 1,
+     "name": "Fiddlehead"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 5
+  },
+  "Marinated Greens": {
+   "biome": "Ashlands",
+   "health": 32,
+   "stamina": 16,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Sap"
+    },
+    {
+     "qty": 2,
+     "name": "Magecap"
+    },
+    {
+     "qty": 2,
+     "name": "Fiddlehead"
+    },
+    {
+     "qty": 2,
+     "name": "Smoke Puff"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 6
+  },
+  "Scorching Medley": {
+   "biome": "Ashlands",
+   "health": 32,
+   "stamina": 95,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Jotun Puffs"
+    },
+    {
+     "qty": 3,
+     "name": "Onion"
+    },
+    {
+     "qty": 3,
+     "name": "Fiddlehead"
+    }
+   ],
+   "yield": 3,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 6
+  },
+  "Roasted Crust Pie": {
+   "biome": "Ashlands",
+   "health": 34,
+   "stamina": 100,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Volture Egg"
+    },
+    {
+     "qty": 2,
+     "name": "Vineberry Cluster"
+    },
+    {
+     "qty": 4,
+     "name": "Barley Flour"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Mushrooms Galore á la Mistlands": {
+   "biome": "Ashlands",
+   "health": 65,
+   "stamina": 65,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Misthare Supreme"
+    },
+    {
+     "qty": 3,
+     "name": "Cooked Seeker Meat"
+    },
+    {
+     "qty": 1,
+     "name": "Yggdrasil Porridge"
+    },
+    {
+     "qty": 1,
+     "name": "Herbs of the Hidden Hills"
+    }
+   ],
+   "yield": null,
+   "uses": 10,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Cooked Asksvin Tail": {
+   "biome": "Ashlands",
+   "health": 70,
+   "stamina": 24,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Asksvin Tail"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Iron cooking station",
+   "stationLevel": null
+  },
+  "Cooked Volture Meat": {
+   "biome": "Ashlands",
+   "health": 70,
+   "stamina": 24,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Volture Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Iron cooking station",
+   "stationLevel": null
+  },
+  "Cooked Bonemaw Meat": {
+   "biome": "Ashlands",
+   "health": 90,
+   "stamina": 30,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Bonemaw Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Iron cooking station",
+   "stationLevel": null
+  },
+  "Fiery Svinstew": {
+   "biome": "Ashlands",
+   "health": 95,
+   "stamina": 32,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Asksvin Tail"
+    },
+    {
+     "qty": 2,
+     "name": "Vineberry Cluster"
+    },
+    {
+     "qty": 1,
+     "name": "Smoke Puff"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 5
+  },
+  "Mashed Meat": {
+   "biome": "Ashlands",
+   "health": 100,
+   "stamina": 34,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Asksvin Tail"
+    },
+    {
+     "qty": 1,
+     "name": "Volture Meat"
+    },
+    {
+     "qty": 1,
+     "name": "Fiddlehead"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 6
+  },
+  "Piquant Pie": {
+   "biome": "Ashlands",
+   "health": 105,
+   "stamina": 35,
+   "ingredients": [
+    {
+     "qty": 2,
+     "name": "Asksvin Tail"
+    },
+    {
+     "qty": 2,
+     "name": "Vineberry Cluster"
+    },
+    {
+     "qty": 4,
+     "name": "Barley Flour"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Smoked Fish": {
+   "biome": "Deep North",
+   "health": 30,
+   "stamina": 16,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Raw Fish"
+    },
+    {
+     "qty": 1,
+     "name": "Kale"
+    },
+    {
+     "qty": 1,
+     "name": "Poteitr"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 7
+  },
+  "Luminous Larva": {
+   "biome": "Deep North",
+   "health": 30,
+   "stamina": 30,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Oats": {
+   "biome": "Deep North",
+   "health": 33,
+   "stamina": 33,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Baked Poteitr": {
+   "biome": "Deep North",
+   "health": 34,
+   "stamina": 17,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Seal Blubber"
+    },
+    {
+     "qty": 2,
+     "name": "Kale"
+    },
+    {
+     "qty": 1,
+     "name": "Poteitr"
+    },
+    {
+     "qty": 2,
+     "name": "Oat Flour"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Meatballs and Poteitr": {
+   "biome": "Deep North",
+   "health": 35,
+   "stamina": 18,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Moose Meat"
+    },
+    {
+     "qty": 2,
+     "name": "Poteitr"
+    },
+    {
+     "qty": 2,
+     "name": "Lingonberries"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 7
+  },
+  "Kale": {
+   "biome": "Deep North",
+   "health": 35,
+   "stamina": 35,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Lingonberries": {
+   "biome": "Deep North",
+   "health": 35,
+   "stamina": 35,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Poteitr": {
+   "biome": "Deep North",
+   "health": 35,
+   "stamina": 35,
+   "ingredients": [],
+   "yield": null,
+   "uses": null,
+   "station": null,
+   "stationLevel": null
+  },
+  "Kale Chips": {
+   "biome": "Deep North",
+   "health": 35,
+   "stamina": 105,
+   "ingredients": [
+    {
+     "qty": 12,
+     "name": "Kale"
+    }
+   ],
+   "yield": 4,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Lingonberry Juice": {
+   "biome": "Deep North",
+   "health": 35,
+   "stamina": 105,
+   "ingredients": [
+    {
+     "qty": 5,
+     "name": "Lingonberries"
+    },
+    {
+     "qty": 5,
+     "name": "Ice"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 7
+  },
+  "Oven Pancake": {
+   "biome": "Deep North",
+   "health": 37,
+   "stamina": 18,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Moose Meat"
+    },
+    {
+     "qty": 2,
+     "name": "Lingonberries"
+    },
+    {
+     "qty": 2,
+     "name": "Poteitr"
+    },
+    {
+     "qty": 2,
+     "name": "Oat Flour"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Fish Soup": {
+   "biome": "Deep North",
+   "health": 37,
+   "stamina": 18,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Raw Fish"
+    },
+    {
+     "qty": 2,
+     "name": "Kale"
+    },
+    {
+     "qty": 2,
+     "name": "Ice"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 7
+  },
+  "Oat Milk": {
+   "biome": "Deep North",
+   "health": 37,
+   "stamina": 110,
+   "ingredients": [
+    {
+     "qty": 5,
+     "name": "Oats"
+    },
+    {
+     "qty": 5,
+     "name": "Ice"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Mead Ketill",
+   "stationLevel": null
+  },
+  "Pancakes": {
+   "biome": "Deep North",
+   "health": 39,
+   "stamina": 115,
+   "ingredients": [
+    {
+     "qty": 2,
+     "name": "Blueberries"
+    },
+    {
+     "qty": 2,
+     "name": "Egg"
+    },
+    {
+     "qty": 1,
+     "name": "Oat Milk"
+    },
+    {
+     "qty": 2,
+     "name": "Oat Flour"
+    }
+   ],
+   "yield": 3,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 6
+  },
+  "Oatmeal": {
+   "biome": "Deep North",
+   "health": 39,
+   "stamina": 115,
+   "ingredients": [
+    {
+     "qty": 2,
+     "name": "Oats"
+    },
+    {
+     "qty": 2,
+     "name": "Lingonberries"
+    },
+    {
+     "qty": 1,
+     "name": "Oat Milk"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 6
+  },
+  "Cooked Seal Blubber": {
+   "biome": "Deep North",
+   "health": 60,
+   "stamina": 20,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Seal Blubber"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Stone Oven",
+   "stationLevel": null
+  },
+  "Ashlands Gourmet Bowl": {
+   "biome": "Deep North",
+   "health": 75,
+   "stamina": 75,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Cooked Asksvin Tail"
+    },
+    {
+     "qty": 5,
+     "name": "Vineberry Cluster"
+    },
+    {
+     "qty": 2,
+     "name": "Scorching Medley"
+    },
+    {
+     "qty": 1,
+     "name": "Fiery Spice Powder"
+    }
+   ],
+   "yield": null,
+   "uses": 10,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Cooked Moose Meat": {
+   "biome": "Deep North",
+   "health": 80,
+   "stamina": 27,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Moose Meat"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Iron cooking station",
+   "stationLevel": null
+  },
+  "Northern Morning Fare": {
+   "biome": "Deep North",
+   "health": 85,
+   "stamina": 85,
+   "ingredients": [
+    {
+     "qty": 3,
+     "name": "Cooked Moose Meat"
+    },
+    {
+     "qty": 5,
+     "name": "Poteitr"
+    },
+    {
+     "qty": 2,
+     "name": "Oat Flour"
+    },
+    {
+     "qty": 1,
+     "name": "Seasoning of the Gourd"
+    }
+   ],
+   "yield": null,
+   "uses": 10,
+   "station": "Food Preparation Table",
+   "stationLevel": null
+  },
+  "Smoked Moose Meat": {
+   "biome": "Deep North",
+   "health": 105,
+   "stamina": 35,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Moose Meat"
+    },
+    {
+     "qty": 2,
+     "name": "Kale"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 7
+  },
+  "Meat In Bread": {
+   "biome": "Deep North",
+   "health": 110,
+   "stamina": 37,
+   "ingredients": [
+    {
+     "qty": 1,
+     "name": "Moose Meat"
+    },
+    {
+     "qty": 2,
+     "name": "Kale"
+    },
+    {
+     "qty": 1,
+     "name": "Oat Flour"
+    },
+    {
+     "qty": 2,
+     "name": "Lingonberries"
+    }
+   ],
+   "yield": 2,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 7
+  },
+  "Seal Meat Soup": {
+   "biome": "Deep North",
+   "health": 110,
+   "stamina": 37,
+   "ingredients": [
+    {
+     "qty": 2,
+     "name": "Seal Blubber"
+    },
+    {
+     "qty": 2,
+     "name": "Kale"
+    },
+    {
+     "qty": 2,
+     "name": "Ice"
+    }
+   ],
+   "yield": null,
+   "uses": null,
+   "station": "Cauldron",
+   "stationLevel": 7
+  }
+ }
+}

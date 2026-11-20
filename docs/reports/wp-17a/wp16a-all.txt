@@ -1,0 +1,11 @@
+PASS  flash: no whole-screen flash (jump > 3/255 that comes back within 300 ms, or a cut > 12), first 20 s (1617 frames)  — 0 jumps []
+PASS  flash: none during 4 view changes  — 0 jumps []
+PASS  flash: bloom at the right and bottom edges (no gauntlet there) stays black, no jump > 0.01  — 92 samples, 0 jumps, corner max 0.0000
+GPU {"baselineUtilPct":22.5,"still":{"fps":59.9,"gpuMsAvg":1.98,"gpuMsP95":18.52,"sceneMs":1.46,"veilMs":0.52,"gpuMsPerSec":119,"samples":298,"tier":"high","gpuUtilPct":56.4},"moving":{"fps":60.1,"gpuMsAvg":15.47,"gpuMsP95":28.78,"sceneMs":9.9,"veilMs":5.57,"gpuMsPerSec":930,"samples":301,"tier":"high","gpuUtilPct":78.3},"view":{"fps":53.5,"gpuMsAvg":17.08,"gpuMsP95":26.45,"sceneMs":12.06,"veilMs":5.02,"gpuMsPerSec":913,"samples":160,"tier":"high","gpuUtilPct":92.3}}
+PASS  gpu: moving pointer keeps ≥ 55 frames/s  — 60.1 fps
+PASS  blue shadow: blank paper above the inset keeps its colour when the table scrolls (blue/red within 0.03, brightness within 5 %)  — b/r 0.770 → 0.770, rgb 212,190,163 → 211,189,163
+PASS  desk: the wood has deep figure (luminance spread p2–p98 ≥ 40/255)  — {"mean":71.4,"sd":20.74,"range":89,"figure":16.53}
+PASS  no page or console errors
+
+7/7 checks pass
+NUMBERS {"flash":{"frames":1617,"loadFlashes":0,"viewFlashes":0,"sample":[]},"bloom":{"samples":92,"jumps":0,"cornerMax":0},"gpu":{"baselineUtilPct":22.5,"still":{"fps":59.9,"gpuMsAvg":1.98,"gpuMsP95":18.52,"sceneMs":1.46,"veilMs":0.52,"gpuMsPerSec":119,"samples":298,"tier":"high","gpuUtilPct":56.4},"moving":{"fps":60.1,"gpuMsAvg":15.47,"gpuMsP95":28.78,"sceneMs":9.9,"veilMs":5.57,"gpuMsPerSec":930,"samples":301,"tier":"high","gpuUtilPct":78.3},"view":{"fps":53.5,"gpuMsAvg":17.08,"gpuMsP95":26.45,"sceneMs":12.06,"veilMs":5.02,"gpuMsPerSec":913,"samples":160,"tier":"high","gpuUtilPct":92.3}},"slip":{"before":{"r":211.81076388888889,"g":189.58159722222223,"b":163.00694444444446},"scrolled":{"r":211.00347222222223,"g":188.81770833333334,"b":162.5625}},"desk":{"after":{"mean":71.4,"sd":20.74,"range":89,"figure":16.53}}}

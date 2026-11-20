@@ -1,0 +1,47 @@
+PASS  1 no dark square: while pieces ink in (time × 0.2), no darkened square wider than 3 blocks (48 px) and ≤ 6 % of the paper  — 4.10 % of the paper, largest darkened square 2 × 2 blocks; v2.2.0 79.16 % of the paper, largest darkened square 19 × 19 blocks
+PASS  1 the same check sees the square on v2.2.0 (a darkened square ≥ 3 × wider)  — 19 vs 2 blocks
+PASS  2 every piece starts before the one before it has finished (no pause in the sequence)  — 19 pieces, longest pause 0 ms, last piece done at 1585 ms
+PASS  2 the sixth piece starts within 60 ms of the fifth (it was ~600 ms)  — #title 460 ms → #description 500 ms
+PASS  2 a little faster: the pieces are in by 1.7 s (was ~1.9 s) and the dots done by 2.4 s (was 2.8 s)  — pieces done 1585 ms; last dot 1985 ms
+PASS  3 pointer resting on the table: shadow maps are not redrawn every frame (≤ 10 % of drawn frames)  — 0 of 14 frames; v2.2.0 74 of 74
+PASS  3 after leaving the table the camera holds still within 2.2 s (it crept on for ~2.5–3 s)  — 1180 ms; v2.2.0 2357 ms
+PASS  4 the table scrolled and stopped, and no paper-settle sound was asked for  — scrollTop 1100; sounds after: ["menu.close","paper.lift","title.quill","paper.lift","title.quill","title.quill","title.quill","title.quill"]
+PASS  5 spark out: the gauntlet is resting (idle pose, parked)  — {"mode":"spark","resting":true,"pose":"hover"}
+PASS  5 it ignores the mouse: the hand moves < 1.5 cm while the pointer sweeps the sheet  — 0.00 cm
+PASS  5 it plays the stretch now and then while resting (first within 12 s)  — stretched: true
+PASS  5 off the sheet the gauntlet is back on the pointer, not resting  — {"mode":"gauntlet","resting":false,"lag":0.006}
+PASS  5 no stretch while the gauntlet is the cursor (10 s watched)  — stretched: false
+PASS  5 the catch still swings a little past the spark (camera held still)  — travel 13.27 cm, swing 1.276 cm; v2.2.0 13.27 cm, 1.276 cm
+PASS  5 …the same swing as v2.2.0 (± 0.05 cm)
+INFO  6 px per cm  — {"main":21.77,"header":16.29,"wood":20.22,"main2":21.77}
+INFO  6 px per cm on v2.2.0  — {"main":17.83,"header":13.57,"wood":13.53,"main2":17.83}
+PASS  6 main framing 20 % closer  — × 1.221
+PASS  6 header/coins zoom out by the same amount as before (main ÷ header unchanged)  — now ÷ 1.337, v2.2.0 ÷ 1.314
+PASS  6 the collections (woodblock) framed 50 % closer  — × 1.494
+PASS  6 in the collections framing the woodblock still runs off the left edge (the gauntlet at x 4 px)  — gauntlet
+PASS  6 the main framing comes back the same after the header and woodblock  — 21.77 → 21.77 px/cm
+PASS  7 the paper margin left of the table equals the margin right of it (± 6 %)  — 70.4 px vs 69.2 px
+PASS  7 the collection title is centred on the sheet (± 2 % of its width)  — title centre 752 px, table centre 753 px, sheet centre 753 px
+PASS  7 the masthead sits in the middle above the collection title  — masthead centre 751 px, bottom 150 ≤ title top 244
+INFO  7 woodblock  — x −19 cm at 88 px (layout unchanged)
+PASS  8 with save: no coin covers text (header view)  — 5 coins, 587 text boxes; clear
+PASS  8 the coins sit close together (each ≤ 1.5 cm from its nearest neighbour), never overlapping, not in one line  — largest gap to a neighbour 0.24 cm; heights span 5.9 cm
+PASS  8 hover is caught near the rim (96 % of the radius)  — {"hopping":true,"spinning":true}
+PASS  8 a new hover restarts the hop and spin before the last one finished  — hop start 10856.6 → 11138.4 ms
+PASS  8 no save: no coin covers text (header view)  — 5 coins, 558 text boxes; clear
+PASS  8 the hover turn is more dramatic (spin 15° → ≥ 60°, tilt 8° → ≥ 18°)  — spin 75°, tilt 22°
+PASS  9 flat: the load button carries its text at ≥ 18 px  — {"id":"loadTop","text":"＋Load characterclick or drop .fch","font":18}
+PASS  9 flat: a save dropped on the page loads
+PASS  9 flat: the load button opens the file picker and loads the save
+PASS  9 desk: a save dropped on the page loads
+PASS  9 desk: the load button opens the file picker and loads the save
+PASS  9 desk: the load coin's legend is engraved large in the middle of the face (label lines, not just the rim)
+INFO  9  — the Import ↥ coin stays (user answer this session: "Keep Import as is"); see DECISIONS
+PASS  10 no save: "start here" and its arrow are drawn and shown  — {"on":true,"drawn":true,"hasSave":false,"scrolled":false,"inked":9754,"opacity":1}
+PASS  10 it adds no text for screen readers or the census (aria-hidden canvas)
+PASS  10 the lettering and arrow cross no text  — clear
+PASS  10 it is set around the "Find your Valheim character" help coin  — coin at 1054, 185
+PASS  10 gone once a save is loaded  — {"on":false,"drawn":true,"hasSave":true,"scrolled":false,"op":0}
+PASS  no page or console errors
+
+41/41 passed

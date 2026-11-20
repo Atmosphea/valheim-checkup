@@ -1,0 +1,628 @@
+{
+ "meta": {
+  "label": "throttle4",
+  "html": "dist/valheim-checkup.html",
+  "named": false,
+  "throttle": 4,
+  "tier": "high",
+  "sampled": false,
+  "framesOnly": true,
+  "at": "2026-11-13T03:47:48.367Z",
+  "errors": [],
+  "tierEnd": "low",
+  "qualityLog": [
+   {
+    "t": 6732.9000000003725,
+    "tier": "medium",
+    "why": "benchmark"
+   },
+   {
+    "t": 10788.599999999627,
+    "tier": "low",
+    "why": "drop"
+   }
+  ],
+  "trimLog": [
+   {
+    "t": 9042.900000000373,
+    "trim": 1,
+    "why": "strain"
+   },
+   {
+    "t": 9810,
+    "trim": 2,
+    "why": "strain"
+   },
+   {
+    "t": 10574.800000000745,
+    "trim": 3,
+    "why": "strain"
+   },
+   {
+    "t": 10788.099999999627,
+    "trim": 0,
+    "why": "reset"
+   },
+   {
+    "t": 19893.199999999255,
+    "trim": 1,
+    "why": "strain"
+   },
+   {
+    "t": 20697.199999999255,
+    "trim": 2,
+    "why": "strain"
+   },
+   {
+    "t": 21454.800000000745,
+    "trim": 3,
+    "why": "strain"
+   },
+   {
+    "t": 46547.5,
+    "trim": 2,
+    "why": "climb"
+   },
+   {
+    "t": 56580.699999999255,
+    "trim": 1,
+    "why": "climb"
+   },
+   {
+    "t": 58686.40000000037,
+    "trim": 2,
+    "why": "strain"
+   },
+   {
+    "t": 59464.90000000037,
+    "trim": 3,
+    "why": "strain"
+   }
+  ],
+  "governor": {
+   "phase": "watch",
+   "benchmarkMs": 22.498333333333342,
+   "drops": 1,
+   "windowMs": 150,
+   "trim": 3,
+   "climbs": 2,
+   "held": false,
+   "gpuMs": 0,
+   "gpuAvgMs": 0.22414404017406564,
+   "gpuParts": [
+    0,
+    0
+   ],
+   "gpuTimer": true
+  }
+ },
+ "rows": [
+  {
+   "name": "load save",
+   "frames": 137,
+   "worstMs": 200.1,
+   "over16": 55,
+   "over33": 6,
+   "mainMs": null,
+   "loafMs": 529,
+   "jsMs": 0,
+   "windowMs": 3626,
+   "gpuMs": 921,
+   "gpuWorst": 74.2,
+   "gpuFrames": 125,
+   "loaf": [
+    {
+     "t": 97,
+     "d": 88,
+     "sl": 1,
+     "top": []
+    },
+    {
+     "t": 202,
+     "d": 201,
+     "sl": 5,
+     "top": []
+    },
+    {
+     "t": 2893,
+     "d": 51,
+     "sl": 6,
+     "top": []
+    },
+    {
+     "t": 3090,
+     "d": 190,
+     "sl": 3,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     402,
+     200.1
+    ],
+    [
+     3268,
+     183.3
+    ],
+    [
+     185,
+     83.3
+    ],
+    [
+     1852,
+     50
+    ],
+    [
+     1935,
+     50
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · drag",
+   "frames": 303,
+   "worstMs": 66.6,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 67,
+   "jsMs": 0,
+   "windowMs": 5121,
+   "gpuMs": 2163,
+   "gpuWorst": 16.8,
+   "gpuFrames": 294,
+   "loaf": [
+    {
+     "t": 4119,
+     "d": 67,
+     "sl": 3,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     4191,
+     66.6
+    ],
+    [
+     1174,
+     16.8
+    ],
+    [
+     1274,
+     16.8
+    ],
+    [
+     1324,
+     16.8
+    ],
+    [
+     1524,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · release",
+   "frames": 97,
+   "worstMs": 450.1,
+   "over16": 62,
+   "over33": 29,
+   "mainMs": null,
+   "loafMs": 741,
+   "jsMs": 0,
+   "windowMs": 3961,
+   "gpuMs": 503,
+   "gpuWorst": 9.5,
+   "gpuFrames": 96,
+   "loaf": [
+    {
+     "t": 18,
+     "d": 321,
+     "sl": 28,
+     "top": []
+    },
+    {
+     "t": 366,
+     "d": 419,
+     "sl": 12,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     808,
+     450.1
+    ],
+    [
+     358,
+     333.2
+    ],
+    [
+     2441,
+     66.8
+    ],
+    [
+     875,
+     66.7
+    ],
+    [
+     1891,
+     66.7
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · drag",
+   "frames": 283,
+   "worstMs": 83.3,
+   "over16": 58,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 76,
+   "jsMs": 0,
+   "windowMs": 5761,
+   "gpuMs": 1761,
+   "gpuWorst": 13.6,
+   "gpuFrames": 278,
+   "loaf": [
+    {
+     "t": 4611,
+     "d": 76,
+     "sl": 2,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     4686,
+     83.3
+    ],
+    [
+     253,
+     33.4
+    ],
+    [
+     537,
+     33.4
+    ],
+    [
+     2136,
+     33.4
+    ],
+    [
+     2486,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · release",
+   "frames": 123,
+   "worstMs": 233.3,
+   "over16": 43,
+   "over33": 4,
+   "mainMs": null,
+   "loafMs": 205,
+   "jsMs": 0,
+   "windowMs": 3035,
+   "gpuMs": 731,
+   "gpuWorst": 12.5,
+   "gpuFrames": 124,
+   "loaf": [
+    {
+     "t": 36,
+     "d": 205,
+     "sl": 16,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     254,
+     233.3
+    ],
+    [
+     971,
+     50
+    ],
+    [
+     1187,
+     50
+    ],
+    [
+     1437,
+     50
+    ],
+    [
+     1137,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Highlights · drag",
+   "frames": 323,
+   "worstMs": 66.7,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 68,
+   "jsMs": 0,
+   "windowMs": 5451,
+   "gpuMs": 2417,
+   "gpuWorst": 14.2,
+   "gpuFrames": 321,
+   "loaf": [
+    {
+     "t": 4569,
+     "d": 68,
+     "sl": 3,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     4639,
+     66.7
+    ],
+    [
+     1689,
+     16.8
+    ],
+    [
+     1989,
+     16.8
+    ],
+    [
+     2906,
+     16.8
+    ],
+    [
+     3656,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Highlights · release",
+   "frames": 133,
+   "worstMs": 83.3,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 89,
+   "jsMs": 0,
+   "windowMs": 2293,
+   "gpuMs": 1350,
+   "gpuWorst": 22.7,
+   "gpuFrames": 133,
+   "loaf": [
+    {
+     "t": 12,
+     "d": 89,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     102,
+     83.3
+    ],
+    [
+     336,
+     16.8
+    ],
+    [
+     536,
+     16.8
+    ],
+    [
+     1702,
+     16.8
+    ],
+    [
+     2252,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Skills & travel · drag",
+   "frames": 322,
+   "worstMs": 33.4,
+   "over16": 1,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5398,
+   "gpuMs": 3506,
+   "gpuWorst": 18.8,
+   "gpuFrames": 321,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     4603,
+     33.4
+    ],
+    [
+     386,
+     16.8
+    ],
+    [
+     836,
+     16.8
+    ],
+    [
+     2453,
+     16.8
+    ],
+    [
+     2553,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Skills & travel · release",
+   "frames": 136,
+   "worstMs": 66.7,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 72,
+   "jsMs": 0,
+   "windowMs": 2330,
+   "gpuMs": 1427,
+   "gpuWorst": 18.8,
+   "gpuFrames": 137,
+   "loaf": [
+    {
+     "t": 12,
+     "d": 72,
+     "sl": 2,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     87,
+     66.7
+    ],
+    [
+     254,
+     16.8
+    ],
+    [
+     1287,
+     16.8
+    ],
+    [
+     1587,
+     16.8
+    ],
+    [
+     1737,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "details open",
+   "frames": 53,
+   "worstMs": 150,
+   "over16": 15,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 1282,
+   "gpuMs": 162,
+   "gpuWorst": 6,
+   "gpuFrames": 54,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     151,
+     150
+    ],
+    [
+     334,
+     33.4
+    ],
+    [
+     401,
+     33.4
+    ],
+    [
+     518,
+     33.4
+    ],
+    [
+     1201,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "details close (burn)",
+   "frames": 203,
+   "worstMs": 166.7,
+   "over16": 29,
+   "over33": 2,
+   "mainMs": null,
+   "loafMs": 140,
+   "jsMs": 0,
+   "windowMs": 4035,
+   "gpuMs": 381,
+   "gpuWorst": 16.4,
+   "gpuFrames": 130,
+   "loaf": [
+    {
+     "t": 18,
+     "d": 140,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     171,
+     166.7
+    ],
+    [
+     588,
+     50
+    ],
+    [
+     1371,
+     33.4
+    ],
+    [
+     1438,
+     33.4
+    ],
+    [
+     1788,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  }
+ ]
+}

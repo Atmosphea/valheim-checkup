@@ -1,0 +1,21 @@
+GPU: ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)
+PASS  ?materials: one card per file 05 material, in table order  — 12 cards: Brushed steel, Engraving, Knurling, Polished gauntlet steel, Gauntlet reflections, Leather, Rivets, Gold, Brass, Oiled wood, Paper, Desk
+PASS  ?materials: every card has the four sample shapes  — 4,4,4,4,4,4,4,4,4,4,4,4
+PASS  ?materials: shapes keep turning (frames advance)  — 36 frames in 0.6 s
+PASS  ?materials (1440 × 900): no console errors or warnings
+PASS  brushed steel: key-light highlight stretched along the brushing direction ≥ 4:1  — σu/σv = 4.50 (anisotropy 0.85); 2.03 with anisotropy 0
+PASS  tiling textures: the wrap seam differs no more than ordinary neighbours (ratio ≤ 1.6, or under 1.5/255)  — walnut.albedo 0.72/0.70, walnut.normal 0.93/0.73, walnut.roughness 1.00/0.67, brushedSteel.roughness 0.25/0.61, brushedSteel.normal 8.00/1.18, (brushedSteel.normal: seam 0.24/3.56 of 255, below visibility), knurl.normal 1.17/1.17, hammered.normal 0.74/0.65, hammered.data 0.67/0.56, leather.normal 1.16/0.98, grain.ink 1.00/1.01, grain.film 1.02/1.00
+PASS  ?materials (390 px): labels inside the window, no sideways scroll, no errors
+PASS  gauntlet steel: the cube reflections pick up the warm paper (box side warmer and brighter than studio-only)  — studio only rgb(105,92,75) → with reflections rgb(173,142,113)
+PASS  same seed (7, two page loads): every texture hash identical  — 18 textures, e.g. paper.albedo 8fabef24
+PASS  other seed (8): the generated textures change  — 17/18 differ (the engraving atlas is text, not noise)
+PASS  generation time is logged on every load  — [desk] textures generated in 364 ms on high
+PASS  generation under 600 ms on High  — 364 / 305 / 320 ms; GPU work done at 330 / 272 / 286 ms; fonts true
+PASS  High tier chosen and GPU memory estimate under 300 MB (1440 × 900, 1×)  — tier high, 295.9 MB: textures 81.01, sceneCanvas 14.83, postScene 69.21, postMix 9.89, postFxaa 0, bloom 23.93, shadows 64, veil 15.71, environment 6.75, gauntletCube 10.5, geometry 0.09
+PASS  startup: the desk fades up from candle-dark (exposure rises to its set value)  — 29 samples: 0.06 → 0.06 → 0.37 → 0.41 → 0.64 → 0.67 … 1.000
+PASS  __vc.engraved() lists every bar name word for word, plus coins, headings, side note, plaque digits  — 22 slots; 13/13 bars; coin:load "Load character"
+PASS  shared: paper normal bitmap in the veil, paper and ink-grain data URLs on #desk, film grain in #grain  — {"paperNormalBitmap":true,"paperDataUrl":281898,"inkGrainDataUrl":425262,"filmGrainDataUrl":138146}
+PASS  desk: no console errors or warnings
+PASS  2× screen on High: the pixel ratio is fitted so the estimate stays under 300 MB  — device 2× → rendering 1×, 295.9 MB
+
+18/18 passed

@@ -1,0 +1,94 @@
+/*
+ * WP-04 stage: the seven stacked layers inside #desk (file 05 "Layer stack").
+ * Everything here is scoped to body.mode-desk / #desk, so flat mode is untouched.
+ *
+ * Rules from file 05: no element between #desk and the layers may set isolation, opacity < 1 or
+ * filter (they would break the blend modes). #desk itself is the one stacking context the
+ * layers blend inside.
+ */
+body.mode-desk { overflow: hidden; }
+
+/* Interim, until WP-06/07 move the controls into #print: toasts stay readable above the desk. */
+body.mode-desk #toast { z-index: 40; }
+
+#desk {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  overflow: hidden;
+  /* Paul, WP-17 item 7: the desk's own dark brown (not grey) while it loads (was #120c08) */
+  background: #24150c;
+  contain: strict;
+}
+/* Paul, WP-17 item 7: until the lit scene is ready only the printed boot paper shows; then the
+   scene and its veil fade in under it, and it fades out onto the real paper */
+#desk > #scene, #desk > #veil { transition: opacity var(--vc-boot-ms, 450ms) ease-out; }
+#desk.vc-booting > #scene, #desk.vc-booting > #veil { opacity: 0; }
+#print .vc-paper-under {
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 30% 40%, rgba(170, 120, 60, 0.10), transparent 45%),
+    radial-gradient(ellipse at 75% 70%, rgba(170, 120, 60, 0.08), transparent 40%),
+    radial-gradient(ellipse at 50% 50%, #cfb89e 55%, #c1a380 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 0.6%, #000 99.4%, transparent), linear-gradient(transparent, #000 1%, #000 99%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 0.6%, #000 99.4%, transparent), linear-gradient(transparent, #000 1%, #000 99%, transparent);
+  -webkit-mask-composite: source-in; mask-composite: intersect;
+  transition: opacity var(--vc-boot-ms, 450ms) ease-in-out var(--vc-boot-ms, 450ms);
+}
+#desk:not(.vc-booting) #print .vc-paper-under { opacity: 0; }
+
+#desk > .vc-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: block;
+}
+
+/* 1 · WebGL scene: desk, paper albedo, board, coins, gauntlet */
+#desk > #scene { mix-blend-mode: normal; pointer-events: none; }
+
+/* 2 · CSS3D printed layer: text and invisible proxies. Authored at ~2× and scaled down in 3D. */
+#desk > #print { mix-blend-mode: normal; pointer-events: auto; }
+#print .vc-printed { will-change: transform; color: #2b1d14; }
+
+/* 3 · Light veil: paper lighting and shadows, multiplied over layers 1 and 2 */
+#desk > #veil { mix-blend-mode: multiply; pointer-events: none; }
+
+/* 4 · Glow: spark light pool, sheen, magic ripples */
+#desk > #glow { mix-blend-mode: screen; pointer-events: none; }
+
+/* 5 · Floating HTML: Details sheet, menus, toasts, tour slips, tooltips.
+   The layer lets the pointer through where it is empty; its content takes the pointer. */
+#desk > #float { mix-blend-mode: normal; pointer-events: none; perspective: 1200px; }
+#desk > #float > * { pointer-events: auto; }
+
+/* 6 · FX: spark core, halo, trail, embers, click ring ("lighter" is the canvas composite inside) */
+#desk > #fx { mix-blend-mode: normal; pointer-events: none; }
+
+/* 7 · Film grain (10%) and vignette (18%), overlay over everything */
+#desk > #grain { mix-blend-mode: overlay; pointer-events: none; }
+#grain > .vc-grain-noise,
+#grain > .vc-grain-vignette { position: absolute; inset: 0; pointer-events: none; }
+#grain > .vc-grain-noise { background-repeat: repeat; image-rendering: pixelated; }
+
+/* WP-04 acceptance test print (only created through __vc.stage.test) */
+#print .vc-test-print {
+  box-sizing: border-box;
+  font: 400 58px/1.15 Georgia, 'Times New Roman', serif;
+  color: rgba(43, 29, 20, 0.92);
+  padding: 0;
+  position: relative;
+}
+#print .vc-test-print > i {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+#print .vc-test-print > i[data-c="tl"] { left: 0; top: 0; }
+#print .vc-test-print > i[data-c="tr"] { right: 0; top: 0; }
+#print .vc-test-print > i[data-c="bl"] { left: 0; bottom: 0; }
+#print .vc-test-print > i[data-c="br"] { right: 0; bottom: 0; }

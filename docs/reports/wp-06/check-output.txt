@@ -1,0 +1,27 @@
+PASS  desk loads with the board, no console errors
+PASS  13 bars, one latched  — latched The Master Chef
+      59 % drag ended at travel 0.5896
+PASS  release at 59 % springs back  — latched The Master Chef
+PASS  release at 61 % latches
+PASS  one drag: press → drag → detent ×n → latch → app:category → return  — 3 detents; bar:press drag… bar:detent drag… bar:detent drag… bar:detent drag… bar:latch app:category bar:return
+PASS  timing: latch → previous bar home (90 + 260 ms) within ±10 %  — 362 ms
+PASS  click without drag never selects
+PASS  hint on the second click within 4 s
+PASS  hint goes after 2.5 s
+PASS  programmatic click selects all 13 views  — 13/13
+PASS  timing: auto-slide 420 ms within ±10 %  — mean 421 ms, range 416–434
+PASS  keyboard: arrows move along the bars, Enter selects, focus kept  — The Hunter → The Master Hunter, focus-visible true
+PASS  keyboard: Home + Space selects the first bar
+PASS  coin hover: hop, then landing contacts
+PASS  timing: hop → first landing (280 ms) within ±10 %  — 283 ms
+PASS  How to coin runs its original handler (opens the How-to)
+      how-to closed by Escape: true
+PASS  Import coin: original file chooser opens, coin flips
+PASS  Load coin: original file chooser opens
+PASS  Export coin follows the original disabled state  — disabled true
+PASS  Sound coin toggles mute, face and aria-pressed  — {"muted":true,"pressed":"false","face":1,"ev":1}
+PASS  file drag on the desk: one drag:file-enter, one drop:file, forwarded to Load (non-.fch not flipped)  — drag:file-enter drop:file app:load
+PASS  engraved strings: 13 bar names, heading and side note word for word  — {"bars":true,"heading":true,"side":true,"n":38}
+PASS  390 px loads, no console errors
+
+23/23 passed

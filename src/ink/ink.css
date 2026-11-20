@@ -1,0 +1,93 @@
+/*
+ * WP-10: stamps, dots, count-up and the wash, in both modes (desk sizes in src/styles/desk.css;
+ * flat look in WP-13). Everything here is paint only: no rule changes layout during a sequence.
+ */
+
+/* ── Stamp parts ─────────────────────────────────────────────────────────────────────── */
+.metric[data-metric] { position: relative; }
+.metric > .stamp-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  color: currentColor;
+}
+.metric > strong { position: relative; }
+
+/* the count-up and the scramble draw over the real number, which stays in the page (tests and
+   screen readers read the final value at once); the real glyphs are see-through meanwhile */
+.metric > strong[data-show] { -webkit-text-fill-color: transparent; -webkit-text-stroke-color: transparent; }
+.metric > strong[data-show]::after {
+  content: attr(data-show);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  translate: -50% 0;
+  white-space: nowrap;
+  -webkit-text-fill-color: currentColor;
+  -webkit-text-stroke-color: rgba(24, 14, 8, 0.42);
+}
+/* the 180 ms ink wipe for a changed number (smaller updates): new ink left of --vc-wipe, old right */
+.metric > strong[data-old] {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: transparent;
+  background: linear-gradient(90deg, currentColor calc(var(--vc-wipe, 0) * 100%), transparent calc(var(--vc-wipe, 0) * 100%));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.metric > strong[data-old]::after {
+  content: attr(data-old);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  translate: -50% 0;
+  white-space: nowrap;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, transparent calc(var(--vc-wipe, 0) * 100%), currentColor calc(var(--vc-wipe, 0) * 100%));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* a stamp not landed yet (sequence): nothing printed there */
+.metric.vc-wait { opacity: 0 !important; }
+
+/* fresh ink: wet highlight on the strokes, drying (--vc-wet 1 → 0) */
+.metric[data-metric] > strong,
+.metric[data-metric] > span { text-shadow: 0 calc(-0.6px * var(--vc-wet, 0)) 0 rgba(255, 250, 235, calc(0.55 * var(--vc-wet, 0))); }
+
+/* ── Dot grids: rows of 10, centred; diameter min(0.42 cm, inner width ÷ 10 × 0.7) ──────── */
+.metric > .dots {
+  container-type: inline-size;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  width: 100%;
+  --vc-dot: min(calc(0.42 * var(--cm, 37.8px)), 7cqw);
+}
+.metric > .dots:not([data-dots]) { visibility: hidden; }
+/* Paul, WP-17 item 9: Undiscovered comes before Unverified (the stamps swap places).
+   Paul, WP-18 item 13: every grid keeps Completed's layout (the Missing grid is no longer turned
+   half round); which circles hold ink, and the order they ink in, is stamps.js `dotOrder`. */
+#metrics > .metric[data-metric="discovered"] { order: 3; }
+#metrics > .metric[data-metric="unknown"] { order: 4; }
+.metric > .dots > .dot {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(var(--vc-dot) * 1.3);
+}
+.metric > .dots > .dot > i {
+  display: block;
+  width: var(--vc-dot);
+  height: var(--vc-dot);
+  border-radius: 50%;
+  border: max(1px, calc(var(--vc-dot) * 0.13)) solid currentColor;
+  /* filled = full ink; partial = the ink strength (DECISIONS 5 draws at least 25 %) */
+  background: color-mix(in srgb, currentColor calc(var(--f, 0) * 100%), transparent);
+  box-shadow: 0 0 calc(var(--vc-dot) * 0.9 * var(--g, 0)) calc(var(--vc-dot) * 0.15 * var(--g, 0)) rgba(255, 244, 214, calc(0.9 * var(--g, 0)));
+  opacity: 0.9;
+}

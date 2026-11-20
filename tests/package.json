@@ -1,0 +1,12 @@
+{
+  "name": "valheim-checkup-checker-tests",
+  "private": true,
+  "description": "Checker-owned parity and golden tests (WP-00). Run with TARGET=baseline|flat|desk.",
+  "scripts": {
+    "test": "playwright test",
+    "test:baseline": "TARGET=baseline playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  }
+}

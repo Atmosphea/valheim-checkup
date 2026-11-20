@@ -1,0 +1,483 @@
+/*
+ * WP-13 · the flat parchment skin. The original page structure (header, sidebar, main) and the
+ * original responsive rules stay; this file only repaints them in the desk's paper and ink.
+ * Every rule is scoped to body.mode-flat, so desk mode never sees it.
+ *
+ * Same faces as the desk (Grenze Gotisch headings, IM Fell English text, IM Fell English SC
+ * labels), same inks (file 05), the same ink-grain mask on headings and stamps. The paper is a
+ * 2D-canvas tile (src/flat/paper.js) written to --vc-flat-paper; until it is ready (idle time)
+ * the flat paper colour and two soft gradients stand in.
+ */
+
+body.mode-flat {
+  color-scheme: light;
+  --vc-ink: rgba(43, 29, 20, 0.92);
+  --vc-ink-solid: #2b1d14;
+  --vc-ink-soft: rgba(43, 29, 20, 0.8);
+  --vc-ink-faint: rgba(43, 29, 20, 0.2);
+  --vc-green: #4f6b34;
+  --vc-green-row: #4a6631; /* Paul, WP-17 item 23 */
+  --vc-red: #8e2a1e;
+  --vc-blue: #3c5a7a;
+  --vc-grey: #6b655c;
+  /* WP-14: text inks. Body text needs 4.5:1 at the ink grain's 0.85 floor on the darker paper; the file 05
+     stamp inks above stay for stamps, dots and inlays (3:1 at their size). */
+  --vc-green-text: #374a24;
+  --vc-red-text: #84271c;
+  --vc-blue-text: #2f465f;
+  --vc-grey-text: #48443e;
+  --vc-paper-tone: #efdcb8;
+  --vc-brass: #b98d40;
+  --vc-brass-dark: #7a5a22;
+  --vc-focus: #8c4a14;
+  /* the original palette, re-pointed at ink and paper (inline styles and app.js colours follow) */
+  --bg: #efdcb8;
+  --panel: rgba(255, 248, 232, 0.35);
+  --line: rgba(43, 29, 20, 0.28);
+  --text: #2b1d14;
+  --muted: rgba(43, 29, 20, 0.8);
+  --gold: #7a4f12;
+  --green: #4f6b34;
+  --red: #8e2a1e;
+  margin: 0;
+  min-height: 100vh;
+  color: var(--vc-ink);
+  background-color: var(--vc-paper-tone);
+  background-image:
+    radial-gradient(140% 100% at 50% 0%, rgba(255, 249, 232, 0.5), rgba(255, 249, 232, 0) 55%),
+    radial-gradient(160% 120% at 50% 110%, rgba(120, 78, 36, 0.2), rgba(120, 78, 36, 0) 60%),
+    var(--vc-flat-paper, none);
+  background-size: 100% 100%, 100% 100%, 384px 384px;
+  background-attachment: fixed, fixed, scroll;
+  font: 400 17px / 1.45 'IM Fell English', Georgia, serif;
+  font-synthesis: none;
+}
+/* a darker edge, like the sheet's deckle shadow on the desk */
+body.mode-flat::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 120px rgba(92, 56, 22, 0.28);
+}
+body.mode-flat > .layout { position: relative; z-index: 1; }
+
+body.mode-flat :is(button, input, select, textarea) { font-family: inherit; }
+body.mode-flat :is(b, strong) { font-weight: 400; }
+body.mode-flat a { color: #6b3d0c; text-decoration-thickness: 0.06em; text-underline-offset: 0.14em; }
+body.mode-flat code { font: 0.82em / 1.35 ui-monospace, Menlo, monospace; overflow-wrap: anywhere; }
+body.mode-flat .eyebrow {
+  font: 400 13px / 1.2 'IM Fell English SC', Georgia, serif;
+  letter-spacing: 0.08em;
+  color: var(--vc-ink-soft);
+}
+
+/* rough ink on headings and stamps (the desk's file 05 filter) plus the ink-grain mask */
+body.mode-flat :is(.brand, #title, .insight-intro h1, #dropzone h1) {
+  filter: url(#vc-ink-rough);
+  -webkit-text-stroke: 0.6px rgba(24, 14, 8, 0.38);
+  -webkit-mask-image: var(--vc-ink-grain, none);
+  mask-image: var(--vc-ink-grain, none);
+  -webkit-mask-size: var(--vc-grain-tile, 64px);
+  mask-size: var(--vc-grain-tile, 64px);
+}
+
+/* ── Printed controls: inked boxes; hover 8 % darker with a 0.3 px bleed, press into the paper ── */
+body.mode-flat :is(button, select) {
+  appearance: none;
+  -webkit-appearance: none;
+  color: var(--vc-ink-solid);
+  background: transparent;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  font: 400 15px / 1.25 'IM Fell English SC', Georgia, serif;
+  letter-spacing: 0.03em;
+  transition: color 120ms ease-out, text-shadow 120ms ease-out, transform 90ms ease-out, box-shadow 90ms ease-out;
+}
+body.mode-flat select {
+  padding: 7px 30px 7px 10px;
+  font: 400 15px / 1.25 'IM Fell English', Georgia, serif;
+  letter-spacing: 0;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 12'%3E%3Cpath d='M2 2.2 Q6 6 10 9.6 Q14.3 5.6 18.2 1.8' fill='none' stroke='%232b1d14' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 9px center / 13px auto;
+}
+body.mode-flat select option { background: #f6e8cf; color: #2b1d14; }
+@media (hover: hover) and (pointer: fine) {
+  body.mode-flat :is(button, select, summary, a, .filterbar label):hover:not(:disabled) {
+    color: #160c05;
+    text-shadow: 0 0 0.3px currentColor;
+    border-color: currentColor;
+  }
+}
+body.mode-flat :is(button, select, summary, .filterbar label):is(:active, .vc-tap):not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: inset 0 1px 3px rgba(43, 29, 20, 0.3);
+  color: #120904;
+}
+body.mode-flat :is(button, select, input, textarea):disabled { opacity: 0.45; cursor: default; }
+body.mode-flat :is(button, a, input, select, summary, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--vc-focus);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 7px rgba(255, 176, 84, 0.3);
+}
+body.mode-flat button.primary { background: transparent; color: var(--vc-ink-solid); border-color: currentColor; font-weight: 400; }
+
+body.mode-flat input[type="search"],
+body.mode-flat input[type="number"],
+body.mode-flat textarea {
+  color: var(--vc-ink-solid);
+  background: rgba(255, 250, 238, 0.35);
+  border: 0;
+  border-bottom: 1.5px solid currentColor;
+  border-radius: 0;
+  font: italic 400 15px / 1.25 'IM Fell English', Georgia, serif;
+}
+body.mode-flat textarea { border: 1.5px solid var(--vc-ink-faint); font-style: normal; }
+body.mode-flat input::placeholder { color: rgba(43, 29, 20, 0.62); }
+body.mode-flat input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  background: transparent no-repeat center / 118% auto;
+  vertical-align: -3px;
+  cursor: pointer;
+}
+body.mode-flat input[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M3.5 10.5 Q6 12.4 8 16.2 Q11.6 8.4 18.4 2.6' fill='none' stroke='%232b1d14' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────────────────────── */
+body.mode-flat header.top {
+  background: rgba(243, 226, 194, 0.94);
+  background-image: var(--vc-flat-paper, none);
+  background-size: 384px 384px;
+  border-bottom: 1.5px solid var(--vc-ink);
+  box-shadow: 0 1px 0 rgba(255, 250, 238, 0.6);
+  transition: box-shadow 200ms ease-out;
+}
+/* Paul, WP-16 item 20: a slightly shorter header (was 20 px top and bottom, 14 px between rows) */
+body.mode-flat header.top { padding-top: 12px; padding-bottom: 10px; row-gap: 8px; }
+body.mode-flat header.top .statline { padding-top: 8px; }
+body.mode-flat header.top.vc-lifted { box-shadow: 0 8px 18px -8px rgba(60, 34, 12, 0.45); }
+body.mode-flat header.top.favorite-drop { outline: 2px dashed var(--vc-ink-solid); outline-offset: -6px; background-color: rgba(255, 214, 150, 0.6); }
+body.mode-flat .brand { font: 700 38px / 1 'Grenze Gotisch', Georgia, serif; letter-spacing: 0.01em; color: var(--vc-ink-solid); }
+body.mode-flat .profile strong { font: 400 21px / 1.2 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat .profile span { font-size: 13px; color: var(--vc-ink-soft); font-style: italic; }
+body.mode-flat .statline { border-top-color: var(--vc-ink-faint); font-size: 14px; }
+body.mode-flat .statline .eyebrow { font-size: 12px; }
+body.mode-flat .statline b { font-family: 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+
+/* favourites: paper tags on the header */
+body.mode-flat .favorite {
+  border: 1px solid rgba(43, 29, 20, 0.45);
+  border-radius: 2px;
+  background: linear-gradient(160deg, #f8ecd2, #ecd8b2);
+  box-shadow: 0 2px 4px rgba(60, 34, 12, 0.22);
+  transform: rotate(-0.8deg);
+}
+body.mode-flat .favorite:nth-child(2n) { transform: rotate(0.7deg); }
+body.mode-flat .favorite button { border: 0; color: var(--vc-ink-solid); font: 400 14px / 1.25 'IM Fell English', Georgia, serif; }
+body.mode-flat .favorite b { color: var(--vc-ink-solid); font-family: 'IM Fell English SC', Georgia, serif; }
+body.mode-flat .favorite small { color: var(--vc-ink-soft); font-size: 11px; }
+
+/* ── Coins (step 3): flat CSS coins, engraved legends, hop on hover, press on tap ──────────── */
+body.mode-flat .top-actions { align-items: center; }
+body.mode-flat .top-actions .vc-coin {
+  --vc-gold-hi: #f6dc98;
+  --vc-gold: #d0a24c;
+  --vc-gold-lo: #8a6122;
+  position: relative;
+  color: #3b2508;
+  border: 0;
+  border-radius: 999px;
+  background:
+    radial-gradient(closest-side, rgba(0, 0, 0, 0) 80%, rgba(84, 55, 14, 0.5) 83%, rgba(0, 0, 0, 0) 86%),
+    radial-gradient(120% 120% at 32% 26%, var(--vc-gold-hi), var(--vc-gold) 45%, var(--vc-gold-lo) 100%);
+  box-shadow:
+    inset 0 1.5px 1px rgba(255, 246, 214, 0.75),
+    inset 0 -2px 3px rgba(70, 42, 8, 0.55),
+    0 3px 5px rgba(60, 34, 12, 0.35),
+    0 1px 0 rgba(60, 34, 12, 0.5);
+  /* engraved: a light lower edge and a dark upper edge on every letter */
+  text-shadow: 0 1px 0 rgba(255, 238, 190, 0.7), 0 -1px 0 rgba(70, 40, 6, 0.45);
+  font-family: 'IM Fell English SC', Georgia, serif;
+  letter-spacing: 0.02em;
+  transition: transform 160ms cubic-bezier(.3, 1.6, .5, 1), box-shadow 160ms ease-out, filter 120ms ease-out;
+}
+body.mode-flat .top-actions .vc-coin svg { filter: drop-shadow(0 1px 0 rgba(255, 238, 190, 0.7)); }
+body.mode-flat .top-actions .vc-coin:is(:active, .vc-tap):not(:disabled) {
+  transform: translateY(1.5px) scale(0.97);
+  box-shadow: inset 0 2px 4px rgba(70, 42, 8, 0.6), 0 1px 1px rgba(60, 34, 12, 0.4);
+}
+body.mode-flat .top-actions .vc-coin:disabled { filter: saturate(0.4) brightness(0.92); opacity: 0.6; }
+/* Paul, WP-18 item 8: a more dramatic hover: a higher hop with a full spin and a rocking settle (was a
+   5 px hop in 300 ms); flat/index.js restarts it on every new hover */
+body.mode-flat .top-actions .vc-coin.vc-hop { animation: vc-coin-hop 620ms cubic-bezier(.3, .7, .4, 1); }
+@keyframes vc-coin-hop {
+  0% { transform: translateY(0) rotate(0deg) scale(1); }
+  28% { transform: translateY(-9px) rotate(-170deg) scale(1.07); box-shadow: inset 0 1.5px 1px rgba(255, 246, 214, 0.75), inset 0 -2px 3px rgba(70, 42, 8, 0.55), 0 12px 12px rgba(60, 34, 12, 0.26); }
+  55% { transform: translateY(0) rotate(-345deg) scale(1); }
+  70% { transform: translateY(-2px) rotate(-366deg) scale(1.01); }
+  84% { transform: translateY(0) rotate(-358deg); }
+  100% { transform: translateY(0) rotate(-360deg); }
+}
+body.mode-flat .top-actions .vc-coin.vc-coin-ok { animation: vc-coin-flip 500ms ease-in-out; }
+body.mode-flat .top-actions .vc-coin.vc-coin-fail { animation: vc-coin-shake 360ms ease-in-out; }
+@keyframes vc-coin-flip { 50% { transform: scaleX(0.06); } }
+@keyframes vc-coin-shake { 20%, 60% { transform: translateX(-3px); } 40%, 80% { transform: translateX(3px); } }
+body.mode-flat .top-actions .icon-button.vc-coin { width: 46px; height: 46px; font-size: 22px; }
+/* Paul, WP-18 item 9: the Load button's words bigger and more legible (14 → 18 px, the note 11 → 13 px) */
+body.mode-flat .top-actions .vc-coin.upload { min-width: 150px; min-height: 80px; padding: 6px 18px; font-size: 18px; line-height: 1.1; }
+/* Paul, WP-16 item 23: coins set down by hand, not in a straight line: each sits a little higher or
+   lower and turned a little (`translate`/`rotate` leave the hop, flip and shake transforms alone) */
+/* Paul, WP-18 item 8: the coins sit closer (gap 9 → 3 px) and further off a line (±3–4 → ±6–8 px) */
+body.mode-flat .top-actions { gap: 3px; }
+body.mode-flat .top-actions > :nth-child(5n + 1) { translate: 0 6px; rotate: -7deg; }
+body.mode-flat .top-actions > :nth-child(5n + 2) { translate: 0 -7px; rotate: 5deg; }
+body.mode-flat .top-actions > :nth-child(5n + 3) { translate: 0 8px; rotate: -3deg; }
+body.mode-flat .top-actions > :nth-child(5n + 4) { translate: 0 -5px; rotate: 4deg; }
+body.mode-flat .top-actions > :nth-child(5n + 5) { translate: 0 4px; rotate: -9deg; }
+body.mode-flat .top-actions .vc-coin.upload small { font: italic 400 13px 'IM Fell English', Georgia, serif; }
+body.mode-flat .top-actions .vc-coin.upload.drag,
+body.mode-flat.vc-file-drag .top-actions .vc-coin.upload { outline: 2px dashed var(--vc-ink-solid); outline-offset: 4px; box-shadow: 0 0 18px 6px rgba(255, 190, 90, 0.55); }
+body.mode-flat .top-actions .vc-howto-button.vc-coin { min-height: 46px; padding: 0 16px; font-size: 15px; }
+body.mode-flat .top-actions .vc-flat-sound {
+  display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+  width: 46px; height: 46px; padding: 0; flex-direction: column; font-size: 10px;
+}
+body.mode-flat .top-actions .vc-flat-sound span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+body.mode-flat .vc-flat-sound .vc-mute-slash { opacity: 0; }
+body.mode-flat .vc-flat-sound[aria-pressed="false"] .vc-mute-slash { opacity: 1; }
+
+/* ── Sidebar (step 2): inked labels, brass inlays, a steel knob mark on the active one ──────── */
+body.mode-flat .sidebar { background: transparent; border-right: 1.5px solid var(--vc-ink-faint); }
+body.mode-flat .workspace { background: transparent; }
+body.mode-flat .overall strong { font: 400 34px / 1.1 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat .overall span { color: var(--vc-ink-soft); font-size: 15px; }
+body.mode-flat .category {
+  position: relative;
+  border: 0;
+  border-radius: 2px;
+  color: var(--vc-ink-solid);
+  background: transparent;
+  font: 400 16px / 1.25 'IM Fell English', Georgia, serif;
+  letter-spacing: 0;
+}
+body.mode-flat .category .label span { font-weight: 400; font-size: 16px; }
+body.mode-flat .category .label small { color: var(--vc-ink-soft); font: 400 13px 'IM Fell English SC', Georgia, serif; }
+body.mode-flat .category.active { background: rgba(255, 246, 224, 0.45); box-shadow: inset 0 0 0 1px rgba(43, 29, 20, 0.3); }
+/* the steel knob mark, left of the active label */
+body.mode-flat .category.active::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f4f5f6, #9aa0a6 45%, #4b5056 100%);
+  box-shadow: 0 1px 2px rgba(20, 12, 4, 0.55), inset 0 -1px 1px rgba(0, 0, 0, 0.35);
+}
+/* the brass inlay: a groove cut in the paper and a brass strip poured to the count */
+body.mode-flat .track {
+  height: 5px;
+  background: linear-gradient(rgba(60, 34, 12, 0.32), rgba(60, 34, 12, 0.14));
+  box-shadow: inset 0 1px 1px rgba(40, 22, 6, 0.35), 0 1px 0 rgba(255, 250, 238, 0.55);
+  border-radius: 3px;
+}
+body.mode-flat .track i {
+  background: linear-gradient(#f2d48b, #c49438 50%, #8a6122);
+  box-shadow: inset 0 0.5px 0 rgba(255, 245, 210, 0.8);
+}
+body.mode-flat .side-note { color: var(--vc-ink-soft); font-style: italic; }
+
+/* ── Hero, messages, title ───────────────────────────────────────────────────────────────── */
+body.mode-flat .loadbox {
+  background: rgba(255, 248, 230, 0.3);
+  border: 2px dashed rgba(43, 29, 20, 0.55);
+  border-radius: 4px;
+}
+body.mode-flat .loadbox.drag,
+body.mode-flat.vc-file-drag .loadbox { border-style: solid; border-color: var(--vc-ink-solid); background: rgba(255, 214, 150, 0.35); box-shadow: inset 0 0 22px rgba(255, 170, 80, 0.4); }
+body.mode-flat .loadbox h1 { font: 700 34px / 1.05 'Grenze Gotisch', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat .loadbox p { color: var(--vc-ink-soft); }
+body.mode-flat .loadbox p strong { font-family: 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat .notice { background: rgba(255, 248, 230, 0.4); border: 1.5px solid var(--vc-ink-faint); color: var(--vc-ink-solid); border-radius: 3px; }
+body.mode-flat .notice.error { border-color: var(--vc-red-text); color: var(--vc-red-text); background: rgba(142, 42, 30, 0.06); }
+/* Paul, WP-16 item 27: bigger, centred, ornate (surfaces.css adds the initial and flourishes) */
+body.mode-flat .title-row { display: block; }
+body.mode-flat .title-row > label { position: absolute; top: 0; right: 0; }
+body.mode-flat #title { font: 700 58px / 1.02 'Grenze Gotisch', Georgia, serif; color: var(--vc-ink-solid); margin-top: 6px; }
+body.mode-flat #description { font-size: 19px; color: var(--vc-ink); }
+body.mode-flat .collection-notes p { font: italic 400 15px / 1.4 'IM Fell English', Georgia, serif; color: var(--vc-ink-soft); }
+body.mode-flat .title-row > label { --cm: 25px; --vc-ink-soft: rgba(43, 29, 20, 0.8); --vc-ink-solid: #2b1d14; }
+
+/* ── Stamps (WP-10 frames and dots, in the desk's inks) ─────────────────────────────────── */
+body.mode-flat .metric {
+  position: relative;
+  border: 0;
+  border-radius: 6px;
+  background: color-mix(in srgb, currentColor 3.5%, transparent); /* WP-14: lighter card, stamp ink ≥ 3:1 on it */
+  color: var(--vc-grey);
+  text-align: center;
+  filter: url(#vc-ink-rough) drop-shadow(0 0 var(--vc-bleed, 0px) currentColor);
+  -webkit-mask-image: var(--vc-stamp-grain, var(--vc-ink-grain, none));
+  mask-image: var(--vc-stamp-grain, var(--vc-ink-grain, none));
+  -webkit-mask-size: var(--vc-grain-tile, 64px);
+  mask-size: var(--vc-grain-tile, 64px);
+}
+body.mode-flat .metric.done { color: var(--vc-green); transform: rotate(-1deg); }
+body.mode-flat .metric.missing { color: var(--vc-red); transform: rotate(0.7deg); }
+body.mode-flat .metric.unknown { color: var(--vc-blue); transform: rotate(-0.5deg); }
+body.mode-flat .metric.discovered { color: var(--vc-grey); transform: rotate(0.9deg); }
+body.mode-flat .metric[data-metric] { display: flex; flex-direction: column; align-items: center; }
+body.mode-flat .metric > span { order: 1; }
+body.mode-flat .metric > strong { order: 2; }
+body.mode-flat .metric > .dots { order: 3; margin-top: 6px; }
+body.mode-flat .metric strong { font: 400 34px / 1.05 'IM Fell English SC', Georgia, serif; color: currentColor; }
+body.mode-flat .metric span { font: 400 19px / 1.2 'IM Fell English SC', Georgia, serif; letter-spacing: 0.02em; color: currentColor; }
+/* the impression grain (WP-10, a fresh mask per landing) must never eat a letter: heavier strokes */
+body.mode-flat .metric[data-metric] > :is(strong, span) { -webkit-text-stroke: 0.9px currentColor; paint-order: stroke fill; }
+body.mode-flat .metric:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+/* the progress rule, a pen stroke */
+body.mode-flat .main-track { background: rgba(43, 29, 20, 0.14); box-shadow: none; height: 4px; }
+body.mode-flat .main-track > i { background: var(--vc-ink-solid); }
+body.mode-flat .progress-hover { background: #f6e8cf; color: var(--vc-ink-solid); border: 1px solid var(--vc-ink-faint); }
+
+/* ── Filters, list, table ───────────────────────────────────────────────────────────────── */
+body.mode-flat .filterbar label { color: var(--vc-ink-solid); display: inline-flex; align-items: center; gap: 6px; }
+body.mode-flat .list-info { color: var(--vc-ink-soft); font-style: italic; }
+body.mode-flat .tablewrap { background: transparent; border: 0; border-top: 1.5px solid var(--vc-ink); border-radius: 0; }
+body.mode-flat table { background: transparent; }
+body.mode-flat th {
+  background: rgba(239, 220, 184, 0.92);
+  color: var(--vc-ink);
+  border-bottom: 1.5px solid var(--vc-ink);
+  font: 400 15px / 1.25 'IM Fell English SC', Georgia, serif;
+  letter-spacing: 0.04em;
+}
+body.mode-flat td { background: none; color: var(--vc-ink); border-color: var(--vc-ink-faint); }
+body.mode-flat tbody tr:hover td { background: rgba(43, 29, 20, 0.045); }
+body.mode-flat tr[class^="row-"] td:first-child { box-shadow: inset 3px 0 var(--vc-grey); }
+body.mode-flat tr.row-done td:first-child { box-shadow: inset 3px 0 var(--vc-green); }
+body.mode-flat tr.row-missing td:first-child { box-shadow: inset 3px 0 var(--vc-red); }
+body.mode-flat tr.row-unknown td:first-child { box-shadow: inset 3px 0 var(--vc-blue); }
+body.mode-flat .item-name { font-weight: 400; color: var(--vc-ink-solid); }
+body.mode-flat .row-done .item-name { font-style: italic; color: var(--vc-ink-soft); }
+body.mode-flat .sub { color: var(--vc-ink-soft); }
+body.mode-flat .note-indicator { color: var(--vc-blue-text); }
+body.mode-flat .status { font: 400 15px / 1.2 'IM Fell English SC', Georgia, serif; color: var(--vc-grey-text); }
+body.mode-flat .status.done { color: var(--vc-green-text); }
+body.mode-flat .status.missing { color: var(--vc-red-text); font-weight: 400; }
+body.mode-flat .status.unknown { color: var(--vc-blue-text); }
+body.mode-flat .pin { border: 0; box-shadow: none; color: rgba(43, 29, 20, 0.72); font-size: 20px; }
+body.mode-flat .pin.on { color: #7a4f12; }
+body.mode-flat .item-actions button { font-size: 13px; padding: 3px 10px; }
+body.mode-flat .empty { color: var(--vc-ink-soft); font-style: italic; }
+
+/* ── Insights ───────────────────────────────────────────────────────────────────────────── */
+body.mode-flat .insight-intro h1 { font: 700 46px / 1.02 'Grenze Gotisch', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat .insight-card { background: rgba(255, 248, 230, 0.3); border: 1.5px solid var(--vc-ink-faint); border-radius: 3px; color: var(--vc-ink); }
+body.mode-flat .insight-card h2 { font: 400 22px / 1.15 'IM Fell English SC', Georgia, serif; letter-spacing: 0.04em; color: var(--vc-ink-solid); }
+body.mode-flat .champion { background: none; border: 1px solid var(--vc-ink-faint); border-radius: 3px; }
+body.mode-flat .champion:first-child { border-color: var(--vc-ink-soft); }
+body.mode-flat .rank { font: 700 24px / 1 'Grenze Gotisch', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat .champion-label b, body.mode-flat .work-stats b, body.mode-flat .skill b { font-family: 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat .skill b { color: var(--vc-green-text); }
+body.mode-flat .champion button { border: 0; padding: 0; }
+body.mode-flat .chart-track { background: rgba(60, 34, 12, 0.18); }
+body.mode-flat .chart-track i { background: var(--vc-ink-solid); }
+body.mode-flat .skill .chart-track i { background: var(--vc-green); }
+body.mode-flat #lossResult { font-style: italic; color: var(--vc-blue-text); }
+
+/* ── Help, footer ───────────────────────────────────────────────────────────────────────── */
+body.mode-flat details.help { background: rgba(255, 248, 230, 0.3); border: 1.5px solid var(--vc-ink-faint); border-radius: 3px; color: var(--vc-ink); }
+body.mode-flat details.help > summary { font: 400 17px / 1.3 'IM Fell English SC', Georgia, serif; color: var(--vc-ink-solid); }
+body.mode-flat details.help p strong { font-family: 'IM Fell English SC', Georgia, serif; }
+body.mode-flat .vc-desk-switch,
+body.mode-flat .vc-pointer-switch { display: flex; align-items: center; gap: 8px; margin: 10px 0 0; }
+body.mode-flat .resources, body.mode-flat .footer { color: var(--vc-ink-soft); }
+
+/* ── Floating sheets in flat (#float without the scene) ─────────────────────────────────── */
+body.mode-flat > #float {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  pointer-events: none;
+  perspective: 1200px;
+}
+body.mode-flat > #float > * { pointer-events: auto; }
+body.mode-flat > #float > :is(.vc-unfold, .vc-tip, .vc-ripple) { pointer-events: none; }
+body.mode-flat #float :is(.vc-unfold-panel, .vc-menu, .vc-tip, #toast.vc-toast-slip, .vc-details-layer > #itemDialog, [data-vc-id="itemDialog"], .vc-howto) {
+  background-size: 100% 100%, 100% 100%, 384px 384px;
+}
+/* the original dialog's own frame gives way to the parchment sheet */
+body.mode-flat #float :is(.vc-details-layer > #itemDialog, [data-vc-id="itemDialog"]) { border: 1px solid rgba(43, 29, 20, 0.35); }
+body.mode-flat #float .vc-howto-layer { background: rgba(14, 8, 3, 0.28); }
+
+/* ── Reduced motion (step 7): a 150 ms fade and scale instead of unfolds; no hop, no shake ── */
+.vc-fade-in { animation: vc-flat-fade 150ms ease-out both; }
+@keyframes vc-flat-fade { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  body.mode-flat .top-actions .vc-coin:is(.vc-hop, .vc-coin-ok, .vc-coin-fail) { animation: none; }
+  .vc-fade-in { animation: vc-flat-fade 150ms ease-out both !important; }
+}
+
+/* ── Phones (step 5: under 760 px) ──────────────────────────────────────────────────────── */
+@media (max-width: 760px) {
+  body.mode-flat { font-size: 16px; background-attachment: scroll; }
+  body.mode-flat .brand { font-size: 31px; }
+  body.mode-flat .mobile-select {
+    padding: 11px 36px 11px 14px;
+    font: 400 19px / 1.2 'IM Fell English SC', Georgia, serif;
+    background-color: rgba(255, 248, 230, 0.4);
+    box-shadow: 0 2px 5px rgba(60, 34, 12, 0.18);
+  }
+  body.mode-flat #title, body.mode-flat .insight-intro h1 { font-size: 40px; }
+  body.mode-flat .title-row > label { position: static; display: block; text-align: center; margin-top: 8px; }
+  body.mode-flat .metric strong { font-size: 30px; }
+  /* Paul, WP-18 item 9: bigger here too (12 → 15 px; 14 px on phones, below) */
+  body.mode-flat .top-actions .vc-coin.upload { min-width: 112px; min-height: 75px; padding: 7px 10px; font-size: 15px; }
+  body.mode-flat .top-actions .icon-button.vc-coin { width: 38px; height: 38px; font-size: 20px; }
+  body.mode-flat .top-actions .vc-flat-sound { width: 38px; height: 38px; }
+  body.mode-flat .top-actions .vc-howto-button.vc-coin { border-radius: 20px; min-height: 75px; padding: 4px 8px; font-size: 12px; }
+}
+@media (max-width: 480px) {
+  /* Paul, WP-18 item 9: 14 px is the most that fits on one line in the phone grid's cell (was 12) */
+  body.mode-flat .top-actions .vc-coin.upload { font-size: 14px; }
+  /* the empty top-left cell of WP-03's phone grid takes the Sound coin */
+  body.mode-flat .top-actions:has(.vc-howto-button) > #vcSound { grid-area: 1 / 1; justify-self: start; }
+  body.mode-flat .top-actions .vc-coin.upload { min-width: 0; }
+}
+/* the original 381 px brand rule: wrap only at the space, never inside a word */
+@media (max-width: 380px) {
+  body.mode-flat .brand { font-size: 27px; white-space: normal; word-break: keep-all; overflow-wrap: normal; }
+}
+body.mode-flat .title-row > div { max-width: none; width: 100%; }
+
+/* Paul, WP-17 item 23: completed rows are green with white text and controls */
+body.mode-flat #items > tr.row-done > td { background: var(--vc-green-row); color: #fff; border-bottom: 1px solid rgba(255, 255, 255, 0.16); }
+body.mode-flat #items > tr.row-done:hover > td { background: color-mix(in srgb, var(--vc-green-row), #000 8%); }
+body.mode-flat #items > tr.row-done > td:first-child { box-shadow: inset 3px 0 var(--vc-green-text); }
+body.mode-flat #items > tr.row-done :is(.item-name, .sub, .status, .note-indicator, .discovery-cell, .biome-cell) { color: #fff; }
+body.mode-flat #items > tr.row-done :is(.pin, .pin.on, .item-actions button) { color: #fff; border-color: rgba(255, 255, 255, 0.75); }
+body.mode-flat #items > tr.row-done .item-actions button { background: rgba(255, 255, 255, 0.08); }
+
+/* Paul, WP-17 item 24: highlights read "993 Wood floor 2×2 Built", the rank on the right */
+body.mode-flat .champion { grid-template-columns: 92px minmax(0, 1fr) 36px 30px; align-items: center; }
+body.mode-flat .champion > div, body.mode-flat .champion .champion-label { display: contents; }
+body.mode-flat .champion-label > b { grid-column: 1; grid-row: 1 / span 2; justify-self: end; font: 400 34px / 1 'IM Fell English SC', Georgia, serif; font-variant-numeric: lining-nums; }
+body.mode-flat .champion-label > span { grid-column: 2; grid-row: 1; align-self: end; font-size: 16px; }
+body.mode-flat .champion .chart-track { grid-column: 2; grid-row: 2; align-self: start; margin-top: 6px; }
+body.mode-flat .champion .rank { grid-column: 3; grid-row: 1 / span 2; justify-self: center; }
+body.mode-flat .champion > button { grid-column: 4; grid-row: 1 / span 2; }
+@media (max-width: 520px) {
+  body.mode-flat .champion { grid-template-columns: 64px minmax(0, 1fr) 26px 26px; gap: 8px; }
+  body.mode-flat .champion-label > b { font-size: 24px; }
+}

@@ -1,0 +1,8 @@
+/* Bundled fonts (file 05 "Fonts", offline): Grenze Gotisch 700, IM Fell English SC, IM Fell English.
+   Latin subsets (plus Latin Extended for Grenze Gotisch, the only one that has it); Vite inlines them into the single-file build. */
+@import '@fontsource/grenze-gotisch/latin-700.css';
+@import '@fontsource/grenze-gotisch/latin-ext-700.css';
+@import '@fontsource/im-fell-english-sc/latin-400.css';
+@import '@fontsource/im-fell-english/latin-400.css';
+/* WP-07: collection notes are IM Fell English italic */
+@import '@fontsource/im-fell-english/latin-400-italic.css';

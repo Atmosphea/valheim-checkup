@@ -1,0 +1,50 @@
+PASS  23 desk: the default is "All items, missing first"; the original five options stay, word for word  — {"value":"first","options":["All items, missing first","Remaining (missing + unverified)","All items","Missing only","Completed only","Unverified only"]}
+PASS  23 desk: every item shown, missing first, then unverified, then completed  — 68 of 68 items shown; 32 missing, 36 done
+PASS  23 desk: completed rows are green with white text and controls  — {"bg":"rgb(74, 102, 49)","text":"rgb(255, 255, 255)","status":"rgb(255, 255, 255)","button":"rgb(255, 255, 255)"}
+PASS  23 desk: "Remaining (missing + unverified)" still filters as before  — {"count":"32 of 68 items shown","done":0}
+PASS  23 desk: "All items" keeps its alphabetical order  — 68 rows
+PASS  23 flat: the default is "All items, missing first"; the original five options stay, word for word  — {"value":"first","options":["All items, missing first","Remaining (missing + unverified)","All items","Missing only","Completed only","Unverified only"]}
+PASS  23 flat: every item shown, missing first, then unverified, then completed  — 68 of 68 items shown; 32 missing, 36 done
+PASS  23 flat: completed rows are green with white text and controls  — {"bg":"rgb(74, 102, 49)","text":"rgb(255, 255, 255)","status":"rgb(255, 255, 255)","button":"rgb(255, 255, 255)"}
+PASS  23 flat: "Remaining (missing + unverified)" still filters as before  — {"count":"32 of 68 items shown","done":0}
+PASS  23 flat: "All items" keeps its alphabetical order  — 68 rows
+PASS  24 desk: amount on the left, then the label, rank on the right (first 5 rows)  — ["993 | Wood Floor 2x2 Built | 1","965 | Wood Beam 2 m Built | 2","723 | Wood Beam 1 m Built | 3","720 | Wood Pole 2 m Built | 4","633 | Stone Floor 2x2 Built | 5"]
+PASS  24 desk: the amount is big (≥ 2 × the label's size)  — 55.1 px vs 24.65 px
+PASS  24 flat: amount on the left, then the label, rank on the right (first 5 rows)  — ["993 | Wood Floor 2x2 Built | 1","965 | Wood Beam 2 m Built | 2","723 | Wood Beam 1 m Built | 3","720 | Wood Pole 2 m Built | 4","633 | Stone Floor 2x2 Built | 5"]
+PASS  24 flat: the amount is big (≥ 2 × the label's size)  — 34 px vs 16 px
+PASS  25 smaller than before (700 px → ≤ 600 px wide)  — 600 px
+PASS  25 toolbar: wiki reference, use save record, mark completed, mark missing, add count, each with a small icon  — [{"text":"Open wiki reference ↗","icon":true},{"text":"Use save record","icon":true},{"text":"Mark completed","icon":true},{"text":"Mark missing","icon":true},{"text":"☆ Add count to header","icon":true}]
+PASS  25 every original field and control is still in the dialog  — {"ids":["detailTitle","closeDetails","detailBody","itemNote","saveNote","favoriteDetail"],"corr":["auto","true","false"]}
+PASS  25 the record and count are a small table; the note is not full width, beside a divider  — note 262 of 643 px
+PASS  25 the "matched directly" line is in plain words in the small footer  — Found under its exact name in your save. “Completed” means the game recorded you doing it 
+PASS  26 a trophy shows its big drop chance and usage under the name (Fader: 100 %, Fader Power)  — 100% at 40 px; 100%drop chanceUsed for Fader PowerValheim Wiki · CC BY-SA 3.0
+PASS  25 after a correction (app.js re-writes the body) the layout and controls come back the same  — ["Open wiki reference ↗","Use save record","Mark completed","Mark missing","☆ Add count to header"]
+PASS  26 an item without an entry shows no facts  — Abyssal Harpoon: null
+PASS  25 desk 1440×900: the sheet fits the screen, no sideways scroll  — {"rect":{"x":398.51141357421875,"y":160.71865844726562,"w":642.9771118164062,"h":577.0885009765625,"r":1041.488525390625,"b":737.8071594238281},"overflowX":0}
+PASS  25 flat 1440×900: the sheet fits the screen, no sideways scroll  — {"rect":{"x":410.7259521484375,"y":171.11724853515625,"w":618.548095703125,"h":557.1991577148438,"r":1029.2740478515625,"b":728.31640625},"overflowX":0}
+PASS  25 flat 1024×768: the sheet fits the screen, no sideways scroll  — {"rect":{"x":202.7260284423828,"y":105.1174087524414,"w":618.5479736328125,"h":557.198974609375,"r":821.2740020751953,"b":662.3163833618164},"overflowX":0}
+PASS  25 flat 768×1024: the sheet fits the screen, no sideways scroll  — {"rect":{"x":74.72602081298828,"y":233.11740112304688,"w":618.5479736328125,"h":557.198974609375,"r":693.2739944458008,"b":790.3163757324219},"overflowX":0}
+PASS  25 flat 390×844: the sheet fits the screen, no sideways scroll  — {"rect":{"x":8.93037223815918,"y":33.45331573486328,"w":372.1392822265625,"h":776.5433349609375,"r":381.0696544647217,"b":809.9966506958008},"overflowX":0}
+PASS  27 a click outside closes the dialog at once (app.js sees the close) and the sheet burns where it was  — {"t":62.60000002384186,"clip":"path(evenodd","dim":1,"ash":true}
+INFO  27 burn copy appeared  — 44 ms after the probe started (the click itself is in between)
+PASS  27 burned to nothing in about 1 s (0.9–1.25 s from the copy appearing), with ash floating on after it  — burnt at 1018 ms, last ash gone at 2169 ms
+PASS  27 the dim simply fades out (monotone to 0 within 0.6 s), no fold-back sequence  — {"dims":[1,0.78,0.56,0.33,0.11,0,0,0,0,0,0,0,0,0],"unfoldRuns":0}
+PASS  27 focus goes back to the row's Details button  — The Trophy Collector:25
+PASS  27 live ember edges (orange pixels on the burn front)  — 10542 ember pixels of 5184000
+PASS  27 Escape burns it away too  — {"burning":true,"open":false}
+PASS  28 the wiki reference opens the real wiki page in a new tab  — https://valheim.weirdgloop.org/w/Fader_Trophy
+PASS  28 the letter stays open, nothing burns, no second paper  — {"open":true,"burn":0,"sheets":"vc-float-layer vc-details-layer vc-modal-root","same":true}
+INFO  29 dialog layer repaints over 3 s  — 0 repaints, 180 desk frames, layers 847
+INFO  29 dialog layer repaints over 3 s (before)  — 138 repaints, 181 desk frames, layers 693,694,695
+PASS  29 the sheet bobs (transform changes) but its layer is not repainted over 3 s (≤ 2): print and paper move as one  — {"now":{"paints":0,"moved":true,"willChange":"transform","shadowOnSheet":"","shade":true},"before":{"paints":138,"moved":true,"willChange":"","shadowOnSheet":"rgba(28, 16, 6, 0.282) 28.8px 37.7px 69.6px","shade":false}}
+PASS  29 the sheet is rastered once (will-change, compositor bob) and its shadow is a separate element  — {"paints":0,"moved":true,"willChange":"transform","shadowOnSheet":"","shade":true}
+PASS  30 stains seeded from the id: the same item gets the same stains, another item different ones  — {"fader":"11.4% 28.5% 93.8% 81.0% 31.3% 57.8%","boar":"24.5% 40.4% 80.1% 103.7% 44.4% 63.5%","faderAgain":"11.4% 28.5% 93.8% 81.0% 31.3% 57.8%"}
+PASS  30 as subtle as before: the same washes (0.55 light, 0.16 brown) and the same paper tile  — ["rgba(255, 250, 235, 0.55)","rgba(255, 250, 235, 0)","rgba(150, 105, 55, 0.16)","rgba(150, 105, 55, 0)"]
+PASS  17B overlap: a plain click on the desk toggles the 30 % zoom  — zoom 1.287 → 1.673
+PASS  17B overlap: the plain click leaves no burn mark  — {"before":{"strokes":0,"points":0,"drawing":false,"hot":0},"after":{"strokes":0,"points":0,"drawing":false,"hot":0}}
+PASS  17B overlap: a drag on the desk burns a line  — {"strokes":1,"points":12,"drawing":false,"hot":2283}
+INFO  17B overlap: second click ended the zoom; the drag did not start one  — zoom back 1.287; click zoom before/after drag false/false
+PASS  no page or console errors
+
+43/43 checks pass
+NUMBERS {"bob":{"now":{"paints":0,"moved":true,"willChange":"transform","shadowOnSheet":"","shade":true},"before":{"paints":138,"moved":true,"willChange":"","shadowOnSheet":"rgba(28, 16, 6, 0.282) 28.8px 37.7px 69.6px","shade":false}}}

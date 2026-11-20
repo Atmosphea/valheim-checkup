@@ -1,0 +1,416 @@
+{
+ "meta": {
+  "label": "before-other",
+  "html": "work/wp18p/named-before/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "at": "2026-11-12T23:54:20.211Z",
+  "errors": [],
+  "tierEnd": "medium",
+  "qualityLog": null
+ },
+ "rows": [
+  {
+   "name": "start-up",
+   "frames": 159,
+   "worstMs": 1016.6,
+   "over16": 11,
+   "over33": 9,
+   "mainMs": 2838,
+   "jsMs": 2380,
+   "gpuMs": null,
+   "usableMs": 2074.4,
+   "top": [
+    [
+     "js three.js:onFirstUse",
+     339.4
+    ],
+    [
+     "js src/surfaces/title.js:build",
+     247.7
+    ],
+    [
+     "js src/audio/engine.js:createContext",
+     153.3
+    ],
+    [
+     "Layout",
+     90
+    ],
+    [
+     "js src/board/burn.js:burnMaps",
+     86.4
+    ],
+    [
+     "Paint",
+     79.9
+    ],
+    [
+     "js src/gauntlet/collide.js:findPenetrations",
+     73.1
+    ],
+    [
+     "js src/mode.js:readEnv",
+     67.2
+    ],
+    [
+     "js src/ink/masks.js:stampGrain",
+     57.5
+    ],
+    [
+     "js src/audio/recipes/ambience.js:speaker",
+     57.3
+    ]
+   ],
+   "worstFrames": [
+    1016.6,
+    166.7,
+    166.6,
+    150,
+    150,
+    116.7,
+    83.4,
+    50
+   ]
+  },
+  {
+   "name": "load save",
+   "frames": 189,
+   "worstMs": 50,
+   "over16": 8,
+   "over33": 1,
+   "mainMs": 1476,
+   "jsMs": 703,
+   "windowMs": 3316,
+   "gpuMs": 1661,
+   "gpuWorst": 94.8,
+   "gpuFrames": 179,
+   "loaf": [
+    {
+     "t": 69,
+     "d": 61,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     306.8
+    ],
+    [
+     "Layerize",
+     147.5
+    ],
+    [
+     "Paint",
+     121.5
+    ],
+    [
+     "Style recalc (forced)",
+     78.3
+    ],
+    [
+     "Hit test",
+     62.6
+    ],
+    [
+     "js native getBoundingClientRect",
+     61.6
+    ],
+    [
+     "js native elementFromPoint",
+     56.8
+    ],
+    [
+     "Pre-paint",
+     50.9
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     36
+    ],
+    [
+     "Layout",
+     34.3
+    ]
+   ],
+   "worstFrames": [
+    [
+     128,
+     50
+    ],
+    [
+     761,
+     33.4
+    ],
+    [
+     61,
+     33.3
+    ],
+    [
+     211,
+     33.3
+    ],
+    [
+     844,
+     33.3
+    ]
+   ]
+  },
+  {
+   "name": "details open",
+   "frames": 68,
+   "worstMs": 50,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": 1048,
+   "jsMs": 364,
+   "windowMs": 1186,
+   "gpuMs": 584,
+   "gpuWorst": 74.3,
+   "gpuFrames": 62,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     509.3
+    ],
+    [
+     "Paint",
+     169.2
+    ],
+    [
+     "js native elementFromPoint",
+     116.7
+    ],
+    [
+     "Pre-paint",
+     87.4
+    ],
+    [
+     "Style recalc (forced)",
+     47.6
+    ],
+    [
+     "js native getClientRects",
+     24.9
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     17.4
+    ],
+    [
+     "js native querySelectorAll",
+     17.3
+    ],
+    [
+     "Commit",
+     14.3
+    ],
+    [
+     "Style recalc",
+     12.5
+    ]
+   ],
+   "worstFrames": [
+    [
+     55,
+     50
+    ],
+    [
+     638,
+     16.8
+    ],
+    [
+     822,
+     16.8
+    ],
+    [
+     972,
+     16.8
+    ],
+    [
+     1088,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "details close (burn)",
+   "frames": 212,
+   "worstMs": 83.3,
+   "over16": 17,
+   "over33": 2,
+   "mainMs": 2623,
+   "jsMs": 949,
+   "windowMs": 3895,
+   "gpuMs": 2071,
+   "gpuWorst": 107.4,
+   "gpuFrames": 199,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     1002.1
+    ],
+    [
+     "Paint",
+     506.3
+    ],
+    [
+     "js native elementFromPoint",
+     275.2
+    ],
+    [
+     "Hit test",
+     209.4
+    ],
+    [
+     "Style recalc (forced)",
+     74.4
+    ],
+    [
+     "Commit",
+     50.1
+    ],
+    [
+     "Pre-paint",
+     39.1
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     38.4
+    ],
+    [
+     "js native querySelectorAll",
+     35.4
+    ],
+    [
+     "js native focus",
+     33.6
+    ]
+   ],
+   "worstFrames": [
+    [
+     85,
+     83.3
+    ],
+    [
+     135,
+     50
+    ],
+    [
+     169,
+     33.4
+    ],
+    [
+     269,
+     33.4
+    ],
+    [
+     402,
+     33.4
+    ]
+   ]
+  },
+  {
+   "name": "row-height rescale",
+   "frames": 98,
+   "worstMs": 83.4,
+   "over16": 19,
+   "over33": 5,
+   "mainMs": 1408,
+   "jsMs": 534,
+   "windowMs": 2112,
+   "gpuMs": 1580,
+   "gpuWorst": 94.9,
+   "gpuFrames": 88,
+   "loaf": [
+    {
+     "t": 84,
+     "d": 64,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 201,
+     "d": 52,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 1095,
+     "d": 79,
+     "sl": 8,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     433.3
+    ],
+    [
+     "Paint",
+     283.3
+    ],
+    [
+     "js native elementFromPoint",
+     200.9
+    ],
+    [
+     "Style recalc (forced)",
+     102.1
+    ],
+    [
+     "Hit test",
+     86
+    ],
+    [
+     "Layout (forced)",
+     58.3
+    ],
+    [
+     "js native getBoundingClientRect",
+     57.6
+    ],
+    [
+     "Style recalc",
+     55.9
+    ],
+    [
+     "Pre-paint",
+     43.5
+    ],
+    [
+     "Commit",
+     28
+    ]
+   ],
+   "worstFrames": [
+    [
+     155,
+     83.4
+    ],
+    [
+     1188,
+     83.2
+    ],
+    [
+     55,
+     50
+    ],
+    [
+     372,
+     50
+    ],
+    [
+     255,
+     49.9
+    ]
+   ]
+  }
+ ]
+}

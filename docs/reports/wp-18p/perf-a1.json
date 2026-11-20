@@ -1,0 +1,383 @@
+{
+ "meta": {
+  "label": "a1",
+  "html": "work/wp18p/named-after/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "at": "2026-11-13T00:01:10.474Z",
+  "errors": [],
+  "tierEnd": "high",
+  "qualityLog": null
+ },
+ "rows": [
+  {
+   "name": "view Carpenter · drag",
+   "frames": 287,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1342,
+   "jsMs": 735,
+   "windowMs": 4801,
+   "gpuMs": 4490,
+   "gpuWorst": 87.6,
+   "gpuFrames": 279,
+   "loaf": [],
+   "top": [
+    [
+     "Paint",
+     223.2
+    ],
+    [
+     "Layerize",
+     137.4
+    ],
+    [
+     "Style recalc",
+     116
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     43.5
+    ],
+    [
+     "Commit",
+     39.1
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     29.3
+    ],
+    [
+     "js three.js:projectObject",
+     26.8
+    ],
+    [
+     "js three.js:setProgram",
+     24.6
+    ],
+    [
+     "Pre-paint",
+     23.9
+    ],
+    [
+     "js three.js:setValue",
+     16.8
+    ]
+   ],
+   "worstFrames": [
+    [
+     476,
+     16.8
+    ],
+    [
+     526,
+     16.8
+    ],
+    [
+     626,
+     16.8
+    ],
+    [
+     2926,
+     16.8
+    ],
+    [
+     76,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Paint",
+     0.6
+    ],
+    [
+     "Style recalc",
+     0.5
+    ],
+    [
+     "Layerize",
+     0.4
+    ],
+    [
+     "js native now",
+     0.2
+    ],
+    [
+     "js three.js:setFromBufferAttribute",
+     0.2
+    ],
+    [
+     "js src/ink/index.js:(anon)",
+     0.2
+    ],
+    [
+     "js src/surfaces/title.js:show",
+     0.2
+    ],
+    [
+     "js three.js:WebGLShadowMap.render",
+     0.2
+    ]
+   ]
+  },
+  {
+   "name": "view Carpenter · release",
+   "frames": 162,
+   "worstMs": 150,
+   "over16": 8,
+   "over33": 1,
+   "mainMs": 2246,
+   "jsMs": 916,
+   "windowMs": 2964,
+   "gpuMs": 2296,
+   "gpuWorst": 54.9,
+   "gpuFrames": 147,
+   "loaf": [
+    {
+     "t": 7,
+     "d": 161,
+     "sl": 8,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Paint",
+     469.6
+    ],
+    [
+     "Style recalc",
+     419.8
+    ],
+    [
+     "Pre-paint",
+     176
+    ],
+    [
+     "Style recalc (forced)",
+     154.9
+    ],
+    [
+     "js native getBoundingClientRect",
+     116.1
+    ],
+    [
+     "Layerize",
+     105.7
+    ],
+    [
+     "Layout (forced)",
+     71.3
+    ],
+    [
+     "js native querySelectorAll",
+     65.9
+    ],
+    [
+     "js native scrollTo",
+     60.3
+    ],
+    [
+     "Layout",
+     42.6
+    ]
+   ],
+   "worstFrames": [
+    [
+     169,
+     150
+    ],
+    [
+     1402,
+     33.4
+    ],
+    [
+     2052,
+     33.4
+    ],
+    [
+     202,
+     33.4
+    ],
+    [
+     1202,
+     33.3
+    ]
+   ],
+   "worstTop": [
+    [
+     "js native scrollTo",
+     60
+    ],
+    [
+     "Style recalc (forced)",
+     49
+    ],
+    [
+     "Layout (forced)",
+     30.8
+    ],
+    [
+     "js native focus",
+     25.6
+    ],
+    [
+     "Layout",
+     19.1
+    ],
+    [
+     "js native checkVisibility",
+     18.8
+    ],
+    [
+     "Paint",
+     8.6
+    ],
+    [
+     "Pre-paint",
+     7
+    ]
+   ]
+  },
+  {
+   "name": "row-height rescale",
+   "frames": 98,
+   "worstMs": 66.7,
+   "over16": 18,
+   "over33": 5,
+   "mainMs": 1040,
+   "jsMs": 377,
+   "windowMs": 2089,
+   "gpuMs": 1448,
+   "gpuWorst": 77.8,
+   "gpuFrames": 90,
+   "loaf": [
+    {
+     "t": 102,
+     "d": 78,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 200,
+     "d": 52,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 266,
+     "d": 57,
+     "sl": 4,
+     "top": []
+    },
+    {
+     "t": 1072,
+     "d": 77,
+     "sl": 7,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Paint",
+     309
+    ],
+    [
+     "Style recalc",
+     145.3
+    ],
+    [
+     "Layerize",
+     65.3
+    ],
+    [
+     "Layout",
+     64.1
+    ],
+    [
+     "Style recalc (forced)",
+     55.4
+    ],
+    [
+     "js native getBoundingClientRect",
+     52.2
+    ],
+    [
+     "Pre-paint",
+     42.4
+    ],
+    [
+     "js native get offsetParent",
+     40
+    ],
+    [
+     "Layout (forced)",
+     38.2
+    ],
+    [
+     "js GC (V8, in JS)",
+     24.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     75,
+     66.7
+    ],
+    [
+     175,
+     66.7
+    ],
+    [
+     1142,
+     66.6
+    ],
+    [
+     325,
+     50.1
+    ],
+    [
+     259,
+     50
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layout",
+     23.8
+    ],
+    [
+     "Paint",
+     5.4
+    ],
+    [
+     "Pre-paint",
+     3.5
+    ],
+    [
+     "Style recalc",
+     0.7
+    ],
+    [
+     "js src/surfaces/row-window.js:(anon)",
+     0.3
+    ],
+    [
+     "Hit test",
+     0.2
+    ],
+    [
+     "js three.js:set needsUpdate",
+     0.2
+    ],
+    [
+     "js three.js:WebGLRenderer.setClearColor",
+     0.2
+    ]
+   ]
+  }
+ ]
+}

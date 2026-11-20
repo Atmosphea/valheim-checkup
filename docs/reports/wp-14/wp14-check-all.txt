@@ -1,0 +1,41 @@
+PASS  budget: dist/valheim-checkup.html ≤ 12 MB  — 3.93 MB
+PASS  budget: flat content usable ≤ 1.5 s  — 192.9 ms
+PASS  budget: flat JS per frame ≤ 6 ms avg, ≤ 12 ms worst  — avg 0.46 ms, worst 1.2 ms
+PASS  ?perf overlay works (flat)  — Mode=flat, FPS=60, Tier=flat, JS ms avg=0.01 (settling…), JS ms worst=0.1 (settling…), Long tasks=settling…, Heap MB=13, Flat usable=0.14 s
+PASS  budget: desk scene visible ≤ 3 s  — 1221.3 ms
+PASS  budget: High ≤ 250 draw calls, ≤ 600,000 triangles per frame  — max 230 calls, 390,743 triangles
+PASS  budget: desk Low JS per frame ≤ 6 ms avg, ≤ 12 ms worst (last 240 frames)  — avg 2.67 ms, worst 8.0 ms
+PASS  ?perf overlay works (desk)  — Mode=desk, FPS=61, Tier=high, Draw calls=224, Triangles=383,751, JS ms avg=2.82 (settling…), JS ms worst=91.6 (settling…), Long tasks=settling…, Heap MB=41, Desk visible=1.19 s
+      flat long task 93 ms during "The Artisan"
+PASS  budget: no long task over 100 ms after startup (flat: 13 views, Details, How-to)  — 10 tasks >50 ms, max 93 ms
+PASS  budget: no long task over 100 ms after startup (desk: 13 views, Details, How-to)  — 4 tasks >50 ms, max 74 ms
+PASS  budget: heap ≤ 250 MB and back within 10 % after 100 view changes (flat)  — base 8.7 MB → 8.9 MB, total 11.1 MB
+PASS  budget: heap ≤ 250 MB and back within 10 % after 100 view changes (desk)  — base 26.2 MB → 27.1 MB, total 93.8 MB
+PASS  keyboard only: every flow (flat)  — load, 13 views, filter, sort, search, star, Details, correction, note, favourite add/remove, both exports, import, help, tour, forget
+PASS  keyboard only: every flow (desk)  — load, 13 views, filter, sort, search, star, Details, correction, note, favourite add/remove, both exports, import, help, tour, forget (chooser event lost, input clicked: progressFile)
+PASS  focus visible on every control (flat: 166 tab stops, one view with rows)
+PASS  focus visible on every control (desk: 154 tab stops, one view with rows)
+PASS  contrast: body ink ≥ 4.5:1, stamp ink ≥ 3:1 on the paper behind it (flat, 18 samples)  — lowest body 4.62:1, lowest stamp 3.62:1
+PASS  contrast: body ink ≥ 4.5:1, stamp ink ≥ 3:1 on the paper behind it (desk, 16 samples)  — lowest body 4.61:1, lowest stamp 3.32:1
+PASS  sounds: every built sound plays from its real trigger (21 built; 23 deferred ones requested, silent)  — bar.scrape (desk), bar.latch (desk), bar.return (desk), coin.up (flat+desk), coin.land (desk), spark.out (desk), spark.in (desk), spark.crackle (desk), load.success (flat+desk), load.fail (flat+desk), wash.out (flat+desk), wash.in (flat+desk), stamp.big (flat+desk), stamp.dot (flat+desk), paper.lift (desk), paper.settle (desk), unfold.flap (flat+desk), menu.open (flat+desk), star.on (flat+desk), star.off (flat+desk), toast.in (flat+desk)
+PASS  "Also show the normal pointer": by keyboard, the native pointer comes back, kept after a reload, off again  — cursor none → auto
+PASS  DECISIONS 24: desk resized to 1000×620, 900×600, 800×500 stays desk, scene fills the window, views still change
+PASS  axe: 0 violations (flat, no save)
+PASS  axe: 0 violations in all 13 views (flat)
+PASS  axe: 0 violations (flat, Details open)
+PASS  axe: 0 violations (flat, How-to open)
+PASS  axe: 0 violations (flat, tour open)
+PASS  axe: 0 violations (flat, menu open)
+PASS  axe: 0 violations (flat, help open)
+PASS  axe: 0 violations (desk, no save)
+PASS  axe: 0 violations in all 13 views (desk)
+PASS  axe: 0 violations (desk, Details open)
+PASS  axe: 0 violations (desk, How-to open)
+PASS  axe: 0 violations (desk, tour open)
+PASS  axe: 0 violations (desk, menu open)
+PASS  axe: 0 violations (desk, help open)
+PASS  no page or console errors in any session of this run
+KNOWN  axe label-content-name-mismatch on #loadTop (original markup, locked by parity P-tests; not counted): flat, no save · flat, The Artisan · flat, The Blacksmith · flat, The Carpenter · flat, The Master Chef · flat, The Gourmet · flat, The Trophy Collector · flat, The Hunter · flat, The Master Hunter · flat, The Fisherman · flat, Are You Alright? · flat, That Can't Be an Accident · flat, Highlights · flat, Skills & travel · flat, menu open · flat, help open · desk, The Artisan · desk, The Blacksmith · desk, The Carpenter · desk, The Master Chef · desk, The Gourmet · desk, The Trophy Collector · desk, The Hunter · desk, The Master Hunter · desk, The Fisherman · desk, Are You Alright? · desk, That Can't Be an Accident · desk, Highlights · desk, Skills & travel · desk, menu open · desk, help open
+
+NUMBERS {"distMB":3.93,"flatUsableMs":192.9,"flatJs":{"avg":0.46,"worst":1.2},"deskVisibleMs":1221.3,"highCalls":230,"highTriangles":390743,"deskLowJs":{"avg":2.67,"worst":8,"frames":257},"longTasks_flat":{"over100":0,"max":93},"longTasks_desk":{"over100":0,"max":74},"heap_flat":{"baseMB":8.7,"afterMB":8.9,"totalMB":11.1},"heap_desk":{"baseMB":26.2,"afterMB":27.1,"totalMB":93.8},"focusStops_flat":166,"focusStops_desk":154,"contrast_flat":{"minBody":4.62,"minStamp":3.62,"samples":18,"seenMinBody":4.89,"seenMinStamp":4.03},"contrast_desk":{"minBody":4.61,"minStamp":3.32,"samples":16,"seenMinBody":3.31,"seenMinStamp":2.99},"sounds":{"built":21,"played":21,"deferredWired":23}}
+36/36 passed

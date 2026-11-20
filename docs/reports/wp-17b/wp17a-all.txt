@@ -1,0 +1,49 @@
+PASS  1 #statusFilter: every list item is on top (hit-tests as itself)  — 5 items, covered: []
+PASS  1 #statusFilter: the list is exactly the box's width  — 337 vs 337 px (layout; the sheet's perspective scales both alike)
+PASS  1 #discoveryFilter: every list item is on top (hit-tests as itself)  — 3 items, covered: []
+PASS  1 #discoveryFilter: the list is exactly the box's width  — 168 vs 168 px (layout; the sheet's perspective scales both alike)
+PASS  1 #biomeFilter: every list item is on top (hit-tests as itself)  — 11 items, covered: []
+PASS  1 #biomeFilter: the list is exactly the box's width  — 193 vs 193 px (layout; the sheet's perspective scales both alike)
+PASS  1 #sort: every list item is on top (hit-tests as itself)  — 3 items, covered: []
+PASS  1 #sort: the list is exactly the box's width  — 194 vs 194 px (layout; the sheet's perspective scales both alike)
+PASS  2 by default the camera frames the main section  — {"framing":1,"on":true,"zoom":1.287,"x":9.25,"y":-0.58,"zoneOut":false,"click":false}
+PASS  2 the wheel scrolls the page, not the camera  — scroll 0 → 960, zoom 1.287 → 1.287
+PASS  2 pinch (ctrl + wheel) does not zoom  — zoom 1.287
+PASS  2 the pointer over the woodblock zooms out to the whole desk  — {"framing":0.002,"on":false,"zoom":1.287,"x":9.25,"y":-0.58,"zoneOut":true,"click":false}
+PASS  2 back over the table: the main section again  — {"framing":0.999,"on":true,"zoom":1.287,"x":9.25,"y":-0.58,"zoneOut":false,"click":false}
+PASS  2 the pointer over the header and coins zooms out  — {"framing":0.001,"on":false,"zoom":1.287,"x":9.25,"y":-0.58,"zoneOut":true,"click":false}
+PASS  2 a click outside the main section zooms in 30 %  — zoom 1.287 → 1.673 (×1.300)
+PASS  2 a second click ends the zoom  — zoom 1.287
+PASS  2 leaving for the main section ends it too  — {"framing":1,"on":true,"zoom":1.287,"x":9.25,"y":-0.58,"zoneOut":false,"click":false}
+PASS  3 the main section is bigger (69 × 50.2 cm, was 58 × 39.2 cm)  — ×1.52 the area; on screen 1337 × 798 px
+PASS  3 the paper's left live edge is 13 cm from the main section (was 36 cm)  — on screen 232 px
+PASS  4 the title, byline and lifetime records are in the main section's scroll  — {"inWrap":true,"has":true}
+PASS  4 the coins stay put while the page scrolls  — coin moved 0.0 px
+PASS  4 the title scrolls with the table  — title moved up 137 px
+PASS  4 no seam between header and main section (blank paper either side of the old edge within 4 %)  — 190 vs 188
+PASS  5 the scroll box carries a mask drawn from the paper's own deckle (two layers: edge × ink grain)  — {"edged":true,"layers":2,"blob":true,"info":{"cols":1263,"min":25.65625,"max":26.84375,"pxPerCm":8,"inCm":0.7,"fadeCm":1.1}}
+PASS  5 no row shows between the burned edge and the stuck heading (text contrast ≤ 55 % of the rows': what is left is the burn texture); the rest fades along the deckle  — s.d. 5.7 under the edge vs 14.4 in the rows; stuck true
+PASS  6 one native scroll box holds the title, the head and the table (no transformed slip)
+PASS  6 the head and the table never part, even in the frame of the scroll  — [0,0,0,0,0,0]
+PASS  6 scrolling keeps the frame rate (no frame over 50 ms)  — {"why":{"event paper:settle":2,"wheel":114,"event paper:lift":5},"frames":121,"drawn":121,"p50":16.7,"max":16.8,"over20":0,"over34":0,"loaf":[],"t0":7884.900000095367}
+PASS  7 no grey frame while the desk loads  — 0 grey of 124 frames; first 0:paper69(79,67,56) 21:paper108(129,104,86) 27:paper113(133,109,90) 33:paper118(138,114,94) 48:paper129(151,126,102) 65:paper133(155,129,106) 81:paper137(158,133,110) 98:paper140(162,137,113) 115:paper144(165,140,117) 132:paper147(169,144,119) 148:paper151(172,147,122) 164:paper154(175,150,125)
+PASS  7 paper from the first painted frame (nothing but the desk colour before it)  — first paper at 0 ms (frame 0)
+PASS  7 seamless: once the paper shows it never drops back to dark (no pop to black)  — darkest centre after the first paper frame: 69
+PASS  8 faster: the whole wash is under WP-16's ~3.2 s  — 2186 ms, 2170 ms
+PASS  8 the stamps land about halfway through it (first within 30–65 %)  — [[0.51,0.56,0.62,0.67],[0.51,0.57,0.62,0.68]]
+PASS  8 it pours through everything (the title block washes too)  — [true,true]
+INFO  8 noisy edge  — edge noise ×1.9, 2,600 pigment specks per mask; 2 masks — look: docs/reports/wp-17a/wash-mid.png
+PASS  9 the stamps read Completed, Missing, Undiscovered, Unverified (Undiscovered and Unverified swapped)  — ["done","missing","discovered","unknown"]
+PASS  9 Missing fills from the bottom up  — {"order":["done","missing","discovered","unknown"],"on":22,"off":6,"onY":372.8,"offY":359.9,"wrap":"wrap-reverse"}
+PASS  10a the gauntlet animating on screen: every frame drawn (none skipped by the idle throttle)  — 180/180 drawn, p50 16.7 ms, max 16.8 ms, over 20 ms: 0
+PASS  10a the still desk still idles (frames skipped, as WP-16A)  — 15/180 drawn {"event paper:settle":15}
+PASS  10b on release the ghost is pre-warmed (no snapshot in the release task)  — [{"prewarmed":true,"snapshotMs":0.1},{"prewarmed":true,"snapshotMs":0.1}]
+PASS  10b the wash after a release has no long frame (LoAF > 50 ms) besides the release itself  — [[],[]]
+INFO  10b release frames now  — [{"max":33.4,"over34":0,"loaf":[],"latched":"The Gourmet"},{"max":33.4,"over34":0,"loaf":[],"latched":"The Hunter"}]
+PASS  11 the lathe seam has one normal (no lighting break where the sheen crosses 180°)  — largest normal difference across the seam 0.00e+0 over 18 rings
+INFO  11 flash  — glint strength 1.6 → 0.9 with a 0.07 glow under it — look: docs/reports/wp-17a/knob-glint.png
+PASS  12 the desk is darker: ≥ 15 % less luminance than at WP-16's shade, same camera and light  — 84.3 vs 103.3 (×0.82) over 1 desk materials
+PASS  no page or console errors
+
+43/43 checks pass
+NUMBERS {"scroll":{"why":{"event paper:settle":2,"wheel":114,"event paper:lift":5},"frames":121,"drawn":121,"p50":16.7,"max":16.8,"over20":0,"over34":0,"loaf":[],"t0":7884.900000095367},"load":{"frames":124,"firstPaperMs":0,"seq":["0:paper69(79,67,56)","21:paper108(129,104,86)","27:paper113(133,109,90)","33:paper118(138,114,94)","48:paper129(151,126,102)","65:paper133(155,129,106)","81:paper137(158,133,110)","98:paper140(162,137,113)","115:paper144(165,140,117)","132:paper147(169,144,119)","148:paper151(172,147,122)","164:paper154(175,150,125)"]},"wash":[{"total":2186,"stamps":[0.51,0.56,0.62,0.67],"stampMs":[1111,1227,1353,1461],"masthead":true},{"total":2170,"stamps":[0.51,0.57,0.62,0.68],"stampMs":[1114,1234,1348,1467],"masthead":true}],"frames":{"now":{"a":{"why":{"caster gauntlet-proxy-index3":180},"frames":180,"drawn":180,"p50":16.7,"max":16.8,"over20":0,"over34":0,"loaf":[],"t0":9230.300000071526},"still":{"why":{"event paper:settle":15},"frames":180,"drawn":15,"p50":16.7,"max":16.8,"over20":0,"over34":0,"loaf":[],"t0":18317.399999976158},"rel":[{"why":{"caster gauntlet-proxy-index3":148},"frames":148,"drawn":148,"p50":16.7,"max":33.4,"over20":8,"over34":0,"loaf":[],"t0":24794.899999976158,"snapshotMs":0.1,"prewarmed":true,"latched":"The Gourmet"},{"why":{"caster gauntlet-proxy-index3":149},"frames":149,"drawn":149,"p50":16.7,"max":33.4,"over20":7,"over34":0,"loaf":[],"t0":30944.5,"snapshotMs":0.1,"prewarmed":true,"latched":"The Hunter"}]}},"desk":{"now":84.3,"atWp16Shade":103.3,"materials":1}}

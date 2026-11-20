@@ -1,0 +1,38 @@
+PASS  11 every collection bar carries the notched track  — 11 notched of 13 bars; 11 collection bars
+PASS  11 the insight bars stay plain (no notches)  — 2 plain
+INFO  11 notches also on a 0 % bar  — 1 notched bar(s) at 0 %
+PASS  12 letting go burns the rows away (the SVG burn filter on the table)  — {"phase":"away","filter":"url(\"#vc-row-burn\")"}
+PASS  12 after the burn-in the row content is rescaled to the new height (text and icon)  — {"before":{"font":21.75,"icon":32.67205047607422,"k":1},"after":{"font":25.0951,"icon":37.701934814453125,"k":1.1538,"scale":1.5,"filter":"none"}}
+PASS  12 the filter is gone afterwards  — none
+PASS  12 reduced motion: no burn, the new size applies directly  — {"runs":0,"k":1.1154,"scale":1.45}
+PASS  13 The Trophy Collector: every stamp uses Completed's circle layout  — {"done":"row/wrap","missing":"row/wrap","unknown":"row/wrap","discovered":"row/wrap"}
+PASS  13 The Trophy Collector: Completed fills from the first circle  — 1111111111111111110000000000000000
+PASS  13 The Trophy Collector: Missing is the reverse (filled run at the end)  — 0000000000000000001111111111111111
+PASS  13 The Trophy Collector: Undiscovered fills from the end  — 0000000000000000001111111111111111
+PASS  13 The Trophy Collector: Unverified fills from the end  — 0000000000000000000000000000000000
+PASS  13 The Gourmet: every stamp uses Completed's circle layout  — {"done":"row/wrap","missing":"row/wrap","unknown":"row/wrap","discovered":"row/wrap"}
+PASS  13 The Gourmet: Completed fills from the first circle  — 111111111111000000000000000000000
+PASS  13 The Gourmet: Missing is the reverse (filled run at the end)  — 000000000000111111111111111111111
+PASS  13 The Gourmet: Undiscovered fills from the end  — 000000000000011111111111111111111
+PASS  13 The Gourmet: Unverified fills from the end  — 000000000000000000000000000000000
+PASS  14 the letter appears where it will lie (mid-screen), not at the Details button  — {"first":{"cx":720,"cy":450},"final":{"cx":720,"cy":449},"button":{"x":1326,"y":603}}
+PASS  14 it fades in from nothing (opacity rises from near 0)  — opacity 0.00 0.02 0.08 0.67 0.69 0.73 0.77 0.81
+PASS  15 the sheet falls (moves down) while it burns  — 303 px down
+PASS  15 carried by the wind and turning, with a slight 3D tumble  — drift 379 px, turn 26.0°, tumble 21.9°
+PASS  15 black paper fragments float off (a cloud, not specks)  — 306 fragments at once
+PASS  15 fragments outlive the sheet and drift on  — 640 frames after the sheet
+PASS  15 the close plays the crackle (fold.close built as a burn crackle), no fold sound  — fold.close amb.hall title.quill:deferred toast.out:deferred title.quill:deferred gauntlet.stretch:deferred title.quill:deferred
+PASS  16 desk: the item icon is much bigger (was 44 px) and square, in a frame  — {"w":113.22247314453125,"h":113.22247314453125,"border":2,"content":88}
+PASS  16 flat: the item icon is much bigger (was 44 px) and square, in a frame  — {"w":107.30828857421875,"h":107.30830383300781,"border":2,"content":88}
+PASS  17 Pancakes: the name is centred in the header  — name centre 722, header centre 722
+PASS  17 the big item icon left of the name, the station icon right of it at the same size  — {"icon":113.216552734375,"station":113.21649169921875,"label":"Cauldron, level 6"}
+PASS  17 the station level is a big number right of the station icon  — 6 at 54px (data: Cauldron 6)
+PASS  17 the recipe row: each ingredient an icon, a big quantity and its name below, bullets between  — ["2 Blueberries","2 Egg","1 Oat Milk","2 Oat Flour"] · 3 bullets · Makes 3
+PASS  17 the recipe row sits right under the header and is credited like the trophy data  — Valheim Wiki · CC BY-SA 3.0
+PASS  17 Raspberries (raw food): the lockup, and no station or recipe  — {"station":false,"ings":0}
+PASS  17 Blue Mushroom (no entry): the lockup only  — {"station":false,"ings":0}
+PASS  17 Whole Roasted Meadow Boar: every ingredient shown with an icon; servings noted  — 4 ingredients · 10 servings
+PASS  17 other collections keep the plain heading  — {"lockup":false}
+PASS  no page or console errors
+
+35/35 passed

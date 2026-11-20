@@ -1,0 +1,149 @@
+
+Running 20 tests using 1 worker
+
+[1A[2K[1/20] [chromium] › specs/wp01.spec.js:41:3 › WP-01 debug API and event bus › opens from file:// with ?mode=flat: no console errors, __vc complete, flat mode
+[1A[2K  1) [chromium] › specs/wp01.spec.js:41:3 › WP-01 debug API and event bus › opens from file:// with ?mode=flat: no console errors, __vc complete, flat mode 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  - 1[39m
+    [31m+ Received  + 1[39m
+
+    [33m@@ -1,7 +1,7 @@[39m
+    [2m  Object {[22m
+    [32m-   "bodyClass": "mode-flat",[39m
+    [31m+   "bodyClass": "mode-flat vc-paper",[39m
+    [2m    "events": true,[22m
+    [2m    "quality": "function",[22m
+    [2m    "seed": "function",[22m
+    [2m    "soundLog": true,[22m
+    [2m    "state": "function",[22m
+
+      56 |       bodyClass: document.body.className,
+      57 |     }));
+    > 58 |     expect(api).toEqual({ events: true, state: 'function', timeScale: 'function', seed: 'function', quality: 'function', soundLog: true, bodyClass: 'mode-flat' });
+         |                 ^
+      59 |     const st = await page.evaluate(() => window.__vc.state());
+      60 |     expect(st).toMatchObject({ view: 'Skills & travel', mode: 'achievement', runMode: 'flat', saveLoaded: true, quality: 'flat', cursor: 'native' });
+      61 |     expect(st.filters).toMatchObject({ status: 'remaining', sort: 'name', starred: false, search: '' });
+        at /Users/Meta/Documents/ValheimChecker/valheim-checkup-3d-herder-kit/tests/specs/wp01.spec.js:58:17
+
+    Error Context: test-results/specs-wp01-WP-01-debug-API-83c41-rrors-vc-complete-flat-mode-chromium/error-context.md
+
+
+[1A[2K[2/20] [chromium] › specs/wp01.spec.js:65:3 › WP-01 debug API and event bus › ?mode=desk gives desk since WP-04; ?mode=flat is flat
+[1A[2K[3/20] [chromium] › specs/wp01.spec.js:74:3 › WP-01 debug API and event bus › timeScale, seed and quality behave; quality never changes the run mode
+[1A[2K[4/20] [chromium] › specs/wp01.spec.js:98:3 › WP-01 debug API and event bus › scripted session: app:* events carry the agreed data (DECISIONS 15, 16, 29)
+[1A[2K  2) [chromium] › specs/wp01.spec.js:98:3 › WP-01 debug API and event bus › scripted session: app:* events carry the agreed data (DECISIONS 15, 16, 29) 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mtrue[39m
+    Received: [31mfalse[39m
+
+      138 |     // Every type is canonical.
+      139 |     const types = [...new Set(ev.map(e => e.type))];
+    > 140 |     expect(types.every(t => /^(app|fx|bar|gauntlet|spark|coin|paper|tour|sound):/.test(t))).toBe(true);
+          |                                                                                             ^
+      141 |   });
+      142 |
+      143 |   test('privacy: __vc.events never holds the name, profile id or fingerprint (Paul\'s save, long session)', async ({ page }) => {
+        at /Users/Meta/Documents/ValheimChecker/valheim-checkup-3d-herder-kit/tests/specs/wp01.spec.js:140:93
+
+    Error Context: test-results/specs-wp01-WP-01-debug-API-28d95-ed-data-DECISIONS-15-16-29--chromium/error-context.md
+
+
+[1A[2K[5/20] [chromium] › specs/wp01.spec.js:143:3 › WP-01 debug API and event bus › privacy: __vc.events never holds the name, profile id or fingerprint (Paul's save, long session)
+[1A[2K[chromium] › specs/wp01.spec.js:143:3 › WP-01 debug API and event bus › privacy: __vc.events never holds the name, profile id or fingerprint (Paul's save, long session)
+LEAKS []
+
+[1A[2K[6/20] [chromium] › specs/wp01.spec.js:180:3 › WP-01 debug API and event bus › privacy round 2: every secret in odd letter cases, after restore and after Forget
+[1A[2K[chromium] › specs/wp01.spec.js:180:3 › WP-01 debug API and event bus › privacy round 2: every secret in odd letter cases, after restore and after Forget
+LEAKS2 []
+
+[1A[2K[7/20] [chromium] › specs/wp01.spec.js:213:3 › WP-01 debug API and event bus › privacy: name typed before any save is loaded, in a fresh session
+[1A[2K[8/20] [chromium] › specs/wp01.spec.js:223:3 › WP-01 debug API and event bus › ring buffer keeps at most 2,000 events, oldest dropped
+[1A[2K[9/20] [chromium] › specs/wp01.spec.js:239:3 › WP-01 break attempts › rapid repeated view selection ends correct, one app:category per selection
+[1A[2K[10/20] [chromium] › specs/wp01.spec.js:250:3 › WP-01 break attempts › rapid repeated loads (5 at once, plus a bad file in between) end in a correct, enabled state
+[1A[2K[11/20] [chromium] › specs/wp01.spec.js:267:3 › WP-01 break attempts › window resize and hidden (frozen) tab during the re-load count animation
+[1A[2K[12/20] [chromium] › specs/wp01.spec.js:286:3 › WP-01 break attempts › 4× CPU throttling: load, every view and golden plaque still correct
+[1A[2K[13/20] [chromium] › specs/wp01.spec.js:299:3 › WP-01 break attempts › browser storage fully disabled (localStorage access throws): starts, loads, warns
+[1A[2K[14/20] [chromium] › specs/wp01.spec.js:308:3 › WP-01 break attempts › odd files: empty .fch, 33 MB .fch, upper-case .FCH, non-.fch with save bytes
+[1A[2K[15/20] [chromium] › specs/wp01.spec.js:323:3 › WP-01 break attempts › dist/site served over HTTP loads the save with no errors
+[1A[2K[16/20] [chromium] › specs/wp12.spec.js:24:1 › 69 sounds in the mix, 22 built, 47 deferred (WP-17 item 21); every built take renders cleanly offline
+[1A[2K[chromium] › specs/wp12.spec.js:24:1 › 69 sounds in the mix, 22 built, 47 deferred (WP-17 item 21); every built take renders cleanly offline
+bar.scrape      2000 ms [1900,2100]  rms -9.4 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kbar.latch        870 ms [700,1000]  rms -23.5 dBFS  peak after master -4.90 dBFS
+
+[1A[2Kbar.return       870 ms [700,1000]  rms -23.9 dBFS  peak after master -6.21 dBFS
+
+[1A[2Kcoin.up           85 ms [80,100]  rms -14.4 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kcoin.land        630 ms [600,700]  rms -19.8 dBFS  peak after master -2.30 dBFS
+
+[1A[2Kspark.out        450 ms [400,500]  rms -20.8 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kspark.in         450 ms [400,500]  rms -22.0 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kspark.crackle     10 ms [5,20]  rms -24.0 dBFS  peak after master -9.67 dBFS
+
+[1A[2Kload.success    1700 ms [1500,1800]  rms -15.3 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kload.fail        380 ms [300,450]  rms -17.8 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kwash.out         460 ms [450,470]  rms -15.7 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kwash.in          610 ms [600,620]  rms -15.3 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kstamp.big        770 ms [700,800]  rms -21.5 dBFS  peak after master -4.36 dBFS
+
+[1A[2Kstamp.dot         40 ms [30,50]  rms -16.0 dBFS  peak after master -8.47 dBFS
+
+[1A[2Kpaper.lift       355 ms [200,370]  rms -18.4 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kpaper.settle     190 ms [180,200]  rms -17.2 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kunfold.flap       60 ms [55,65]  rms -16.4 dBFS  peak after master -4.22 dBFS
+
+[1A[2Kmenu.open        130 ms [120,135]  rms -16.9 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kstar.on          140 ms [130,150]  rms -15.1 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kstar.off         140 ms [130,150]  rms -18.2 dBFS  peak after master -1.00 dBFS
+
+[1A[2Ktoast.in         255 ms [250,260]  rms -14.4 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kamb.hall       12000 ms [11950,12050]  rms -15.0 dBFS  peak after master -1.00 dBFS
+
+[1A[2K[17/20] [chromium] › specs/wp12.spec.js:50:1 › no sound before the first interaction; mute survives a reload
+[1A[2K[18/20] [chromium] › specs/wp12.spec.js:73:1 › scripted sessions: load, failed load, tour, Details, view change, drag-latch, spark — log matches file 06 triggers
+[1A[2K  3) [chromium] › specs/wp12.spec.js:73:1 › scripted sessions: load, failed load, tour, Details, view change, drag-latch, spark — log matches file 06 triggers 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m1[39m
+    Received: [31m0[39m
+
+      108 |   const flaps = await page.evaluate(() => window.__vc.sound.log.filter(e => e.name === 'unfold.flap').map(e => e.pitch));
+      109 |   // Paul, WP-16 item 25: "Details … not a five-step fold. One step, like opening a letter": one flap sound
+    > 110 |   expect(flaps.length).toBe(1);
+          |                        ^
+      111 |   expect((await requested(page)).filter(n => n.startsWith('fold.close'))).toEqual(['fold.close:deferred']); // the dialog's own close (WP-15: no scripted close any more)
+      112 |
+      113 |   // View change (scripted WP-10 events): wash.out, wash.in, 4 × stamp.big, 160 × stamp.dot.
+        at /Users/Meta/Documents/ValheimChecker/valheim-checkup-3d-herder-kit/tests/specs/wp12.spec.js:110:24
+
+    Error Context: test-results/specs-wp12-scripted-sessio-59bad-og-matches-file-06-triggers-chromium/error-context.md
+
+
+[1A[2K[19/20] [chromium] › specs/wp12.spec.js:147:1 › The Carpenter view change (40 dots × 4 grids) never has more than 8 stamp.dot voices
+[1A[2K[chromium] › specs/wp12.spec.js:147:1 › The Carpenter view change (40 dots × 4 grids) never has more than 8 stamp.dot voices
+dot voices: sequence max 4, burst max 8, cut 32
+
+[1A[2K[20/20] [chromium] › specs/wp12.spec.js:167:1 › ?soundboard lists every sound by bus with controls, plays, runs sequences and downloads audio-mix.json in the config format
+[1A[2K  3 failed
+    [chromium] › specs/wp01.spec.js:41:3 › WP-01 debug API and event bus › opens from file:// with ?mode=flat: no console errors, __vc complete, flat mode 
+    [chromium] › specs/wp01.spec.js:98:3 › WP-01 debug API and event bus › scripted session: app:* events carry the agreed data (DECISIONS 15, 16, 29) 
+    [chromium] › specs/wp12.spec.js:73:1 › scripted sessions: load, failed load, tour, Details, view change, drag-latch, spark — log matches file 06 triggers 
+  17 passed (1.0m)

@@ -1,0 +1,65 @@
+INFO  18 wash (now, desk): the edge is over the heading for  — 383 / 385 / 383 ms (masked for 1219 / 1217 / 1204 ms)
+PASS  18 the wash edge is visibly over the heading for at least 350 ms of each view change (desk; was 450, WP-17 item 8)  — 383, 385, 383 ms
+PASS  18 flat: the wash edge is over the heading for at least 300 ms (was 450, WP-17 item 8; flat measures ~50 ms under desk)  — 392 ms
+PASS  19 desk: "Valheim Checkup" cannot be selected (double-click, drag) or dragged  — {"userSelect":"none","drag":"none","picked":""}
+PASS  19 flat: "Valheim Checkup" cannot be selected (double-click, drag) or dragged  — {"userSelect":"none","drag":"none","picked":""}
+INFO  20 flat header height (now)  — 136 px
+PASS  20 flat: header at most 140 px tall at 1440 × 900 (pre-16C 172 px)  — 136 px
+INFO  20 desk header, sheet top edge → inset top (now)  — 13 px on screen
+PASS  20 desk: header split (WP-17 item 4): the title block is in the main section and scrolls with the table  — {"inMain":true,"scrolls":true}
+PASS  21 desk: "Bring your Viking's progress" / "Choose .fch file" not shown (element kept for app.js)
+PASS  21 desk: the Load control opens the file chooser
+PASS  21 desk: a save dropped anywhere on the page loads
+PASS  21 desk: the file input loads
+PASS  21 flat: "Bring your Viking's progress" / "Choose .fch file" not shown (element kept for app.js)
+PASS  21 flat: the Load control opens the file chooser
+PASS  21 flat: a save dropped anywhere on the page loads
+PASS  21 flat: the file input loads
+PASS  22 desk: the help note is at the top right, under the coin row, above the collection heading  — {"s":{"x":1153.7847900390625,"y":132.6714630126953,"r":1344.80810546875,"b":174.81851196289062},"coinsBottom":143.87322998046875,"coinsLeft":921.61669921875,"coinsRight":1332.6400146484375,"insetTop":186.7593536376953,"w":1440}
+PASS  22 flat: the help note is in the header, under the coins, on the right  — {"inHeader":true,"x":1106.390625,"r":1410,"y":96.203125,"actionsBottom":88,"actionsLeft":974.046875,"headerBottom":136.296875,"w":1440}
+PASS  23 desk: the coin centres are not in a line (vertical spread ≥ 10 px)  — 13.2 px; howto 87, load 96, import 85, export 98
+PASS  23 desk: each coin rests with its own small tilt (1.5–3.5°)  — [["howto",3.2,-2.4],["load",-1.8,1.6],["import",2.6,3],["export",-3,-2.2]]
+PASS  23 flat: the coins each sit at their own height and angle  — [{"rotate":"-7deg","translate":"0px 3px"},{"rotate":"5deg","translate":"0px -3px"},{"rotate":"-3deg","translate":"0px 4px"},{"rotate":"4deg","translate":"0px -2px"},{"rotate":"-9deg","translate":"0px 2px"}]
+PASS  24 desk: the letter opens in many small pieces (≥ 6), one after another  — 11 pieces; first seen turning at 7, 95, 195, 295, 395, 479, 577, 678, 762, 862, 962 ms
+PASS  24 desk: every piece carries the letter's print from the start (no wipe-in)  — faces 12, base text "How progress is read, catalog notes, and", ink-wash frames 0
+PASS  24 desk: every piece prints its own part of the letter  — 11 distinct offsets for 11 pieces
+PASS  24 desk: then the real letter is open, the pieces gone, no duplicate ids  — {"open":true,"inFloat":true,"stage":false,"dupIds":1}
+PASS  24 desk: Escape folds it back and the note returns  — {"open":false,"back":true,"stage":false}
+PASS  24 flat: the letter opens in many small pieces (≥ 6), one after another  — 11 pieces; first seen turning at 10, 110, 194, 293, 394, 475, 575, 675, 775, 860, 960 ms
+PASS  24 flat: every piece carries the letter's print from the start (no wipe-in)  — faces 12, base text "How progress is read, catalog notes, and", ink-wash frames 0
+PASS  24 flat: every piece prints its own part of the letter  — 11 distinct offsets for 11 pieces
+PASS  24 flat: then the real letter is open, the pieces gone, no duplicate ids  — {"open":true,"inFloat":true,"stage":false,"dupIds":1}
+PASS  24 flat: Escape folds it back and the note returns  — {"open":false,"back":true,"stage":false}
+PASS  25 desk: Details unfolds in one step (one fold)  — {"t":33.60000002384186,"style":"letter","flaps":1,"peel":"vc-peel-off","tf":"matrix(1, 0, 0, 1, 0, 0)"}
+PASS  25 desk: the one step is over within 0.8 s of the sheet appearing  — 632 ms
+PASS  25 desk: the Details button has peeled off and floats (lifted, turned) while open  — vc-peel-off matrix3d(0.986767, -0.0513528, 0.1538, -0.000640833, 0.05074
+PASS  25 desk: the dialog is open with its own content, no duplicate ids
+PASS  25 desk: on close the button settles back onto the paper  — vc-peel-settle → (no class) matrix(1, 0, 0, 1, 0, 0)
+PASS  25 flat: Details unfolds in one step (one fold)  — {"t":17.5,"style":"letter","flaps":1,"peel":"vc-peel-off","tf":"matrix(1, 0, 0, 1, 0, 0)"}
+PASS  25 flat: the one step is over within 0.8 s of the sheet appearing  — 627 ms
+PASS  25 flat: the Details button has peeled off and floats (lifted, turned) while open  — vc-peel-off matrix3d(0.98653, -0.0518928, 0.155129, -0.000646372, 0.0512
+PASS  25 flat: the dialog is open with its own content, no duplicate ids
+PASS  25 flat: on close the button settles back onto the paper  — vc-peel-settle → (no class) none
+PASS  26 #statusFilter: the list lies on the paper and moves with its box (box moved 131.6 px, list drift ≤ 3 px)  — drift 2.29 px [[-2.9,-1.7,-0.1,0],[131.6,0.1,2.3,0],[70.7,1.2,1.3,0],[9.2,-3.9,0.2,0]]{"s0":{"x":203.4794464111328,"y":423.86456298828125,"w":204.94874572753906,"h":20.153045654296875,"r":408.4281921386719,"b":444.0176086425781},"m0":{"x":187.27394104003906,"y":444.730224609375,"w":219.96128845214844,"h":148.5269775390625,"r":407.2352294921875,"b":593.2572021484375}}
+PASS  26 #discoveryFilter: the list lies on the paper and moves with its box (box moved 8.6 px, list drift ≤ 3 px)  — drift 0.07 px [[-7,-2.3,0,0],[0.3,-4.5,0.1,0],[-7.2,-2.8,0,0],[-6.9,-5.2,-0.1,0]]{"s0":{"x":407.42352294921875,"y":424.1415710449219,"w":102.31961059570312,"h":20.15533447265625,"r":509.7431335449219,"b":444.2969055175781},"m0":{"x":400.9722900390625,"y":445.0096130371094,"w":108.17535400390625,"h":99.81619262695312,"r":509.14764404296875,"b":544.8258056640625}}
+PASS  26 #biomeFilter: the list lies on the paper and moves with its box (box moved 7.0 px, list drift ≤ 3 px)  — drift 0.19 px [[-2.2,-1.9,-0.1,0],[5.7,-3.9,0.2,0],[-0.6,-2.1,-0.1,0],[-0.6,-4.5,-0.2,0]]{"s0":{"x":507.3192138671875,"y":423.46905517578125,"w":119.85174560546875,"h":20.658843994140625,"r":627.1709594726562,"b":444.1278991699219},"m0":{"x":495.97808837890625,"y":444.8583984375,"w":131.27801513671875,"h":266.7685546875,"r":627.256103515625,"b":711.626953125}}
+PASS  26 #sort: the list lies on the paper and moves with its box (box moved 5.4 px, list drift ≤ 3 px)  — drift 0.07 px [[-2.4,-1.9,0,0],[2.7,-4.3,0,0],[-2.7,-2.4,0,0],[-2.8,-4.6,-0.1,0]]{"s0":{"x":630.0470581054688,"y":423.4688415527344,"w":120.07666015625,"h":20.6588134765625,"r":750.1237182617188,"b":444.1276550292969},"m0":{"x":628.2899780273438,"y":444.8581848144531,"w":122.39892578125,"h":85.96212768554688,"r":750.6889038085938,"b":530.8203125}}
+PASS  26 choosing from the paper list sets the filter
+INFO  27 desk title (now)  — height 55.6 px, align center, centre offset 0.2 px
+PASS  27 desk: collection title centred (text centre within 2 % of the row's) with flourishes and a red initial  — {"off":"0.2","ornament":true,"initial":"rgb(142, 42, 30)"}
+PASS  27 desk: the title text is unchanged  — The Master Chef
+INFO  27 flat title (now)  — height 59.2 px, align center, centre offset 0.0 px
+PASS  27 flat: collection title centred (text centre within 2 % of the row's) with flourishes and a red initial  — {"off":"0.0","ornament":true,"initial":"rgb(142, 42, 30)"}
+PASS  27 flat: the title text is unchanged  — The Master Chef
+PASS  28 desk: dragging the Item column's edge widens it and narrows Status by the same amount  — Item 722 → 866, Status 258 → 114
+PASS  28 desk: the widths are saved in this browser  — [118,866,114,295,273,231]
+PASS  28 desk: after a reload the widths come back  — Item 866
+PASS  28 flat: dragging the Item column's edge widens it and narrows Status by the same amount  — Item 370 → 460, Status 155 → 65
+PASS  28 flat: the widths are saved in this browser  — [103,460,65,177,166,149]
+PASS  28 flat: after a reload the widths come back  — Item 460
+PASS  28 storage blocked: resizing works without an error
+PASS  29 desk: a starred row has a slight outline; others none  — {"on":["solid","1px","rgba(122, 79, 18, 0.55)"],"off":"none"}
+PASS  29 flat: a starred row has a slight outline; others none  — {"on":["solid","1px","rgba(122, 79, 18, 0.55)"],"off":"none"}
+PASS  no page or console errors
+
+58/58 checks passed

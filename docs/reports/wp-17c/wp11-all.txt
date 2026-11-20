@@ -1,0 +1,117 @@
+{
+ "details": {
+  "open": false,
+  "inLayer": true,
+  "ariaModal": "true",
+  "current": null,
+  "burning": false
+ },
+ "help": {
+  "open": false,
+  "out": false,
+  "inFloat": false
+ },
+ "lift": {
+  "s": 0,
+  "scrollHeight": 6440,
+  "onescroll": true,
+  "masthead": true,
+  "headBottom": 470.25,
+  "tableTop": 470.25,
+  "lifted": false,
+  "settling": false,
+  "drift": 0
+ },
+ "unfold": {
+  "runs": [],
+  "floating": 0
+ },
+ "menu": null,
+ "toast": {
+  "rect": {
+   "x": 1191.9375,
+   "y": 791.453125,
+   "width": 236.0625,
+   "height": 46.75,
+   "top": 791.453125,
+   "right": 1428,
+   "bottom": 838.203125,
+   "left": 1191.9375
+  },
+  "in": true,
+  "out": false,
+  "rotate": "0deg"
+ },
+ "tooltip": {
+  "shown": false,
+  "text": "",
+  "moved": false
+ },
+ "tour": {
+  "poolScreen": null,
+  "targetScreen": null,
+  "phase": "off",
+  "vis": 0,
+  "k": 1,
+  "key": 2.6,
+  "veilKey": 1.3,
+  "keyBase": {
+   "scene": 0.9099999999999999,
+   "veil": 0.078
+  },
+  "pool": null,
+  "target": null,
+  "spot": 0,
+  "veilSpot": 0
+ }
+}
+PASS  smoke: no page errors after load
+FAIL  details: five folds  — [273]
+FAIL  details: fold timings ±10%  — [273] want ≈ [0,250,500,750,1000]
+FAIL  details: float at ≈1500 ms  — 656
+PASS  details: in #float layer, aria-modal  — {"open":true,"inLayer":true,"ariaModal":"true","current":{"category":"The Master Chef","id":"The Master Chef:81"},"burning":false}
+PASS  details: focus inside
+PASS  details: sheet visible after unfold  — 1
+PASS  details: fx and grain stack above #float  — scene,print,veil,glow,float,fx,grain
+shot: docs/reports/wp-11/details-open.png
+PASS  details: Tab trapped  — 0 escapes
+PASS  details: Escape closes, one app:details-close, focus back in the table  — {"open":false,"closeEv":1,"focus":true}
+PASS  details: no late duplicate close event  — 1
+PASS  details: × closes
+PASS  details: outside click closes
+PASS  details: unfold cleaned up
+[{"s":0,"scrollHeight":6440,"onescroll":true,"masthead":true,"headBottom":474.52,"tableTop":474.52,"lifted":false,"settling":false,"drift":0},{"s":40,"scrollHeight":6440,"onescroll":true,"masthead":true,"headBottom":452.41,"tableTop":452.41,"lifted":false,"settling":false,"drift":0},{"s":120,"scrollHeight":6440,"onescroll":true,"masthead":true,"headBottom":408.79,"tableTop":408.79,"lifted":false,"settling":false,"drift":0},{"s":600,"scrollHeight":6440,"onescroll":true,"masthead":true,"headBottom":162.81,"tableTop":162.81,"lifted":false,"settling":false,"drift":0},{"s":3000,"scrollHeight":6440,"onescroll":true,"masthead":true,"headBottom":-764.54,"tableTop":-764.54,"lifted":false,"settling":false,"drift":0},{"s":0,"scrollHeight":6440,"onescroll":true,"masthead":true,"headBottom":474.52,"tableTop":474.52,"lifted":false,"settling":false,"drift":0}]
+PASS  lift: no drift between slip and table (in-plane ≤1 px at every scroll)  — [0,0,0,0,0,0]
+PASS  lift: settles back at the top  — {"s":0,"scrollHeight":6440,"onescroll":true,"masthead":true,"headBottom":474.52,"tableTop":474.52,"lifted":false,"settling":false,"drift":0}
+PASS  lift: the coins stay live while the page is scrolled (WP-17 items 4–6; was: covered coins inert)  — 0
+focused covered coin: none
+PASS  lift: Home scrolls back to the top
+FAIL  menus: every option by mouse, change once per choice (statusFilter:6 discoveryFilter:3 biomeFilter:11 sort:3)  — statusFilter no item 0; statusFilter no item 1; statusFilter no item 2; statusFilter no item 3; statusFilter no item 4; statusFilter no item 5; discoveryFilter no item 0; discoveryFilter no item 1; discoveryFilter no item 2; biomeFilter no item 0; biomeFilter no item 1; biomeFilter no item 2; biomeFilter no item 3; biomeFilter no item 4; biomeFilter no item 5; biomeFilter no item 6; biomeFilter no item 7; biomeFilter no item 8; biomeFilter no item 9; biomeFilter no item 10; sort no item 0; sort no item 1; sort no item 2
+PASS  menus: every option by keyboard (open list), change once per choice, focus stays on the select  — statusFilter no item 0; statusFilter no item 1; statusFilter no item 2; statusFilter no item 3; statusFilter no item 4; statusFilter no item 5; discoveryFilter no item 0; discoveryFilter no item 1; discoveryFilter no item 2; biomeFilter no item 0; biomeFilter no item 1; biomeFilter no item 2; biomeFilter no item 3; biomeFilter no item 4; biomeFilter no item 5; biomeFilter no item 6; biomeFilter no item 7; biomeFilter no item 8; biomeFilter no item 9; biomeFilter no item 10; sort no item 0; sort no item 1; sort no item 2
+PASS  menus: open list takes End + Enter
+PASS  menus: record switch flips by mouse and moves its lever  — {"i":1,"pos":"1"}
+PASS  tags: three tags added, drop-in runs  — 3
+PASS  tags: 4 × 5 cm  — 4.00 × 5.00 cm
+PASS  tags: swing on breeze  — idle 0.28° → air 5.69°
+PASS  tags: swing on impact  — idle 0.28° → impact 5.62°
+PASS  tags: idle sway present  — [{"key":13,"angle":0.152,"swing":-0.319,"rotate":"0.15deg"},{"key":13,"angle":-0.158,"swing":-0.319,"rotate":"-0.16deg"},{"key":11,"angle":-0.469,"swing":-0.319,"rotate":"-0.47deg"}]
+tags swing peak after air/impact (deg): 5.693 tag:swing events 4
+PASS  title: fourteen flourishes (Paul, WP-17 item 22; was six), none touches the letters (8 samples over 12 s)  — []
+PASS  title: independent phases  — [["under-left",3918,"hold"],["under-right",3992,"hold"],["under-loop-left",6587,"erase"],["under-loop-right",9504,"rest"],["under-knot",447,"draw"],["curl-left",3113,"hold"],["curl-right",8366,"erase"],["above-tendril-left",5552,"hold"],["above-tendril-right",7165,"erase"],["above-left",7411,"erase"],["above-right",3853,"hold"],["above-dash-left",3928,"hold"],["above-dash-right",4918,"hold"],["above-crest",3142,"hold"]]
+PASS  title: the cycle loops (draw/hold/erase/rest seen)  — hold,erase,rest,draw
+FAIL  tooltips: paper slip shown, native title moved aside (no double)  — {"shown":false,"text":"","moved":false}
+FAIL  tooltips: title restored on leave  — 172 → 172
+tour {"poolScreen":[1093.4,95.5],"targetScreen":[1093.5,95.6],"phase":"on","vis":1,"k":0.35,"key":0.91,"veilKey":0.455,"keyBase":{"scene":2.6,"veil":1.3},"pool":[31.63,20.99],"target":[31.63,20.99],"spot":3744,"veilSpot":1872}
+PASS  tour: lamp dims to ≈0.35  — {"poolScreen":[1093.4,95.5],"targetScreen":[1093.5,95.6],"phase":"on","vis":1,"k":0.35,"key":0.91,"veilKey":0.455,"keyBase":{"scene":2.6,"veil":1.3},"pool":[31.63,20.99],"target":[31.63,20.99],"spot":3744,"veilSpot":1872}
+PASS  tour: light pool sits on each target (3 steps, ≤6 px)  — [0.1,0,0]
+PASS  tour: every step has a target and the pool moves to it  — [[[1093.4,95.5],1],[[66.9,341.9],1],[[763.5,274],1]]
+tour pools [{"i":0,"pool":[1093.4,95.5],"target":[1093.5,95.6],"vis":1,"d":0.1},{"i":1,"pool":[66.9,341.9],"target":[66.9,341.9],"vis":1,"d":0},{"i":2,"pool":[763.5,274],"target":[763.5,274],"vis":1,"d":0}]
+PASS  tour: lamp restores  — {"poolScreen":null,"targetScreen":[763.5,274],"phase":"off","vis":0,"k":1,"key":2.6,"veilKey":1.3,"keyBase":{"scene":2.6,"veil":1.3},"pool":null,"target":null,"spot":0,"veilSpot":0}
+PASS  help: letter floats as a non-modal sheet (like the original details) with all 7 paragraphs and #forget, envelope cracked  — {"open":true,"inLetter":true,"role":"dialog","modal":null,"ps":7,"forget":true,"envelope":true,"focus":true,"pageInert":0,"ev":["help:open"]}
+PASS  help: help:open, no details:fold (seal.crack chains its own flaps)  — help:open
+PASS  help: Escape folds it back onto the sheet  — {"open":false,"back":true,"envelope":false}
+PASS  howto: howto:open, five folds on the Details rhythm, floats, focus inside  — {"open":true,"folds":[1,252,502,752,1003],"float":true,"inFloat":true,"opacity":"1","focus":true}
+PASS  howto: Escape closes, one howto:close, folds away  — {"close":1,"open":false,"left":0}
+PASS  no page errors
+
+36/42 passed

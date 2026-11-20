@@ -1,0 +1,3681 @@
+{
+ "meta": {
+  "label": "final-before-t",
+  "html": "work/wp18p/named-before/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "sampled": false,
+  "framesOnly": false,
+  "at": "2026-11-13T03:11:43.851Z",
+  "errors": [],
+  "tierEnd": "high",
+  "qualityLog": [
+   {
+    "t": 2868.2999999998137,
+    "tier": "high",
+    "why": "benchmark"
+   }
+  ],
+  "trimLog": null,
+  "governor": {
+   "phase": "watch",
+   "benchmarkMs": 10,
+   "drops": 0,
+   "windowMs": 1420
+  }
+ },
+ "rows": [
+  {
+   "name": "start-up",
+   "frames": 160,
+   "worstMs": 1050,
+   "over16": 12,
+   "over33": 8,
+   "mainMs": 3144,
+   "jsMs": 0,
+   "gpuMs": null,
+   "usableMs": 2263.2,
+   "top": [
+    [
+     "Paint",
+     108.4
+    ],
+    [
+     "Layout",
+     100.1
+    ],
+    [
+     "Parse HTML",
+     70.9
+    ],
+    [
+     "Layerize",
+     58.4
+    ],
+    [
+     "Style recalc",
+     50.2
+    ],
+    [
+     "Style recalc (forced)",
+     38.8
+    ],
+    [
+     "Pre-paint",
+     28.1
+    ],
+    [
+     "JS compile",
+     25.1
+    ],
+    [
+     "Commit",
+     18.2
+    ],
+    [
+     "Update layer",
+     7.6
+    ]
+   ],
+   "worstFrames": [
+    1050,
+    233.3,
+    199.9,
+    166.7,
+    150,
+    133.3,
+    66.6,
+    49.9
+   ]
+  },
+  {
+   "name": "load save",
+   "frames": 185,
+   "worstMs": 50,
+   "over16": 12,
+   "over33": 1,
+   "mainMs": 1489,
+   "loafMs": 57,
+   "jsMs": 0,
+   "windowMs": 3314,
+   "gpuMs": 1716,
+   "gpuWorst": 46.5,
+   "gpuFrames": 177,
+   "loaf": [
+    {
+     "t": 60,
+     "d": 57,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     286.2
+    ],
+    [
+     "Layerize",
+     143.3
+    ],
+    [
+     "Paint",
+     132.8
+    ],
+    [
+     "Style recalc (forced)",
+     77.5
+    ],
+    [
+     "Hit test",
+     68.3
+    ],
+    [
+     "Pre-paint",
+     54.5
+    ],
+    [
+     "Layout",
+     32.4
+    ],
+    [
+     "Commit",
+     23
+    ],
+    [
+     "Layout (forced)",
+     10.8
+    ],
+    [
+     "Update layer",
+     9.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     120,
+     50
+    ],
+    [
+     686,
+     33.4
+    ],
+    [
+     1136,
+     33.4
+    ],
+    [
+     1420,
+     33.4
+    ],
+    [
+     753,
+     33.4
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc",
+     7
+    ],
+    [
+     "Layout",
+     6
+    ],
+    [
+     "Style recalc (forced)",
+     5
+    ],
+    [
+     "Paint",
+     3.3
+    ],
+    [
+     "Pre-paint",
+     2.5
+    ],
+    [
+     "Layout (forced)",
+     1.1
+    ],
+    [
+     "Parse HTML",
+     0.9
+    ],
+    [
+     "Hit test",
+     0.5
+    ]
+   ],
+   "worstRecalcs": [
+    "style 3.2ms 1065el @frame",
+    "layout 4.3ms 1621el @frame",
+    "style 3.2ms 849el @frame",
+    "style 3.9ms 568el @frame"
+   ]
+  },
+  {
+   "name": "view Artisan · drag",
+   "frames": 327,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1865,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5459,
+   "gpuMs": 4357,
+   "gpuWorst": 178.4,
+   "gpuFrames": 311,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     340.3
+    ],
+    [
+     "Paint",
+     273.9
+    ],
+    [
+     "Style recalc (forced)",
+     67.9
+    ],
+    [
+     "Commit",
+     57.9
+    ],
+    [
+     "Pre-paint",
+     24
+    ],
+    [
+     "Style recalc",
+     17.2
+    ],
+    [
+     "Update layer",
+     13.4
+    ],
+    [
+     "Hit test",
+     10.3
+    ],
+    [
+     "Layout (forced)",
+     5.2
+    ],
+    [
+     "GC (minor)",
+     0.2
+    ]
+   ],
+   "worstFrames": [
+    [
+     1602,
+     16.8
+    ],
+    [
+     1652,
+     16.8
+    ],
+    [
+     3618,
+     16.8
+    ],
+    [
+     3668,
+     16.8
+    ],
+    [
+     2385,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layerize",
+     1.4
+    ],
+    [
+     "Paint",
+     1
+    ],
+    [
+     "Style recalc (forced)",
+     0.2
+    ],
+    [
+     "Commit",
+     0.2
+    ],
+    [
+     "Style recalc",
+     0.1
+    ],
+    [
+     "Pre-paint",
+     0
+    ],
+    [
+     "Update layer",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Artisan · release",
+   "frames": 149,
+   "worstMs": 183.4,
+   "over16": 21,
+   "over33": 1,
+   "mainMs": 2573,
+   "loafMs": 190,
+   "jsMs": 0,
+   "windowMs": 3006,
+   "gpuMs": 1791,
+   "gpuWorst": 57.9,
+   "gpuFrames": 142,
+   "loaf": [
+    {
+     "t": 16,
+     "d": 190,
+     "sl": 8,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     754.3
+    ],
+    [
+     "Paint",
+     389.1
+    ],
+    [
+     "Style recalc",
+     296.6
+    ],
+    [
+     "Pre-paint",
+     149.2
+    ],
+    [
+     "Style recalc (forced)",
+     104.5
+    ],
+    [
+     "Layout (forced)",
+     83.5
+    ],
+    [
+     "Commit",
+     31.3
+    ],
+    [
+     "Layout",
+     26
+    ],
+    [
+     "Update layer",
+     20.5
+    ],
+    [
+     "Hit test",
+     8.3
+    ]
+   ],
+   "worstFrames": [
+    [
+     211,
+     183.4
+    ],
+    [
+     1294,
+     33.5
+    ],
+    [
+     244,
+     33.4
+    ],
+    [
+     844,
+     33.4
+    ],
+    [
+     961,
+     33.4
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     40.8
+    ],
+    [
+     "Layout (forced)",
+     35
+    ],
+    [
+     "Style recalc",
+     22.7
+    ],
+    [
+     "Layout",
+     20.9
+    ],
+    [
+     "Pre-paint",
+     7.8
+    ],
+    [
+     "Paint",
+     7.6
+    ],
+    [
+     "Parse HTML",
+     5.4
+    ],
+    [
+     "Hit test",
+     0.1
+    ]
+   ],
+   "worstRecalcs": [
+    "style 19.3ms 4749el @frame",
+    "layout 20.7ms 7333el @frame",
+    "style 7.0ms 896el @frame",
+    "layout 4.8ms 1270el @frame",
+    "style 2.4ms 375el @frame",
+    "style 16.0ms 4749el @frame",
+    "layout 26.9ms 7332el @frame",
+    "style 7.4ms 896el @frame",
+    "layout 4.8ms 1270el @frame",
+    "style 3.6ms 348el @frame",
+    "style 3.3ms 325el @frame"
+   ]
+  },
+  {
+   "name": "view Blacksmith · drag",
+   "frames": 294,
+   "worstMs": 33.3,
+   "over16": 1,
+   "over33": 0,
+   "mainMs": 3974,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 4937,
+   "gpuMs": 3542,
+   "gpuWorst": 73.8,
+   "gpuFrames": 252,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     2053
+    ],
+    [
+     "Paint",
+     828.2
+    ],
+    [
+     "Commit",
+     71.3
+    ],
+    [
+     "Style recalc (forced)",
+     47.7
+    ],
+    [
+     "Update layer",
+     33.2
+    ],
+    [
+     "Pre-paint",
+     26.5
+    ],
+    [
+     "Style recalc",
+     17.6
+    ],
+    [
+     "Hit test",
+     14.2
+    ],
+    [
+     "Layout (forced)",
+     5.7
+    ],
+    [
+     "GC (minor)",
+     0.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     4121,
+     33.3
+    ],
+    [
+     3271,
+     16.8
+    ],
+    [
+     321,
+     16.8
+    ],
+    [
+     654,
+     16.8
+    ],
+    [
+     754,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     9.3
+    ],
+    [
+     "Layerize",
+     7.1
+    ],
+    [
+     "Layout (forced)",
+     5.7
+    ],
+    [
+     "Paint",
+     3.5
+    ],
+    [
+     "Pre-paint",
+     0.9
+    ],
+    [
+     "Style recalc",
+     0
+    ]
+   ],
+   "worstRecalcs": [
+    "style 2.7ms 399el @frame",
+    "layout 5.7ms 416el @frame",
+    "style 6.5ms 665el @frame"
+   ]
+  },
+  {
+   "name": "view Blacksmith · release",
+   "frames": 161,
+   "worstMs": 66.6,
+   "over16": 6,
+   "over33": 1,
+   "mainMs": 1630,
+   "loafMs": 74,
+   "jsMs": 0,
+   "windowMs": 2829,
+   "gpuMs": 2879,
+   "gpuWorst": 68.8,
+   "gpuFrames": 151,
+   "loaf": [
+    {
+     "t": 11,
+     "d": 74,
+     "sl": 6,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     342.2
+    ],
+    [
+     "Layerize",
+     206.6
+    ],
+    [
+     "Paint",
+     176.1
+    ],
+    [
+     "Pre-paint",
+     76.9
+    ],
+    [
+     "Style recalc (forced)",
+     72.8
+    ],
+    [
+     "Layout (forced)",
+     38.1
+    ],
+    [
+     "Commit",
+     25.2
+    ],
+    [
+     "Layout",
+     24.6
+    ],
+    [
+     "Update layer",
+     11
+    ],
+    [
+     "Hit test",
+     7.6
+    ]
+   ],
+   "worstFrames": [
+    [
+     88,
+     66.6
+    ],
+    [
+     955,
+     33.4
+    ],
+    [
+     1038,
+     33.4
+    ],
+    [
+     1121,
+     33.4
+    ],
+    [
+     1188,
+     33.3
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     18.7
+    ],
+    [
+     "Layout (forced)",
+     14.1
+    ],
+    [
+     "Layout",
+     7.4
+    ],
+    [
+     "Pre-paint",
+     3.7
+    ],
+    [
+     "Style recalc",
+     3.6
+    ],
+    [
+     "Paint",
+     3.5
+    ],
+    [
+     "Parse HTML",
+     1.8
+    ],
+    [
+     "Hit test",
+     0.1
+    ]
+   ],
+   "worstRecalcs": [
+    "layout 7.2ms 2671el @frame",
+    "style 2.4ms 356el @frame",
+    "style 5.6ms 1719el @frame",
+    "layout 8.3ms 2671el @frame",
+    "style 2.3ms 356el @frame",
+    "style 3.6ms 316el @frame",
+    "style 3.5ms 317el @frame"
+   ]
+  },
+  {
+   "name": "view Carpenter · drag",
+   "frames": 292,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1915,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 4884,
+   "gpuMs": 3773,
+   "gpuWorst": 117.7,
+   "gpuFrames": 275,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     503.9
+    ],
+    [
+     "Paint",
+     355.7
+    ],
+    [
+     "Commit",
+     51.8
+    ],
+    [
+     "Style recalc (forced)",
+     50.2
+    ],
+    [
+     "Pre-paint",
+     20.7
+    ],
+    [
+     "Update layer",
+     16.1
+    ],
+    [
+     "Style recalc",
+     14.3
+    ],
+    [
+     "Hit test",
+     7.5
+    ],
+    [
+     "Layout (forced)",
+     5.4
+    ],
+    [
+     "GC (minor)",
+     0.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     94,
+     16.8
+    ],
+    [
+     294,
+     16.8
+    ],
+    [
+     394,
+     16.8
+    ],
+    [
+     444,
+     16.8
+    ],
+    [
+     727,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layerize",
+     1.7
+    ],
+    [
+     "Paint",
+     0.8
+    ],
+    [
+     "Commit",
+     0.4
+    ],
+    [
+     "Hit test",
+     0.3
+    ],
+    [
+     "Style recalc",
+     0.1
+    ],
+    [
+     "Update layer",
+     0.1
+    ],
+    [
+     "Style recalc (forced)",
+     0
+    ],
+    [
+     "Pre-paint",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · release",
+   "frames": 146,
+   "worstMs": 166.6,
+   "over16": 23,
+   "over33": 1,
+   "mainMs": 2599,
+   "loafMs": 163,
+   "jsMs": 0,
+   "windowMs": 2971,
+   "gpuMs": 1879,
+   "gpuWorst": 72.9,
+   "gpuFrames": 141,
+   "loaf": [
+    {
+     "t": 12,
+     "d": 163,
+     "sl": 8,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     754.1
+    ],
+    [
+     "Paint",
+     421.6
+    ],
+    [
+     "Style recalc",
+     301.5
+    ],
+    [
+     "Pre-paint",
+     160.2
+    ],
+    [
+     "Style recalc (forced)",
+     120.8
+    ],
+    [
+     "Layout (forced)",
+     79
+    ],
+    [
+     "Commit",
+     29.5
+    ],
+    [
+     "Layout",
+     28.2
+    ],
+    [
+     "Update layer",
+     19.9
+    ],
+    [
+     "Hit test",
+     8.9
+    ]
+   ],
+   "worstFrames": [
+    [
+     191,
+     166.6
+    ],
+    [
+     1874,
+     33.5
+    ],
+    [
+     791,
+     33.4
+    ],
+    [
+     1641,
+     33.4
+    ],
+    [
+     1791,
+     33.4
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     40
+    ],
+    [
+     "Layout (forced)",
+     28.8
+    ],
+    [
+     "Layout",
+     28.7
+    ],
+    [
+     "Style recalc",
+     16.6
+    ],
+    [
+     "Pre-paint",
+     8.2
+    ],
+    [
+     "Paint",
+     7.3
+    ],
+    [
+     "Layerize",
+     7.2
+    ],
+    [
+     "Parse HTML",
+     2.2
+    ]
+   ],
+   "worstRecalcs": [
+    "style 12.9ms 4656el @frame",
+    "layout 28.5ms 7270el @frame",
+    "style 6.9ms 880el @frame",
+    "layout 4.5ms 1242el @frame",
+    "style 11.3ms 4656el @frame",
+    "layout 15.2ms 7269el @frame",
+    "style 6.0ms 880el @frame",
+    "layout 4.5ms 1240el @frame",
+    "style 10.4ms 348el @frame",
+    "style 3.7ms 341el @frame"
+   ]
+  },
+  {
+   "name": "view Master Chef · drag",
+   "frames": 301,
+   "worstMs": 33.4,
+   "over16": 2,
+   "over33": 0,
+   "mainMs": 4345,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5080,
+   "gpuMs": 3481,
+   "gpuWorst": 65.2,
+   "gpuFrames": 265,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     2075.6
+    ],
+    [
+     "Paint",
+     995.9
+    ],
+    [
+     "Pre-paint",
+     83.3
+    ],
+    [
+     "Commit",
+     73.6
+    ],
+    [
+     "Style recalc (forced)",
+     72.3
+    ],
+    [
+     "Update layer",
+     32.8
+    ],
+    [
+     "Style recalc",
+     16.5
+    ],
+    [
+     "Hit test",
+     16.4
+    ],
+    [
+     "Layout (forced)",
+     6.8
+    ],
+    [
+     "GC (minor)",
+     0.2
+    ]
+   ],
+   "worstFrames": [
+    [
+     4632,
+     33.4
+    ],
+    [
+     4182,
+     33.3
+    ],
+    [
+     249,
+     16.8
+    ],
+    [
+     649,
+     16.8
+    ],
+    [
+     799,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layerize",
+     13.2
+    ],
+    [
+     "Paint",
+     10.5
+    ],
+    [
+     "Pre-paint",
+     1.8
+    ],
+    [
+     "Commit",
+     0.6
+    ],
+    [
+     "Style recalc (forced)",
+     0.5
+    ],
+    [
+     "Style recalc",
+     0.1
+    ],
+    [
+     "Layout (forced)",
+     0
+    ],
+    [
+     "Update layer",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Master Chef · release",
+   "frames": 161,
+   "worstMs": 50,
+   "over16": 5,
+   "over33": 2,
+   "mainMs": 1507,
+   "loafMs": 123,
+   "jsMs": 0,
+   "windowMs": 2810,
+   "gpuMs": 2855,
+   "gpuWorst": 101.6,
+   "gpuFrames": 148,
+   "loaf": [
+    {
+     "t": 18,
+     "d": 58,
+     "sl": 4,
+     "top": []
+    },
+    {
+     "t": 109,
+     "d": 66,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     279.6
+    ],
+    [
+     "Layerize",
+     132.4
+    ],
+    [
+     "Paint",
+     115.8
+    ],
+    [
+     "Pre-paint",
+     60.3
+    ],
+    [
+     "Style recalc (forced)",
+     59
+    ],
+    [
+     "Layout",
+     27.5
+    ],
+    [
+     "Layout (forced)",
+     24.7
+    ],
+    [
+     "Commit",
+     21.9
+    ],
+    [
+     "Update layer",
+     9.7
+    ],
+    [
+     "Hit test",
+     8.3
+    ]
+   ],
+   "worstFrames": [
+    [
+     70,
+     50
+    ],
+    [
+     170,
+     50
+    ],
+    [
+     1120,
+     33.3
+    ],
+    [
+     1203,
+     33.3
+    ],
+    [
+     1303,
+     33.3
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     14.7
+    ],
+    [
+     "Layout (forced)",
+     9.4
+    ],
+    [
+     "Layout",
+     4.1
+    ],
+    [
+     "Style recalc",
+     3.3
+    ],
+    [
+     "Pre-paint",
+     3.1
+    ],
+    [
+     "Parse HTML",
+     1.2
+    ],
+    [
+     "Hit test",
+     0
+    ]
+   ],
+   "worstRecalcs": [
+    "style 3.3ms 1044el @frame",
+    "layout 4.1ms 1588el @frame",
+    "style 2.4ms 1044el @frame",
+    "layout 3.8ms 1588el @frame",
+    "style 2.5ms 230el @frame",
+    "layout 2.6ms 271el @frame",
+    "style 3.3ms 247el @frame"
+   ]
+  },
+  {
+   "name": "view Gourmet · drag",
+   "frames": 286,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1651,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 4789,
+   "gpuMs": 3728,
+   "gpuWorst": 100.8,
+   "gpuFrames": 272,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     309.2
+    ],
+    [
+     "Paint",
+     239.7
+    ],
+    [
+     "Commit",
+     52.2
+    ],
+    [
+     "Style recalc (forced)",
+     50.2
+    ],
+    [
+     "Style recalc",
+     24.6
+    ],
+    [
+     "Pre-paint",
+     22.5
+    ],
+    [
+     "Update layer",
+     12.3
+    ],
+    [
+     "Layout (forced)",
+     7.8
+    ],
+    [
+     "Hit test",
+     4.8
+    ],
+    [
+     "GC (minor)",
+     0.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     788,
+     16.8
+    ],
+    [
+     838,
+     16.8
+    ],
+    [
+     1588,
+     16.8
+    ],
+    [
+     1772,
+     16.8
+    ],
+    [
+     1822,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layerize",
+     1.1
+    ],
+    [
+     "Paint",
+     0.6
+    ],
+    [
+     "Commit",
+     0.1
+    ],
+    [
+     "Style recalc",
+     0.1
+    ],
+    [
+     "Style recalc (forced)",
+     0.1
+    ],
+    [
+     "Update layer",
+     0
+    ],
+    [
+     "Pre-paint",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · release",
+   "frames": 164,
+   "worstMs": 66.6,
+   "over16": 5,
+   "over33": 1,
+   "mainMs": 1731,
+   "loafMs": 73,
+   "jsMs": 0,
+   "windowMs": 2872,
+   "gpuMs": 2815,
+   "gpuWorst": 72.2,
+   "gpuFrames": 152,
+   "loaf": [
+    {
+     "t": 17,
+     "d": 73,
+     "sl": 5,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     371.6
+    ],
+    [
+     "Paint",
+     166.5
+    ],
+    [
+     "Layerize",
+     163.8
+    ],
+    [
+     "Style recalc (forced)",
+     86.3
+    ],
+    [
+     "Pre-paint",
+     79.2
+    ],
+    [
+     "Layout",
+     38.5
+    ],
+    [
+     "Layout (forced)",
+     35.9
+    ],
+    [
+     "Commit",
+     27.6
+    ],
+    [
+     "Update layer",
+     10.2
+    ],
+    [
+     "Hit test",
+     9.5
+    ]
+   ],
+   "worstFrames": [
+    [
+     94,
+     66.6
+    ],
+    [
+     1111,
+     33.4
+    ],
+    [
+     1028,
+     33.3
+    ],
+    [
+     1211,
+     33.3
+    ],
+    [
+     1294,
+     33.3
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     17.6
+    ],
+    [
+     "Layout (forced)",
+     12.8
+    ],
+    [
+     "Layout",
+     6.2
+    ],
+    [
+     "Pre-paint",
+     4.7
+    ],
+    [
+     "Style recalc",
+     3.3
+    ],
+    [
+     "Paint",
+     2.6
+    ],
+    [
+     "Layerize",
+     1.3
+    ],
+    [
+     "Parse HTML",
+     0.8
+    ]
+   ],
+   "worstRecalcs": [
+    "layout 6.0ms 1881el @frame",
+    "style 2.1ms 368el @frame",
+    "style 3.2ms 1231el @frame",
+    "layout 5.1ms 1880el @frame",
+    "style 2.7ms 260el @frame",
+    "layout 3.5ms 316el @frame",
+    "style 3.6ms 285el @frame",
+    "style 3.2ms 285el @frame"
+   ]
+  },
+  {
+   "name": "view Trophy Collector · drag",
+   "frames": 287,
+   "worstMs": 33.3,
+   "over16": 1,
+   "over33": 0,
+   "mainMs": 1755,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 4811,
+   "gpuMs": 3799,
+   "gpuWorst": 98.9,
+   "gpuFrames": 272,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     349.9
+    ],
+    [
+     "Paint",
+     278.8
+    ],
+    [
+     "Style recalc (forced)",
+     58.1
+    ],
+    [
+     "Commit",
+     51.3
+    ],
+    [
+     "Style recalc",
+     25.4
+    ],
+    [
+     "Pre-paint",
+     21.2
+    ],
+    [
+     "Update layer",
+     12.6
+    ],
+    [
+     "Hit test",
+     6.5
+    ],
+    [
+     "Layout (forced)",
+     6
+    ],
+    [
+     "GC (minor)",
+     0.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     4088,
+     33.3
+    ],
+    [
+     305,
+     16.8
+    ],
+    [
+     1171,
+     16.8
+    ],
+    [
+     1321,
+     16.8
+    ],
+    [
+     1955,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc",
+     6.6
+    ],
+    [
+     "Layerize",
+     2.3
+    ],
+    [
+     "Paint",
+     1.9
+    ],
+    [
+     "Pre-paint",
+     0.7
+    ],
+    [
+     "Commit",
+     0.5
+    ],
+    [
+     "Style recalc (forced)",
+     0.3
+    ],
+    [
+     "Update layer",
+     0.1
+    ],
+    [
+     "GC (major)",
+     0
+    ]
+   ],
+   "worstRecalcs": [
+    "style 6.4ms 639el @frame"
+   ]
+  },
+  {
+   "name": "view Trophy Collector · release",
+   "frames": 164,
+   "worstMs": 33.4,
+   "over16": 7,
+   "over33": 0,
+   "mainMs": 1579,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 2863,
+   "gpuMs": 2767,
+   "gpuWorst": 64.9,
+   "gpuFrames": 154,
+   "loaf": [],
+   "top": [
+    [
+     "Style recalc",
+     367
+    ],
+    [
+     "Paint",
+     134.9
+    ],
+    [
+     "Layerize",
+     119.6
+    ],
+    [
+     "Style recalc (forced)",
+     68.5
+    ],
+    [
+     "Pre-paint",
+     59.6
+    ],
+    [
+     "Layout",
+     29.9
+    ],
+    [
+     "Layout (forced)",
+     24.4
+    ],
+    [
+     "Commit",
+     23.7
+    ],
+    [
+     "Hit test",
+     8.1
+    ],
+    [
+     "Update layer",
+     7.2
+    ]
+   ],
+   "worstFrames": [
+    [
+     134,
+     33.4
+    ],
+    [
+     1317,
+     33.4
+    ],
+    [
+     67,
+     33.3
+    ],
+    [
+     734,
+     33.3
+    ],
+    [
+     1134,
+     33.3
+    ]
+   ],
+   "worstTop": [
+    [
+     "Paint",
+     0.8
+    ],
+    [
+     "Layerize",
+     0.4
+    ],
+    [
+     "Style recalc (forced)",
+     0.2
+    ],
+    [
+     "Pre-paint",
+     0.2
+    ],
+    [
+     "Commit",
+     0.1
+    ],
+    [
+     "Style recalc",
+     0.1
+    ],
+    [
+     "Update layer",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Hunter · drag",
+   "frames": 282,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1518,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 4708,
+   "gpuMs": 3814,
+   "gpuWorst": 89.3,
+   "gpuFrames": 265,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     275.4
+    ],
+    [
+     "Paint",
+     199.8
+    ],
+    [
+     "Commit",
+     52.8
+    ],
+    [
+     "Style recalc (forced)",
+     40.8
+    ],
+    [
+     "Style recalc",
+     26.1
+    ],
+    [
+     "Pre-paint",
+     20.3
+    ],
+    [
+     "Update layer",
+     10.5
+    ],
+    [
+     "Layout (forced)",
+     6.1
+    ],
+    [
+     "Hit test",
+     5.1
+    ],
+    [
+     "GC (minor)",
+     0.2
+    ]
+   ],
+   "worstFrames": [
+    [
+     169,
+     16.8
+    ],
+    [
+     403,
+     16.8
+    ],
+    [
+     636,
+     16.8
+    ],
+    [
+     803,
+     16.8
+    ],
+    [
+     936,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layerize",
+     1.4
+    ],
+    [
+     "Paint",
+     0.6
+    ],
+    [
+     "Style recalc",
+     0.1
+    ],
+    [
+     "Commit",
+     0.1
+    ],
+    [
+     "Hit test",
+     0.1
+    ],
+    [
+     "Pre-paint",
+     0.1
+    ],
+    [
+     "Update layer",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Hunter · release",
+   "frames": 164,
+   "worstMs": 49.9,
+   "over16": 4,
+   "over33": 1,
+   "mainMs": 1539,
+   "loafMs": 70,
+   "jsMs": 0,
+   "windowMs": 2829,
+   "gpuMs": 2806,
+   "gpuWorst": 76,
+   "gpuFrames": 154,
+   "loaf": [
+    {
+     "t": 8,
+     "d": 70,
+     "sl": 6,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     289.3
+    ],
+    [
+     "Paint",
+     168.2
+    ],
+    [
+     "Layerize",
+     165.9
+    ],
+    [
+     "Style recalc (forced)",
+     71.3
+    ],
+    [
+     "Pre-paint",
+     68.7
+    ],
+    [
+     "Layout (forced)",
+     29.4
+    ],
+    [
+     "Layout",
+     26.7
+    ],
+    [
+     "Commit",
+     25.6
+    ],
+    [
+     "Update layer",
+     9.9
+    ],
+    [
+     "Hit test",
+     7.6
+    ]
+   ],
+   "worstFrames": [
+    [
+     70,
+     49.9
+    ],
+    [
+     920,
+     33.3
+    ],
+    [
+     1170,
+     33.3
+    ],
+    [
+     1270,
+     33.3
+    ],
+    [
+     703,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     18.3
+    ],
+    [
+     "Layout (forced)",
+     12.1
+    ],
+    [
+     "Pre-paint",
+     2.9
+    ],
+    [
+     "Parse HTML",
+     0.8
+    ],
+    [
+     "Hit test",
+     0.1
+    ]
+   ],
+   "worstRecalcs": [
+    "style 2.1ms 282el @frame",
+    "style 2.0ms 367el @frame",
+    "style 3.7ms 1363el @frame",
+    "layout 4.9ms 2096el @frame",
+    "style 4.3ms 236el @frame",
+    "layout 2.3ms 80el @frame"
+   ]
+  },
+  {
+   "name": "view Master Hunter · drag",
+   "frames": 290,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1941,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 4847,
+   "gpuMs": 3754,
+   "gpuWorst": 129.6,
+   "gpuFrames": 272,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     383.5
+    ],
+    [
+     "Paint",
+     348.8
+    ],
+    [
+     "Commit",
+     55.7
+    ],
+    [
+     "Style recalc (forced)",
+     38.9
+    ],
+    [
+     "Style recalc",
+     32
+    ],
+    [
+     "Pre-paint",
+     23
+    ],
+    [
+     "Update layer",
+     13.7
+    ],
+    [
+     "Hit test",
+     10.5
+    ],
+    [
+     "Layout (forced)",
+     4.8
+    ],
+    [
+     "GC (minor)",
+     0.2
+    ]
+   ],
+   "worstFrames": [
+    [
+     319,
+     16.8
+    ],
+    [
+     1003,
+     16.8
+    ],
+    [
+     1153,
+     16.8
+    ],
+    [
+     1503,
+     16.8
+    ],
+    [
+     1703,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layerize",
+     1.3
+    ],
+    [
+     "Paint",
+     1.1
+    ],
+    [
+     "Style recalc",
+     0.3
+    ],
+    [
+     "Pre-paint",
+     0.2
+    ],
+    [
+     "Hit test",
+     0.2
+    ],
+    [
+     "Commit",
+     0.1
+    ],
+    [
+     "Update layer",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Master Hunter · release",
+   "frames": 163,
+   "worstMs": 66.6,
+   "over16": 4,
+   "over33": 1,
+   "mainMs": 1557,
+   "loafMs": 75,
+   "jsMs": 0,
+   "windowMs": 2826,
+   "gpuMs": 2849,
+   "gpuWorst": 78.4,
+   "gpuFrames": 150,
+   "loaf": [
+    {
+     "t": 6,
+     "d": 75,
+     "sl": 14,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     302.6
+    ],
+    [
+     "Paint",
+     162.5
+    ],
+    [
+     "Layerize",
+     160.8
+    ],
+    [
+     "Pre-paint",
+     67
+    ],
+    [
+     "Style recalc (forced)",
+     64.3
+    ],
+    [
+     "Layout (forced)",
+     30.4
+    ],
+    [
+     "Layout",
+     27.4
+    ],
+    [
+     "Commit",
+     25.7
+    ],
+    [
+     "Update layer",
+     9.4
+    ],
+    [
+     "Hit test",
+     8.6
+    ]
+   ],
+   "worstFrames": [
+    [
+     84,
+     66.6
+    ],
+    [
+     1234,
+     33.4
+    ],
+    [
+     1368,
+     33.3
+    ],
+    [
+     1868,
+     33.3
+    ],
+    [
+     751,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     15.6
+    ],
+    [
+     "Layout (forced)",
+     12.6
+    ],
+    [
+     "Style recalc",
+     7.3
+    ],
+    [
+     "Pre-paint",
+     3.4
+    ],
+    [
+     "Paint",
+     2.9
+    ],
+    [
+     "Parse HTML",
+     0.9
+    ],
+    [
+     "Layout",
+     0.5
+    ],
+    [
+     "Hit test",
+     0.1
+    ]
+   ],
+   "worstRecalcs": [
+    "style 2.1ms 282el @frame",
+    "style 3.4ms 1363el @frame",
+    "layout 4.6ms 2096el @frame",
+    "style 2.9ms 237el @frame",
+    "layout 3.1ms 80el @frame",
+    "style 11.1ms 237el @frame"
+   ]
+  },
+  {
+   "name": "view Fisherman · drag",
+   "frames": 287,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1784,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 4796,
+   "gpuMs": 3760,
+   "gpuWorst": 100.3,
+   "gpuFrames": 272,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     362.8
+    ],
+    [
+     "Paint",
+     264.9
+    ],
+    [
+     "Pre-paint",
+     99.5
+    ],
+    [
+     "Commit",
+     50.8
+    ],
+    [
+     "Style recalc (forced)",
+     38.7
+    ],
+    [
+     "Style recalc",
+     30
+    ],
+    [
+     "Hit test",
+     16.4
+    ],
+    [
+     "Update layer",
+     13.4
+    ],
+    [
+     "Layout (forced)",
+     7.2
+    ],
+    [
+     "Layout",
+     3
+    ]
+   ],
+   "worstFrames": [
+    [
+     86,
+     16.8
+    ],
+    [
+     1053,
+     16.8
+    ],
+    [
+     1453,
+     16.8
+    ],
+    [
+     1753,
+     16.8
+    ],
+    [
+     1903,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layerize",
+     1.2
+    ],
+    [
+     "Paint",
+     0.7
+    ],
+    [
+     "Pre-paint",
+     0.5
+    ],
+    [
+     "Commit",
+     0.5
+    ],
+    [
+     "Hit test",
+     0.3
+    ],
+    [
+     "Style recalc",
+     0.2
+    ],
+    [
+     "Update layer",
+     0
+    ],
+    [
+     "Layout",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Fisherman · release",
+   "frames": 163,
+   "worstMs": 33.4,
+   "over16": 3,
+   "over33": 0,
+   "mainMs": 1091,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 2788,
+   "gpuMs": 3054,
+   "gpuWorst": 60.4,
+   "gpuFrames": 156,
+   "loaf": [],
+   "top": [
+    [
+     "Style recalc",
+     165.7
+    ],
+    [
+     "Layerize",
+     58.8
+    ],
+    [
+     "Paint",
+     52.7
+    ],
+    [
+     "Style recalc (forced)",
+     46.1
+    ],
+    [
+     "Pre-paint",
+     28.8
+    ],
+    [
+     "Layout",
+     27.3
+    ],
+    [
+     "Commit",
+     21.5
+    ],
+    [
+     "Hit test",
+     8.7
+    ],
+    [
+     "Layout (forced)",
+     8
+    ],
+    [
+     "Update layer",
+     5.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     1027,
+     33.4
+    ],
+    [
+     1160,
+     33.3
+    ],
+    [
+     1244,
+     33.3
+    ],
+    [
+     477,
+     16.8
+    ],
+    [
+     577,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Paint",
+     1.6
+    ],
+    [
+     "Layout",
+     1.5
+    ],
+    [
+     "Style recalc",
+     1.4
+    ],
+    [
+     "Style recalc (forced)",
+     1
+    ],
+    [
+     "Layerize",
+     0.9
+    ],
+    [
+     "Pre-paint",
+     0.5
+    ],
+    [
+     "Commit",
+     0.3
+    ],
+    [
+     "Update layer",
+     0.1
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Are You Alright? · drag",
+   "frames": 479,
+   "worstMs": 83.3,
+   "over16": 18,
+   "over33": 5,
+   "mainMs": 3782,
+   "loafMs": 343,
+   "jsMs": 0,
+   "windowMs": 8429,
+   "gpuMs": 9271,
+   "gpuWorst": 101.4,
+   "gpuFrames": 419,
+   "loaf": [
+    {
+     "t": 3283,
+     "d": 68,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 4297,
+     "d": 50,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 4350,
+     "d": 53,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 5126,
+     "d": 69,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 7396,
+     "d": 103,
+     "sl": 2,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     346.7
+    ],
+    [
+     "Paint",
+     199.2
+    ],
+    [
+     "Style recalc (forced)",
+     195.2
+    ],
+    [
+     "Commit",
+     109.2
+    ],
+    [
+     "Pre-paint",
+     72.4
+    ],
+    [
+     "Style recalc",
+     59.2
+    ],
+    [
+     "Layout (forced)",
+     26.7
+    ],
+    [
+     "Update layer",
+     15.3
+    ],
+    [
+     "Hit test",
+     10.7
+    ],
+    [
+     "GC (minor)",
+     5.9
+    ]
+   ],
+   "worstFrames": [
+    [
+     7487,
+     83.3
+    ],
+    [
+     3171,
+     66.7
+    ],
+    [
+     5187,
+     50.1
+    ],
+    [
+     3337,
+     50
+    ],
+    [
+     4387,
+     50
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     37.1
+    ],
+    [
+     "Layout (forced)",
+     26.7
+    ]
+   ],
+   "worstRecalcs": [
+    "style 28.4ms 415el @frame",
+    "layout 26.7ms 436el @frame",
+    "style 8.7ms 448el @frame"
+   ]
+  },
+  {
+   "name": "view Are You Alright? · release",
+   "frames": 167,
+   "worstMs": 83.3,
+   "over16": 3,
+   "over33": 2,
+   "mainMs": 1364,
+   "loafMs": 104,
+   "jsMs": 0,
+   "windowMs": 2912,
+   "gpuMs": 2479,
+   "gpuWorst": 56.8,
+   "gpuFrames": 156,
+   "loaf": [
+    {
+     "t": 22,
+     "d": 104,
+     "sl": 3,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     223.7
+    ],
+    [
+     "Layerize",
+     72.8
+    ],
+    [
+     "Paint",
+     68.3
+    ],
+    [
+     "Style recalc (forced)",
+     68
+    ],
+    [
+     "Pre-paint",
+     36.7
+    ],
+    [
+     "Layout",
+     34.7
+    ],
+    [
+     "Layout (forced)",
+     26.8
+    ],
+    [
+     "Commit",
+     23.1
+    ],
+    [
+     "Hit test",
+     10.4
+    ],
+    [
+     "Parse HTML",
+     7.6
+    ]
+   ],
+   "worstFrames": [
+    [
+     117,
+     83.3
+    ],
+    [
+     217,
+     50
+    ],
+    [
+     167,
+     33.4
+    ],
+    [
+     251,
+     16.8
+    ],
+    [
+     2567,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     21.4
+    ],
+    [
+     "Layout",
+     7.8
+    ],
+    [
+     "Style recalc",
+     7
+    ],
+    [
+     "Parse HTML",
+     5.8
+    ],
+    [
+     "Layout (forced)",
+     4.4
+    ],
+    [
+     "Pre-paint",
+     2.6
+    ],
+    [
+     "Hit test",
+     0
+    ]
+   ],
+   "worstRecalcs": [
+    "style 7.0ms 281el @frame",
+    "layout 7.8ms 446el @frame",
+    "style 4.2ms 2el @frame",
+    "style 3.8ms 424el @frame",
+    "style 6.3ms 70el @frame"
+   ]
+  },
+  {
+   "name": "view That Can't Be an Accident · drag",
+   "frames": 312,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1358,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5216,
+   "gpuMs": 5047,
+   "gpuWorst": 105.4,
+   "gpuFrames": 295,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     160.8
+    ],
+    [
+     "Paint",
+     95.6
+    ],
+    [
+     "Style recalc (forced)",
+     56.7
+    ],
+    [
+     "Commit",
+     50.8
+    ],
+    [
+     "Pre-paint",
+     21.1
+    ],
+    [
+     "Style recalc",
+     16.4
+    ],
+    [
+     "Update layer",
+     7.6
+    ],
+    [
+     "Hit test",
+     7.2
+    ],
+    [
+     "Layout (forced)",
+     6.2
+    ],
+    [
+     "GC (minor)",
+     0.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     517,
+     16.8
+    ],
+    [
+     1017,
+     16.8
+    ],
+    [
+     3467,
+     16.8
+    ],
+    [
+     5034,
+     16.8
+    ],
+    [
+     1750,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layerize",
+     0.5
+    ],
+    [
+     "Paint",
+     0.3
+    ],
+    [
+     "Style recalc (forced)",
+     0.2
+    ],
+    [
+     "Commit",
+     0.1
+    ],
+    [
+     "Hit test",
+     0.1
+    ],
+    [
+     "Style recalc",
+     0.1
+    ],
+    [
+     "Pre-paint",
+     0.1
+    ],
+    [
+     "Update layer",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view That Can't Be an Accident · release",
+   "frames": 166,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1088,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 2782,
+   "gpuMs": 2647,
+   "gpuWorst": 95.2,
+   "gpuFrames": 160,
+   "loaf": [],
+   "top": [
+    [
+     "Style recalc",
+     176.4
+    ],
+    [
+     "Layerize",
+     56.3
+    ],
+    [
+     "Paint",
+     50.4
+    ],
+    [
+     "Style recalc (forced)",
+     41.6
+    ],
+    [
+     "Pre-paint",
+     27.3
+    ],
+    [
+     "Layout",
+     26.2
+    ],
+    [
+     "Commit",
+     19.7
+    ],
+    [
+     "Hit test",
+     9
+    ],
+    [
+     "Layout (forced)",
+     8.2
+    ],
+    [
+     "Update layer",
+     4.3
+    ]
+   ],
+   "worstFrames": [
+    [
+     776,
+     16.8
+    ],
+    [
+     926,
+     16.8
+    ],
+    [
+     2592,
+     16.8
+    ],
+    [
+     2642,
+     16.8
+    ],
+    [
+     93,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc",
+     2.3
+    ],
+    [
+     "Paint",
+     0.5
+    ],
+    [
+     "Layerize",
+     0.5
+    ],
+    [
+     "Pre-paint",
+     0.2
+    ],
+    [
+     "Layout",
+     0.2
+    ],
+    [
+     "Style recalc (forced)",
+     0.2
+    ],
+    [
+     "Hit test",
+     0.2
+    ],
+    [
+     "Commit",
+     0.1
+    ]
+   ],
+   "worstRecalcs": [
+    "style 2.3ms 155el @frame"
+   ]
+  },
+  {
+   "name": "view Highlights · drag",
+   "frames": 302,
+   "worstMs": 33.4,
+   "over16": 1,
+   "over33": 0,
+   "mainMs": 1176,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5070,
+   "gpuMs": 4925,
+   "gpuWorst": 114.4,
+   "gpuFrames": 287,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     129.4
+    ],
+    [
+     "Paint",
+     64.1
+    ],
+    [
+     "Style recalc (forced)",
+     45.2
+    ],
+    [
+     "Commit",
+     44.5
+    ],
+    [
+     "Pre-paint",
+     25.3
+    ],
+    [
+     "Style recalc",
+     18.2
+    ],
+    [
+     "Update layer",
+     6.6
+    ],
+    [
+     "Hit test",
+     6.1
+    ],
+    [
+     "Layout (forced)",
+     5.7
+    ],
+    [
+     "GC (minor)",
+     0.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     4437,
+     33.4
+    ],
+    [
+     437,
+     16.8
+    ],
+    [
+     1904,
+     16.8
+    ],
+    [
+     2204,
+     16.8
+    ],
+    [
+     2304,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     8.8
+    ],
+    [
+     "Layout (forced)",
+     3.2
+    ],
+    [
+     "Pre-paint",
+     0.6
+    ],
+    [
+     "Layerize",
+     0.4
+    ],
+    [
+     "Paint",
+     0.3
+    ],
+    [
+     "Commit",
+     0.2
+    ],
+    [
+     "Update layer",
+     0
+    ],
+    [
+     "Style recalc",
+     0
+    ]
+   ],
+   "worstRecalcs": [
+    "style 4.3ms 440el @frame",
+    "layout 3.2ms 469el @frame",
+    "style 4.3ms 465el @frame"
+   ]
+  },
+  {
+   "name": "view Highlights · release",
+   "frames": 133,
+   "worstMs": 50,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": 612,
+   "loafMs": 67,
+   "jsMs": 0,
+   "windowMs": 2262,
+   "gpuMs": 2108,
+   "gpuWorst": 87.6,
+   "gpuFrames": 127,
+   "loaf": [
+    {
+     "t": 10,
+     "d": 67,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     46
+    ],
+    [
+     "Style recalc (forced)",
+     36.4
+    ],
+    [
+     "Paint",
+     32
+    ],
+    [
+     "Pre-paint",
+     24
+    ],
+    [
+     "Layout (forced)",
+     19.3
+    ],
+    [
+     "Commit",
+     16.8
+    ],
+    [
+     "Hit test",
+     6.6
+    ],
+    [
+     "Style recalc",
+     6.3
+    ],
+    [
+     "Update layer",
+     3
+    ],
+    [
+     "Layout",
+     0.7
+    ]
+   ],
+   "worstFrames": [
+    [
+     72,
+     50
+    ],
+    [
+     272,
+     16.8
+    ],
+    [
+     872,
+     16.8
+    ],
+    [
+     2222,
+     16.8
+    ],
+    [
+     456,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layout",
+     14.6
+    ],
+    [
+     "Style recalc (forced)",
+     8.3
+    ],
+    [
+     "Pre-paint",
+     7.2
+    ],
+    [
+     "Layout (forced)",
+     2.3
+    ],
+    [
+     "Parse HTML",
+     0.2
+    ],
+    [
+     "Hit test",
+     0
+    ]
+   ],
+   "worstRecalcs": [
+    "layout 14.6ms 385el @frame",
+    "style 2.2ms 283el @frame",
+    "style 3.6ms 583el @frame"
+   ]
+  },
+  {
+   "name": "view Skills & travel · drag",
+   "frames": 343,
+   "worstMs": 150,
+   "over16": 9,
+   "over33": 3,
+   "mainMs": 1720,
+   "loafMs": 332,
+   "jsMs": 0,
+   "windowMs": 6110,
+   "gpuMs": 5711,
+   "gpuWorst": 103.6,
+   "gpuFrames": 316,
+   "loaf": [
+    {
+     "t": 4270,
+     "d": 61,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 4642,
+     "d": 111,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 4859,
+     "d": 160,
+     "sl": 0,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     117.9
+    ],
+    [
+     "Style recalc (forced)",
+     63
+    ],
+    [
+     "Commit",
+     58.7
+    ],
+    [
+     "Paint",
+     46.7
+    ],
+    [
+     "Style recalc",
+     31
+    ],
+    [
+     "Pre-paint",
+     27.1
+    ],
+    [
+     "Update layer",
+     8.5
+    ],
+    [
+     "Hit test",
+     6.3
+    ],
+    [
+     "Layout (forced)",
+     1.7
+    ],
+    [
+     "GC (minor)",
+     0.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     5005,
+     150
+    ],
+    [
+     4739,
+     100
+    ],
+    [
+     4339,
+     83.3
+    ],
+    [
+     4239,
+     33.4
+    ],
+    [
+     4789,
+     33.4
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layerize",
+     0.2
+    ],
+    [
+     "Style recalc (forced)",
+     0.2
+    ],
+    [
+     "Commit",
+     0.1
+    ],
+    [
+     "Paint",
+     0.1
+    ],
+    [
+     "Pre-paint",
+     0
+    ],
+    [
+     "Update layer",
+     0
+    ],
+    [
+     "Style recalc",
+     0
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Skills & travel · release",
+   "frames": 136,
+   "worstMs": 50,
+   "over16": 2,
+   "over33": 1,
+   "mainMs": 610,
+   "loafMs": 75,
+   "jsMs": 0,
+   "windowMs": 2335,
+   "gpuMs": 2316,
+   "gpuWorst": 93.2,
+   "gpuFrames": 130,
+   "loaf": [
+    {
+     "t": 12,
+     "d": 75,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc (forced)",
+     38.8
+    ],
+    [
+     "Layout (forced)",
+     35.9
+    ],
+    [
+     "Paint",
+     25.8
+    ],
+    [
+     "Layerize",
+     19.7
+    ],
+    [
+     "Commit",
+     18.8
+    ],
+    [
+     "Pre-paint",
+     15.9
+    ],
+    [
+     "Style recalc",
+     10.4
+    ],
+    [
+     "Update layer",
+     2.6
+    ],
+    [
+     "Parse HTML",
+     1.6
+    ],
+    [
+     "Layout",
+     1
+    ]
+   ],
+   "worstFrames": [
+    [
+     76,
+     50
+    ],
+    [
+     126,
+     33.3
+    ],
+    [
+     2309,
+     16.8
+    ],
+    [
+     592,
+     16.8
+    ],
+    [
+     892,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "Layout",
+     33.4
+    ],
+    [
+     "Style recalc (forced)",
+     2.5
+    ],
+    [
+     "Layout (forced)",
+     1.3
+    ],
+    [
+     "Parse HTML",
+     0.7
+    ],
+    [
+     "Style recalc",
+     0.2
+    ]
+   ],
+   "worstRecalcs": [
+    "layout 33.3ms 497el @frame",
+    "style 2.1ms 395el @frame"
+   ]
+  },
+  {
+   "name": "details open",
+   "frames": 62,
+   "worstMs": 83.3,
+   "over16": 9,
+   "over33": 1,
+   "mainMs": 1191,
+   "loafMs": 74,
+   "jsMs": 0,
+   "windowMs": 1246,
+   "gpuMs": 596,
+   "gpuWorst": 84.9,
+   "gpuFrames": 58,
+   "loaf": [
+    {
+     "t": 10,
+     "d": 74,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     484.2
+    ],
+    [
+     "Paint",
+     206.6
+    ],
+    [
+     "Pre-paint",
+     102.8
+    ],
+    [
+     "Style recalc (forced)",
+     64.6
+    ],
+    [
+     "Style recalc",
+     17.5
+    ],
+    [
+     "Commit",
+     16.3
+    ],
+    [
+     "Layout (forced)",
+     10.9
+    ],
+    [
+     "Update layer",
+     9.9
+    ],
+    [
+     "Hit test",
+     5.7
+    ],
+    [
+     "Layout",
+     4.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     100,
+     83.3
+    ],
+    [
+     217,
+     33.4
+    ],
+    [
+     950,
+     33.4
+    ],
+    [
+     184,
+     33.3
+    ],
+    [
+     384,
+     33.3
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc",
+     40.8
+    ],
+    [
+     "Paint",
+     11.5
+    ],
+    [
+     "Layout",
+     11.1
+    ],
+    [
+     "Layerize",
+     9.1
+    ],
+    [
+     "Pre-paint",
+     4.3
+    ],
+    [
+     "Style recalc (forced)",
+     0.4
+    ],
+    [
+     "Parse HTML",
+     0.1
+    ],
+    [
+     "Layout (forced)",
+     0.1
+    ]
+   ],
+   "worstRecalcs": [
+    "layout 7.4ms 80el @frame",
+    "style 37.6ms 5009el @frame",
+    "layout 2.2ms 15el @frame"
+   ]
+  },
+  {
+   "name": "details close (burn)",
+   "frames": 218,
+   "worstMs": 100,
+   "over16": 17,
+   "over33": 4,
+   "mainMs": 2694,
+   "loafMs": 63,
+   "jsMs": 0,
+   "windowMs": 4069,
+   "gpuMs": 1177,
+   "gpuWorst": 94.2,
+   "gpuFrames": 206,
+   "loaf": [
+    {
+     "t": 69,
+     "d": 63,
+     "sl": 0,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     1034.8
+    ],
+    [
+     "Paint",
+     554.1
+    ],
+    [
+     "Hit test",
+     230.6
+    ],
+    [
+     "Style recalc (forced)",
+     80.1
+    ],
+    [
+     "Commit",
+     51.8
+    ],
+    [
+     "Pre-paint",
+     44.8
+    ],
+    [
+     "Update layer",
+     31.7
+    ],
+    [
+     "Style recalc",
+     4.5
+    ],
+    [
+     "Layout (forced)",
+     4.2
+    ],
+    [
+     "Layout",
+     2.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     160,
+     100
+    ],
+    [
+     593,
+     66.8
+    ],
+    [
+     210,
+     50
+    ],
+    [
+     260,
+     49.9
+    ],
+    [
+     460,
+     33.4
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     31.7
+    ],
+    [
+     "Layerize",
+     31.1
+    ],
+    [
+     "Paint",
+     11.8
+    ],
+    [
+     "Pre-paint",
+     3.8
+    ],
+    [
+     "Layout (forced)",
+     3.8
+    ],
+    [
+     "Layout",
+     2
+    ],
+    [
+     "Hit test",
+     1.5
+    ],
+    [
+     "Style recalc",
+     0.3
+    ]
+   ],
+   "worstRecalcs": [
+    "style 29.8ms 5010el @frame",
+    "layout 2.2ms 19el @frame"
+   ]
+  },
+  {
+   "name": "row-height rescale",
+   "frames": 100,
+   "worstMs": 83.3,
+   "over16": 16,
+   "over33": 3,
+   "mainMs": 1342,
+   "loafMs": 194,
+   "jsMs": 0,
+   "windowMs": 2040,
+   "gpuMs": 1875,
+   "gpuWorst": 85.7,
+   "gpuFrames": 91,
+   "loaf": [
+    {
+     "t": 75,
+     "d": 69,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 241,
+     "d": 50,
+     "sl": 0,
+     "top": []
+    },
+    {
+     "t": 1034,
+     "d": 75,
+     "sl": 7,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     420.7
+    ],
+    [
+     "Paint",
+     238.6
+    ],
+    [
+     "Style recalc",
+     111.9
+    ],
+    [
+     "Hit test",
+     80.3
+    ],
+    [
+     "Layout",
+     61.8
+    ],
+    [
+     "Style recalc (forced)",
+     44.4
+    ],
+    [
+     "Pre-paint",
+     42.9
+    ],
+    [
+     "Layout (forced)",
+     25.2
+    ],
+    [
+     "Commit",
+     24.6
+    ],
+    [
+     "Update layer",
+     13
+    ]
+   ],
+   "worstFrames": [
+    [
+     1118,
+     83.3
+    ],
+    [
+     151,
+     66.6
+    ],
+    [
+     302,
+     50.1
+    ],
+    [
+     85,
+     33.4
+    ],
+    [
+     835,
+     33.4
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     32.3
+    ],
+    [
+     "Layout (forced)",
+     25
+    ],
+    [
+     "Layerize",
+     7.6
+    ],
+    [
+     "Pre-paint",
+     6.8
+    ],
+    [
+     "Paint",
+     5.7
+    ],
+    [
+     "Hit test",
+     0.8
+    ]
+   ],
+   "worstRecalcs": [
+    "style 32.2ms 5646el @frame",
+    "layout 25.0ms 7536el @frame"
+   ]
+  }
+ ]
+}

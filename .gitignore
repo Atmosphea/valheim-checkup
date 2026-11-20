@@ -3,3 +3,14 @@ work/
 *.fch
 *-valheim-progress.json
 .env
+
+fixtures/private/
+node_modules/
+dist/
+valheim-checkup-3d.zip
+spec/
+reference/
+tests/test-results/
+tests/playwright-report/
+checker-reports/screens/
+work/

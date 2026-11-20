@@ -1,0 +1,296 @@
+{
+ "meta": {
+  "label": "ab-before-2",
+  "html": "work/wp18p/named-before/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "sampled": false,
+  "framesOnly": true,
+  "at": "2026-11-13T00:18:12.151Z",
+  "errors": [],
+  "tierEnd": "low",
+  "qualityLog": null
+ },
+ "rows": [
+  {
+   "name": "view Artisan · drag",
+   "frames": 321,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5356,
+   "gpuMs": 4579,
+   "gpuWorst": 87.1,
+   "gpuFrames": 298,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     334,
+     16.8
+    ],
+    [
+     1784,
+     16.8
+    ],
+    [
+     2784,
+     16.8
+    ],
+    [
+     3851,
+     16.8
+    ],
+    [
+     218,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Artisan · release",
+   "frames": 133,
+   "worstMs": 83.3,
+   "over16": 32,
+   "over33": 3,
+   "mainMs": null,
+   "loafMs": 158,
+   "jsMs": 0,
+   "windowMs": 2888,
+   "gpuMs": 2384,
+   "gpuWorst": 98.2,
+   "gpuFrames": 126,
+   "loaf": [
+    {
+     "t": 10,
+     "d": 87,
+     "sl": 7,
+     "top": []
+    },
+    {
+     "t": 1493,
+     "d": 71,
+     "sl": 5,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     105,
+     83.3
+    ],
+    [
+     1571,
+     83.3
+    ],
+    [
+     1021,
+     50
+    ],
+    [
+     1388,
+     33.4
+    ],
+    [
+     1488,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · drag",
+   "frames": 308,
+   "worstMs": 33.4,
+   "over16": 3,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5204,
+   "gpuMs": 4221,
+   "gpuWorst": 68,
+   "gpuFrames": 301,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     1620,
+     33.4
+    ],
+    [
+     4287,
+     33.4
+    ],
+    [
+     4387,
+     33.4
+    ],
+    [
+     804,
+     16.8
+    ],
+    [
+     1054,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · release",
+   "frames": 138,
+   "worstMs": 183.2,
+   "over16": 28,
+   "over33": 3,
+   "mainMs": null,
+   "loafMs": 272,
+   "jsMs": 0,
+   "windowMs": 3016,
+   "gpuMs": 1758,
+   "gpuWorst": 61.8,
+   "gpuFrames": 129,
+   "loaf": [
+    {
+     "t": 23,
+     "d": 181,
+     "sl": 11,
+     "top": []
+    },
+    {
+     "t": 1746,
+     "d": 91,
+     "sl": 6,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     209,
+     183.2
+    ],
+    [
+     1843,
+     100
+    ],
+    [
+     276,
+     50.1
+    ],
+    [
+     1176,
+     33.4
+    ],
+    [
+     1310,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · drag",
+   "frames": 300,
+   "worstMs": 33.2,
+   "over16": 1,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5036,
+   "gpuMs": 1941,
+   "gpuWorst": 42.2,
+   "gpuFrames": 252,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     4185,
+     33.2
+    ],
+    [
+     86,
+     16.8
+    ],
+    [
+     436,
+     16.8
+    ],
+    [
+     3402,
+     16.8
+    ],
+    [
+     3452,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · release",
+   "frames": 157,
+   "worstMs": 50.1,
+   "over16": 11,
+   "over33": 2,
+   "mainMs": null,
+   "loafMs": 109,
+   "jsMs": 0,
+   "windowMs": 2843,
+   "gpuMs": 1311,
+   "gpuWorst": 25.7,
+   "gpuFrames": 150,
+   "loaf": [
+    {
+     "t": 17,
+     "d": 53,
+     "sl": 5,
+     "top": []
+    },
+    {
+     "t": 80,
+     "d": 56,
+     "sl": 0,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     136,
+     50.1
+    ],
+    [
+     69,
+     50
+    ],
+    [
+     886,
+     33.4
+    ],
+    [
+     1052,
+     33.4
+    ],
+    [
+     1086,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  }
+ ]
+}

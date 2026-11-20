@@ -1,0 +1,12 @@
+/* WP-09: on the desk the gauntlet or the spark is the pointer. Help → "Also show the normal pointer" brings it back. */
+body.mode-desk:not(.vc-show-pointer) #desk,
+body.mode-desk:not(.vc-show-pointer) #desk * { cursor: none !important; }
+/* text fields keep the I-beam so typing and selecting feel normal (the spark draws its caret too) */
+body.mode-desk:not(.vc-show-pointer) #desk input[type="search"],
+body.mode-desk:not(.vc-show-pointer) #desk input[type="number"],
+body.mode-desk:not(.vc-show-pointer) #desk textarea { cursor: none !important; }
+.vc-pointer-switch { display: flex; align-items: center; gap: 0.4em; margin-top: 0.6em; cursor: pointer; }
+/* the tour's capture layer covers #desk: hide the native pointer there too, and paint the spark above it */
+body.mode-desk.vc-tour-open:not(.vc-show-pointer) .vc-tour { cursor: none; }
+.vc-spark-top { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 1001; pointer-events: none; }
+body:not(.mode-desk) .vc-spark-top { display: none; }

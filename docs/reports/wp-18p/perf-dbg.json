@@ -1,0 +1,185 @@
+{
+ "meta": {
+  "label": "dbg",
+  "html": "work/wp18p/named-before/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "at": "2026-11-12T23:21:13.121Z",
+  "errors": [],
+  "tierEnd": "high",
+  "qualityLog": null
+ },
+ "rows": [
+  {
+   "name": "view Gourmet · drag",
+   "frames": 207,
+   "worstMs": 133.4,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": 1585,
+   "jsMs": 822,
+   "windowMs": 3427,
+   "gpuMs": 2219,
+   "gpuWorst": 89.2,
+   "gpuFrames": 193,
+   "loaf": [
+    {
+     "t": -161,
+     "d": 155,
+     "sl": 0,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     342.1
+    ],
+    [
+     "Paint",
+     219.4
+    ],
+    [
+     "Style recalc (forced)",
+     49.2
+    ],
+    [
+     "Commit",
+     48.3
+    ],
+    [
+     "js native get offsetLeft",
+     48
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     43.7
+    ],
+    [
+     "js three.js:projectObject",
+     25
+    ],
+    [
+     "js native elementFromPoint",
+     24.9
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     23.7
+    ],
+    [
+     "js three.js:setProgram",
+     21.4
+    ]
+   ],
+   "worstFrames": [
+    [
+     -18,
+     133.4
+    ],
+    [
+     249,
+     16.8
+    ],
+    [
+     899,
+     16.8
+    ],
+    [
+     2615,
+     16.8
+    ],
+    [
+     365,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Gourmet · release",
+   "frames": 1839,
+   "worstMs": 133.2,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": 8526,
+   "jsMs": 4821,
+   "windowMs": 30627,
+   "gpuMs": 34745,
+   "gpuWorst": 105.4,
+   "gpuFrames": 1795,
+   "loaf": [
+    {
+     "t": -148,
+     "d": 145,
+     "sl": 0,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Paint",
+     1519.6
+    ],
+    [
+     "Layerize",
+     1003.8
+    ],
+    [
+     "Commit",
+     273.1
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     267.3
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     236.8
+    ],
+    [
+     "js native get offsetLeft",
+     225.3
+    ],
+    [
+     "Style recalc (forced)",
+     204.9
+    ],
+    [
+     "js three.js:projectObject",
+     175
+    ],
+    [
+     "js three.js:setProgram",
+     145.1
+    ],
+    [
+     "js three.js:setValue",
+     136.7
+    ]
+   ],
+   "worstFrames": [
+    [
+     -8,
+     133.2
+    ],
+    [
+     3392,
+     16.8
+    ],
+    [
+     3842,
+     16.8
+    ],
+    [
+     4092,
+     16.8
+    ],
+    [
+     7408,
+     16.8
+    ]
+   ]
+  }
+ ]
+}

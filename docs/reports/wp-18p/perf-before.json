@@ -1,0 +1,2105 @@
+{
+ "meta": {
+  "label": "before",
+  "html": "work/wp18p/named-before/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "at": "2026-11-12T23:46:05.347Z",
+  "errors": [],
+  "tierEnd": "low",
+  "qualityLog": null
+ },
+ "rows": [
+  {
+   "name": "view Artisan · drag",
+   "frames": 314,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1471,
+   "jsMs": 815,
+   "windowMs": 5241,
+   "gpuMs": 4825,
+   "gpuWorst": 92.7,
+   "gpuFrames": 300,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     289.3
+    ],
+    [
+     "Paint",
+     216.3
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     50.8
+    ],
+    [
+     "Commit",
+     46.1
+    ],
+    [
+     "Style recalc (forced)",
+     45.8
+    ],
+    [
+     "js native get offsetLeft",
+     41
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     32
+    ],
+    [
+     "js three.js:projectObject",
+     28.5
+    ],
+    [
+     "js three.js:setProgram",
+     24.7
+    ],
+    [
+     "Pre-paint",
+     20.5
+    ]
+   ],
+   "worstFrames": [
+    [
+     886,
+     16.8
+    ],
+    [
+     1903,
+     16.8
+    ],
+    [
+     2153,
+     16.8
+    ],
+    [
+     2303,
+     16.8
+    ],
+    [
+     3753,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Artisan · release",
+   "frames": 146,
+   "worstMs": 150.1,
+   "over16": 24,
+   "over33": 1,
+   "mainMs": 2758,
+   "jsMs": 807,
+   "windowMs": 2975,
+   "gpuMs": 1853,
+   "gpuWorst": 59.8,
+   "gpuFrames": 139,
+   "loaf": [
+    {
+     "t": 14,
+     "d": 158,
+     "sl": 8,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     949.9
+    ],
+    [
+     "Paint",
+     410
+    ],
+    [
+     "Style recalc",
+     314.2
+    ],
+    [
+     "Pre-paint",
+     143.5
+    ],
+    [
+     "Style recalc (forced)",
+     95
+    ],
+    [
+     "Layout (forced)",
+     81.5
+    ],
+    [
+     "js native scrollTo",
+     67.7
+    ],
+    [
+     "js native getBoundingClientRect",
+     61.8
+    ],
+    [
+     "js native querySelectorAll",
+     56.1
+    ],
+    [
+     "js GC (V8, in JS)",
+     34.3
+    ]
+   ],
+   "worstFrames": [
+    [
+     176,
+     150.1
+    ],
+    [
+     1676,
+     33.4
+    ],
+    [
+     2009,
+     33.4
+    ],
+    [
+     2209,
+     33.4
+    ],
+    [
+     876,
+     33.4
+    ]
+   ]
+  },
+  {
+   "name": "view Blacksmith · drag",
+   "frames": 308,
+   "worstMs": 50,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": 4507,
+   "jsMs": 981,
+   "windowMs": 5182,
+   "gpuMs": 3873,
+   "gpuWorst": 79.2,
+   "gpuFrames": 272,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     2392.8
+    ],
+    [
+     "Paint",
+     933.2
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     75.8
+    ],
+    [
+     "Commit",
+     73.6
+    ],
+    [
+     "Style recalc (forced)",
+     50.9
+    ],
+    [
+     "js native querySelectorAll",
+     46
+    ],
+    [
+     "js native get offsetLeft",
+     42.3
+    ],
+    [
+     "Update layer",
+     38.2
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     33.5
+    ],
+    [
+     "Pre-paint",
+     29.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     4334,
+     50
+    ],
+    [
+     1217,
+     16.8
+    ],
+    [
+     1967,
+     16.8
+    ],
+    [
+     2067,
+     16.8
+    ],
+    [
+     2417,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Blacksmith · release",
+   "frames": 163,
+   "worstMs": 66.7,
+   "over16": 4,
+   "over33": 1,
+   "mainMs": 1641,
+   "jsMs": 698,
+   "windowMs": 2827,
+   "gpuMs": 2388,
+   "gpuWorst": 56.3,
+   "gpuFrames": 152,
+   "loaf": [
+    {
+     "t": 9,
+     "d": 85,
+     "sl": 6,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     355.4
+    ],
+    [
+     "Layerize",
+     211.7
+    ],
+    [
+     "Paint",
+     165.1
+    ],
+    [
+     "Pre-paint",
+     80.1
+    ],
+    [
+     "Style recalc (forced)",
+     78.9
+    ],
+    [
+     "js native getBoundingClientRect",
+     52.8
+    ],
+    [
+     "Layout (forced)",
+     39.7
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     34.8
+    ],
+    [
+     "js native querySelectorAll",
+     30.8
+    ],
+    [
+     "Layout",
+     24.7
+    ]
+   ],
+   "worstFrames": [
+    [
+     86,
+     66.7
+    ],
+    [
+     1119,
+     33.4
+    ],
+    [
+     753,
+     33.4
+    ],
+    [
+     1253,
+     33.4
+    ],
+    [
+     2386,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Carpenter · drag",
+   "frames": 288,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1683,
+   "jsMs": 759,
+   "windowMs": 4816,
+   "gpuMs": 3997,
+   "gpuWorst": 88.3,
+   "gpuFrames": 274,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     484
+    ],
+    [
+     "Paint",
+     323
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     59.9
+    ],
+    [
+     "Commit",
+     47.8
+    ],
+    [
+     "Style recalc (forced)",
+     35
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     29.9
+    ],
+    [
+     "js native get offsetLeft",
+     28.4
+    ],
+    [
+     "js three.js:renderObject",
+     27.4
+    ],
+    [
+     "js three.js:projectObject",
+     25
+    ],
+    [
+     "js three.js:setProgram",
+     23.5
+    ]
+   ],
+   "worstFrames": [
+    [
+     461,
+     16.8
+    ],
+    [
+     1477,
+     16.8
+    ],
+    [
+     1827,
+     16.8
+    ],
+    [
+     3644,
+     16.8
+    ],
+    [
+     3927,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Carpenter · release",
+   "frames": 142,
+   "worstMs": 133.4,
+   "over16": 26,
+   "over33": 2,
+   "mainMs": 2685,
+   "jsMs": 827,
+   "windowMs": 2959,
+   "gpuMs": 1713,
+   "gpuWorst": 56.6,
+   "gpuFrames": 135,
+   "loaf": [
+    {
+     "t": 18,
+     "d": 142,
+     "sl": 7,
+     "top": []
+    },
+    {
+     "t": 2637,
+     "d": 82,
+     "sl": 0,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Layerize",
+     870.6
+    ],
+    [
+     "Paint",
+     394.8
+    ],
+    [
+     "Style recalc",
+     316.8
+    ],
+    [
+     "Pre-paint",
+     152.6
+    ],
+    [
+     "Style recalc (forced)",
+     109.7
+    ],
+    [
+     "js native getBoundingClientRect",
+     68.8
+    ],
+    [
+     "Layout (forced)",
+     67.8
+    ],
+    [
+     "js native scrollTo",
+     57.7
+    ],
+    [
+     "js native querySelectorAll",
+     54
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     35.2
+    ]
+   ],
+   "worstFrames": [
+    [
+     163,
+     133.4
+    ],
+    [
+     2713,
+     66.7
+    ],
+    [
+     879,
+     33.4
+    ],
+    [
+     996,
+     33.4
+    ],
+    [
+     1113,
+     33.4
+    ]
+   ]
+  },
+  {
+   "name": "view Master Chef · drag",
+   "frames": 293,
+   "worstMs": 33.4,
+   "over16": 1,
+   "over33": 0,
+   "mainMs": 3849,
+   "jsMs": 755,
+   "windowMs": 4920,
+   "gpuMs": 2605,
+   "gpuWorst": 27.1,
+   "gpuFrames": 254,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     2091.2
+    ],
+    [
+     "Paint",
+     810.1
+    ],
+    [
+     "Commit",
+     68.3
+    ],
+    [
+     "Style recalc (forced)",
+     54.2
+    ],
+    [
+     "js native get offsetLeft",
+     50.4
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     46.6
+    ],
+    [
+     "js native querySelectorAll",
+     38.6
+    ],
+    [
+     "Update layer",
+     35.7
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     26.3
+    ],
+    [
+     "js native elementFromPoint",
+     26.3
+    ]
+   ],
+   "worstFrames": [
+    [
+     4118,
+     33.4
+    ],
+    [
+     19,
+     16.8
+    ],
+    [
+     319,
+     16.8
+    ],
+    [
+     419,
+     16.8
+    ],
+    [
+     902,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Master Chef · release",
+   "frames": 166,
+   "worstMs": 33.3,
+   "over16": 1,
+   "over33": 0,
+   "mainMs": 1345,
+   "jsMs": 614,
+   "windowMs": 2795,
+   "gpuMs": 1475,
+   "gpuWorst": 25.9,
+   "gpuFrames": 162,
+   "loaf": [
+    {
+     "t": 12,
+     "d": 52,
+     "sl": 4,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     305.5
+    ],
+    [
+     "Layerize",
+     140.3
+    ],
+    [
+     "Paint",
+     99.8
+    ],
+    [
+     "Pre-paint",
+     61.1
+    ],
+    [
+     "Style recalc (forced)",
+     58.1
+    ],
+    [
+     "js native toBlob",
+     31.1
+    ],
+    [
+     "js native getBoundingClientRect",
+     29.9
+    ],
+    [
+     "js native get offsetLeft",
+     29.5
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     28.1
+    ],
+    [
+     "Layout",
+     25.2
+    ]
+   ],
+   "worstFrames": [
+    [
+     55,
+     33.3
+    ],
+    [
+     572,
+     16.8
+    ],
+    [
+     1272,
+     16.8
+    ],
+    [
+     1655,
+     16.8
+    ],
+    [
+     2155,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Gourmet · drag",
+   "frames": 275,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1054,
+   "jsMs": 538,
+   "windowMs": 4615,
+   "gpuMs": 3505,
+   "gpuWorst": 41.4,
+   "gpuFrames": 274,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     239.5
+    ],
+    [
+     "Paint",
+     164.3
+    ],
+    [
+     "Commit",
+     35.6
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     33.7
+    ],
+    [
+     "Style recalc (forced)",
+     32.4
+    ],
+    [
+     "js native get offsetLeft",
+     26.6
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     20.1
+    ],
+    [
+     "js three.js:renderObject",
+     17.4
+    ],
+    [
+     "Pre-paint",
+     16.7
+    ],
+    [
+     "js native querySelectorAll",
+     16.6
+    ]
+   ],
+   "worstFrames": [
+    [
+     1364,
+     16.8
+    ],
+    [
+     1714,
+     16.8
+    ],
+    [
+     1814,
+     16.8
+    ],
+    [
+     2430,
+     16.8
+    ],
+    [
+     3230,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Gourmet · release",
+   "frames": 168,
+   "worstMs": 33.4,
+   "over16": 2,
+   "over33": 0,
+   "mainMs": 1388,
+   "jsMs": 584,
+   "windowMs": 2851,
+   "gpuMs": 1598,
+   "gpuWorst": 35.3,
+   "gpuFrames": 159,
+   "loaf": [
+    {
+     "t": 17,
+     "d": 53,
+     "sl": 5,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     349.8
+    ],
+    [
+     "Layerize",
+     149.6
+    ],
+    [
+     "Paint",
+     121.4
+    ],
+    [
+     "Style recalc (forced)",
+     68.4
+    ],
+    [
+     "Pre-paint",
+     57.2
+    ],
+    [
+     "js native getBoundingClientRect",
+     51.2
+    ],
+    [
+     "Layout (forced)",
+     26.8
+    ],
+    [
+     "Layout",
+     24.3
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     23.9
+    ],
+    [
+     "js native querySelectorAll",
+     22.8
+    ]
+   ],
+   "worstFrames": [
+    [
+     62,
+     33.4
+    ],
+    [
+     95,
+     33.3
+    ],
+    [
+     1112,
+     16.8
+    ],
+    [
+     1362,
+     16.8
+    ],
+    [
+     1662,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Trophy Collector · drag",
+   "frames": 277,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1168,
+   "jsMs": 562,
+   "windowMs": 4633,
+   "gpuMs": 3385,
+   "gpuWorst": 26.8,
+   "gpuFrames": 276,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     287.1
+    ],
+    [
+     "Paint",
+     194.8
+    ],
+    [
+     "Commit",
+     37.1
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     29.4
+    ],
+    [
+     "Style recalc (forced)",
+     27
+    ],
+    [
+     "js native querySelectorAll",
+     21.7
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     21.7
+    ],
+    [
+     "js native get offsetLeft",
+     20
+    ],
+    [
+     "Pre-paint",
+     17.8
+    ],
+    [
+     "js GC (V8, in JS)",
+     17.4
+    ]
+   ],
+   "worstFrames": [
+    [
+     260,
+     16.8
+    ],
+    [
+     410,
+     16.8
+    ],
+    [
+     1860,
+     16.8
+    ],
+    [
+     2010,
+     16.8
+    ],
+    [
+     2210,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Trophy Collector · release",
+   "frames": 168,
+   "worstMs": 33.4,
+   "over16": 1,
+   "over33": 0,
+   "mainMs": 1241,
+   "jsMs": 541,
+   "windowMs": 2825,
+   "gpuMs": 1526,
+   "gpuWorst": 27.2,
+   "gpuFrames": 162,
+   "loaf": [],
+   "top": [
+    [
+     "Style recalc",
+     345.8
+    ],
+    [
+     "Layerize",
+     108.7
+    ],
+    [
+     "Paint",
+     98.3
+    ],
+    [
+     "Style recalc (forced)",
+     56.1
+    ],
+    [
+     "Pre-paint",
+     44.9
+    ],
+    [
+     "js native getBoundingClientRect",
+     33.3
+    ],
+    [
+     "Layout",
+     24.9
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     22.1
+    ],
+    [
+     "js native querySelectorAll",
+     19.9
+    ],
+    [
+     "js native toBlob",
+     19.8
+    ]
+   ],
+   "worstFrames": [
+    [
+     51,
+     33.4
+    ],
+    [
+     601,
+     16.8
+    ],
+    [
+     1051,
+     16.8
+    ],
+    [
+     1151,
+     16.8
+    ],
+    [
+     2818,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Hunter · drag",
+   "frames": 273,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 980,
+   "jsMs": 515,
+   "windowMs": 4569,
+   "gpuMs": 3461,
+   "gpuWorst": 36.7,
+   "gpuFrames": 273,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     211.1
+    ],
+    [
+     "Paint",
+     145.1
+    ],
+    [
+     "Commit",
+     34.5
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     30.5
+    ],
+    [
+     "Style recalc (forced)",
+     29.8
+    ],
+    [
+     "js three.js:renderObject",
+     21.9
+    ],
+    [
+     "js native get offsetLeft",
+     21.5
+    ],
+    [
+     "js native querySelectorAll",
+     18.3
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     17.2
+    ],
+    [
+     "Pre-paint",
+     16.9
+    ]
+   ],
+   "worstFrames": [
+    [
+     282,
+     16.8
+    ],
+    [
+     382,
+     16.8
+    ],
+    [
+     615,
+     16.8
+    ],
+    [
+     665,
+     16.8
+    ],
+    [
+     1315,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Hunter · release",
+   "frames": 166,
+   "worstMs": 50.1,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": 1333,
+   "jsMs": 558,
+   "windowMs": 2812,
+   "gpuMs": 1524,
+   "gpuWorst": 25.7,
+   "gpuFrames": 161,
+   "loaf": [
+    {
+     "t": 11,
+     "d": 59,
+     "sl": 4,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     302.9
+    ],
+    [
+     "Layerize",
+     154.7
+    ],
+    [
+     "Paint",
+     136.1
+    ],
+    [
+     "Style recalc (forced)",
+     58.8
+    ],
+    [
+     "Pre-paint",
+     57.8
+    ],
+    [
+     "js native getBoundingClientRect",
+     33.6
+    ],
+    [
+     "Layout",
+     26
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     25.3
+    ],
+    [
+     "Layout (forced)",
+     23.9
+    ],
+    [
+     "js native toBlob",
+     21.9
+    ]
+   ],
+   "worstFrames": [
+    [
+     74,
+     50.1
+    ],
+    [
+     674,
+     16.8
+    ],
+    [
+     1191,
+     16.8
+    ],
+    [
+     1891,
+     16.8
+    ],
+    [
+     1991,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Master Hunter · drag",
+   "frames": 277,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1178,
+   "jsMs": 542,
+   "windowMs": 4630,
+   "gpuMs": 3290,
+   "gpuWorst": 28,
+   "gpuFrames": 276,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     302.3
+    ],
+    [
+     "Paint",
+     219
+    ],
+    [
+     "Commit",
+     37.8
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     37
+    ],
+    [
+     "Style recalc (forced)",
+     26.6
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     25
+    ],
+    [
+     "js native get offsetLeft",
+     20.9
+    ],
+    [
+     "js native querySelectorAll",
+     20.2
+    ],
+    [
+     "js three.js:renderObject",
+     20.1
+    ],
+    [
+     "js three.js:projectObject",
+     18.8
+    ]
+   ],
+   "worstFrames": [
+    [
+     90,
+     16.8
+    ],
+    [
+     806,
+     16.8
+    ],
+    [
+     1440,
+     16.8
+    ],
+    [
+     1490,
+     16.8
+    ],
+    [
+     1840,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Master Hunter · release",
+   "frames": 166,
+   "worstMs": 50.1,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": 1395,
+   "jsMs": 617,
+   "windowMs": 2822,
+   "gpuMs": 1343,
+   "gpuWorst": 25.7,
+   "gpuFrames": 159,
+   "loaf": [
+    {
+     "t": 19,
+     "d": 67,
+     "sl": 5,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc",
+     302.6
+    ],
+    [
+     "Layerize",
+     151.7
+    ],
+    [
+     "Paint",
+     133.7
+    ],
+    [
+     "Style recalc (forced)",
+     64.1
+    ],
+    [
+     "Pre-paint",
+     58.7
+    ],
+    [
+     "js native getBoundingClientRect",
+     37.2
+    ],
+    [
+     "Layout",
+     26.3
+    ],
+    [
+     "Layout (forced)",
+     26.1
+    ],
+    [
+     "js native querySelectorAll",
+     25.8
+    ],
+    [
+     "js GC (V8, in JS)",
+     25.8
+    ]
+   ],
+   "worstFrames": [
+    [
+     80,
+     50.1
+    ],
+    [
+     780,
+     16.8
+    ],
+    [
+     2064,
+     16.8
+    ],
+    [
+     114,
+     16.7
+    ],
+    [
+     164,
+     16.7
+    ]
+   ]
+  },
+  {
+   "name": "view Fisherman · drag",
+   "frames": 276,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1232,
+   "jsMs": 583,
+   "windowMs": 4607,
+   "gpuMs": 3215,
+   "gpuWorst": 47,
+   "gpuFrames": 275,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     300.8
+    ],
+    [
+     "Paint",
+     181.3
+    ],
+    [
+     "Pre-paint",
+     59
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     40.9
+    ],
+    [
+     "Commit",
+     36.7
+    ],
+    [
+     "Style recalc (forced)",
+     31.3
+    ],
+    [
+     "js native get offsetLeft",
+     29.4
+    ],
+    [
+     "js native querySelectorAll",
+     20.6
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     19.6
+    ],
+    [
+     "js three.js:renderObject",
+     19.2
+    ]
+   ],
+   "worstFrames": [
+    [
+     52,
+     16.8
+    ],
+    [
+     102,
+     16.8
+    ],
+    [
+     335,
+     16.8
+    ],
+    [
+     585,
+     16.8
+    ],
+    [
+     619,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Fisherman · release",
+   "frames": 166,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 875,
+   "jsMs": 515,
+   "windowMs": 2779,
+   "gpuMs": 1767,
+   "gpuWorst": 31.9,
+   "gpuFrames": 164,
+   "loaf": [],
+   "top": [
+    [
+     "Style recalc",
+     149
+    ],
+    [
+     "Layerize",
+     51
+    ],
+    [
+     "Paint",
+     39.8
+    ],
+    [
+     "Style recalc (forced)",
+     39.2
+    ],
+    [
+     "js GC (V8, in JS)",
+     31.3
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     24.1
+    ],
+    [
+     "Pre-paint",
+     23.3
+    ],
+    [
+     "js native getBoundingClientRect",
+     20.5
+    ],
+    [
+     "Layout",
+     19
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     17.4
+    ]
+   ],
+   "worstFrames": [
+    [
+     352,
+     16.8
+    ],
+    [
+     952,
+     16.8
+    ],
+    [
+     2035,
+     16.8
+    ],
+    [
+     2769,
+     16.8
+    ],
+    [
+     69,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Are You Alright? · drag",
+   "frames": 304,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 846,
+   "jsMs": 565,
+   "windowMs": 5079,
+   "gpuMs": 4144,
+   "gpuWorst": 37.4,
+   "gpuFrames": 303,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     104.2
+    ],
+    [
+     "Paint",
+     58
+    ],
+    [
+     "Commit",
+     32.9
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     29.9
+    ],
+    [
+     "js native get offsetLeft",
+     26.7
+    ],
+    [
+     "Style recalc (forced)",
+     26.1
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     21.9
+    ],
+    [
+     "js GC (V8, in JS)",
+     19.1
+    ],
+    [
+     "js three.js:renderObject",
+     18.7
+    ],
+    [
+     "Style recalc",
+     17.2
+    ]
+   ],
+   "worstFrames": [
+    [
+     177,
+     16.8
+    ],
+    [
+     1443,
+     16.8
+    ],
+    [
+     1510,
+     16.8
+    ],
+    [
+     1943,
+     16.8
+    ],
+    [
+     1993,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Are You Alright? · release",
+   "frames": 166,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 840,
+   "jsMs": 461,
+   "windowMs": 2779,
+   "gpuMs": 1851,
+   "gpuWorst": 29.6,
+   "gpuFrames": 162,
+   "loaf": [],
+   "top": [
+    [
+     "Style recalc",
+     169.6
+    ],
+    [
+     "Layerize",
+     55.2
+    ],
+    [
+     "Paint",
+     45
+    ],
+    [
+     "Style recalc (forced)",
+     36.3
+    ],
+    [
+     "js GC (V8, in JS)",
+     26.7
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     23.9
+    ],
+    [
+     "Pre-paint",
+     23.8
+    ],
+    [
+     "Layout",
+     20.1
+    ],
+    [
+     "js native toBlob",
+     19.8
+    ],
+    [
+     "js native getBoundingClientRect",
+     18.3
+    ]
+   ],
+   "worstFrames": [
+    [
+     324,
+     16.8
+    ],
+    [
+     374,
+     16.8
+    ],
+    [
+     1124,
+     16.8
+    ],
+    [
+     2291,
+     16.8
+    ],
+    [
+     2441,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view That Can't Be an Accident · drag",
+   "frames": 302,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 851,
+   "jsMs": 555,
+   "windowMs": 5047,
+   "gpuMs": 4025,
+   "gpuWorst": 29.7,
+   "gpuFrames": 302,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     116.8
+    ],
+    [
+     "Paint",
+     69
+    ],
+    [
+     "Commit",
+     33.4
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     33.3
+    ],
+    [
+     "Style recalc (forced)",
+     28
+    ],
+    [
+     "js native get offsetLeft",
+     25.9
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     23.2
+    ],
+    [
+     "js three.js:renderObject",
+     19.9
+    ],
+    [
+     "Style recalc",
+     17.2
+    ],
+    [
+     "Pre-paint",
+     17
+    ]
+   ],
+   "worstFrames": [
+    [
+     74,
+     16.8
+    ],
+    [
+     174,
+     16.8
+    ],
+    [
+     274,
+     16.8
+    ],
+    [
+     524,
+     16.8
+    ],
+    [
+     1340,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view That Can't Be an Accident · release",
+   "frames": 167,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 837,
+   "jsMs": 499,
+   "windowMs": 2802,
+   "gpuMs": 1902,
+   "gpuWorst": 30.7,
+   "gpuFrames": 162,
+   "loaf": [],
+   "top": [
+    [
+     "Style recalc",
+     132.2
+    ],
+    [
+     "js GC (V8, in JS)",
+     56.2
+    ],
+    [
+     "Layerize",
+     50
+    ],
+    [
+     "Paint",
+     40.6
+    ],
+    [
+     "Style recalc (forced)",
+     35.9
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     22.9
+    ],
+    [
+     "Pre-paint",
+     22
+    ],
+    [
+     "js native toBlob",
+     20
+    ],
+    [
+     "Layout",
+     19.9
+    ],
+    [
+     "js native getBoundingClientRect",
+     17.8
+    ]
+   ],
+   "worstFrames": [
+    [
+     479,
+     16.8
+    ],
+    [
+     679,
+     16.8
+    ],
+    [
+     979,
+     16.8
+    ],
+    [
+     1112,
+     16.8
+    ],
+    [
+     1312,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Highlights · drag",
+   "frames": 303,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 830,
+   "jsMs": 561,
+   "windowMs": 5059,
+   "gpuMs": 4012,
+   "gpuWorst": 45.5,
+   "gpuFrames": 301,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     102.5
+    ],
+    [
+     "Paint",
+     56.5
+    ],
+    [
+     "Commit",
+     32.4
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     32.4
+    ],
+    [
+     "Style recalc (forced)",
+     28.4
+    ],
+    [
+     "js native get offsetLeft",
+     27.8
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     23.2
+    ],
+    [
+     "js three.js:renderObject",
+     19.9
+    ],
+    [
+     "Style recalc",
+     17.8
+    ],
+    [
+     "Pre-paint",
+     16.9
+    ]
+   ],
+   "worstFrames": [
+    [
+     2222,
+     16.8
+    ],
+    [
+     3539,
+     16.8
+    ],
+    [
+     339,
+     16.8
+    ],
+    [
+     789,
+     16.8
+    ],
+    [
+     1039,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Highlights · release",
+   "frames": 133,
+   "worstMs": 50,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": 441,
+   "jsMs": 338,
+   "windowMs": 2269,
+   "gpuMs": 1744,
+   "gpuWorst": 30.6,
+   "gpuFrames": 133,
+   "loaf": [
+    {
+     "t": 15,
+     "d": 64,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Style recalc (forced)",
+     35.6
+    ],
+    [
+     "Pre-paint",
+     29.7
+    ],
+    [
+     "Layerize",
+     23.4
+    ],
+    [
+     "Paint",
+     20.8
+    ],
+    [
+     "js native get offsetLeft",
+     18.9
+    ],
+    [
+     "js src/main.js:evaluate",
+     17.4
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     15.4
+    ],
+    [
+     "js GC (V8, in JS)",
+     13.3
+    ],
+    [
+     "js native scrollTo",
+     12.1
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     11.7
+    ]
+   ],
+   "worstFrames": [
+    [
+     80,
+     50
+    ],
+    [
+     546,
+     16.8
+    ],
+    [
+     696,
+     16.8
+    ],
+    [
+     1196,
+     16.8
+    ],
+    [
+     1346,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Skills & travel · drag",
+   "frames": 303,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 723,
+   "jsMs": 537,
+   "windowMs": 5066,
+   "gpuMs": 4638,
+   "gpuWorst": 31.9,
+   "gpuFrames": 304,
+   "loaf": [],
+   "top": [
+    [
+     "Layerize",
+     67.9
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     32.1
+    ],
+    [
+     "Commit",
+     30.1
+    ],
+    [
+     "Style recalc (forced)",
+     24.7
+    ],
+    [
+     "js GC (V8, in JS)",
+     24.5
+    ],
+    [
+     "js native get offsetLeft",
+     24.4
+    ],
+    [
+     "Paint",
+     23.6
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     22
+    ],
+    [
+     "js three.js:renderObject",
+     19.5
+    ],
+    [
+     "js native querySelectorAll",
+     16.3
+    ]
+   ],
+   "worstFrames": [
+    [
+     481,
+     16.8
+    ],
+    [
+     897,
+     16.8
+    ],
+    [
+     1447,
+     16.8
+    ],
+    [
+     1797,
+     16.8
+    ],
+    [
+     3497,
+     16.8
+    ]
+   ]
+  },
+  {
+   "name": "view Skills & travel · release",
+   "frames": 136,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 384,
+   "jsMs": 319,
+   "windowMs": 2274,
+   "gpuMs": 2087,
+   "gpuWorst": 30.3,
+   "gpuFrames": 136,
+   "loaf": [],
+   "top": [
+    [
+     "js native scrollTo",
+     28.3
+    ],
+    [
+     "Style recalc (forced)",
+     22.2
+    ],
+    [
+     "Paint",
+     20.1
+    ],
+    [
+     "Layout (forced)",
+     19.2
+    ],
+    [
+     "Layerize",
+     15.4
+    ],
+    [
+     "js native clear",
+     14.7
+    ],
+    [
+     "js native get offsetLeft",
+     13.6
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     13.3
+    ],
+    [
+     "js native querySelectorAll",
+     13.2
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     12.5
+    ]
+   ],
+   "worstFrames": [
+    [
+     1305,
+     16.8
+    ],
+    [
+     1355,
+     16.8
+    ],
+    [
+     389,
+     16.8
+    ],
+    [
+     589,
+     16.8
+    ],
+    [
+     39,
+     16.7
+    ]
+   ]
+  }
+ ]
+}

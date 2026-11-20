@@ -1,0 +1,28 @@
+
+Running 1 test using 1 worker
+
+  ✘  1 [chromium] › specs/parity.spec.js:798:3 › parity P01–P44 › P39 aria-labels, live regions, hidden label, keyboard use (379ms)
+
+
+  1) [chromium] › specs/parity.spec.js:798:3 › parity P01–P44 › P39 aria-labels, live regions, hidden label, keyboard use 
+
+    Error: Tab reaches the collection list
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mtrue[39m
+    Received: [31mfalse[39m
+
+      813 |       found = await page.evaluate(() => !!document.activeElement?.closest?.('#categories'));
+      814 |     }
+    > 815 |     expect(found, 'Tab reaches the collection list').toBe(true);
+          |                                                      ^
+      816 |     for (let n = 0; n < 15; n++) {
+      817 |       if (await page.evaluate(() => document.activeElement?.dataset?.category === 'The Carpenter')) break;
+      818 |       const before = await page.evaluate(() => document.activeElement?.dataset?.category);
+        at /Users/Meta/Documents/ValheimChecker/valheim-checkup-3d-herder-kit/tests/specs/parity.spec.js:815:54
+
+    Error Context: test-results/specs-parity-parity-P01–P4-bef13-s-hidden-label-keyboard-use-chromium/error-context.md
+
+  1 failed
+    [chromium] › specs/parity.spec.js:798:3 › parity P01–P44 › P39 aria-labels, live regions, hidden label, keyboard use 

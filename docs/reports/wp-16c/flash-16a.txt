@@ -1,0 +1,7 @@
+PASS  flash: no whole-screen flash (jump > 3/255 that comes back within 300 ms, or a cut > 12), first 20 s (1585 frames)  — 0 jumps []
+PASS  flash: none during 4 view changes  — 0 jumps []
+PASS  flash: bloom at the right and bottom edges (no gauntlet there) stays black, no jump > 0.01  — 91 samples, 0 jumps, corner max 0.0001
+PASS  no page or console errors
+
+4/4 checks pass
+NUMBERS {"flash":{"frames":1585,"loadFlashes":0,"viewFlashes":0,"sample":[]},"bloom":{"samples":91,"jumps":0,"cornerMax":0.0001}}

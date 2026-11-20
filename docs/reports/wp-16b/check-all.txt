@@ -1,0 +1,42 @@
+PASS  item 7: board narrower (27 < 28 cm) and taller (65 > 36 cm)  — 27 × 65 cm (was 28 × 36)
+PASS  item 7: slots thicker (pitch 2.4 vs 2.0 cm, bar 1.26 vs 1.0 cm)  — pitch 2.40, bar 1.26 cm
+PASS  item 7: bars read bigger on screen (≥ 1.2×)  — 14.5 px vs 11.5 px
+PASS  item 7: bar name text larger (box ≥ 1.4× the old 0.72 cm)  — 1.20 cm
+PASS  item 7: bars longer for their slot  — bar + knob 75 % of the slot (was 63 %)
+PASS  item 8: the wood runs off the bottom of the window  — bottom edge at y 1056 px
+PASS  item 8: and a little off the left edge  — left edge at x -68 px near the bottom
+PASS  item 8: every slot starts inside the window  — leftmost slot end x 33 px
+PASS  item 8: the paper lies under it (the sheet edge x −48 is inside the woodblock)
+PASS  item 8: the help note sits clear, right of the wood  — help x 393 px, wood edge 367 px
+PASS  item 12: the three labels are burned, word for word from the page  — {"heading":"Achievement collections","divider":"Your Viking","sidenote":"Save files stay on this device. Load a fresh save after playing to update your progress."}
+INFO  item 12: v2.0.0 carved heading  — char p10 97, label median 111, wood 115
+PASS  item 12: letters charred near-black (darkest 10 % ≤ 0.4 × the wood, and darker than v2.0.0)  — char p10 36, wood median 92 (×0.39; v2.0.0 ×0.84)
+PASS  item 12: darker edges round the letters (label median ≤ 0.85 × the wood, and darker than v2.0.0)  — label median 66, wood 92 (×0.72; v2.0.0 ×0.97)
+PASS  item 12: recessed (a normal map from the letters' height)  — roughness 0.92
+PASS  item 13: Collection targets is a bigger feature at the top (≥ 2.5× the area on screen)  — 10027 px² vs 3225 px² (×3.11); plaque 17.0 × 4.1 cm (was 10 × 2.2)
+PASS  item 13: it sits at the top, above every slot  — plaque bottom 11.1 cm, first slot top 10.0 cm
+PASS  item 11: the knob is turned (a lathe profile) and round  — LatheGeometry, radius 0.84 cm, 1.30 cm tall
+PASS  item 11: with a grip (fluted, knurled band)  — grip radius 0.748–0.840 cm over 291 vertices
+PASS  item 9: left is the resting position (a drag to the left stays at rest)  — x 0
+PASS  item 9: sliding a bar RIGHT selects it  — latched The Gourmet, app shows The Gourmet
+PASS  item 10: the old bar slides back left at the same time, coupled to the drag  — |new + old − travel| ≤ 0.000 cm over 24 samples; midway new 2.173 old 2.227
+PASS  item 10: only one bar out at a time  — bars out per sample ≤ 2 (the two coupled); old bar now x 0
+PASS  item 10: event order kept (latch → app:category → return)
+PASS  item 14: the white dot is under the pointer while the spark is home  — {"alpha":1,"x":193,"y":610,"on":true}, pointer 193, 610
+PASS  item 14: the fingertip hovers just above it  — fingertip 15.9 px above, 11.5 px aside
+PASS  item 14: drawn white on screen  — dot 254, around 14
+PASS  item 15: the gauntlet freezes where it was when the spark left  — moved 0.000 cm while the spark flew about for 1.5 s; 0.000 cm from the point it froze at
+PASS  item 14: no dot while the spark is out  — alpha 0
+PASS  item 16: the hand moves to the spark smoothly (no jump, speeds up and slows down)  — travelled 32.7 cm, largest frame step 1.72 cm, first 0.29 cm
+PASS  item 16: with inertia (a small swing past the target)  — overshoot 1.44 cm
+PASS  item 16: it turns to face the spark to receive it  — turned up to 22.3°
+PASS  item 16: they meet (catch → burst at the socket → spark:in)  — gauntlet:catch → spark:burst → spark:in → reticle:spawn
+PASS  item 16: the dot spawns in at that moment  — 0 ms after spark:in
+INFO  item 16: hand still travelling when they met  — 4.12 cm from where it settled
+PASS  item 17: a twirl of one, two or three full turns, chosen at random  — turns 2, 2, 3, 3, 2, 3
+PASS  item 17: the flight really loops that many times  — measured windings 2.23, 2.23, 3.23, 3.23, 2.23, 3.23
+PASS  item 17: a burst of sparks as it leaves  — burst sizes 16, 16, 16, 16, 16, 16
+PASS  item 17: like slow-motion gunfire (fast out, braked to a hang, still there after 0.6 s)  — 442 → 59 px/s, 16 sparks still alive at ~0.6 s
+PASS  no page or console errors
+
+38/38 passed

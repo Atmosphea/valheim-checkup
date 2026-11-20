@@ -1,0 +1,30 @@
+PASS  flash: no whole-screen flash (jump > 3/255 that comes back within 300 ms, or a cut > 12), first 20 s (1580 frames)  — 0 jumps []
+PASS  flash: none during 4 view changes  — 0 jumps []
+PASS  flash: bloom at the right and bottom edges (no gauntlet there) stays black, no jump > 0.01  — 94 samples, 0 jumps, corner max 0.0004
+GPU {"baselineUtilPct":41.1,"still":{"fps":60,"gpuMsAvg":2.14,"gpuMsP95":23.08,"sceneMs":1.32,"veilMs":0.82,"gpuMsPerSec":128,"samples":298,"tier":"high","gpuUtilPct":58.4},"moving":{"fps":60.1,"gpuMsAvg":15.03,"gpuMsP95":42.68,"sceneMs":10.1,"veilMs":4.93,"gpuMsPerSec":903,"samples":303,"tier":"high","gpuUtilPct":79.4},"view":{"fps":52.3,"gpuMsAvg":18.23,"gpuMsP95":27.07,"sceneMs":12.87,"veilMs":5.36,"gpuMsPerSec":953,"samples":155,"tier":"high","gpuUtilPct":92.9}}
+PASS  gpu: still desk: GPU ms per second ≤ 40 % of before  — 128 vs 1294 ms/s
+PASS  gpu: still desk: GPU utilisation above baseline ≤ 50 % of before  — 17.3 vs 48.3 points
+INFO  gpu: moving pointer 903 vs 985 ms/s before (92 %)
+PASS  gpu: moving pointer keeps ≥ 55 frames/s  — 60.1 fps
+PASS  blue shadow: blank paper above the inset keeps its colour when the table scrolls (blue/red within 0.03, brightness within 5 %)  — b/r 0.761 → 0.758, rgb 211,188,160 → 211,188,160
+PASS  zoom: starts at 1 with the gauntlet on the board  — {"zoom":1,"user":1,"spark":{"framing":0,"on":false,"held":false}}
+PASS  zoom: 5 wheel notches in → zoom ≥ 1.8, ≤ 2.5 (limit)  — user zoom 2.0137
+PASS  zoom: the paper point under the pointer stays under it (≤ 40 px)  — 14.4 px (was at 326,422)
+PASS  zoom: capped at 2.5 however far you wheel  — 2.5
+PASS  zoom: wheel out is capped at 0.8  — 0.8
+PASS  zoom: eases (a 2.5 → 0.8 jump of the target moves ≤ 8 % per frame)  — max step 6.2 % over 74 frames
+PASS  zoom: the wheel over the table scrolls it and leaves the zoom alone  — scrollTop 0 → 400, zoom 1
+PASS  zoom: trackpad pinch (ctrl + wheel) zooms over the table  — user zoom 1.6161, page scale 1
+PASS  spark: out over the page → zoom ≈ 1.3 (1.25–1.35)  — mode spark, zoom 1.333 (board 1.000)
+PASS  spark: the whole text page is on screen (all four inset corners)  — [[270,737],[1386,737],[323,121],[1307,121]]
+PASS  spark: the board's right edge stays on screen, so the spark can reach it  — x 199 px
+PASS  spark: at the left edge the framing lets go  — {"framing":0,"on":false,"held":true}
+PASS  spark: back on the board → zoom back to 1, gauntlet  — zoom 1.000
+PASS  spark: table text reads bigger with the spark out (row height ≥ 1.2×)  — 29.4 vs 22.9 px
+PASS  desk: the wood has deep figure (luminance spread p2–p98 ≥ 40/255)  — {"mean":66.2,"sd":15.19,"range":69,"figure":8.53}
+PASS  desk: luminance spread (p2–p98) at least 1.5× v2.0.0  — 39 → 69
+PASS  desk: coarse figure (8× downsampled s.d.) at least 1.5× v2.0.0  — 4.29 → 8.53
+PASS  no page or console errors
+
+25/25 checks pass
+NUMBERS {"flash":{"frames":1580,"loadFlashes":0,"viewFlashes":0,"sample":[]},"bloom":{"samples":94,"jumps":0,"cornerMax":0.0004},"gpu":{"baselineUtilPct":41.1,"still":{"fps":60,"gpuMsAvg":2.14,"gpuMsP95":23.08,"sceneMs":1.32,"veilMs":0.82,"gpuMsPerSec":128,"samples":298,"tier":"high","gpuUtilPct":58.4},"moving":{"fps":60.1,"gpuMsAvg":15.03,"gpuMsP95":42.68,"sceneMs":10.1,"veilMs":4.93,"gpuMsPerSec":903,"samples":303,"tier":"high","gpuUtilPct":79.4},"view":{"fps":52.3,"gpuMsAvg":18.23,"gpuMsP95":27.07,"sceneMs":12.87,"veilMs":5.36,"gpuMsPerSec":953,"samples":155,"tier":"high","gpuUtilPct":92.9}},"slip":{"before":{"r":210.76388888888889,"g":188.19965277777777,"b":160.33159722222223},"scrolled":{"r":210.52256944444446,"g":187.57465277777777,"b":159.62673611111111}},"spark":{"zoomOut":1.333,"rowPxSparkOut":29.4,"rowPxBoard":22.9},"desk":{"after":{"mean":66.2,"sd":15.19,"range":69,"figure":8.53},"before":{"mean":101.1,"sd":8.48,"range":39,"figure":4.29}}}

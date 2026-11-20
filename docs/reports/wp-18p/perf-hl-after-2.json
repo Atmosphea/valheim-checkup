@@ -1,0 +1,114 @@
+{
+ "meta": {
+  "label": "hl-after-2",
+  "html": "work/wp18c/after.html",
+  "named": false,
+  "throttle": 1,
+  "tier": "high",
+  "sampled": false,
+  "framesOnly": true,
+  "at": "2026-11-13T04:03:05.534Z",
+  "errors": [],
+  "tierEnd": "high",
+  "qualityLog": [],
+  "trimLog": [],
+  "governor": {
+   "phase": "warmup",
+   "benchmarkMs": null,
+   "drops": 0,
+   "windowMs": 0,
+   "trim": 0,
+   "climbs": 0,
+   "held": true,
+   "gpuMs": 12.372124,
+   "gpuAvgMs": 11.403286030383272,
+   "gpuParts": [
+    8.082791,
+    4.289333
+   ],
+   "gpuTimer": true
+  }
+ },
+ "rows": [
+  {
+   "name": "view Highlights · drag",
+   "frames": 308,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 5140,
+   "gpuMs": 4917,
+   "gpuWorst": 92.4,
+   "gpuFrames": 293,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     502,
+     16.8
+    ],
+    [
+     1052,
+     16.8
+    ],
+    [
+     1969,
+     16.8
+    ],
+    [
+     4569,
+     16.8
+    ],
+    [
+     4619,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Highlights · release",
+   "frames": 138,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 2317,
+   "gpuMs": 2273,
+   "gpuWorst": 76.5,
+   "gpuFrames": 134,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     279,
+     16.8
+    ],
+    [
+     429,
+     16.8
+    ],
+    [
+     879,
+     16.8
+    ],
+    [
+     1079,
+     16.8
+    ],
+    [
+     1529,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  }
+ ]
+}

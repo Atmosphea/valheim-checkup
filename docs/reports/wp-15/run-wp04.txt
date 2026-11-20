@@ -1,0 +1,46 @@
+
+Running 15 tests using 1 worker
+
+  ✓   1 [chromium] › specs/wp04.spec.js:66:3 › WP-04 acceptance › 1 · layer order, blend modes, pointer settings (DOM inspection, own computed styles) (1.7s)
+  ✓   2 [chromium] › specs/wp04.spec.js:114:3 › WP-04 acceptance › 2 · printed test div stays within 1 px of its paper position (DOM math + rendered pixel markers) (4.4s)
+  ✓   3 [chromium] › specs/wp04.spec.js:179:3 › WP-04 acceptance › 3 · veil test shadow darkens paper and text; glow test brightens both (1.9s)
+  ✓   4 [chromium] › specs/wp04.spec.js:223:3 › WP-04 acceptance › 4 · flat/desk switch (no ?mode): WebGL2, reduced motion, coarse pointer, window size (6.3s)
+  ✓   5 [chromium] › specs/wp04.spec.js:266:3 › WP-04 acceptance › 5 · tiers: benchmark picks, forced slow frames drop exactly one tier after 2 s, never climb (19.0s)
+  ✓   6 [chromium] › specs/wp04.spec.js:319:3 › WP-04 acceptance › 6 · no console errors; heap stable over a 5-minute idle run (1440×900) (5.0m)
+  ✘   7 [chromium] › specs/wp04.spec.js:350:3 › WP-04 timings and steps › camera: framing, drift spring 30/10 to 1.6 × 1.0 cm, middle-third zoom 1.025, shake 0.04 cm / 140 ms (1.3s)
+  -   8 [chromium] › specs/wp04.spec.js:409:3 › WP-04 timings and steps › input: exact pointer, 30 ms velocity in cm/s, hover raycast lifts the Load coin, grain at 24 fps
+  -   9 [chromium] › specs/wp04.spec.js:477:3 › WP-04 timings and steps › frame loop: phase order, CSS3D only re-renders when the camera moved, placeholders at the master layout
+  -  10 [chromium] › specs/wp04.spec.js:521:3 › WP-04 visual review › screens at seed 7, slowed time: 1440×900 High/Medium/Low, crops, 390 px phone (desk forced and flat)
+  -  11 [chromium] › specs/wp04.spec.js:575:3 › WP-04 break attempts › resize mid-drift and mid-shake: canvases, framing and print alignment follow; stays desk below 1024 × 640
+  -  12 [chromium] › specs/wp04.spec.js:620:3 › WP-04 break attempts › hidden tab: loop pauses, no tier drop on return, camera stays finite
+  -  13 [chromium] › specs/wp04.spec.js:659:8 › WP-04 break attempts › WebGL failure after choosing desk: #desk removed with a warning, original page usable
+  -  14 [chromium] › specs/wp04.spec.js:694:3 › WP-04 break attempts › WebGL context loss mid-session: no uncaught errors; rendering resumes after restore
+  -  15 [chromium] › specs/wp04.spec.js:721:3 › WP-04 break attempts › 4× CPU throttle from High: single-step drops only, never climbs, app still works, alignment holds
+
+
+  1) [chromium] › specs/wp04.spec.js:350:3 › WP-04 timings and steps › camera: framing, drift spring 30/10 to 1.6 × 1.0 cm, middle-third zoom 1.025, shake 0.04 cm / 140 ms 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeCloseTo[2m([22m[32mexpected[39m[2m, [22mprecision[2m)[22m
+
+    Expected: [32m0.97[39m
+    Received: [31m0.9900000000000098[39m
+
+    Expected precision:    2
+    Expected difference: < [32m0.005[39m
+    Received difference:   [31m0.020000000000009788[39m
+
+      365 |     });
+      366 |     expect(fill.fov).toBe(28);
+    > 367 |     expect(fill.widest).toBeCloseTo(0.97, 2);
+          |                         ^
+      368 |     expect(Math.abs(fill.cy)).toBeLessThan(0.01);
+      369 |     // Drift: release, slow time ×0.1 so each ~frame is a small scaled step, move pointer to the top-right corner.
+      370 |     await page.evaluate(() => { window.__vc.stage.camera.release(); window.__vc.timeScale(0.1); });
+        at /Users/Meta/Documents/ValheimChecker/valheim-checkup-3d-herder-kit/tests/specs/wp04.spec.js:367:25
+
+    Error Context: test-results/specs-wp04-WP-04-timings-a-6b433--1-025-shake-0-04-cm-140-ms-chromium/error-context.md
+
+  1 failed
+    [chromium] › specs/wp04.spec.js:350:3 › WP-04 timings and steps › camera: framing, drift spring 30/10 to 1.6 × 1.0 cm, middle-third zoom 1.025, shake 0.04 cm / 140 ms 
+  8 did not run
+  6 passed (5.6m)

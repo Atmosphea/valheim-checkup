@@ -1,0 +1,521 @@
+{
+ "source": "https://valheim.weirdgloop.org/w/Trophies",
+ "license": "CC BY-SA 3.0 (Valheim Wiki, weirdgloop)",
+ "fetched": "2026-11-11",
+ "trophies": {
+  "TrophyBoar": {
+   "creature": "Boar",
+   "biome": "Meadows",
+   "dropChance": "15%",
+   "usage": []
+  },
+  "TrophyDeer": {
+   "creature": "Deer",
+   "biome": "Meadows",
+   "dropChance": "50%",
+   "usage": [
+    "Mead Horn of Odin",
+    "Stagbreaker",
+    "Summoning Eikthyr"
+   ]
+  },
+  "TrophyNeck": {
+   "creature": "Neck",
+   "biome": "Meadows",
+   "dropChance": "5%",
+   "usage": []
+  },
+  "TrophyEikthyr": {
+   "creature": "Eikthyr",
+   "biome": "Meadows",
+   "dropChance": "100%",
+   "usage": [
+    "Eikthyr Power"
+   ]
+  },
+  "TrophyGreydwarf": {
+   "creature": "Greydwarf",
+   "biome": "Black Forest",
+   "dropChance": "5%",
+   "usage": []
+  },
+  "TrophyGreydwarfBrute": {
+   "creature": "Greydwarf Brute",
+   "biome": "Black Forest",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyGreydwarfShaman": {
+   "creature": "Greydwarf Shaman",
+   "biome": "Black Forest",
+   "dropChance": "10%",
+   "usage": [
+    "Heart of the Forest"
+   ]
+  },
+  "TrophySkeletonPoison": {
+   "creature": "Rancid Remains",
+   "biome": "Black Forest",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophySkeleton": {
+   "creature": "Skeleton",
+   "biome": "Black Forest",
+   "dropChance": "10%",
+   "usage": [
+    "Unfading Candles",
+    "Bone Tower Shield",
+    "Dead Raiser"
+   ]
+  },
+  "TrophyGhost": {
+   "creature": "Ghost",
+   "biome": "Black Forest",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyFrostTroll": {
+   "creature": "Troll",
+   "biome": "Black Forest",
+   "dropChance": "50%",
+   "usage": [
+    "Mossy Fishing Bait",
+    "Trollstav"
+   ]
+  },
+  "TrophyBjorn": {
+   "creature": "Bear",
+   "biome": "Black Forest",
+   "dropChance": "10%",
+   "usage": [
+    "Bearskin Rug",
+    "Headdress of the Bear",
+    "Bronze Pendant"
+   ]
+  },
+  "TrophySkeletonHildir": {
+   "creature": "Brenna",
+   "biome": "Black Forest",
+   "dropChance": "100%",
+   "usage": []
+  },
+  "TrophyTheElder": {
+   "creature": "The Elder",
+   "biome": "Black Forest",
+   "dropChance": "100%",
+   "usage": [
+    "The Elder Power"
+   ]
+  },
+  "TrophySerpent": {
+   "creature": null,
+   "biome": "Ocean",
+   "dropChance": "33%",
+   "usage": [
+    "Fins of Destiny",
+    "Heavy Fishing Bait"
+   ]
+  },
+  "TrophyAbomination": {
+   "creature": "Abomination",
+   "biome": "Swamp",
+   "dropChance": "50%",
+   "usage": [
+    "Sticky Fishing Bait"
+   ]
+  },
+  "TrophyBlob": {
+   "creature": "Blob",
+   "biome": "Swamp",
+   "dropChance": "10%",
+   "usage": [
+    "Blob bomb Poison",
+    "Blob bomb Elite poison"
+   ]
+  },
+  "TrophyDraugr": {
+   "creature": "Draugr",
+   "biome": "Swamp",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyDraugrElite": {
+   "creature": "Draugr Elite",
+   "biome": "Swamp",
+   "dropChance": "10%",
+   "usage": [
+    "Iron Sledge"
+   ]
+  },
+  "TrophyLeech": {
+   "creature": "Leech",
+   "biome": "Swamp",
+   "dropChance": "10%",
+   "usage": [
+    "Iron Brooch"
+   ]
+  },
+  "TrophySurtling": {
+   "creature": "Surtling",
+   "biome": "Swamp",
+   "dropChance": "5%",
+   "usage": [
+    "Nimble Anklet"
+   ]
+  },
+  "TrophyWraith": {
+   "creature": "Wraith",
+   "biome": "Swamp",
+   "dropChance": "5%",
+   "usage": []
+  },
+  "TrophyKvastur": {
+   "creature": "Kvastur",
+   "biome": "Swamp",
+   "dropChance": "100%",
+   "usage": []
+  },
+  "TrophyWrithan": {
+   "creature": "Writhan",
+   "biome": "Swamp",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyBonemass": {
+   "creature": "Bonemass",
+   "biome": "Swamp",
+   "dropChance": "100%",
+   "usage": [
+    "Bonemass Power"
+   ]
+  },
+  "TrophyCultist": {
+   "creature": "Cultist",
+   "biome": "Mountain",
+   "dropChance": "10%",
+   "usage": [
+    "Fenris Hood"
+   ]
+  },
+  "TrophyHatchling": {
+   "creature": "Drake",
+   "biome": "Mountain",
+   "dropChance": "10%",
+   "usage": [
+    "Drake Helmet",
+    "Frosty Fishing Bait",
+    "Blob Bombs"
+   ]
+  },
+  "TrophyFenring": {
+   "creature": "Fenring",
+   "biome": "Mountain",
+   "dropChance": "10%",
+   "usage": [
+    "Cold Fishing Bait",
+    "Wolf Sight"
+   ]
+  },
+  "TrophyBlob_Frost": {
+   "creature": "Frost Blob",
+   "biome": "Mountain",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophySGolem": {
+   "creature": "Stone Golem",
+   "biome": "Mountain",
+   "dropChance": "5%",
+   "usage": [
+    "Crystal Heart"
+   ]
+  },
+  "TrophyUlv": {
+   "creature": "Ulv",
+   "biome": "Mountain",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyWolf": {
+   "creature": "Wolf",
+   "biome": "Mountain",
+   "dropChance": "10%",
+   "usage": [
+    "Wolf Fur Cape",
+    "Rustic Drawbridge"
+   ]
+  },
+  "TrophyCultist_Hildir": {
+   "creature": "Geirrhafa",
+   "biome": "Mountain",
+   "dropChance": "100%",
+   "usage": []
+  },
+  "TrophyDragonQueen": {
+   "creature": "Moder",
+   "biome": "Mountain",
+   "dropChance": "100%",
+   "usage": [
+    "Moder Power"
+   ]
+  },
+  "TrophyDeathsquito": {
+   "creature": "Deathsquito",
+   "biome": "Plains",
+   "dropChance": "5%",
+   "usage": []
+  },
+  "TrophyGoblin": {
+   "creature": "Fuling",
+   "biome": "Plains",
+   "dropChance": "10%",
+   "usage": [
+    "Stingy Fishing Bait"
+   ]
+  },
+  "TrophyGoblinBrute": {
+   "creature": "Fuling Berserker",
+   "biome": "Plains",
+   "dropChance": "5%",
+   "usage": [
+    "Evasion Mantle"
+   ]
+  },
+  "TrophyGoblinShaman": {
+   "creature": "Fuling Shaman",
+   "biome": "Plains",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyGrowth": {
+   "creature": "Growth",
+   "biome": "Plains",
+   "dropChance": "10%",
+   "usage": [
+    "Blob Bombs"
+   ]
+  },
+  "TrophyLox": {
+   "creature": "Lox",
+   "biome": "Plains",
+   "dropChance": "10%",
+   "usage": [
+    "Misty Fishing Bait",
+    "Bracelets of the Brave"
+   ]
+  },
+  "TrophyBjornUndead": {
+   "creature": "Vile",
+   "biome": "Plains",
+   "dropChance": "10%",
+   "usage": [
+    "Vilebone Visage"
+   ]
+  },
+  "TrophyGoblinBruteBrosShaman": {
+   "creature": "Zil",
+   "biome": "Plains",
+   "dropChance": "100%",
+   "usage": []
+  },
+  "TrophyGoblinBruteBrosBrute": {
+   "creature": "Thungr",
+   "biome": "Plains",
+   "dropChance": "100%",
+   "usage": []
+  },
+  "TrophyGoblinKing": {
+   "creature": "Yagluth",
+   "biome": "Plains",
+   "dropChance": "100%",
+   "usage": [
+    "Yagluth Power"
+   ]
+  },
+  "TrophyDvergr": {
+   "creature": null,
+   "biome": "Mistlands",
+   "dropChance": "5%",
+   "usage": []
+  },
+  "TrophyHare": {
+   "creature": "Hare",
+   "biome": "Mistlands",
+   "dropChance": "5%",
+   "usage": []
+  },
+  "TrophyGjall": {
+   "creature": "Gjall",
+   "biome": "Mistlands",
+   "dropChance": "30%",
+   "usage": [
+    "Pulsating Earrings"
+   ]
+  },
+  "TrophySeeker": {
+   "creature": "Seeker",
+   "biome": "Mistlands",
+   "dropChance": "5%",
+   "usage": [
+    "Resounding Shackle"
+   ]
+  },
+  "TrophySeekerBrute": {
+   "creature": "Seeker Soldier",
+   "biome": "Mistlands",
+   "dropChance": "5%",
+   "usage": [
+    "Re-summoning The Queen"
+   ]
+  },
+  "TrophyTick": {
+   "creature": "Tick",
+   "biome": "Mistlands",
+   "dropChance": "5%",
+   "usage": []
+  },
+  "TrophySeekerQueen": {
+   "creature": "The Queen",
+   "biome": "Mistlands",
+   "dropChance": "100%",
+   "usage": [
+    "The Queen's Power"
+   ]
+  },
+  "TrophyAsksvin": {
+   "creature": "Asksvin",
+   "biome": "Ashlands",
+   "dropChance": "10%",
+   "usage": [
+    "Feathery wreath"
+   ]
+  },
+  "TrophyBonemawSerpent": {
+   "creature": "Bonemaw",
+   "biome": "Ashlands",
+   "dropChance": "33%",
+   "usage": []
+  },
+  "TrophyFallenValkyrie": {
+   "creature": "Fallen Valkyrie",
+   "biome": "Ashlands",
+   "dropChance": "5%",
+   "usage": [
+    "Jörmundling"
+   ]
+  },
+  "TrophyCharredArcher": {
+   "creature": null,
+   "biome": "Ashlands",
+   "dropChance": "5%",
+   "usage": []
+  },
+  "TrophyMorgen": {
+   "creature": "Morgen",
+   "biome": "Ashlands",
+   "dropChance": "5%",
+   "usage": [
+    "Brimstone"
+   ]
+  },
+  "TrophyVolture": {
+   "creature": "Volture",
+   "biome": "Ashlands",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyCharredMage": {
+   "creature": null,
+   "biome": "Ashlands",
+   "dropChance": "5%",
+   "usage": []
+  },
+  "TrophyCharredMelee": {
+   "creature": null,
+   "biome": "Ashlands",
+   "dropChance": "5%",
+   "usage": [
+    "Hot Fishing Bait",
+    "Grausten Chest"
+   ]
+  },
+  "TrophyBlob_Lava": {
+   "creature": "Lava Blob",
+   "biome": "Ashlands",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyFader": {
+   "creature": "Fader",
+   "biome": "Ashlands",
+   "dropChance": "100%",
+   "usage": [
+    "Fader Power"
+   ]
+  },
+  "TrophyBarka": {
+   "creature": "Barka",
+   "biome": "Deep North",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyElaking": {
+   "creature": "Elaking",
+   "biome": "Deep North",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyMole": {
+   "creature": "Eyeless One",
+   "biome": "Deep North",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyJotunWitch": {
+   "creature": "Hexen",
+   "biome": "Deep North",
+   "dropChance": "10%",
+   "usage": [
+    "Northern Vengeance",
+    "Witch Crown"
+   ]
+  },
+  "TrophyJotunWarrior": {
+   "creature": "Krigen",
+   "biome": "Deep North",
+   "dropChance": "10%",
+   "usage": []
+  },
+  "TrophyMoose": {
+   "creature": "Moose",
+   "biome": "Deep North",
+   "dropChance": "10%",
+   "usage": [
+    "Headdress of the Caller",
+    "Neckstabber",
+    "Spirit Caller",
+    "Antler Throne"
+   ]
+  },
+  "TrophyBlob_Morkhalla": {
+   "creature": "Shapeless Pulp",
+   "biome": "Deep North",
+   "dropChance": "10%",
+   "usage": [
+    "Blob Bombs"
+   ]
+  },
+  "TrophySeal": {
+   "creature": "Seal",
+   "biome": "Deep North",
+   "dropChance": "10%",
+   "usage": []
+  }
+ },
+ "sharedUsage": [
+  "Item Stand decoration",
+  "Ballista ammunition (programming)",
+  "1 Coal in the Obliterator (pre-Mistlands trophies)"
+ ]
+}

@@ -1,14 +1,35 @@
 {
   "name": "valheim-checkup",
-  "version": "1.3.0",
+  "version": "2.3.0",
   "private": true,
   "description": "Browser-local Valheim achievement collection tracker",
   "scripts": {
+    "dev": "vite",
+    "build:single": "vite build --mode single",
+    "build:site": "vite build --mode site",
+    "build:all": "npm run build:single && npm run build:site && npm run build",
     "build": "node scripts/build.cjs",
     "check": "node --check src/core.js && node --check src/app.js",
-    "test": "node scripts/test.cjs"
+    "test": "node scripts/test.cjs",
+    "icons": "node tools/harvest-icons.mjs",
+    "test:unit": "node --experimental-detect-module --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test unit/*.test.mjs"
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "@fontsource/unifrakturcook": "5.3.0",
+    "@fontsource/unifrakturmaguntia": "5.3.0",
+    "axe-core": "4.14.0",
+    "sharp": "0.35.5",
+    "vite": "8.3.5",
+    "vite-plugin-singlefile": "2.3.4"
+  },
+  "dependencies": {
+    "@fontsource/grenze-gotisch": "5.3.0",
+    "@fontsource/im-fell-english": "5.3.0",
+    "@fontsource/im-fell-english-sc": "5.3.0",
+    "three": "0.187.0",
+    "three-subdivide": "1.1.5"
   }
 }

@@ -1,10 +1,187 @@
-# 1.3.0 — Survival records
+# 2.3.0 — Paul's feedback on 2.2.0 (WP-18)
 
-- Add Survival under Your Viking and the mobile page selector.
-- Show all-play and credited overall current/best streaks, the 30-day target, and all eight stored combat-difficulty rows.
-- Display exact saved counters without summing, substituting global bests, or treating stale rows as independent continuous streaks.
-- Explain world switching, death resets, best-record behavior, and the official 1.0.21 Survivor difficulty fix.
-- Existing saves and progress exports already contain these counters; no new import fields are required.
+- WP-18A: no dark square behind the pieces while they ink in (the wash's damp-paper shading is gone).
+- WP-18A: the load-in flows straight through, without the pause after the title; done ~0.5 s sooner (dots by 2.0 s).
+- WP-18A: no frame drops when the cursor leaves the table: the hidden gauntlet no longer forces shadow redraws every frame, and the camera stops ~1.2 s sooner instead of creeping.
+- WP-18A: no sound when the table's scrolling stops.
+- WP-18A: while the spark is out the gauntlet rests, ignores the mouse and now and then stretches (only then).
+- WP-18A: camera 20 % closer on the main section and 50 % closer on the collections; the header zoom-out is the same step as before.
+- WP-18A: the sheet's left edge moved in so the collection title is centred with equal margins, and the masthead is centred above it.
+- WP-18A: the coins form a tighter, uneven cluster clear of text; a bigger, retriggerable hover with a round hit area.
+- WP-18A: bigger Load text (desk coin legend; flat 14 → 18 px); the Import coin stays.
+- WP-18A: "start here" in red script around the help coin with a hand-drawn arrow while no save is loaded (desk).
+- WP-18A: `tools/wp18a-check.cjs` (wash, flow, leave, sound, gauntlet, catch, camera, layout, coins, load, start).
+- WP-18B: the bars' progress track is notched from the end of the fill to the far end (also at 0 %), clear of the engraved names.
+- WP-18B: letting go of the row-height slider burns the rows away, rescales their text, icons and buttons to the new height, and burns them back in.
+- WP-18B: stamp dots: every stamp uses Completed's layout; Missing is its reverse (filled at the end); Undiscovered and Unverified fill from the end.
+- WP-18B: Details appears from nothing in the middle of the screen and unfolds in; no box comes out of the button.
+- WP-18B: closing Details: the letter toasts, falls and turns on the wind while a fast char front runs ahead of the ember; black paper fragments float away; a crackle plays.
+- WP-18B: a much bigger item icon in a square frame in Details.
+- WP-18B: Gourmet Details: name centred between the item icon and the cooking station's icon with its level; a recipe row with each ingredient's icon, quantity and name (Valheim Wiki Food data, CC BY-SA 3.0).
+- WP-18B: `tools/wp18b-check.cjs` (notches, rows, stamps, open, burn, icon, gourmet) and `tools/recipe-icons.mjs`.
+- WP-18P: smoother transitions: switching to the big tables and opening or closing Details now drops 1 frame instead of 7–20 (this Mac, median of 3 runs); the same look, checked mid-way against 2.2.0.
+- WP-18P: far-off table rows don't paint their icons; buttons only carry their press offset while pressed; no layout reads in the middle of a frame.
+- WP-18P: one central scheduler for every animation and idle job (`util/clock.js`: read → timers → frame → idle), and a layout cache (`util/layout-epoch.js`).
+- WP-18P: adaptive quality: small trims inside a tier before frames drop, climbing back with headroom; a short burst of long frames no longer drops the tier for good.
+- WP-18P: dead code removed (damp-band veil patch, unused exports); `docs/explained/architecture.md`; `tools/wp18p-perf.cjs`, `wp18p-diff.cjs`, `wp18p-cuts.cjs`, `wp18p-summary.cjs`.
+- WP-18C: Bosses in Highlights: a big square tile per boss (the seven bosses and Hildir's three) with its trophy, name and kills, dim until defeated; the lifetime boss totals; a quiet line that the save doesn't record damage per boss or each kill's difficulty.
+- WP-18C: a "Played on" line with the world settings you played under (presets and modifiers, defaults left out), read from the part of the save the original parser skips, without changing its results.
+- WP-18C: Viking records in Highlights: about 90 lifetime numbers in five groups (Combat, Travel & world, Building, Harvest & crafting, Deaths & oddities), big number left.
+- WP-18C: `tools/wp18c-check.cjs`; full parity + golden + census on flat and desk; version 2.3.0; package rebuilt.
+
+# 2.2.0 — Paul's feedback on 2.1.0 (WP-17)
+
+- WP-17A: the filter drop-downs open above everything (they went under the table) and are exactly as wide as their box.
+- WP-17A: no wheel or pinch zoom. The camera frames the main section and eases out to the whole desk while the pointer is over the woodblock or the header and coins; a click outside the main section zooms in 30 % until a second click or the pointer comes back.
+- WP-17A: a bigger main section (×1.5 the area), with the paper's left edge 13 cm from it (was 36 cm).
+- WP-17A: the title, byline and lifetime records are part of the main section and scroll with the table; the coins and the help note stay put; no seam between header and main section.
+- WP-17A: one native scroll for the whole main section; rows fade out along the burned top edge and go under the table's heading row.
+- WP-17A: seamless load-in: the desk colour from the first byte and the paper from the first desk frame, no grey screen, no pop.
+- WP-17A: a noisier, faster ink wash (~2.2 s) that pours through the title too, with the stamps landing about halfway through it.
+- WP-17A: Undiscovered and Unverified stamps swapped; Missing dots fill from the bottom.
+- WP-17A: no dropped frames while the gauntlet animates on screen; the slider-release hitch is about halved (worst frame 83–100 → 50 ms).
+- WP-17A: the knob sheen has no seam at 180° and a softer flash with a slight glow; the desk is about a quarter darker.
+- WP-17A: fixed a screen-wide flicker at the end of a view change and the print layer scrolling aside when the Load coin got focus.
+- WP-17A: `tools/wp17a-check.cjs` (menus, camera, layout, header, edge, scroll, load, wash, stamps, frames, knob, desk).
+- WP-17B: dragging a bar fades the current view out with the knob's travel; a short release brings it back, a latch washes the new view straight in.
+- WP-17B: progress is a gilded fill on the bars themselves (the inlays are gone); thicker bars, a bigger plaque, bolder dark-filled engraved counts.
+- WP-17B: burned labels glow like embers near the gauntlet's fingertip.
+- WP-17B: a vertical row-height slider on the woodblock (rows 1.3× taller by default, remembered per viewer); the fingers curl over a whole bar, not just its knob.
+- WP-17B: the gauntlet is a first-person left hand coming in from the bottom left.
+- WP-17B: click-drag on the desk or the woodblock's border to burn lines into the wood; they glow, cool to char and are kept in this browser only.
+- WP-17B: a quiet tavern ambience (murmured voices, an occasional laugh), generated in code; it starts after the first click or key and follows the Sound coin.
+- WP-17B: the title's flourishes are about three times as intricate (14, with spiral volutes); Grenze Gotisch kept after a side-by-side with UnifrakturMaguntia and UnifrakturCook.
+- WP-17B: no long frame on slider release for typical collections (app.js category stats memoised; the 400-row Carpenter 108 → 63 ms).
+- WP-17B: `tools/wp17b-check.cjs` (fade, bars, tabs, ember, rows, curl, hand, burn, ambience, brand, frames).
+- WP-17C: the table shows every item by default, missing first (a new first option, "All items, missing first"); "Remaining" and the other original options are unchanged. Completed rows are green with white text and controls.
+- WP-17C: Highlights read "993 Wood Floor 2x2 Built": the amount big on the left, the rank on the right.
+- WP-17C: a condensed Details sheet: a toolbar under the name (wiki reference, use save record, mark completed, mark missing, add count, each with a small icon), the record table and the private note side by side with dividers, and the "matched directly" note in plain words in a small footer. It fits every width from 390 px up.
+- WP-17C: trophies show their drop chance (big) and what they are used for, from the Valheim Wiki Trophies page (CC BY-SA 3.0, bundled, credited in README and LICENSES).
+- WP-17C: closing Details burns the letter away in about a second (a fast burn front, live ember edges, floating ash); the dim simply fades. The wiki reference is a normal new-tab link; the letter stays open.
+- WP-17C: the Details text no longer swims against the sheet as it bobs (the bob runs on the compositor: 0 repaints, was 137 in 3 s); each item's sheet has its own faint stains, the same every time.
+- WP-17C: a plain click on the desk only zooms; burning starts once the pointer has moved (17B burned a dot on every click).
+- WP-17C: `tools/wp17c-check.cjs` (table, highlights, details, facts, close, wiki, bob, stains, overlap).
+
+# 2.1.0 — Paul's feedback on 2.0.0 (WP-16)
+
+- WP-16A: the repeated flashing after load is fixed. The bloom pre-pass cleared to a stale colour (the desk's after a normal frame, black after a reflection-cube frame), so the whole screen pulsed at ~5 Hz; it now clears to black.
+- WP-16A: render on demand. With nothing moving for 1.5 s the 3D and overlay layers redraw 5 times a second instead of 60; any input, camera move, ink or scene change wakes them at once. Still-desk GPU time on High at 2× falls from 1,294 to 129–136 GPU ms per second.
+- WP-16A: shadow maps redraw only when something that casts a shadow moves; High's shadow map is 1024 (was 2048); the gauntlet's reflection cube refreshes one face every 12th frame (was 6th); gauntlet reflections and clearcoat toned down slightly.
+- WP-16A: the blue shadow that appeared over the paper after scrolling the table is gone (the lifted header slip's shadow mirror is clipped like the slip and lit like paper).
+- WP-16A: scroll-wheel zoom 0.8×–2.5×, eased, anchored at the pointer; the wheel still scrolls the table and dialogs; trackpad pinch zooms anywhere.
+- WP-16A: with the spark out the camera zooms in 30 % and frames the whole text page (table rows 22.9 → 29.4 px); it lets go at the window's left edge so the board stays reachable.
+- WP-16A: the desk planks have knots, grain swirling round them, wavy figure, drying checks, worn edges and dirt in the gaps (shader only, no new textures).
+- WP-16A: `tools/wp16a-check.cjs` (flash, gpu, shadow, zoom, spark, desk) and `tools/wp16a-probe.cjs` (the flash diagnosis probe).
+- WP-16B: the woodblock is narrower and much taller (27 × 65 cm), runs off the bottom and a little off the left of the window, on top of the paper; thicker bars (pitch 2.4 cm) with bigger names, longer bars for their slots; the help note moved beside it.
+- WP-16B: bars rest on the left and slide right to select; while you drag one out, the selected bar slides back in exactly as far, so only one bar is ever out.
+- WP-16B: turned, round, fluted knobs with a knurled grip; "Achievement collections", "Your Viking" and the side note are burned into the wood; a much bigger "Collection targets" counter at the top.
+- WP-16B: a white aiming dot under the gauntlet's fingertip; the gauntlet freezes when the spark leaves and catches it with inertia when it returns; the spark leaves on a 1–3-turn twirl with a slow-motion burst of sparks.
+- WP-16B: `tools/wp16b-check.cjs` (board, burn, plaque, knob, slider, reticle, freeze, catch, twirl) and `tools/wp16b-shot.cjs` (masked screenshots).
+- WP-16C: the ink wash on entering a view is visible: its wet edge now crosses the heading at an even pace for about half a second (it was over the text for only ~125 ms).
+- WP-16C: "Valheim Checkup" can no longer be selected or dragged (desk and flat).
+- WP-16C: smaller header: the title sits higher and the collection sheet starts 1 cm sooner on the desk; the flat header is 136 px tall (was 172 px).
+- WP-16C: the "Bring your Viking's progress / Choose .fch file" block is gone from view (both modes); the Load control, the file input and dropping a save anywhere on the page all still load.
+- WP-16C: "How progress is read" moved to the top right, under the coins (its own small strip of paper on the desk, the header's right column in flat).
+- WP-16C: the coins sit at their own heights and rest with their own small tilts (desk); flat coins each have their own angle and offset.
+- WP-16C: the help letter unfolds piece by piece (6–12 strips, one after another), each piece already printed with its part of the letter, and folds back the same way.
+- WP-16C: Details opens in one step, a single letter fold (about 0.6 s); the Details button peels off the paper and floats while the letter is open, then settles back.
+- WP-16C: the filter and sort drop-downs open on the paper itself (desk) and move with it; flat keeps its overlay lists.
+- WP-16C: collection titles are bigger, centred, with drawn flourishes and a red initial.
+- WP-16C: table columns can be resized by dragging the edge between two headings; the widths are kept in this browser (`valheim-checkup:vc-column-widths`, written only after a resize); double-click an edge to reset.
+- WP-16C: starred rows have a slight outline.
+- WP-16C: fold copies never stand in for the real controls (no `for`/`name` attributes, no cloned `<details>`), so assistive tech and tests see only the real letter and dialog.
+- WP-16C: `tools/wp16c-check.cjs` (wash, brand, header, hero, help, coins, fold, details, menus, titles, columns, star, flat); the stale `wp06-check.cjs` and `wp09-check.cjs` moved to `tools/retired/`.
+
+# 2.0.0 — 3D desk
+
+- WP-01: Vite 8.3.5 toolchain. `npm run build:single` makes `dist/valheim-checkup.html` (one file, opens from file://), `npm run build:site` makes `dist/site/`, `npm run dev` runs the dev server; `scripts/build.cjs` now writes the flat original to `dist/original.html`.
+- WP-01: `inline-legacy` Vite plugin inlines `src/core.js` and `src/catalog.json` byte for byte, as before (same `#catalogData`, same global `ValheimCore`).
+- WP-01: `src/app.js` is an ES module with one-line `app:*` event emits; no behaviour change (docs/app-js-changes.md).
+- WP-01: event bus `src/bus.js`, canonical event list `src/events.js`, debug API `window.__vc` (events, state, timeScale, seed, quality, sound.log).
+- WP-01: privacy: event data never carries the character name, the save's profile id or its fingerprint, in any letter case. `app:toast` is recorded as `{kind, text}` with the name replaced by `{name}`; the id becomes `{profile}` and the fingerprint `{fingerprint}`; all other event data is redacted the same way.
+- WP-01: shared helpers with unit tests: seeded random generator, central clock with time scale, damped spring (fixed 1/240 s substeps), easing set.
+- WP-01: config skeleton `src/config/motion.js`, `render.js`, `audio-mix.json` with every value from spec files 04–06; run-mode switch `src/mode.js` (flat until the desk exists).
+- WP-02: item icons beside every table row (28 px) and in the Details heading (64 px). All 1,052 icon-bearing catalog tokens have a bundled icon; the 16 death causes and 10 tree species each have their own engraved glyph.
+- WP-02: `npm run icons` (`tools/harvest-icons.mjs`) builds `src/icons/atlas.webp` (991 cells of 96 px, 1.39 MB), `icon-map.json`, `sources.json` and `coverage.md` from the Jötunn documentation (MIT), hand-checked `overrides.json`, and the Valheim wiki; incremental, works without git; blank source pictures are detected and skipped.
+- WP-02: icons are printed onto the page: 15% sepia and an ink-grain mask; multiply blend on paper surfaces (desk mode and the flat parchment skin).
+- WP-02: footer credit line "Item, piece and creature icons © Iron Gate AB, via the Jötunn documentation (MIT) and the Valheim wiki." No icon is hotlinked, so the app still makes no network requests and the help text has no hotlink line.
+- WP-02: dev dependency `sharp 0.35.5` (atlas only). `app.js` unchanged.
+- WP-03: "How to" button directly left of Load character (accessible name "How to find your save and use Valheim Checkup", `data-tour-anchor`; it is also the desk How-to coin's proxy). Flat header order stays as before, with How to inserted: Import, Export, How to, Load character.
+- WP-03: "Find your Valheim character" popup: Windows / macOS / Linux tabs preselected from the visitor's platform, every Steam save folder in a code box with a Copy button ("Path copied."), including the macOS `characters` folder verified on a real Mac; the .fch advice and the Steam Cloud sentence from the help text; "Show me around" and ×. Escape, × or a click outside closes; focus stays inside while open and returns to How to.
+- WP-03: three-step tour (Load your Viking, Choose a collection, Read your progress) with no Done, Finish or Skip button: click anywhere or → / Enter / Space to continue, ← to go back, Esc to leave. A capture layer stops clicks reaching the page; flat mode dims the page to 35% around a soft cut-out; the slip sits beside its target and never leaves the window. Events `tour:start`, `tour:step`, `tour:end`.
+- WP-03 round 2: on phones the header keeps the brand whole (it only ever wraps between words, below 381 px) and How to stays directly left of Load, with Import and Export above them; Tab skips the unselected platform tabs; a click on a toast during the tour still advances it; resizing or scrolling during the tour moves the slip and cut-out at once instead of gliding.
+- WP-03: dev dependency `axe-core 4.14.0` (accessibility self-check); `tools/wp03-check.cjs` browser self-check. `app.js` unchanged.
+- WP-04: the 3D desk stage. On a computer with WebGL2, a mouse or trackpad, no reduced-motion setting and a window of at least 1024 × 640, the page now opens on the desk (`src/mode.js`, `DESK_AVAILABLE` true); everything else, and `?mode=flat`, gets the flat page exactly as before. Flat mode loads no 3D code.
+- WP-04: `#desk` with the seven layers of spec file 05 in order — `#scene` (WebGL), `#print` (CSS3D, same camera), `#veil` (second WebGL context, multiply), `#glow` (screen), `#float`, `#fx`, `#grain` (10% film grain and 18% vignette, overlay).
+- WP-04: placeholder desk at the master layout (`src/config/layout.js`): plank desk, main and inset sheets, woodblock box, five coin discs, a steel gauntlet stand-in. Camera fov 28°, pitched 62°, framed to the sheet and refitted on resize; drifts up to 1.6 × 1.0 cm toward the pointer and zooms to 1.025 in the middle third (spring 30 / 10); shake hook for impacts.
+- WP-04: key (3,200 K, soft shadows), hemisphere fill, cool rim and spark lights; warm studio environment through PMREM (RoomEnvironment fallback); AgX tone mapping; selective bloom on the gauntlet only; MSAA 4 / FXAA by tier. The paper is drawn unlit and lit only by the veil, so printed text is shaded exactly like the paper under it.
+- WP-04: quality tiers High / Medium / Low from a 60-frame benchmark; drops one tier after 2 s of frames over 20 ms and never climbs back; `__vc.quality()` overrides. One frame loop (input → physics → scene → veil → overlays → print) that pauses while the tab is hidden. Pointer position is never smoothed; velocity is a 30 ms average in cm/s on the paper; raycasting is used only for hover.
+- WP-04: runtime dependency `three 0.187.0` (exact). Test hooks on `__vc.stage` (layers, project, camera, input, stats, forceFrameMs, test print/shadow/glow); `tools/wp04-check.cjs` browser self-check. `app.js` unchanged.
+- WP-05: every texture is generated on the GPU at startup from seeded noise (`src/scene/textures/`): paper 2,048 × 1,152 (fibres, stains, worn edges, deckle, two creases), walnut 1,024 × 2,048, brushed steel 2,048 × 128, knurl, hammered gold, leather, ink grain and film grain; ≈ 300 ms on High; the same seed gives byte-identical textures (`__vc.stage.textures.hash()`). Generation time is logged.
+- WP-05: the materials of file 05 (`src/scene/materials/`): brushed steel (anisotropic), engraving, knurling, polished gauntlet steel with cube-camera reflections, leather, rivets, gold, brass, oiled wood, paper, desk. The placeholders wear them (`src/scene/dress.js`); the woodblock has a plain bevelled border (no braided carving, Paul's scope cut).
+- WP-05: engravings drawn from the page's own text in Grenze Gotisch and IM Fell (bundled, `@fontsource/* 5.3.0` exact); `__vc.engraved()` lists them.
+- WP-05: the desk fades up from candle-dark while textures generate; shaders compile before the first frame and the quality benchmark waits for both.
+- WP-05: `?materials` review page (`?materials=<id>` for one card). The paper normal goes to the veil, the paper and ink grain to CSS (`--vc-paper`, `--vc-ink-grain`), the film grain to `#grain`.
+- WP-05: GPU memory estimate under 300 MB on High (`__vc.stage.gpuMemory()`): one-target post chain, and High's pixel ratio is fitted to the budget (never below 1). `tools/wp05-check.cjs` browser self-check; `tests/specs/wp05.spec.js`, `unit/wp05.test.mjs`. `app.js` unchanged.
+- WP-12: audio engine (`src/audio/`): seven buses → compressor (−12 dB, 3:1) → limiter with a hard −1 dBFS ceiling; 24 voices, oldest of the same sound cut; silent until the first pointer or key press; hidden tab fades out over 500 ms; mute remembered under `valheim-checkup-3d:sound`; every play logged to `__vc.sound.log` and `sound:play`.
+- WP-12 (trimmed by Paul's scope cuts): 21 key sounds synthesised in code, one take each with random pitch ±3 % and gain ±1.5 dB per play; the other 48 file 06 sounds are wired but marked `"deferred": true` and silent; no ambience bed.
+- WP-12: wiring from canonical events to sounds, with pan from the object's screen position; load, failed load, stars and toasts are audible today, and the rest start when their WPs emit their events. Recorded overrides drop into `assets/audio/override/`.
+- WP-12: `?soundboard` mix page: every sound by bus with Play, gain and pitch, six scripted sequences, and a Download that writes `audio-mix.json` in the config format.
+- WP-06: the woodblock (28 × 36 × 3 cm oiled walnut, plain bevelled border, no braid) with 13 identical brushed-steel bars in the original order, real routed slots, brass inlays that pour, brass count tabs, and a brass plaque whose four digit wheels roll to the overall count.
+- WP-06: the slider: drag a bar's knob left; past 60% it latches and selects that view, under 60% it springs back; only one bar is latched; the previous bar returns on the linkage. Detents, press tilt, knob roll, latch dust, a hover glint and a keyboard-focus glow. A click without a drag nudges the bar and never selects; a second click within 4 s shows "Drag the knob to the left".
+- WP-06: the app's own buttons are now invisible proxies over the bars and coins, so the keyboard (↑/↓/Home/End, Enter/Space), screen readers and the original handlers work as before.
+- WP-06: five gold coins with engraved legends and emblems: How to, Load (legend changes with a 180 ms wipe after a save is loaded), Import and Export (flip on use; Export dims while disabled), and a new Sound coin that mutes and turns to its struck-bell face. Coins hop when hovered, shake on a failed load, flash with gold motes on a successful one, and jitter while a file is dragged over the window.
+- WP-06: a breeze field and impact() shared by the scene: moving things stir the air, the paper's edges lift and settle, and landings rattle the bars and dip the sheets.
+- WP-06: `tools/wp06-check.cjs` browser self-check. `app.js` unchanged.
+- WP-07: every original text and control is printed on the two sheets (CSS3D, authored at 29 px/cm): title area (title, byline, lifetime records, favourite tags; still the favourite drop zone), the collection sheet (eyebrow, heading, description, margin notes, record-mode menu, the four stamps, progress rule, filters, list info, scrolling table with a sticky header), the help letter and the footer lines. Same ids, classes and words; tab order coins → tags → board → collection sheet → help → footer → Sound coin.
+- WP-07: ink on parchment: IM Fell English / IM Fell English SC / Grenze Gotisch at the WP-07 type scale, ink #2b1d14 at 92% with the generated ink-grain mask, rough ink edges on headings and stamps, stamp inks for the four stamps and the status words.
+- WP-07: printed controls: inked-box menus, an inked square with a quill tick for Starred, an underlined search field, boxed Details / Export labels; hover darkens 8% with a slight bleed (120 ms), press goes 15% darker and into the paper with a 500/30 spring back, disabled fades to 45%, focus shows a warm glow ring and an outline.
+- WP-07: with no save the "Bring your Viking's progress with you" hero prints where the stamps go; the message line prints under the progress rule.
+- WP-07: paper bristle (slow ripple and fibre shimmer, doubled while a file is dragged over the window), the veil clamped to 1.0 with any brighter light added in #glow, the inset sheet casting a shadow when lifted, and the spark's 2,700 K flickering light pool in #glow (switched on by WP-09's spark).
+- WP-07: software renderers (SwiftShader and similar) start at Low, do all shader compiles and texture passes in one go while the page loads (instead of freezing it again and again while in use), keep the film grain still, and redraw the 3D layers at most every 2 s unless the camera moves.
+- WP-07: the #glow layer repaints only when its picture changes, and the veil's excess light is now captured on the lit desk (it was taken during the dark warm-up and never showed).
+- WP-08: the real gauntlet replaces the stand-in (`src/gauntlet/`): 19 bones with joint limits, plates as two-skin shells with rolled edges, 60 domed rivets, a skinned leather under-glove, a hinged index tip cap over an ember socket, vambrace, cuff, strap and buckle; LOD0 148,756 triangles on High/Medium, LOD1 53,414 (no subdivision) on Low. Seven poses (hover, point, pinch-ready, pinch, stretch, release, receive) blended per bone; the pinch is solved so the thumb pad meets the index pad. No plate passes through another in any pose, blend or wrist extreme (66 cases).
+- WP-08: polished steel with the hand's cube reflections (strength 1.0) and bloom on plates and rivets only; a simple shadow proxy casts the hand's shadow onto the paper and the printed text alike. The cube refreshes only when the hand has moved, every 6th frame on High, so the gauntlet stays under 3 ms a frame.
+- WP-08: `?gauntlet` review page (turntable, close / medium / desk distance, every pose, LOD0 / LOD1, wireframe). New dependency `three-subdivide 1.1.5` (exact).
+- WP-09: on the desk the gauntlet is the pointer over the board and a spark is the pointer everywhere else (`src/gauntlet/controller.js`, `spark.js`). The native pointer is hidden on #desk; Help has a new switch "Also show the normal pointer", remembered per browser.
+- WP-09: the hand follows with inertia and never lags more than 1.2 cm, leans into motion, points near a knob, opens thumb over it, pinches and rides the knob while you drag (pinch point on the knob centre), stops at the board's edge against a soft wall and watches the spark, and stretches when left alone (every 25–40 s). Coin runes glow near the spark; impacts bob the hand.
+- WP-09: the handover: leaving the board, the tip cap opens and the spark leaps out of the socket onto the pointer in 280 ms; coming back, it flies home in 140 ms and the cap closes. Reversing mid-way continues smoothly.
+- WP-09: the spark (on #fx): core and halo, flicker, trail, embers thrown forward on a sudden stop, click ring, hover growth, an ember caret over text fields, idle crackle, 150 ms fade at the window edge; it lights the board, coins and gauntlet (point light) and the paper and text (#glow), and stirs the breeze. Touch screens get no spark; dragging a knob makes the hand glide in and pinch it. During the tour the spark stays visible above the capture layer.
+- WP-09: printed text on the sheets can be selected again (three's CSS3D had turned selection off).
+- WP-08+09: camera pitch 64° and a fuller fit so the sheet fills the window like the reference; darker engraving in the bar names, board heading and foot note.
+- WP-10: choosing a collection washes the old view out (left to right, 30 ms stagger) and the new one in like watercolour (`src/ink/`). On the desk a darker damp band follows each wash front on the paper, with a faint sheen. Both modes, same modules.
+- WP-10: the four count cards are now inked stamps with ornate frames. They land one after another from 1 s, with a desk thump, a small camera shake and a fresh grain of stray ASCII characters each time (never the same twice). The numbers then count up, and a fresh-ink sheen and bleed dry over 1.5 s.
+- WP-10: dot grids under each stamp (rows of 10; partial dots drawn at least 25 % full) ink in one by one, all done by 3.5 s, with a glint on the last dot. Later corrections wipe the number (180 ms) and tick the changed dots without re-stamping.
+- WP-10: screen readers and tests see the new view at once; the old view's ghost is `aria-hidden`, inert and in a closed shadow root. Reduced motion gets a 150 ms fade and one soft stamp. A second choice mid-sequence ends cleanly in the second view.
+- WP-10: `app.js` line 57 adds `data-metric`, the frame `<svg>` and the dot-grid hooks `data-dots` / `data-full` / `data-partial` (DECISIONS 25); golden dot assertions now run (WP=10).
+- WP-10: bar names on the board are bolder and darker, with a faint light lip, and read at 100 % zoom.
+- WP-10: fixed the gauntlet's arm stretching into long rods across the desk after the quality tier dropped to Medium or Low (WP-08 leather LOD built in the wrong pose).
+- WP-11: the Details sheet unfolds out of its Details button in five folds (width, height, width, height, width; 260 ms each, from 0 to 1,000 ms), rises to float 4 cm over the desk by 1.5 s, bobs gently, and folds back into the button with an ink puff when closed. Escape, × and a click outside close it; Tab stays inside; focus returns to the Details button.
+- WP-11: the How-to popup unfolds and folds the same way; new events `howto:open`, `howto:close` (and `help:close`).
+- WP-11: the help note is a sealed letter: opening it cracks the wax seal and the letter floats over the desk; the page stays usable, and Escape or a click elsewhere folds it back.
+- WP-11: the collection header (title, stamps, filters) is a paper slip that lifts off the table as the table scrolls, curls a little at the top and casts a growing shadow. The coins it covers ignore the pointer; Tab to a coin or Home brings the slip back down.
+- WP-11: ink swashes draw, hold, erase and redraw around the title, never over its letters; the byline writes itself in when a save loads.
+- WP-11: favourite counts are 4 × 5 cm paper tags on brass pins that sway, swing in the breeze and on impacts, drop in when added and blow away when removed.
+- WP-11: parchment menus for every filter and sort list (mouse and keyboard; `change` fires once per real change), and a brass two-way lever for Achievement credit / Lifetime actions.
+- WP-11: the toast is a paper slip that slides in at the sheet's bottom-right and out again before it hides; tooltips are small paper slips after 500 ms (the browser's own tooltip is held back while one shows).
+- WP-11: during the tour the lamp dims to 35 % and a pool of light follows each step's target.
+- WP-11: dropping a save leaves an ink ripple; changing values wipe in 180 ms; errors get a red ink blot.
+- WP-11 round 2: the tour's step 2 (Choose a collection) now lights the board on the desk; before, it found no target there (the original collection list is a 0-px wrapper over the 3D bars), so the slip sat in the middle of the window and the light stayed on the Load coin. A step with no target (step 3 on Highlights or Skills & travel) fades the light pool out instead of leaving it on the last target.
+- WP-13: the flat page (phones, tablets, no WebGL, reduced motion, `?mode=flat`) wears the desk's parchment and ink: a generated 384 px paper tile, the same ink colours, grain and rough edges, gold coins for How to / Load / Import / Export / Sound, and inked stamps. The layout is the original one; the 381 px brand rule holds.
+- WP-13: flat mode uses the WP-11 paper surfaces: Details and the How-to letter unfold, parchment menus, paper toast slips, the help letter. Reduced motion swaps every unfold for a 150 ms fade.
+- WP-13: a .fch dropped anywhere on the flat page loads like the Load button, also during the tour (DECISIONS point 10).
+- WP-13: touch: press and hold a row for 0.5 s to open Details; a tap on a filter opens the parchment list; pressed controls show their pressed ink.
+- WP-13: a "Sound" coin in the flat header (mute), and "Show the 3D desk anyway" in the help note when the computer could run the desk but the visitor chose reduced motion.
+- WP-14: `?perf` overlay (`src/perf.js`): frames per second, quality tier, draw calls, triangles, JavaScript ms per frame, long tasks, heap and start-up time, red when over budget, with a Copy button.
+- WP-14: no long task over 100 ms after start-up: the sound system starts in idle time after load and renders its takes there; generated images reach CSS as short `blob:` URLs; hidden gauntlet parts and the glow pass's stand-ins are compiled at load; the light-excess readback is asynchronous; view changes no longer force an extra layout.
+- WP-14: smooth view changes: the ink wash's masks are short `blob:` URLs, stamp grains are drawn ahead in idle time, and the wash starts in the frame after the click.
+- WP-14: fewer draw calls on the desk: the glow pre-pass draws only what can glow or hide it; shadow-only parts sit on their own layer; the planks are one mesh; the gauntlet's reflection cube redraws one face per frame; the cube's filtering gets a frame of its own.
+- WP-14: High tier draws its glow at half size so the desk stays under the 300 MB graphics-memory budget at 1×.
+- WP-14: accessibility: the star column header has screen-reader text; on the desk the foot sheet (help letter, links, credits) is the page's footer landmark. `tools/wp14-check.cjs` checks every budget, axe in 13 views and 5 open states, keyboard-only flows, visible focus, contrast and sounds. `app.js` unchanged.
+- WP-14: contrast: body text on paper is at least 4.5:1 in both modes (status words, notes and soft ink a little darker), stamps at least 3:1 on their paler cards; the desk's Completed stamp is 7 % darker than file 05's green (NEEDS PAUL).
+- WP-15: version 2.0.0. README: the new features, privacy (still no network requests, no hotlinked icons) and attribution for icons (Iron Gate AB via Jötunn, MIT), fonts (SIL OFL 1.1), Three.js and three-subdivide (MIT). `LICENSES/` with each third-party licence.
+- WP-15: `scripts/package.cjs` builds `valheim-checkup-3d.zip`: the one-file app, `site/`, `source/` (no node_modules, dist, fixtures, spec, reference or test output), START-HERE.md, the plain-language notes with an index, the final audit, the questions for Paul, the licences and this changelog. No save, no export and no character name inside.
+- WP-15: the WP-04 and WP-12 specs brought up to date with the later WPs (the WP-12 one waits for the ink to finish before clearing its sound log).
 
 # 1.2.1 — Valheim 1.0.20 save compatibility
 

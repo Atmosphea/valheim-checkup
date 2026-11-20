@@ -1,0 +1,57 @@
+
+Running 5 tests using 1 worker
+
+[1A[2K[1/5] [chromium] › specs/wp12.spec.js:24:1 › 69 sounds in the mix, 22 built, 47 deferred (WP-17 item 21); every built take renders cleanly offline
+[1A[2K[chromium] › specs/wp12.spec.js:24:1 › 69 sounds in the mix, 22 built, 47 deferred (WP-17 item 21); every built take renders cleanly offline
+bar.scrape      2000 ms [1900,2100]  rms -9.4 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kbar.latch        870 ms [700,1000]  rms -23.5 dBFS  peak after master -4.90 dBFS
+
+[1A[2Kbar.return       870 ms [700,1000]  rms -23.9 dBFS  peak after master -6.21 dBFS
+
+[1A[2Kcoin.up           85 ms [80,100]  rms -14.4 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kcoin.land        630 ms [600,700]  rms -19.8 dBFS  peak after master -2.30 dBFS
+
+[1A[2Kspark.out        450 ms [400,500]  rms -20.8 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kspark.in         450 ms [400,500]  rms -22.0 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kspark.crackle     10 ms [5,20]  rms -24.0 dBFS  peak after master -9.67 dBFS
+
+[1A[2Kload.success    1700 ms [1500,1800]  rms -15.3 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kload.fail        380 ms [300,450]  rms -17.8 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kwash.out         460 ms [450,470]  rms -15.7 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kwash.in          610 ms [600,620]  rms -15.3 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kstamp.big        770 ms [700,800]  rms -21.5 dBFS  peak after master -4.36 dBFS
+
+[1A[2Kstamp.dot         40 ms [30,50]  rms -16.0 dBFS  peak after master -8.47 dBFS
+
+[1A[2Kpaper.lift       355 ms [200,370]  rms -18.4 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kpaper.settle     190 ms [180,200]  rms -17.2 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kunfold.flap       60 ms [55,65]  rms -16.4 dBFS  peak after master -4.22 dBFS
+
+[1A[2Kmenu.open        130 ms [120,135]  rms -16.9 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kstar.on          140 ms [130,150]  rms -15.1 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kstar.off         140 ms [130,150]  rms -18.2 dBFS  peak after master -1.00 dBFS
+
+[1A[2Ktoast.in         255 ms [250,260]  rms -14.4 dBFS  peak after master -1.00 dBFS
+
+[1A[2Kamb.hall       12000 ms [11950,12050]  rms -15.0 dBFS  peak after master -1.00 dBFS
+
+[1A[2K[2/5] [chromium] › specs/wp12.spec.js:50:1 › no sound before the first interaction; mute survives a reload
+[1A[2K[3/5] [chromium] › specs/wp12.spec.js:73:1 › scripted sessions: load, failed load, tour, Details, view change, drag-latch, spark — log matches file 06 triggers
+[1A[2K[4/5] [chromium] › specs/wp12.spec.js:151:1 › The Carpenter view change (40 dots × 4 grids) never has more than 8 stamp.dot voices
+[1A[2K[chromium] › specs/wp12.spec.js:151:1 › The Carpenter view change (40 dots × 4 grids) never has more than 8 stamp.dot voices
+dot voices: sequence max 4, burst max 8, cut 32
+
+[1A[2K[5/5] [chromium] › specs/wp12.spec.js:171:1 › ?soundboard lists every sound by bus with controls, plays, runs sequences and downloads audio-mix.json in the config format
+[1A[2K  5 passed (34.9s)

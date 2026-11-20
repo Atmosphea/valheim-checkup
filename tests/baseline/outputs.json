@@ -1,0 +1,18 @@
+{
+  "_about": "Output census (file 03 #3). Files themselves are personal data and live in fixtures/private/baseline-outputs/; this manifest holds only hashes and sizes.",
+  "script": "load save; status All; star Carrot Soup and Blood Pudding; Details Carrot Soup: Mark completed, note 'Census note, \"quoted\", with comma', Add count to header; close; status Remaining; export progress; export list (Master Chef); dump localStorage (original keys only, JSON.stringify(...,null,1)). Fixed date 2026-11-10T12:00:00.000Z, locale en-US, timezone UTC.",
+  "files": {
+    "progress.json": {
+      "sha256": "cdfec4c38996a7e2a14fae5367ce88f1da700d7c43afb9c8664687dbdff4b942",
+      "bytes": 144217
+    },
+    "list.csv": {
+      "sha256": "c79ce0ed04edbf1baa3fafe6bc10bd0bbdd0cbbdd15dbbef451df9f821984a07",
+      "bytes": 6497
+    },
+    "localStorage.json": {
+      "sha256": "fcc7d707027742d00f7c19bf9ad773364b049d1696bbb3ea81e1debe12a2a812",
+      "bytes": 86622
+    }
+  }
+}

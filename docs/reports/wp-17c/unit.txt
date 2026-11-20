@@ -1,0 +1,938 @@
+
+> valheim-checkup@2.1.0 test:unit
+> node --experimental-detect-module --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test unit/*.test.mjs
+
+TAP version 13
+# Subtest: scope cuts: 22 built sounds have recipes, the other 47 are deferred and have none
+ok 1 - scope cuts: 22 built sounds have recipes, the other 47 are deferred and have none
+  ---
+  duration_ms: 0.742625
+  type: 'test'
+  ...
+# Subtest: every built recipe renders: finite, within its length range, RMS above −50 dBFS, normalised peak
+ok 2 - every built recipe renders: finite, within its length range, RMS above −50 dBFS, normalised peak
+  ---
+  duration_ms: 404.024875
+  type: 'test'
+  ...
+# Subtest: recipes are deterministic per seed and vary between seeds
+ok 3 - recipes are deterministic per seed and vary between seeds
+  ---
+  duration_ms: 56.77825
+  type: 'test'
+  ...
+# Subtest: FFT convolution matches direct convolution; loops join without a jump
+ok 4 - FFT convolution matches direct convolution; loops join without a jump
+  ---
+  duration_ms: 0.624125
+  type: 'test'
+  ...
+# Subtest: every wired event in audio-mix.json is canonical
+ok 5 - every wired event in audio-mix.json is canonical
+  ---
+  duration_ms: 0.189042
+  type: 'test'
+  ...
+# Subtest: emit records {t, wall, type, data} and calls listeners
+ok 6 - emit records {t, wall, type, data} and calls listeners
+  ---
+  duration_ms: 1.19875
+  type: 'test'
+  ...
+# Subtest: t is scaled clock time
+ok 7 - t is scaled clock time
+  ---
+  duration_ms: 0.143167
+  type: 'test'
+  ...
+# Subtest: "*" hears everything; once() fires once
+ok 8 - "*" hears everything; once() fires once
+  ---
+  duration_ms: 0.372875
+  type: 'test'
+  ...
+# Subtest: a throwing listener does not break the emitter or other listeners
+ok 9 - a throwing listener does not break the emitter or other listeners
+  ---
+  duration_ms: 0.136167
+  type: 'test'
+  ...
+# Subtest: ring buffer keeps the last 2,000 events
+ok 10 - ring buffer keeps the last 2,000 events
+  ---
+  duration_ms: 9.842375
+  type: 'test'
+  ...
+# Subtest: canonical list = file 01 (31 names) + DECISIONS point 29 (34 names), no duplicates
+ok 11 - canonical list = file 01 (31 names) + DECISIONS point 29 (34 names), no duplicates
+  ---
+  duration_ms: 0.102334
+  type: 'test'
+  ...
+# Subtest: now() follows wall time at scale 1
+ok 12 - now() follows wall time at scale 1
+  ---
+  duration_ms: 2.121125
+  type: 'test'
+  ...
+# Subtest: timeScale slows, speeds and pauses without jumps
+ok 13 - timeScale slows, speeds and pauses without jumps
+  ---
+  duration_ms: 0.133791
+  type: 'test'
+  ...
+# Subtest: setScale rejects bad values
+ok 14 - setScale rejects bad values
+  ---
+  duration_ms: 0.986667
+  type: 'test'
+  ...
+# Subtest: tick() returns scaled frame delta, clamped after a stall
+ok 15 - tick() returns scaled frame delta, clamped after a stall
+  ---
+  duration_ms: 0.181208
+  type: 'test'
+  ...
+# Subtest: onFrame subscribers get (dt, t); unsubscribe works
+ok 16 - onFrame subscribers get (dt, t); unsubscribe works
+  ---
+  duration_ms: 0.868208
+  type: 'test'
+  ...
+# Subtest: after() fires once on scaled time, and can be cancelled
+ok 17 - after() fires once on scaled time, and can be cancelled
+  ---
+  duration_ms: 0.227833
+  type: 'test'
+  ...
+# Subtest: a throwing subscriber does not stop the others
+ok 18 - a throwing subscriber does not stop the others
+  ---
+  duration_ms: 0.099333
+  type: 'test'
+  ...
+# Subtest: the app-wide clock uses performance.now
+ok 19 - the app-wide clock uses performance.now
+  ---
+  duration_ms: 0.192625
+  type: 'test'
+  ...
+# Subtest: backticked tunable names from files 04–06 exist as config keys
+ok 20 - backticked tunable names from files 04–06 exist as config keys
+  ---
+  duration_ms: 0.409667
+  type: 'test'
+  ...
+# Subtest: backticked tunables hold the spec value, checked by key name
+ok 21 - backticked tunables hold the spec value, checked by key name
+  ---
+  duration_ms: 0.737792
+  type: 'test'
+  ...
+# Subtest: every named spring holds the stiffness / damping from its file 04 row, checked by key name
+ok 22 - every named spring holds the stiffness / damping from its file 04 row, checked by key name
+  ---
+  duration_ms: 2.406584
+  type: 'test'
+  ...
+# Subtest: all 69 sounds of file 06 are in audio-mix.json with bus, gain and a canonical trigger
+ok 23 - all 69 sounds of file 06 are in audio-mix.json with bus, gain and a canonical trigger
+  ---
+  duration_ms: 0.923459
+  type: 'test'
+  ...
+# Subtest: the gain column of file 06 matches audio-mix.json
+ok 24 - the gain column of file 06 matches audio-mix.json
+  ---
+  duration_ms: 0.988959
+  type: 'test'
+  ...
+# Subtest: every number in files 04, 05 and 06 is in src/config/
+ok 25 - every number in files 04, 05 and 06 is in src/config/
+  ---
+  duration_ms: 7.244834
+  type: 'test'
+  ...
+# Subtest: every curve starts at 0 and ends at 1
+ok 26 - every curve starts at 0 and ends at 1
+  ---
+  duration_ms: 0.70225
+  type: 'test'
+  ...
+# Subtest: inputs outside 0–1 are clamped
+ok 27 - inputs outside 0–1 are clamped
+  ---
+  duration_ms: 1.854375
+  type: 'test'
+  ...
+# Subtest: monotonic curves never go backwards or leave 0–1
+ok 28 - monotonic curves never go backwards or leave 0–1
+  ---
+  duration_ms: 10.812
+  type: 'test'
+  ...
+# Subtest: outQuart is the original app formula 1 − (1 − x)^4 (DECISIONS point 23)
+ok 29 - outQuart is the original app formula 1 − (1 − x)^4 (DECISIONS point 23)
+  ---
+  duration_ms: 0.363625
+  type: 'test'
+  ...
+# Subtest: outCubic is 1 − (1 − x)^3 (stamp count-up)
+ok 30 - outCubic is 1 − (1 − x)^3 (stamp count-up)
+  ---
+  duration_ms: 0.261292
+  type: 'test'
+  ...
+# Subtest: inOut curves pass through the middle
+ok 31 - inOut curves pass through the middle
+  ---
+  duration_ms: 0.081958
+  type: 'test'
+  ...
+# Subtest: back curves anticipate and overshoot
+ok 32 - back curves anticipate and overshoot
+  ---
+  duration_ms: 0.36275
+  type: 'test'
+  ...
+# Subtest: tween, lerp, clamp01
+ok 33 - tween, lerp, clamp01
+  ---
+  duration_ms: 0.427042
+  type: 'test'
+  ...
+# Subtest: gauntlet: 19 bones, rivets ≈ 60, LOD0 80k–150k triangles, LOD1 lighter
+ok 34 - gauntlet: 19 bones, rivets ≈ 60, LOD0 80k–150k triangles, LOD1 lighter
+  ---
+  duration_ms: 155.03575
+  type: 'test'
+  ...
+# Subtest: gauntlet: the pinch closes (thumb pad on the index pad) without plates passing through
+ok 35 - gauntlet: the pinch closes (thumb pad on the index pad) without plates passing through
+  ---
+  duration_ms: 0.074083
+  type: 'test'
+  ...
+# Subtest: gauntlet: no plate passes through another in any pose, blend or wrist extreme
+ok 36 - gauntlet: no plate passes through another in any pose, blend or wrist extreme
+  ---
+  duration_ms: 567.176292
+  type: 'test'
+  ...
+# Subtest: gauntlet: every pose stays inside the joint limits
+ok 37 - gauntlet: every pose stays inside the joint limits
+  ---
+  duration_ms: 0.32575
+  type: 'test'
+  ...
+# Subtest: spark: a sudden stop throws 4–8 embers in the travel direction
+ok 38 - spark: a sudden stop throws 4–8 embers in the travel direction
+  ---
+  duration_ms: 0.829875
+  type: 'test'
+  ...
+# Subtest: spark: a slow stop throws nothing; a click draws a ring with three embers
+ok 39 - spark: a slow stop throws nothing; a click draws a ring with three embers
+  ---
+  duration_ms: 0.146625
+  type: 'test'
+  ...
+# Subtest: gauntlet: a LOD built while the arm is posed and placed matches one built at rest (WP-10 rods)
+ok 40 - gauntlet: a LOD built while the arm is posed and placed matches one built at rest (WP-10 rods)
+  ---
+  duration_ms: 264.847959
+  type: 'test'
+  ...
+# Subtest: catalog has 1,052 icon-bearing tokens and 26 death/tree tokens (spec numbers)
+ok 41 - catalog has 1,052 icon-bearing tokens and 26 death/tree tokens (spec numbers)
+  ---
+  duration_ms: 0.510292
+  type: 'test'
+  ...
+# Subtest: acceptance 1: at least 1,050 of 1,052 tokens bundled; every other one has a hotlink or glyph
+ok 42 - acceptance 1: at least 1,050 of 1,052 tokens bundled; every other one has a hotlink or glyph
+  ---
+  duration_ms: 0.627
+  type: 'test'
+  ...
+# Subtest: acceptance 1: the 16 death causes and 10 trees each have their own, distinct glyph
+ok 43 - acceptance 1: the 16 death causes and 10 trees each have their own, distinct glyph
+  ---
+  duration_ms: 0.703375
+  type: 'test'
+  ...
+# Subtest: acceptance 4: atlas is WebP, 96 px cells, under 4 MB, and matches the map
+ok 44 - acceptance 4: atlas is WebP, 96 px cells, under 4 MB, and matches the map
+  ---
+  duration_ms: 9.26075
+  type: 'test'
+  ...
+# Subtest: every bundled cell is a visible picture (no blank Jötunn renders slipped through)
+ok 45 - every bundled cell is a visible picture (no blank Jötunn renders slipped through)
+  ---
+  duration_ms: 240.161667
+  type: 'test'
+  ...
+# Subtest: overrides: every entry is a catalog token and was looked at before it was accepted
+ok 46 - overrides: every entry is a catalog token and was looked at before it was accepted
+  ---
+  duration_ms: 0.488667
+  type: 'test'
+  ...
+# Subtest: harvester: parses Jötunn list rows, with and without images
+ok 47 - harvester: parses Jötunn list rows, with and without images
+  ---
+  duration_ms: 0.489583
+  type: 'test'
+  ...
+# Subtest: harvester: token match rules (direct, case-insensitive; creatures: trophy, then item, then character)
+ok 48 - harvester: token match rules (direct, case-insensitive; creatures: trophy, then item, then character)
+  ---
+  duration_ms: 0.282208
+  type: 'test'
+  ...
+# Subtest: harvester: glyph categories
+ok 49 - harvester: glyph categories
+  ---
+  duration_ms: 0.362958
+  type: 'test'
+  ...
+# Subtest: runtime lookup: every row of every collection resolves, including The Hunter and items without a token
+ok 50 - runtime lookup: every row of every collection resolves, including The Hunter and items without a token
+  ---
+  duration_ms: 1.716375
+  type: 'test'
+  ...
+# Subtest: runtime lookup: bundled beats hotlink beats glyph across an item's tokens
+ok 51 - runtime lookup: bundled beats hotlink beats glyph across an item's tokens
+  ---
+  duration_ms: 0.132042
+  type: 'test'
+  ...
+# Subtest: acceptance 5: privacy line present if and only if hotlinks exist
+ok 52 - acceptance 5: privacy line present if and only if hotlinks exist
+  ---
+  duration_ms: 0.557125
+  type: 'test'
+  ...
+# Subtest: acceptance 5: credit line worded for the sources actually used
+ok 53 - acceptance 5: credit line worded for the sources actually used
+  ---
+  duration_ms: 5.440917
+  type: 'test'
+  ...
+# Subtest: config: icon sizes and print treatment from the spec
+ok 54 - config: icon sizes and print treatment from the spec
+  ---
+  duration_ms: 0.052
+  type: 'test'
+  ...
+# Subtest: privacy guard: atlas never spells a private string, even by chance (made-up values only)
+ok 55 - privacy guard: atlas never spells a private string, even by chance (made-up values only)
+  ---
+  duration_ms: 7.193916
+  type: 'test'
+  ...
+# Subtest: since WP-04 the desk exists; outside a browser (no fine pointer) the answer is flat
+ok 56 - since WP-04 the desk exists; outside a browser (no fine pointer) the answer is flat
+  ---
+  duration_ms: 0.4425
+  type: 'test'
+  ...
+# Subtest: desk when everything allows it (once the desk exists)
+ok 57 - desk when everything allows it (once the desk exists)
+  ---
+  duration_ms: 0.114916
+  type: 'test'
+  ...
+# Subtest: WP-04 acceptance cases: no WebGL2, reduced motion, coarse pointer, 900 px wide window
+ok 58 - WP-04 acceptance cases: no WebGL2, reduced motion, coarse pointer, 900 px wide window
+  ---
+  duration_ms: 0.073917
+  type: 'test'
+  ...
+# Subtest: help switch "Use the 3D desk anyway" overrides reduced motion only
+ok 59 - help switch "Use the 3D desk anyway" overrides reduced motion only
+  ---
+  duration_ms: 0.274209
+  type: 'test'
+  ...
+# Subtest: ?mode= overrides (DECISIONS point 14)
+ok 60 - ?mode= overrides (DECISIONS point 14)
+  ---
+  duration_ms: 0.140416
+  type: 'test'
+  ...
+# Subtest: WebGL2 is only probed when the answer depends on it
+ok 61 - WebGL2 is only probed when the answer depends on it
+  ---
+  duration_ms: 0.062084
+  type: 'test'
+  ...
+# Subtest: WP-13 step 9: the help switch is offered only where the desk can run
+ok 62 - WP-13 step 9: the help switch is offered only where the desk can run
+  ---
+  duration_ms: 0.13075
+  type: 'test'
+  ...
+# Subtest: a toast containing the name is stored redacted in __vc.events as {kind, text}
+ok 63 - a toast containing the name is stored redacted in __vc.events as {kind, text}
+  ---
+  duration_ms: 1.440792
+  type: 'test'
+  ...
+# Subtest: listeners get the redacted data too
+ok 64 - listeners get the redacted data too
+  ---
+  duration_ms: 0.195792
+  type: 'test'
+  ...
+# Subtest: other events (app:load, nested data) are redacted as well
+ok 65 - other events (app:load, nested data) are redacted as well
+  ---
+  duration_ms: 0.154792
+  type: 'test'
+  ...
+# Subtest: a name stays redacted after the source changes or clears (Load another / Forget)
+ok 66 - a name stays redacted after the source changes or clears (Load another / Forget)
+  ---
+  duration_ms: 0.289375
+  type: 'test'
+  ...
+# Subtest: the emitter's own object is not modified; no source means no redaction
+ok 67 - the emitter's own object is not modified; no source means no redaction
+  ---
+  duration_ms: 0.084916
+  type: 'test'
+  ...
+# Subtest: toast kinds cover every notify() text in app.js
+ok 68 - toast kinds cover every notify() text in app.js
+  ---
+  duration_ms: 0.172
+  type: 'test'
+  ...
+# Subtest: the name is redacted in any letter case (search typed in lower or upper case)
+ok 69 - the name is redacted in any letter case (search typed in lower or upper case)
+  ---
+  duration_ms: 0.1435
+  type: 'test'
+  ...
+# Subtest: names that differ only in case are remembered once
+ok 70 - names that differ only in case are remembered once
+  ---
+  duration_ms: 0.188667
+  type: 'test'
+  ...
+# Subtest: the profile id and the fingerprint are registered as secrets and redacted
+ok 71 - the profile id and the fingerprint are registered as secrets and redacted
+  ---
+  duration_ms: 0.400417
+  type: 'test'
+  ...
+# Subtest: secrets stay redacted after the sources clear (Forget), and regex characters are literal
+ok 72 - secrets stay redacted after the sources clear (Forget), and regex characters are literal
+  ---
+  duration_ms: 0.39375
+  type: 'test'
+  ...
+# Subtest: a placeholder is never redacted again, even if a secret matches its letters
+ok 73 - a placeholder is never redacted again, even if a secret matches its letters
+  ---
+  duration_ms: 0.153917
+  type: 'test'
+  ...
+# Subtest: a throwing source never breaks emit
+ok 74 - a throwing source never breaks emit
+  ---
+  duration_ms: 0.071958
+  type: 'test'
+  ...
+# Subtest: same seed gives the same sequence; different seeds differ
+ok 75 - same seed gives the same sequence; different seeds differ
+  ---
+  duration_ms: 1.483959
+  type: 'test'
+  ...
+# Subtest: known first values for seed 1 (guards against accidental algorithm changes)
+ok 76 - known first values for seed 1 (guards against accidental algorithm changes)
+  ---
+  duration_ms: 0.092958
+  type: 'test'
+  ...
+# Subtest: seed() restarts the sequence in place
+ok 77 - seed() restarts the sequence in place
+  ---
+  duration_ms: 0.070125
+  type: 'test'
+  ...
+# Subtest: next() stays in [0, 1) and is roughly uniform
+ok 78 - next() stays in [0, 1) and is roughly uniform
+  ---
+  duration_ms: 6.713709
+  type: 'test'
+  ...
+# Subtest: range, int, jitter, chance, sign, pick
+ok 79 - range, int, jitter, chance, sign, pick
+  ---
+  duration_ms: 2.226167
+  type: 'test'
+  ...
+# Subtest: fork() is deterministic and independent of later parent draws
+ok 80 - fork() is deterministic and independent of later parent draws
+  ---
+  duration_ms: 0.108708
+  type: 'test'
+  ...
+# Subtest: toSeed accepts numbers, numeric strings and words
+ok 81 - toSeed accepts numbers, numeric strings and words
+  ---
+  duration_ms: 0.182708
+  type: 'test'
+  ...
+# Subtest: the app-wide rng exists and can be reseeded
+ok 82 - the app-wide rng exists and can be reseeded
+  ---
+  duration_ms: 0.049041
+  type: 'test'
+  ...
+# Subtest: benchmark: 60 frames after warm-up pick the start tier
+ok 83 - benchmark: 60 frames after warm-up pick the start tier
+  ---
+  duration_ms: 1.778084
+  type: 'test'
+  ...
+# Subtest: slow frames for 2 s drop exactly one tier; fast frames never climb back
+ok 84 - slow frames for 2 s drop exactly one tier; fast frames never climb back
+  ---
+  duration_ms: 0.487042
+  type: 'test'
+  ...
+# Subtest: average at exactly 20 ms does not drop; the window restarts after each check
+ok 85 - average at exactly 20 ms does not drop; the window restarts after each check
+  ---
+  duration_ms: 0.325125
+  type: 'test'
+  ...
+# Subtest: never drops below low; flat is only reached by hand
+ok 86 - never drops below low; flat is only reached by hand
+  ---
+  duration_ms: 0.320833
+  type: 'test'
+  ...
+# Subtest: a manual tier cancels a pending benchmark
+ok 87 - a manual tier cancels a pending benchmark
+  ---
+  duration_ms: 0.094333
+  type: 'test'
+  ...
+# Subtest: velocity: 30 ms moving average in cm/s
+ok 88 - velocity: 30 ms moving average in cm/s
+  ---
+  duration_ms: 0.252666
+  type: 'test'
+  ...
+# Subtest: framing: sheet centred and filling the screen, at 16:9, 16:10 and 4:3
+ok 89 - framing: sheet centred and filling the screen, at 16:9, 16:10 and 4:3
+  ---
+  duration_ms: 19.669416
+  type: 'test'
+  ...
+# Subtest: zoom zone is the middle third of the window
+ok 90 - zoom zone is the middle third of the window
+  ---
+  duration_ms: 0.083583
+  type: 'test'
+  ...
+# Subtest: layout: placeholders sit where WP-04 and DECISIONS say
+ok 91 - layout: placeholders sit where WP-04 and DECISIONS say
+  ---
+  duration_ms: 0.308459
+  type: 'test'
+  ...
+# Subtest: layer stack config matches file 05
+ok 92 - layer stack config matches file 05
+  ---
+  duration_ms: 0.385416
+  type: 'test'
+  ...
+# Subtest: config holds every stiffness / damping pair from file 04
+ok 93 - config holds every stiffness / damping pair from file 04
+  ---
+  duration_ms: 2.45325
+  type: 'test'
+  ...
+# Subtest: every file 04 spring settles within 1% (step response, 60 fps)
+ok 94 - every file 04 spring settles within 1% (step response, 60 fps)
+  ---
+  duration_ms: 10.369709
+  type: 'test'
+  ...
+# Subtest: matches the exact underdamped solution closely
+ok 95 - matches the exact underdamped solution closely
+  ---
+  duration_ms: 0.13875
+  type: 'test'
+  ...
+# Subtest: frame-rate independent: 30, 60 and 144 fps agree
+ok 96 - frame-rate independent: 30, 60 and 144 fps agree
+  ---
+  duration_ms: 0.091875
+  type: 'test'
+  ...
+# Subtest: the 700 / 22 latch overshoots once (file 04: "latch with one overshoot")
+ok 97 - the 700 / 22 latch overshoots once (file 04: "latch with one overshoot")
+  ---
+  duration_ms: 0.088667
+  type: 'test'
+  ...
+# Subtest: huge steps are capped, negative steps ignored, snap/impulse/settled work
+ok 98 - huge steps are capped, negative steps ignored, snap/impulse/settled work
+  ---
+  duration_ms: 0.158
+  type: 'test'
+  ...
+# Subtest: SpringVec moves several numbers together
+ok 99 - SpringVec moves several numbers together
+  ---
+  duration_ms: 2.172334
+  type: 'test'
+  ...
+# Subtest: platform: userAgentData first, then the user agent string
+ok 100 - platform: userAgentData first, then the user agent string
+  ---
+  duration_ms: 0.678875
+  type: 'test'
+  ...
+# Subtest: placement order: right, then left, then above
+ok 101 - placement order: right, then left, then above
+  ---
+  duration_ms: 0.259834
+  type: 'test'
+  ...
+# Subtest: placement fallbacks: below, then inside; never off-screen
+ok 102 - placement fallbacks: below, then inside; never off-screen
+  ---
+  duration_ms: 4.87375
+  type: 'test'
+  ...
+# Subtest: arrow points at the target centre and stays off the corners
+ok 103 - arrow points at the target centre and stays off the corners
+  ---
+  duration_ms: 0.078875
+  type: 'test'
+  ...
+# Subtest: unionBox and fitTarget
+ok 104 - unionBox and fitTarget
+  ---
+  duration_ms: 0.425459
+  type: 'test'
+  ...
+# Subtest: strings: spec wording, tour text variants, no Done/Finish/Skip
+ok 105 - strings: spec wording, tour text variants, no Done/Finish/Skip
+  ---
+  duration_ms: 0.213542
+  type: 'test'
+  ...
+# Subtest: save paths: spec table plus the verified macOS row, exact text
+ok 106 - save paths: spec table plus the verified macOS row, exact text
+  ---
+  duration_ms: 0.158709
+  type: 'test'
+  ...
+# Subtest: config: tour tunables in render.js
+ok 107 - config: tour tunables in render.js
+  ---
+  duration_ms: 0.051
+  type: 'test'
+  ...
+# Subtest: fnv1a: known vectors, and any changed byte changes the hash
+ok 108 - fnv1a: known vectors, and any changed byte changes the hash
+  ---
+  duration_ms: 1.3115
+  type: 'test'
+  ...
+# Subtest: textureBytes: mip chain adds about a third
+ok 109 - textureBytes: mip chain adds about a third
+  ---
+  duration_ms: 0.11575
+  type: 'test'
+  ...
+# Subtest: texture table matches spec/wp-05-materials.md
+ok 110 - texture table matches spec/wp-05-materials.md
+  ---
+  duration_ms: 0.421625
+  type: 'test'
+  ...
+# Subtest: material table: every file 05 material, once
+ok 111 - material table: every file 05 material, once
+  ---
+  duration_ms: 0.1245
+  type: 'test'
+  ...
+# Subtest: estimateGpuMemory: adds up parts and grows with pixel ratio
+ok 112 - estimateGpuMemory: adds up parts and grows with pixel ratio
+  ---
+  duration_ms: 0.236042
+  type: 'test'
+  ...
+# Subtest: fitPixelRatio: largest step under budget, never below the floor
+ok 113 - fitPixelRatio: largest step under budget, never below the floor
+  ---
+  duration_ms: 1.678083
+  type: 'test'
+  ...
+# Subtest: release at 59% springs back, at 61% latches; only one bar latched
+ok 114 - release at 59% springs back, at 61% latches; only one bar latched
+  ---
+  duration_ms: 10.291042
+  type: 'test'
+  ...
+# Subtest: event order for one drag: press → drag → detent… → latch → app:category → return
+ok 115 - event order for one drag: press → drag → detent… → latch → app:category → return
+  ---
+  duration_ms: 1.131542
+  type: 'test'
+  ...
+# Subtest: Paul, WP-16 item 10: while a bar is dragged out, the selected bar slides back in lockstep
+ok 116 - Paul, WP-16 item 10: while a bar is dragged out, the selected bar slides back in lockstep
+  ---
+  duration_ms: 1.638166
+  type: 'test'
+  ...
+# Subtest: click without drag nudges, never selects; the hint shows on the second click within 4 s
+ok 117 - click without drag nudges, never selects; the hint shows on the second click within 4 s
+  ---
+  duration_ms: 0.367709
+  type: 'test'
+  ...
+# Subtest: a slow press without movement is not a click (no nudge) and does not select
+ok 118 - a slow press without movement is not a click (no nudge) and does not select
+  ---
+  duration_ms: 0.26225
+  type: 'test'
+  ...
+# Subtest: activate (keyboard / programmatic click) slides by itself in 420 ms and selects at the latch
+ok 119 - activate (keyboard / programmatic click) slides by itself in 420 ms and selects at the latch
+  ---
+  duration_ms: 1.17825
+  type: 'test'
+  ...
+# Subtest: activating the latched bar selects again at once; sync from elsewhere animates without selecting
+ok 120 - activating the latched bar selects again at once; sync from elsewhere animates without selecting
+  ---
+  duration_ms: 0.513541
+  type: 'test'
+  ...
+# Subtest: a second activation cancels a running auto-slide; never two latches
+ok 121 - a second activation cancels a running auto-slide; never two latches
+  ---
+  duration_ms: 0.645541
+  type: 'test'
+  ...
+# Subtest: dragging the latched bar back right never unlatches it
+ok 122 - dragging the latched bar back right never unlatches it
+  ---
+  duration_ms: 0.830209
+  type: 'test'
+  ...
+# Subtest: latch overshoot stays within ~0.12 cm
+ok 123 - latch overshoot stays within ~0.12 cm
+  ---
+  duration_ms: 1.025666
+  type: 'test'
+  ...
+# Subtest: impact rattles every bar, staggered, then settles
+ok 124 - impact rattles every bar, staggered, then settles
+  ---
+  duration_ms: 1.008208
+  type: 'test'
+  ...
+# Subtest: breeze: write, bilinear sample, 600 ms half-life, DECISIONS point 20 lift and swing
+ok 125 - breeze: write, bilinear sample, 600 ms half-life, DECISIONS point 20 lift and swing
+  ---
+  duration_ms: 0.305958
+  type: 'test'
+  ...
+# Subtest: impact falloff = 1 / (1 + d / 20 cm)
+ok 126 - impact falloff = 1 / (1 + d / 20 cm)
+  ---
+  duration_ms: 0.042834
+  type: 'test'
+  ...
+# Subtest: every printed part lies on the main sheet
+ok 127 - every printed part lies on the main sheet
+  ---
+  duration_ms: 0.52325
+  type: 'test'
+  ...
+# Subtest: title-area parts sit inside the title area; foot parts inside the foot strip
+ok 128 - title-area parts sit inside the title area; foot parts inside the foot strip
+  ---
+  duration_ms: 0.082375
+  type: 'test'
+  ...
+# Subtest: printed text stays clear of the woodblock, the coins and the inset sheet
+ok 129 - printed text stays clear of the woodblock, the coins and the inset sheet
+  ---
+  duration_ms: 0.394083
+  type: 'test'
+  ...
+# Subtest: the title is centred on the WP-04 anchor and the tags hang at the top edge
+ok 130 - the title is centred on the WP-04 anchor and the tags hang at the top edge
+  ---
+  duration_ms: 0.08825
+  type: 'test'
+  ...
+# Subtest: inset sheet: WP-07 moved its foot by at most 3 cm and the four 11 cm stamps fit in a row
+ok 131 - inset sheet: WP-07 moved its foot by at most 3 cm and the four 11 cm stamps fit in a row
+  ---
+  duration_ms: 0.062917
+  type: 'test'
+  ...
+# Subtest: bristle: amplitude, slope and the file-drag doubling
+ok 132 - bristle: amplitude, slope and the file-drag doubling
+  ---
+  duration_ms: 3.458542
+  type: 'test'
+  ...
+# Subtest: file 04 / file 05 values the paper layer uses
+ok 133 - file 04 / file 05 values the paper layer uses
+  ---
+  duration_ms: 0.95725
+  type: 'test'
+  ...
+# Subtest: software renderer names
+ok 134 - software renderer names
+  ---
+  duration_ms: 0.355875
+  type: 'test'
+  ...
+# Subtest: ghost selectors: the chain outside the inset points at the stand-in wrappers
+ok 135 - ghost selectors: the chain outside the inset points at the stand-in wrappers
+  ---
+  duration_ms: 0.542375
+  type: 'test'
+  ...
+# Subtest: stamp frame: three paths, finite numbers, any size
+ok 136 - stamp frame: three paths, finite numbers, any size
+  ---
+  duration_ms: 2.237917
+  type: 'test'
+  ...
+# Subtest: dot model (DECISIONS 5): logical fill from data-partial, drawn fill at least 25 %
+ok 137 - dot model (DECISIONS 5): logical fill from data-partial, drawn fill at least 25 %
+  ---
+  duration_ms: 1.394125
+  type: 'test'
+  ...
+# Subtest: dot interval (DECISIONS 4): every view ends by 3,500 ms
+ok 138 - dot interval (DECISIONS 4): every view ends by 3,500 ms
+  ---
+  duration_ms: 0.173166
+  type: 'test'
+  ...
+# Subtest: grain hash: different bytes, different hash; same bytes, same hash
+ok 139 - grain hash: different bytes, different hash; same bytes, same hash
+  ---
+  duration_ms: 0.114459
+  type: 'test'
+  ...
+# Subtest: fold plan: starts at W/8 × H/4 and doubles width, height, width, height, width
+ok 140 - fold plan: starts at W/8 × H/4 and doubles width, height, width, height, width
+  ---
+  duration_ms: 0.782208
+  type: 'test'
+  ...
+# Subtest: fold angle: 180° → 3° overshoot → 0° in 260 ms; folds start at 0, 250, 500, 750, 1000 ms
+ok 141 - fold angle: 180° → 3° overshoot → 0° in 260 ms; folds start at 0, 250, 500, 750, 1000 ms
+  ---
+  duration_ms: 4.675583
+  type: 'test'
+  ...
+# Subtest: close: folds reverse in 900 ms, last fold first
+ok 142 - close: folds reverse in 900 ms, last fold first
+  ---
+  duration_ms: 0.255667
+  type: 'test'
+  ...
+# Subtest: lift: offset follows the scroll up to the slip height; height, curl and shadow grow with it
+ok 143 - lift: offset follows the scroll up to the slip height; height, curl and shadow grow with it
+  ---
+  duration_ms: 0.514666
+  type: 'test'
+  ...
+# Subtest: pendulum: rests at 0, swings at 1.1 Hz after a kick and decays at 0.9 /s
+ok 144 - pendulum: rests at 0, swings at 1.1 Hz after a kick and decays at 0.9 /s
+  ---
+  duration_ms: 6.15
+  type: 'test'
+  ...
+# Subtest: swash cycle: draw → hold → erase → rest, with the given hold and rest
+ok 145 - swash cycle: draw → hold → erase → rest, with the given hold and rest
+  ---
+  duration_ms: 1.385708
+  type: 'test'
+  ...
+# Subtest: WP-13 paper: same seed gives the same tile, another seed a different one
+ok 146 - WP-13 paper: same seed gives the same tile, another seed a different one
+  ---
+  duration_ms: 26.945667
+  type: 'test'
+  ...
+# Subtest: WP-13 paper: warm parchment near the desk paper tone, opaque
+ok 147 - WP-13 paper: warm parchment near the desk paper tone, opaque
+  ---
+  duration_ms: 3.836292
+  type: 'test'
+  ...
+# Subtest: WP-13 paper: seamless (wrap seam no harsher than ordinary neighbours)
+ok 148 - WP-13 paper: seamless (wrap seam no harsher than ordinary neighbours)
+  ---
+  duration_ms: 1.483333
+  type: 'test'
+  ...
+# Subtest: toBlobUrl: a base64 data URL becomes a short blob: URL with the same bytes and type
+ok 149 - toBlobUrl: a base64 data URL becomes a short blob: URL with the same bytes and type
+  ---
+  duration_ms: 2.647584
+  type: 'test'
+  ...
+# Subtest: toBlobUrl: a percent-encoded SVG data URL keeps its text
+ok 150 - toBlobUrl: a percent-encoded SVG data URL keeps its text
+  ---
+  duration_ms: 0.338625
+  type: 'test'
+  ...
+# Subtest: toBlobUrl: anything that is not a data URL comes back unchanged
+ok 151 - toBlobUrl: anything that is not a data URL comes back unchanged
+  ---
+  duration_ms: 0.064875
+  type: 'test'
+  ...
+# Subtest: WP-14 settings: stamp voids fade the ink by half; High draws its glow at half size
+ok 152 - WP-14 settings: stamp voids fade the ink by half; High draws its glow at half size
+  ---
+  duration_ms: 7.822916
+  type: 'test'
+  ...
+# Subtest: item 26: every catalog trophy maps to one wiki entry, none twice
+ok 153 - item 26: every catalog trophy maps to one wiki entry, none twice
+  ---
+  duration_ms: 1.844458
+  type: 'test'
+  ...
+# Subtest: item 26: facts carry the drop chance and usage; unknown tokens give nothing
+ok 154 - item 26: facts carry the drop chance and usage; unknown tokens give nothing
+  ---
+  duration_ms: 0.4815
+  type: 'test'
+  ...
+1..154
+# tests 154
+# suites 0
+# pass 154
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1580.824875

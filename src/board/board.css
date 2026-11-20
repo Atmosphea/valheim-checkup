@@ -1,0 +1,83 @@
+/*
+ * WP-06: the board's and coins' HTML proxies in #print (CSS3D, authored at 29 px/cm).
+ * The app's own buttons sit over the woodblock, bars and coins as invisible hit targets: the
+ * 3D scene draws what they show (engraved names, inlays, tabs, wheels, coin faces). They stay
+ * real buttons, so keyboard, screen readers and app.js work unchanged.
+ * Scoped to #print, so flat mode is untouched.
+ */
+
+/* the wrappers take no pointer; their buttons do */
+#print .vc-board-print,
+#print .vc-coin-print { pointer-events: none !important; }
+
+#print .vc-board-proxies {
+  /* undo the original sidebar look and its phone-width display:none */
+  display: block !important;
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  color: transparent;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+#print .vc-board-proxies * { color: transparent !important; }
+#print .vc-board-proxies .eyebrow,
+#print .vc-board-proxies .side-note,
+#print .vc-board-proxies #overall { margin: 0; padding: 0; border: 0; overflow: hidden; }
+#print .vc-board-proxies #categories,
+#print .vc-board-proxies #insightNav { position: static; margin: 0; padding: 0; }
+#print .vc-board-proxies .track { opacity: 0; }
+
+#print .vc-bar-proxy,
+#print .vc-coin-proxy,
+#print #vcSound {
+  pointer-events: auto;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0.3cm;
+  color: transparent !important;
+  box-shadow: none !important;
+  outline-offset: 2px;
+  touch-action: none;
+  cursor: grab;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+#print .vc-bar-proxy:active { cursor: grabbing; }
+#print .vc-coin-proxy,
+#print #vcSound { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 50%; cursor: pointer; min-width: 0; min-height: 0; }
+#print .vc-coin-proxy:disabled { cursor: default; opacity: 1; }
+/* WP-07: opacity, not visibility, so the original label ("＋ Load character click or drop .fch")
+   stays whole in the page's text (string census) while the 3D coin is what is seen */
+#print .vc-coin-proxy *,
+#print #vcSound * { opacity: 0; }
+
+/* keyboard focus: a warm ink outline (the 3D knob or coin glows too) */
+#print .vc-bar-proxy:focus-visible,
+#print .vc-coin-proxy:focus-visible,
+#print #vcSound:focus-visible { outline: 6px solid rgba(160, 92, 28, 0.85) !important; }
+#print .vc-bar-proxy:focus:not(:focus-visible),
+#print .vc-coin-proxy:focus:not(:focus-visible),
+#print #vcSound:focus:not(:focus-visible) { outline: none; }
+
+/* "Drag the knob to the left": ink beside the board (file 04, 2.5 s) */
+#print .vc-bar-hint {
+  pointer-events: none !important;
+  display: flex;
+  align-items: center;
+  font: italic 500 17px/1.25 'Vollkorn', Georgia, serif;
+  color: #3a2617;
+  opacity: 0;
+  transition: opacity 260ms ease-out;
+}
+#print .vc-bar-hint.on { opacity: 0.9; }
+
+/* Paul, WP-17 item 17: the row-height slider's proxy takes the pointer (the proxies layer does not) */
+#print .vc-row-height { pointer-events: auto; touch-action: none; border-radius: 0.3cm; outline: none; }
+#print .vc-row-height:focus-visible { outline: 6px solid rgba(160, 92, 28, 0.85); }

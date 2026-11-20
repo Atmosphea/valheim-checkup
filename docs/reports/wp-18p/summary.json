@@ -1,0 +1,907 @@
+{
+ "runs": {
+  "before": 3,
+  "after": 3
+ },
+ "rows": [
+  {
+   "name": "start-up",
+   "before": {
+    "worst": 866.7,
+    "over16": 11,
+    "over33": 8,
+    "frames": 160,
+    "mainMs": 2650,
+    "gpuMs": null,
+    "all16": [
+     11,
+     11,
+     12
+    ]
+   },
+   "after": {
+    "worst": 866.6,
+    "over16": 12,
+    "over33": 8,
+    "frames": 163,
+    "mainMs": 2649,
+    "gpuMs": null,
+    "all16": [
+     15,
+     12,
+     11
+    ]
+   }
+  },
+  {
+   "name": "load save",
+   "before": {
+    "worst": 50,
+    "over16": 5,
+    "over33": 1,
+    "frames": 192,
+    "mainMs": 1489,
+    "gpuMs": 1594,
+    "all16": [
+     2,
+     5,
+     12
+    ]
+   },
+   "after": {
+    "worst": 50,
+    "over16": 4,
+    "over33": 1,
+    "frames": 194,
+    "mainMs": 1346,
+    "gpuMs": 1411,
+    "all16": [
+     30,
+     4,
+     2
+    ]
+   }
+  },
+  {
+   "name": "view Artisan · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 316,
+    "mainMs": 1865,
+    "gpuMs": 4357,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 311,
+    "mainMs": 1471,
+    "gpuMs": 4377,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Artisan · release",
+   "before": {
+    "worst": 66.7,
+    "over16": 20,
+    "over33": 1,
+    "frames": 150,
+    "mainMs": 2573,
+    "gpuMs": 1717,
+    "all16": [
+     12,
+     20,
+     21
+    ]
+   },
+   "after": {
+    "worst": 116.7,
+    "over16": 1,
+    "over33": 1,
+    "frames": 168,
+    "mainMs": 1903,
+    "gpuMs": 1796,
+    "all16": [
+     24,
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "name": "view Blacksmith · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 296,
+    "mainMs": 3974,
+    "gpuMs": 3579,
+    "all16": [
+     0,
+     0,
+     1
+    ]
+   },
+   "after": {
+    "worst": 50,
+    "over16": 1,
+    "over33": 1,
+    "frames": 338,
+    "mainMs": 5118,
+    "gpuMs": 3841,
+    "all16": [
+     1,
+     0,
+     3
+    ]
+   }
+  },
+  {
+   "name": "view Blacksmith · release",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1630,
+    "gpuMs": 2165,
+    "all16": [
+     0,
+     0,
+     6
+    ]
+   },
+   "after": {
+    "worst": 100,
+    "over16": 1,
+    "over33": 1,
+    "frames": 166,
+    "mainMs": 2337,
+    "gpuMs": 2008,
+    "all16": [
+     1,
+     1,
+     10
+    ]
+   }
+  },
+  {
+   "name": "view Carpenter · drag",
+   "before": {
+    "worst": 33.3,
+    "over16": 1,
+    "over33": 0,
+    "frames": 292,
+    "mainMs": 1915,
+    "gpuMs": 3773,
+    "all16": [
+     1,
+     1,
+     0
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 281,
+    "mainMs": 1355,
+    "gpuMs": 3695,
+    "all16": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Carpenter · release",
+   "before": {
+    "worst": 100,
+    "over16": 18,
+    "over33": 1,
+    "frames": 150,
+    "mainMs": 2599,
+    "gpuMs": 1770,
+    "all16": [
+     12,
+     18,
+     23
+    ]
+   },
+   "after": {
+    "worst": 116.8,
+    "over16": 1,
+    "over33": 1,
+    "frames": 168,
+    "mainMs": 2010,
+    "gpuMs": 1857,
+    "all16": [
+     4,
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "name": "view Master Chef · drag",
+   "before": {
+    "worst": 33.4,
+    "over16": 2,
+    "over33": 0,
+    "frames": 301,
+    "mainMs": 4345,
+    "gpuMs": 3775,
+    "all16": [
+     0,
+     5,
+     2
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 292,
+    "mainMs": 1984,
+    "gpuMs": 3427,
+    "all16": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Master Chef · release",
+   "before": {
+    "worst": 33.4,
+    "over16": 1,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1507,
+    "gpuMs": 2334,
+    "all16": [
+     0,
+     1,
+     5
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1495,
+    "gpuMs": 2095,
+    "all16": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "name": "view Gourmet · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 279,
+    "mainMs": 1651,
+    "gpuMs": 3770,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 276,
+    "mainMs": 1241,
+    "gpuMs": 3852,
+    "all16": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Gourmet · release",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 168,
+    "mainMs": 1731,
+    "gpuMs": 2323,
+    "all16": [
+     0,
+     0,
+     5
+    ]
+   },
+   "after": {
+    "worst": 33.4,
+    "over16": 1,
+    "over33": 0,
+    "frames": 168,
+    "mainMs": 1324,
+    "gpuMs": 2138,
+    "all16": [
+     1,
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "name": "view Trophy Collector · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 278,
+    "mainMs": 1755,
+    "gpuMs": 3885,
+    "all16": [
+     0,
+     0,
+     1
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 276,
+    "mainMs": 1240,
+    "gpuMs": 3790,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Trophy Collector · release",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 168,
+    "mainMs": 1579,
+    "gpuMs": 2368,
+    "all16": [
+     0,
+     0,
+     7
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 168,
+    "mainMs": 1243,
+    "gpuMs": 2059,
+    "all16": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "name": "view Hunter · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 277,
+    "mainMs": 1518,
+    "gpuMs": 3937,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 275,
+    "mainMs": 1206,
+    "gpuMs": 3491,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Hunter · release",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1539,
+    "gpuMs": 2331,
+    "all16": [
+     0,
+     0,
+     4
+    ]
+   },
+   "after": {
+    "worst": 33.4,
+    "over16": 1,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1247,
+    "gpuMs": 2212,
+    "all16": [
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "name": "view Master Hunter · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 278,
+    "mainMs": 1941,
+    "gpuMs": 3761,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 275,
+    "mainMs": 1257,
+    "gpuMs": 3773,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Master Hunter · release",
+   "before": {
+    "worst": 33.3,
+    "over16": 1,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1557,
+    "gpuMs": 2329,
+    "all16": [
+     0,
+     1,
+     4
+    ]
+   },
+   "after": {
+    "worst": 33.2,
+    "over16": 1,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1239,
+    "gpuMs": 2242,
+    "all16": [
+     1,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "name": "view Fisherman · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 279,
+    "mainMs": 1784,
+    "gpuMs": 3791,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 276,
+    "mainMs": 1289,
+    "gpuMs": 3812,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Fisherman · release",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1091,
+    "gpuMs": 2623,
+    "all16": [
+     0,
+     0,
+     3
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 904,
+    "gpuMs": 2407,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Are You Alright? · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 304,
+    "mainMs": 3782,
+    "gpuMs": 5020,
+    "all16": [
+     0,
+     0,
+     18
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 303,
+    "mainMs": 1087,
+    "gpuMs": 4529,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Are You Alright? · release",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1364,
+    "gpuMs": 2537,
+    "all16": [
+     0,
+     0,
+     3
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 996,
+    "gpuMs": 2374,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view That Can't Be an Accident · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 312,
+    "mainMs": 1358,
+    "gpuMs": 5047,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 302,
+    "mainMs": 1081,
+    "gpuMs": 4621,
+    "all16": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view That Can't Be an Accident · release",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 1088,
+    "gpuMs": 2495,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 166,
+    "mainMs": 889,
+    "gpuMs": 2346,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Highlights · drag",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 303,
+    "mainMs": 1176,
+    "gpuMs": 4925,
+    "all16": [
+     0,
+     0,
+     1
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 303,
+    "mainMs": 1035,
+    "gpuMs": 4536,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Highlights · release",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 133,
+    "mainMs": 612,
+    "gpuMs": 2178,
+    "all16": [
+     0,
+     0,
+     1
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 133,
+    "mainMs": 502,
+    "gpuMs": 2020,
+    "all16": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "name": "view Skills & travel · drag",
+   "before": {
+    "worst": 33.4,
+    "over16": 1,
+    "over33": 0,
+    "frames": 311,
+    "mainMs": 1720,
+    "gpuMs": 5071,
+    "all16": [
+     1,
+     0,
+     9
+    ]
+   },
+   "after": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 303,
+    "mainMs": 996,
+    "gpuMs": 4483,
+    "all16": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "name": "view Skills & travel · release",
+   "before": {
+    "worst": 16.8,
+    "over16": 0,
+    "over33": 0,
+    "frames": 136,
+    "mainMs": 610,
+    "gpuMs": 2316,
+    "all16": [
+     0,
+     0,
+     2
+    ]
+   },
+   "after": {
+    "worst": 33.3,
+    "over16": 1,
+    "over33": 0,
+    "frames": 136,
+    "mainMs": 492,
+    "gpuMs": 2232,
+    "all16": [
+     1,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "name": "details open",
+   "before": {
+    "worst": 50,
+    "over16": 7,
+    "over33": 1,
+    "frames": 62,
+    "mainMs": 1191,
+    "gpuMs": 602,
+    "all16": [
+     7,
+     2,
+     9
+    ]
+   },
+   "after": {
+    "worst": 33.4,
+    "over16": 1,
+    "over33": 0,
+    "frames": 70,
+    "mainMs": 471,
+    "gpuMs": 576,
+    "all16": [
+     2,
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "name": "details close (burn)",
+   "before": {
+    "worst": 66.7,
+    "over16": 13,
+    "over33": 1,
+    "frames": 218,
+    "mainMs": 2694,
+    "gpuMs": 1573,
+    "all16": [
+     13,
+     12,
+     17
+    ]
+   },
+   "after": {
+    "worst": 33.3,
+    "over16": 1,
+    "over33": 0,
+    "frames": 218,
+    "mainMs": 1322,
+    "gpuMs": 865,
+    "all16": [
+     2,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "name": "row-height rescale",
+   "before": {
+    "worst": 83.3,
+    "over16": 16,
+    "over33": 3,
+    "frames": 100,
+    "mainMs": 1342,
+    "gpuMs": 1753,
+    "all16": [
+     30,
+     14,
+     16
+    ]
+   },
+   "after": {
+    "worst": 66.6,
+    "over16": 14,
+    "over33": 2,
+    "frames": 104,
+    "mainMs": 878,
+    "gpuMs": 1490,
+    "all16": [
+     14,
+     14,
+     14
+    ]
+   }
+  }
+ ]
+}

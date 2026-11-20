@@ -1,0 +1,23 @@
+{
+  "_source": "spec/07-golden-values.md (numbers only; the character name lives in fixtures/private/expected.json)",
+  "profile": 46, "playerData": 33, "skills": 24,
+  "overall": { "done": "430", "total": "1,461" },
+  "lifetime": { "Items crafted": "490", "Food eaten": "905", "Build actions": "20,586", "Enemy kills": "2,120", "Deaths": "146" },
+  "collections": [
+    { "title": "The Artisan", "total": 415, "completed": "59", "missing": "356", "unverified": "0", "undiscovered": "212", "pct": 14, "dots": [38, 11], "dotFill": { "completed": [5, 4], "missing": [32, 4], "unverified": [0, 0], "undiscovered": [19, 3] } },
+    { "title": "The Blacksmith", "total": 145, "completed": "22", "missing": "123", "unverified": "0", "undiscovered": "83", "pct": 15, "dots": [37, 4], "dotFill": { "completed": [5, 2], "missing": [30, 3], "unverified": [0, 0], "undiscovered": [20, 3] } },
+    { "title": "The Carpenter", "total": 400, "completed": "155", "missing": "238", "unverified": "7", "undiscovered": "152", "pct": 39, "dots": [40, 10], "dotFill": { "completed": [15, 5], "missing": [23, 8], "unverified": [0, 7], "undiscovered": [15, 2] } },
+    { "title": "The Master Chef", "total": 82, "completed": "16", "missing": "66", "unverified": "0", "undiscovered": "47", "pct": 20, "dots": [28, 3], "dotFill": { "completed": [5, 1], "missing": [22, 0], "unverified": [0, 0], "undiscovered": [15, 2] } },
+    { "title": "The Gourmet", "total": 97, "completed": "36", "missing": "61", "unverified": "0", "undiscovered": "58", "pct": 37, "dots": [33, 3], "dotFill": { "completed": [12, 0], "missing": [20, 1], "unverified": [0, 0], "undiscovered": [19, 1] } },
+    { "title": "The Trophy Collector", "total": 68, "completed": "36", "missing": "32", "unverified": "0", "undiscovered": "32", "pct": 53, "dots": [34, 2], "dotFill": { "completed": [18, 0], "missing": [16, 0], "unverified": [0, 0], "undiscovered": [16, 0] } },
+    { "title": "The Hunter", "total": 108, "completed": "49", "missing": "59", "unverified": "0", "undiscovered": "—", "pct": 45, "dots": [36, 3], "dotFill": { "completed": [16, 1], "missing": [19, 2], "unverified": [0, 0], "undiscovered": null } },
+    { "title": "The Master Hunter", "total": 108, "completed": "49", "missing": "59", "unverified": "0", "undiscovered": "—", "pct": 45, "dots": [36, 3], "dotFill": { "completed": [16, 1], "missing": [19, 2], "unverified": [0, 0], "undiscovered": null } },
+    { "title": "The Fisherman", "total": 12, "completed": "0", "missing": "12", "unverified": "0", "undiscovered": "—", "pct": 0, "dots": [12, 1], "dotFill": { "completed": [0, 0], "missing": [12, 0], "unverified": [0, 0], "undiscovered": null } },
+    { "title": "Are You Alright?", "total": 16, "completed": "6", "missing": "10", "unverified": "0", "undiscovered": "—", "pct": 38, "dots": [16, 1], "dotFill": { "completed": [6, 0], "missing": [10, 0], "unverified": [0, 0], "undiscovered": null } },
+    { "title": "That Can't Be an Accident", "total": 10, "completed": "2", "missing": "8", "unverified": "0", "undiscovered": "—", "pct": 20, "dots": [10, 1], "dotFill": { "completed": [2, 0], "missing": [8, 0], "unverified": [0, 0], "undiscovered": null } }
+  ],
+  "masterChefTable": { "listCount": "66 of 82 items shown", "firstRows": ["Baked Poteitr", "Blood Pudding", "Carrot Soup"] },
+  "highlightsTop3": [ { "name": "Wood Floor 2x2", "action": "Built", "count": "993" }, { "name": "Wood Beam 2 m", "action": "Built", "count": "965" }, { "name": "Wood Beam 1 m", "action": "Built", "count": "723" } ],
+  "skillsTop3": [ { "name": "Run", "level": "35.67" }, { "name": "Jump", "level": "35.36" }, { "name": "Swords", "level": "24.80" } ],
+  "distances": { "Walked": "297,299 m", "Ran": "218,362 m", "Sailed": "27,620 m" }
+}

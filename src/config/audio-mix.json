@@ -1,0 +1,805 @@
+{
+  "_about": "Sound mix and recipe values from spec file 06. Gains in dB, times in ms, frequencies in Hz. Paul's mix pass edits gains here (the ?soundboard page downloads a new copy). 'event' is the canonical bus event that triggers the sound (src/events.js); null means a continuous or non-event trigger described in 'trigger'. \"deferred\": true marks a sound Paul cut from this build (DECISIONS, Scope cuts): it stays listed and is silent. An optional \"pitch\" (playback-rate multiplier, default 1) comes from the soundboard.",
+  "engine": {
+    "sounds": 69,
+    "takes": 4,
+    "takesBuilt": 1,
+    "_takesNote": "Scope cuts (Paul): one take per sound; variation comes from random pitch and gain on every play.",
+    "override": {
+      "dir": "assets/audio/override",
+      "formats": [
+        "ogg",
+        "wav"
+      ]
+    },
+    "buses": [
+      "mech",
+      "coin",
+      "gauntlet",
+      "magic",
+      "paper",
+      "ui",
+      "ambience"
+    ],
+    "compressor": {
+      "thresholdDb": -12,
+      "ratio": 3
+    },
+    "limiterDbfs": -1,
+    "variation": {
+      "pitch": 0.03,
+      "gainDb": 1.5,
+      "panMin": -0.6,
+      "panMax": 0.6
+    },
+    "voices": 24,
+    "voicesPerSound": 4,
+    "voiceSteal": "oldest-of-same-sound",
+    "ducking": {
+      "stampBig": {
+        "bus": "ambience",
+        "db": 5,
+        "ms": 300
+      },
+      "detailsUnfold": {
+        "bus": "ambience",
+        "db": 2,
+        "while": "unfolding"
+      }
+    },
+    "ambienceFadeInMs": 3000,
+    "hiddenFadeOutMs": 500,
+    "muteKey": "valheim-checkup-3d:sound",
+    "_muteKeyNote": "DECISIONS point 9 renames file 06's valheim-checkup:sound so the original storage stays byte-identical.",
+    "soundboardQuery": "soundboard",
+    "limiterCeiling": 0.8912
+  },
+  "blocks": {
+    "barRatios": [
+      1,
+      2.756,
+      5.404,
+      8.933
+    ],
+    "discRatios": [
+      1,
+      2.32,
+      4.25,
+      6.63
+    ],
+    "clickMsMin": 1,
+    "clickMsMax": 3,
+    "roomSmallMs": 350,
+    "roomHallMs": 2200
+  },
+  "sounds": {
+    "bar.glint": {
+      "bus": "mech",
+      "gain": -34,
+      "event": "bar:hover",
+      "partialsHz": [
+        6200,
+        8100,
+        9700
+      ],
+      "attackMs": 15,
+      "decayMs": 180,
+      "deferred": true
+    },
+    "bar.pickup": {
+      "bus": "mech",
+      "gain": -18,
+      "event": "bar:press",
+      "clickHz": 4000,
+      "modalHz": 1900,
+      "decaysMs": [
+        60,
+        30,
+        15
+      ],
+      "deferred": true
+    },
+    "bar.scrape": {
+      "bus": "mech",
+      "gain": -20,
+      "event": "bar:drag",
+      "loop": true,
+      "gainIsMax": true,
+      "centerHzFrom": 2200,
+      "centerHzTo": 4000,
+      "speedMin": 0,
+      "speedMax": 60,
+      "q": 2.5,
+      "levelSpeedExponent": 0.7,
+      "tremoloHzMin": 30,
+      "tremoloHzMax": 80,
+      "tremoloDepth": 0.4,
+      "stopFadeMs": 40,
+      "travelCm": 10,
+      "idleStopMs": 300
+    },
+    "bar.detent": {
+      "bus": "mech",
+      "gain": -24,
+      "event": "bar:detent",
+      "clickMs": 2,
+      "partialHz": 3100,
+      "decayMs": 25,
+      "pitchStepPerDetent": 0.02,
+      "deferred": true
+    },
+    "bar.prelatch": {
+      "bus": "mech",
+      "gain": -20,
+      "event": "bar:prelatch",
+      "modalHz": 2400,
+      "decayMs": 40,
+      "deferred": true
+    },
+    "bar.latch": {
+      "bus": "mech",
+      "gain": -10,
+      "event": "bar:latch",
+      "gainIsPeak": true,
+      "click": {
+        "ms": 1.5,
+        "aboveHz": 5000
+      },
+      "modal": {
+        "hz": 2150,
+        "spread": 0.04,
+        "amps": [
+          1,
+          0.6,
+          0.35,
+          0.2
+        ],
+        "decaysMs": [
+          420,
+          260,
+          150,
+          90
+        ],
+        "twinDetuneHz": 3
+      },
+      "thunk": {
+        "sineHz": 140,
+        "sineMs": 50,
+        "noiseLowpassHz": 600,
+        "noiseMs": 40,
+        "noiseGainDb": -8
+      },
+      "room": {
+        "type": "small",
+        "wet": 0.12
+      }
+    },
+    "bar.linkage": {
+      "bus": "mech",
+      "gain": -26,
+      "event": "bar:latch",
+      "startsAfterEvent": true,
+      "ticks": 5,
+      "overMs": 220,
+      "slowing": true,
+      "tickPartialHz": 1200,
+      "tickMs": 15,
+      "deferred": true
+    },
+    "bar.return": {
+      "bus": "mech",
+      "gain": -16,
+      "event": "bar:return",
+      "basedOn": "bar.latch",
+      "modalHz": 1800,
+      "decayMul": 0.7
+    },
+    "bar.springback": {
+      "bus": "mech",
+      "gain": -20,
+      "event": "bar:springback",
+      "thunkHz": 120,
+      "deferred": true
+    },
+    "bar.nudge": {
+      "bus": "mech",
+      "gain": -22,
+      "event": "bar:nudge",
+      "deferred": true
+    },
+    "bar.rattle": {
+      "bus": "mech",
+      "gain": -26,
+      "event": "impact",
+      "gainIsMax": true,
+      "clinksMin": 3,
+      "clinksMax": 6,
+      "hzMin": 2600,
+      "hzMax": 3400,
+      "spreadMs": 120,
+      "levelFollowsStrength": true,
+      "deferred": true
+    },
+    "brass.pour": {
+      "bus": "mech",
+      "gain": -28,
+      "event": "brass:pour",
+      "lowpassHz": 800,
+      "swellMs": 1200,
+      "blipHzMin": 200,
+      "blipHzMax": 400,
+      "deferred": true
+    },
+    "plaque.tick": {
+      "bus": "mech",
+      "gain": -28,
+      "event": "plaque:tick",
+      "maxPerSecond": 30,
+      "deferred": true
+    },
+    "toggle.brass": {
+      "bus": "mech",
+      "gain": -18,
+      "event": "app:mode",
+      "partialHz": 1600,
+      "camClicks": 2,
+      "deferred": true
+    },
+    "coin.up": {
+      "bus": "coin",
+      "gain": -30,
+      "event": "coin:hop",
+      "bandHzMin": 2000,
+      "bandHzMax": 5000,
+      "ms": 80
+    },
+    "coin.land": {
+      "bus": "coin",
+      "gain": -14,
+      "event": "coin:land",
+      "modalHz": 3200,
+      "spread": 0.05,
+      "decaysMs": [
+        600,
+        380,
+        220,
+        120
+      ],
+      "firstContactGain": -14,
+      "secondContactGain": -22,
+      "chatterHits": 3,
+      "chatterGapsMs": [
+        60,
+        35,
+        20
+      ],
+      "chatterGainMin": -34,
+      "chatterGainMax": -28,
+      "amps": [
+        1,
+        0.7,
+        0.45,
+        0.3
+      ]
+    },
+    "coin.press": {
+      "bus": "coin",
+      "gain": -22,
+      "event": "coin:press",
+      "deferred": true
+    },
+    "coin.flip": {
+      "bus": "coin",
+      "gain": -16,
+      "event": "coin:flip",
+      "tremoloHz": 18,
+      "ms": 500,
+      "then": "coin.land",
+      "deferred": true
+    },
+    "coin.mute": {
+      "bus": "coin",
+      "gain": -20,
+      "event": "coin:mute",
+      "playBeforeMuting": true,
+      "deferred": true
+    },
+    "gauntlet.creak": {
+      "bus": "gauntlet",
+      "gain": -30,
+      "event": "gauntlet:creak",
+      "impulsesPerSecMin": 20,
+      "impulsesPerSecMax": 60,
+      "bandHzMin": 700,
+      "bandHzMax": 1400,
+      "msMin": 120,
+      "msMax": 300,
+      "minGapMs": 400,
+      "deferred": true
+    },
+    "gauntlet.plate": {
+      "bus": "gauntlet",
+      "gain": -30,
+      "event": null,
+      "trigger": "each finger-joint movement",
+      "clickMs": 1,
+      "partialHzMin": 4500,
+      "partialHzMax": 6000,
+      "ms": 20,
+      "deferred": true
+    },
+    "gauntlet.stretch": {
+      "bus": "gauntlet",
+      "gain": -26,
+      "event": "gauntlet:stretch",
+      "plateTicks": 5,
+      "tickGapMs": 60,
+      "airMs": 400,
+      "deferred": true
+    },
+    "gauntlet.pinch": {
+      "bus": "gauntlet",
+      "gain": -22,
+      "event": "gauntlet:pinch",
+      "plateTicks": 2,
+      "contactHz": 3800,
+      "deferred": true
+    },
+    "gauntlet.wall": {
+      "bus": "gauntlet",
+      "gain": -30,
+      "event": "gauntlet:wall",
+      "thumpHz": 160,
+      "deferred": true
+    },
+    "visor.open": {
+      "bus": "gauntlet",
+      "gain": -22,
+      "event": "visor:open",
+      "noiseHz": 5000,
+      "sweep": "down",
+      "sweepMs": 60,
+      "deferred": true
+    },
+    "visor.close": {
+      "bus": "gauntlet",
+      "gain": -22,
+      "event": "visor:close",
+      "noiseHz": 5000,
+      "sweep": "down",
+      "sweepMs": 60,
+      "deferred": true
+    },
+    "spark.out": {
+      "bus": "magic",
+      "gain": -16,
+      "event": "spark:out",
+      "crackleRatePerSec": 300,
+      "crackleMs": 120,
+      "crackleAboveHz": 2500,
+      "whooshHzFrom": 800,
+      "whooshHzTo": 4000,
+      "whooshMs": 250,
+      "tingHz": 2640,
+      "tingMs": 400
+    },
+    "spark.in": {
+      "bus": "magic",
+      "gain": -18,
+      "event": "spark:in",
+      "whooshHzFrom": 4000,
+      "whooshHzTo": 800,
+      "thupHz": 300,
+      "thupMs": 60,
+      "tingHz": 1980
+    },
+    "spark.crackle": {
+      "bus": "magic",
+      "gain": -36,
+      "event": "spark:out",
+      "loop": true,
+      "whileVisible": true,
+      "aboveHz": 3000,
+      "ratePerSecRest": 2,
+      "ratePerSecMax": 25,
+      "stopEvent": "spark:in",
+      "speedPxPerSecMax": 1500
+    },
+    "spark.embers": {
+      "bus": "magic",
+      "gain": -28,
+      "event": "spark:embers",
+      "popsMin": 4,
+      "popsMax": 8,
+      "popPartialHz": 6000,
+      "popMs": 10,
+      "overMs": 200,
+      "deferred": true
+    },
+    "spark.click": {
+      "bus": "magic",
+      "gain": -22,
+      "event": "spark:click",
+      "deferred": true
+    },
+    "spark.hover": {
+      "bus": "magic",
+      "gain": -34,
+      "event": "spark:hover",
+      "ms": 120,
+      "oncePerEntry": true,
+      "deferred": true
+    },
+    "coin.hum": {
+      "bus": "magic",
+      "gain": -30,
+      "event": "drag:file-enter",
+      "loop": true,
+      "stopEvent": "drag:file-leave",
+      "sinesHz": [
+        220,
+        330
+      ],
+      "shimmerHz": 6000,
+      "fadeInMs": 300,
+      "deferred": true
+    },
+    "load.success": {
+      "bus": "magic",
+      "gain": -14,
+      "event": "app:load",
+      "when": "ok",
+      "fmCarrierHz": 880,
+      "fmRatio": 1.4,
+      "fmIndex": 2,
+      "pings": 8,
+      "pingsOverMs": 600,
+      "pingScale": "pentatonic"
+    },
+    "load.fail": {
+      "bus": "magic",
+      "gain": -14,
+      "event": "app:load",
+      "when": "error",
+      "thudHzFrom": 90,
+      "thudMs": 120,
+      "squelchHzFrom": 1200,
+      "squelchHzTo": 400,
+      "squelchMs": 200
+    },
+    "paper.ripple": {
+      "bus": "magic",
+      "gain": -28,
+      "event": "drop:file",
+      "ms": 900,
+      "deferred": true
+    },
+    "unfold.float": {
+      "bus": "magic",
+      "gain": -28,
+      "event": "details:float",
+      "padHz": [
+        523,
+        659,
+        784
+      ],
+      "attackMs": 300,
+      "decayMs": 1200,
+      "deferred": true
+    },
+    "wash.out": {
+      "bus": "paper",
+      "gain": -18,
+      "event": "fx:wash-out-start",
+      "bandHzMin": 900,
+      "bandHzMax": 2800,
+      "sweep": "up",
+      "ms": 450,
+      "pan": "centre-to-right"
+    },
+    "wash.in": {
+      "bus": "paper",
+      "gain": -18,
+      "event": "fx:wash-in-start",
+      "bandHzMin": 900,
+      "bandHzMax": 2800,
+      "sweep": "down",
+      "ms": 600,
+      "pan": "left-to-centre"
+    },
+    "stamp.big": {
+      "bus": "paper",
+      "gain": -8,
+      "event": "fx:stamp-land",
+      "gainIsPeak": true,
+      "thumpHzFrom": 72,
+      "thumpHzTo": 46,
+      "thumpMs": 120,
+      "knockHzMin": 350,
+      "knockHzMax": 900,
+      "knockMs": 70,
+      "smackAboveHz": 2000,
+      "smackMs": 25,
+      "smackSweepHzFrom": 3000,
+      "smackSweepHzTo": 1000,
+      "smackSweepMs": 80,
+      "layers": [
+        "bar.rattle",
+        "coin.land"
+      ],
+      "roomWet": 0.15,
+      "pitches": [
+        1,
+        0.97,
+        1.03,
+        0.95
+      ],
+      "pitchSpread": 0.02,
+      "order": [
+        "done",
+        "missing",
+        "unknown",
+        "discovered"
+      ]
+    },
+    "stamp.dot": {
+      "bus": "paper",
+      "gain": -24,
+      "event": "fx:dot",
+      "bandHzMin": 1200,
+      "bandHzMax": 2500,
+      "noiseMs": 25,
+      "blipHz": 420,
+      "blipMs": 15,
+      "gainSpreadDb": 2,
+      "pitchStepSemitones": 1,
+      "pitchStepEveryDots": 4,
+      "pitchMaxSemitones": 7,
+      "voices": 8,
+      "maxPerSequence": 160,
+      "sequenceMs": 2000
+    },
+    "count.settle": {
+      "bus": "paper",
+      "gain": -30,
+      "event": "fx:count-end",
+      "deferred": true
+    },
+    "paper.lift": {
+      "bus": "paper",
+      "gain": -22,
+      "event": "paper:lift",
+      "gainIsMax": true,
+      "aboveHz": 2000,
+      "crinklesPerSecMin": 8,
+      "crinklesPerSecMax": 20,
+      "msMin": 200,
+      "msMax": 350,
+      "minGapMs": 250,
+      "speedMax": 30
+    },
+    "paper.settle": {
+      "bus": "paper",
+      "gain": -20,
+      "event": "paper:settle",
+      "lowpassHz": 400,
+      "ms": 150
+    },
+    "paper.breeze": {
+      "bus": "paper",
+      "gain": -38,
+      "event": null,
+      "trigger": "strong breeze on paper",
+      "minGapMs": 1000,
+      "deferred": true
+    },
+    "unfold.flap": {
+      "bus": "paper",
+      "gain": -18,
+      "event": "details:fold",
+      "bandHzMin": 600,
+      "bandHzMax": 2000,
+      "ms": 55,
+      "sweep": "up",
+      "folds": 5,
+      "stepSemitones": 1.5
+    },
+    "fold.close": {
+      "bus": "paper",
+      "gain": -20,
+      "event": "app:details-close",
+      "note": "Paul, WP-18 item 15: built as a paper-burn crackle (was 5 reversed flaps, deferred)",
+      "ms": 820,
+      "flameHzFrom": 380,
+      "flameHzTo": 1400,
+      "flameAttackMs": 90,
+      "flameAmp": 0.35,
+      "crackleRate": 420,
+      "crackleAboveHz": 1800,
+      "pops": 5
+    },
+    "menu.open": {
+      "bus": "paper",
+      "gain": -22,
+      "event": "menu:open",
+      "flaps": 2,
+      "flapGapMs": 70
+    },
+    "menu.close": {
+      "bus": "paper",
+      "gain": -22,
+      "event": "menu:close",
+      "flaps": 2,
+      "deferred": true
+    },
+    "menu.select": {
+      "bus": "paper",
+      "gain": -24,
+      "event": "menu:select",
+      "bandHzMin": 3000,
+      "bandHzMax": 6000,
+      "ms": 40,
+      "sweep": "down",
+      "deferred": true
+    },
+    "star.on": {
+      "bus": "paper",
+      "gain": -24,
+      "event": "app:star",
+      "when": "on"
+    },
+    "star.off": {
+      "bus": "paper",
+      "gain": -24,
+      "event": "app:star",
+      "when": "off",
+      "reversed": true,
+      "softer": true,
+      "peak": 0.7
+    },
+    "type.key": {
+      "bus": "paper",
+      "gain": -34,
+      "event": null,
+      "trigger": "each key in search or note fields",
+      "deferred": true
+    },
+    "toast.in": {
+      "bus": "paper",
+      "gain": -26,
+      "event": "app:toast",
+      "sweepHzFrom": 1000,
+      "sweepHzTo": 3000,
+      "ms": 250
+    },
+    "toast.out": {
+      "bus": "paper",
+      "gain": -26,
+      "event": "toast:out",
+      "sweepHzFrom": 1000,
+      "sweepHzTo": 3000,
+      "ms": 250,
+      "deferred": true
+    },
+    "tag.add": {
+      "bus": "paper",
+      "gain": -22,
+      "event": "app:favorite-add",
+      "deferred": true
+    },
+    "tag.remove": {
+      "bus": "paper",
+      "gain": -24,
+      "event": "app:favorite-remove",
+      "deferred": true
+    },
+    "tag.swing": {
+      "bus": "paper",
+      "gain": -34,
+      "event": "tag:swing",
+      "deferred": true
+    },
+    "seal.crack": {
+      "bus": "paper",
+      "gain": -18,
+      "event": "help:open",
+      "lowpassHz": 3000,
+      "ms": 120,
+      "crumbTicks": 3,
+      "then": "unfold.flap",
+      "thenTimes": 5,
+      "deferred": true
+    },
+    "export.quill": {
+      "bus": "paper",
+      "gain": -22,
+      "event": "app:export-list",
+      "ms": 300,
+      "deferred": true
+    },
+    "title.quill": {
+      "bus": "paper",
+      "gain": -40,
+      "event": "title:stroke",
+      "deferred": true
+    },
+    "hint.ink": {
+      "bus": "paper",
+      "gain": -30,
+      "event": "hint:show",
+      "deferred": true
+    },
+    "tour.dim": {
+      "bus": "ui",
+      "gain": -28,
+      "event": "tour:start",
+      "deferred": true
+    },
+    "tour.end": {
+      "bus": "ui",
+      "gain": -28,
+      "event": "tour:end",
+      "reversed": true,
+      "deferred": true
+    },
+    "tour.move": {
+      "bus": "ui",
+      "gain": -30,
+      "event": "tour:step",
+      "deferred": true
+    },
+    "amb.hall": {
+      "bus": "ambience",
+      "gain": -32,
+      "event": null,
+      "loop": true,
+      "voices": 8,
+      "pitchHzMin": 90,
+      "pitchHzMax": 220,
+      "f1HzMin": 300,
+      "f1HzMax": 800,
+      "f2HzMin": 900,
+      "f2HzMax": 2300,
+      "vowelHopMsMin": 120,
+      "vowelHopMsMax": 300,
+      "syllablesPerSecMin": 3,
+      "syllablesPerSecMax": 5,
+      "phraseMsMin": 1500,
+      "phraseMsMax": 4000,
+      "laughs": "occasional",
+      "lowpassHz": 1800,
+      "room": "hall",
+      "wet": 0.6,
+      "_wp17": "Paul, WP-17 item 21: the tavern ambience is back (generated, src/audio/recipes/ambience.js): quiet chatter and an occasional laugh, low by default; starts after the first click or key press, follows the Sound coin, never on ?soundboard until started there.",
+      "stopFadeMs": 400
+    },
+    "amb.hearth": {
+      "bus": "ambience",
+      "gain": -34,
+      "event": null,
+      "loop": true,
+      "brownLowpassHz": 500,
+      "cracklesPerSec": 3,
+      "pops": "rare",
+      "deferred": true
+    },
+    "amb.cups": {
+      "bus": "ambience",
+      "gain": -38,
+      "event": null,
+      "loop": true,
+      "everyMsMin": 6000,
+      "everyMsMax": 15000,
+      "reverb": "heavy",
+      "deferred": true
+    },
+    "amb.wind": {
+      "bus": "ambience",
+      "gain": -42,
+      "event": null,
+      "loop": true,
+      "swell": "slow",
+      "deferred": true
+    }
+  }
+}

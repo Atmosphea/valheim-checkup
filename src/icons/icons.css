@@ -1,0 +1,56 @@
+/*
+ * Item icons (WP-02 step 3). Sizes, sepia and grain come from src/config/render.js (`icons`),
+ * set as custom properties on :root by src/icons/icons.js.
+ *
+ * "Printed onto the paper": 15% sepia, a slight ink-grain mask, and a multiply blend wherever the
+ * page is paper (desk mode, and the flat parchment skin from WP-13 via the `vc-paper` class).
+ * On the original dark page a multiply blend would turn the icons black, so there it is off.
+ */
+:root {
+  --vc-icon-blend: normal;
+  --vc-glyph-ink: #c9b48c;
+}
+body.mode-desk,
+.vc-paper {
+  --vc-icon-blend: var(--vc-icon-paper-blend, multiply);
+  --vc-glyph-ink: #2b1d14;
+}
+
+.vc-icon {
+  display: block;
+  box-sizing: border-box;
+  flex: none;
+  width: var(--vc-icon-row, 28px);
+  height: var(--vc-icon-row, 28px);
+  pointer-events: none;
+  user-select: none;
+  filter: sepia(var(--vc-icon-sepia, 0.15));
+  mix-blend-mode: var(--vc-icon-blend);
+  -webkit-mask-image: var(--vc-ink-grain);
+  mask-image: var(--vc-ink-grain);
+  -webkit-mask-size: var(--vc-grain-tile, 64px);
+  mask-size: var(--vc-grain-tile, 64px);
+}
+
+/* One cell of the atlas: background-size makes one cell exactly the element's size. */
+.vc-icon--cell {
+  background-image: url('./atlas.webp');
+  background-repeat: no-repeat;
+  background-size: calc(var(--vc-atlas-cols) * 100%) calc(var(--vc-atlas-rows) * 100%);
+}
+/* Paul, WP-18 item 17: raw recipe ingredients the atlas never needed (tools/recipe-icons.mjs); size and position inline */
+.vc-icon--extra { background-image: url('./recipe-icons.webp'); background-repeat: no-repeat; }
+.vc-icon--hotlink { object-fit: contain; }
+.vc-icon--glyph { color: var(--vc-glyph-ink); padding: 2px; }
+.vc-icon--glyph svg { display: block; width: 100%; height: 100%; }
+
+/* Table rows: the icon floats left of the name and its sub-lines. */
+.vc-icon-cell > .vc-icon--row { float: left; margin: 0 10px 0 0; }
+
+/* Details heading: icon, title, close button. */
+.dialog-heading.vc-has-icon { justify-content: flex-start; align-items: center; }
+.dialog-heading.vc-has-icon > #closeDetails { margin-left: auto; align-self: flex-start; }
+.vc-icon--details { width: var(--vc-icon-details, 64px); height: var(--vc-icon-details, 64px); }
+
+/* Footer credit on its own line, inside .footer. */
+.vc-icon-credit { display: block; margin-top: 4px; }

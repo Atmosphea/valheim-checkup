@@ -1,0 +1,1 @@
+Passed: skill decoding, cooking/eating separation, checksum validation, catalog integrity, difficulty records.

@@ -1,0 +1,89 @@
+// Retired WP-17A (Paul, WP-17 item 2): the wheel/pinch zoom and the spark-out framing this
+// block checked are gone; tools/wp17a-check.cjs `camera` checks the new rules. Cut from
+// tools/wp16a-check.cjs, kept as text (it needs that file's helpers to run).
+
+    // ── 4 · wheel and pinch zoom; 5 · spark out frames the page ──
+    if (want('zoom') || want('spark')) {
+      const { page, ctx, errors } = await open(browser);
+      allErrors.push(errors);
+      await ready(page); await loadSave(page); await idle(page);
+      // the pointer on the board: the gauntlet, no spark zoom
+      const board = await proj(page, -30, 0);
+      await page.mouse.move(board.x, board.y); await settle(page);
+      const z1 = await cam(page);
+      check('zoom: starts at 1 with the gauntlet on the board', Math.abs(z1.user.zoom - 1) < 1e-3 && !z1.spark.on, JSON.stringify({ zoom: z1.zoom, user: z1.user.zoom, spark: z1.spark }));
+      await shot(page, 'zoom-1.png');
+      if (want('zoom')) {
+        // five wheel notches in over the board (not a scroller): zoom in, anchored at the pointer
+        const before = await page.evaluate(([x, y]) => __vc.stage.project(-30, 0, 0), [0, 0]);
+        // Playwright's wheel delta is in device px: 100 × DPR is one 100-CSS-px notch
+        for (let i = 0; i < 5; i++) { await page.mouse.wheel(0, -100 * DPR); await page.waitForTimeout(60); }
+        await settle(page);
+        const zIn = await cam(page);
+        const after = await proj(page, -30, 0);
+        const drift = Math.hypot(after.x - board.x, after.y - board.y);
+        check('zoom: 5 wheel notches in → zoom ≥ 1.8, ≤ 2.5 (limit)', zIn.user.zoom >= 1.8 && zIn.user.zoom <= 2.5, `user zoom ${zIn.user.zoom}`);
+        check('zoom: the paper point under the pointer stays under it (≤ 40 px)', drift <= 40, `${drift.toFixed(1)} px (was at ${before.x.toFixed(0)},${before.y.toFixed(0)})`);
+        await shot(page, 'zoom-in.png');
+        for (let i = 0; i < 30; i++) { await page.mouse.wheel(0, -100); await page.waitForTimeout(16); }
+        await settle(page);
+        check('zoom: capped at 2.5 however far you wheel', Math.abs((await cam(page)).user.zoom - 2.5) < 1e-3, `${(await cam(page)).user.zoom}`);
+        // smooth: sample the zoom while it eases from 2.5 back out to 0.8
+        // one big turn of the wheel at once (a 2.5 → 0.8 target jump): the camera must ease, not snap
+        await page.evaluate(() => { window.__wp16z = []; window.__wp16zOff = __vc.stage.onPhase('print', () => __wp16z.push(__vc.stage.camera.read().zoom)); });
+        await page.mouse.wheel(0, 1000 * DPR);
+        await page.waitForTimeout(1200);
+        const samples = await page.evaluate(() => { __wp16zOff(); return __wp16z; });
+        await settle(page);
+        const zOut = await cam(page);
+        let maxStep = 0; for (let i = 1; i < samples.length; i++) maxStep = Math.max(maxStep, Math.abs(samples[i] / samples[i - 1] - 1));
+        check('zoom: wheel out is capped at 0.8', Math.abs(zOut.user.zoom - 0.8) < 1e-3, `${zOut.user.zoom}`);
+        check('zoom: eases (a 2.5 → 0.8 jump of the target moves ≤ 8 % per frame)', maxStep > 0 && maxStep < 0.08, `max step ${(maxStep * 100).toFixed(1)} % over ${samples.length} frames`);
+        await shot(page, 'zoom-out.png');
+        // the table still scrolls with the wheel (it is a scroller), and does not zoom
+        await page.evaluate(() => __vc.stage.camera.resetZoom()); await settle(page);
+        const row = await page.evaluate(() => { const r = document.querySelector('#items tr:nth-child(4)').getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 }; });
+        await page.mouse.move(row.x, row.y); await settle(page, 1600);
+        const zr = (await cam(page)).user.zoom, s0 = await page.evaluate(() => document.querySelector('#collectionView .tablewrap').scrollTop);
+        await page.mouse.wheel(0, 200 * DPR); await page.waitForTimeout(500);
+        const s1 = await page.evaluate(() => document.querySelector('#collectionView .tablewrap').scrollTop);
+        check('zoom: the wheel over the table scrolls it and leaves the zoom alone', s1 > s0 && Math.abs((await cam(page)).user.zoom - zr) < 1e-3, `scrollTop ${s0} → ${s1}, zoom ${zr}`);
+        await page.evaluate(() => { document.querySelector('#collectionView .tablewrap').scrollTop = 0; });
+        // a trackpad pinch (ctrl + wheel) zooms even over the table, and never the browser page
+        const cdp = await ctx.newCDPSession(page);
+        for (let i = 0; i < 8; i++) { await cdp.send('Input.dispatchMouseEvent', { type: 'mouseWheel', x: row.x, y: row.y, deltaX: 0, deltaY: -10, modifiers: 2 }); await page.waitForTimeout(16); }
+        await settle(page);
+        const zp = await cam(page);
+        const pageZoom = await page.evaluate(() => visualViewport.scale);
+        check('zoom: trackpad pinch (ctrl + wheel) zooms over the table', zp.user.zoom > 1.5, `user zoom ${zp.user.zoom}, page scale ${pageZoom}`);
+        await page.evaluate(() => __vc.stage.camera.resetZoom()); await settle(page);
+      }
+      if (want('spark')) {
+        // the spark out over the text page: about 30 % in, the whole page framed
+        await page.mouse.move(board.x, board.y); await settle(page);
+        const inset = { x0: -12, x1: 46, y0: -24.2, y1: 14 };
+        const tgt = await proj(page, 20, -10);
+        await page.mouse.move(tgt.x, tgt.y, { steps: 12 }); await settle(page, 1800);
+        const zs = await cam(page);
+        const mode = await page.evaluate(() => __vc.cursor.mode);
+        const corners = await page.evaluate(r => [[r.x0, r.y0], [r.x1, r.y0], [r.x0, r.y1], [r.x1, r.y1]].map(([x, y]) => __vc.stage.project(x, y, 0)), inset);
+        const inView = corners.every(p => p.x >= -2 && p.x <= 1442 && p.y >= -2 && p.y <= 902);
+        const boardEdge = await proj(page, -18, 0);
+        check('spark: out over the page → zoom ≈ 1.3 (1.25–1.35)', mode === 'spark' && zs.zoom / z1.zoom >= 1.25 && zs.zoom / z1.zoom <= 1.35, `mode ${mode}, zoom ${zs.zoom.toFixed(3)} (board ${z1.zoom.toFixed(3)})`);
+        check('spark: the whole text page is on screen (all four inset corners)', inView, JSON.stringify(corners.map(p => [Math.round(p.x), Math.round(p.y)])));
+        check('spark: the board\'s right edge stays on screen, so the spark can reach it', boardEdge.x > 0, `x ${boardEdge.x.toFixed(0)} px`);
+        const h0 = await page.evaluate(() => document.querySelector('#items tr:nth-child(2)').getBoundingClientRect().height);
+        await shot(page, 'spark-out.png');
+        // at the window's left edge the framing lets go, and the board comes back
+        await page.mouse.move(40, 450, { steps: 10 }); await settle(page, 1800);
+        const ze = await cam(page);
+        check('spark: at the left edge the framing lets go', ze.spark.framing < 0.05, JSON.stringify(ze.spark));
+        await page.mouse.move(board.x, board.y, { steps: 10 }); await settle(page, 1800);
+        const zb = await cam(page);
+        const h1 = await page.evaluate(() => document.querySelector('#items tr:nth-child(2)').getBoundingClientRect().height);
+        check('spark: back on the board → zoom back to 1, gauntlet', Math.abs(zb.zoom / z1.zoom - 1) < 0.01 && (await page.evaluate(() => __vc.cursor.mode)) === 'gauntlet', `zoom ${zb.zoom.toFixed(3)}`);
+        numbers.spark = { zoomOut: +(zs.zoom / z1.zoom).toFixed(3), rowPxSparkOut: +h0.toFixed(1), rowPxBoard: +h1.toFixed(1) };
+        check('spark: table text reads bigger with the spark out (row height ≥ 1.2×)', h0 >= h1 * 1.2, `${h0.toFixed(1)} vs ${h1.toFixed(1)} px`);
+      }
+      await ctx.close();
+    }

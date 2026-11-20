@@ -1,0 +1,303 @@
+{
+ "meta": {
+  "label": "ab-after-1",
+  "html": "work/wp18p/named-after/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "sampled": false,
+  "framesOnly": true,
+  "at": "2026-11-13T00:17:20.897Z",
+  "errors": [],
+  "tierEnd": "low",
+  "qualityLog": null
+ },
+ "rows": [
+  {
+   "name": "view Artisan · drag",
+   "frames": 335,
+   "worstMs": 66.7,
+   "over16": 2,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 88,
+   "jsMs": 0,
+   "windowMs": 5659,
+   "gpuMs": 5918,
+   "gpuWorst": 92.9,
+   "gpuFrames": 280,
+   "loaf": [
+    {
+     "t": 4738,
+     "d": 88,
+     "sl": 1,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     4817,
+     66.7
+    ],
+    [
+     4267,
+     33.3
+    ],
+    [
+     350,
+     16.8
+    ],
+    [
+     1167,
+     16.8
+    ],
+    [
+     1267,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Artisan · release",
+   "frames": 153,
+   "worstMs": 166.6,
+   "over16": 17,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 170,
+   "jsMs": 0,
+   "windowMs": 2981,
+   "gpuMs": 3018,
+   "gpuWorst": 68.6,
+   "gpuFrames": 136,
+   "loaf": [
+    {
+     "t": 12,
+     "d": 170,
+     "sl": 8,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     189,
+     166.6
+    ],
+    [
+     922,
+     33.4
+    ],
+    [
+     1155,
+     33.4
+    ],
+    [
+     1255,
+     33.4
+    ],
+    [
+     1405,
+     33.4
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · drag",
+   "frames": 293,
+   "worstMs": 49.9,
+   "over16": 1,
+   "over33": 1,
+   "mainMs": null,
+   "loafMs": 56,
+   "jsMs": 0,
+   "windowMs": 4934,
+   "gpuMs": 4144,
+   "gpuWorst": 91.3,
+   "gpuFrames": 259,
+   "loaf": [
+    {
+     "t": 4081,
+     "d": 56,
+     "sl": 2,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     4139,
+     49.9
+    ],
+    [
+     2072,
+     16.8
+    ],
+    [
+     2672,
+     16.8
+    ],
+    [
+     2872,
+     16.8
+    ],
+    [
+     3272,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · release",
+   "frames": 122,
+   "worstMs": 133.2,
+   "over16": 35,
+   "over33": 7,
+   "mainMs": null,
+   "loafMs": 319,
+   "jsMs": 0,
+   "windowMs": 2840,
+   "gpuMs": 1626,
+   "gpuWorst": 51,
+   "gpuFrames": 115,
+   "loaf": [
+    {
+     "t": 10,
+     "d": 60,
+     "sl": 5,
+     "top": []
+    },
+    {
+     "t": 603,
+     "d": 54,
+     "sl": 8,
+     "top": []
+    },
+    {
+     "t": 720,
+     "d": 70,
+     "sl": 18,
+     "top": []
+    },
+    {
+     "t": 1551,
+     "d": 135,
+     "sl": 5,
+     "top": []
+    }
+   ],
+   "top": [],
+   "worstFrames": [
+    [
+     1681,
+     133.2
+    ],
+    [
+     64,
+     50
+    ],
+    [
+     781,
+     50
+    ],
+    [
+     1047,
+     50
+    ],
+    [
+     1381,
+     50
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · drag",
+   "frames": 290,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 4859,
+   "gpuMs": 2102,
+   "gpuWorst": 52.7,
+   "gpuFrames": 280,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     1467,
+     16.8
+    ],
+    [
+     1867,
+     16.8
+    ],
+    [
+     3633,
+     16.8
+    ],
+    [
+     3733,
+     16.8
+    ],
+    [
+     200,
+     16.8
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Gourmet · release",
+   "frames": 162,
+   "worstMs": 33.4,
+   "over16": 7,
+   "over33": 0,
+   "mainMs": null,
+   "loafMs": 0,
+   "jsMs": 0,
+   "windowMs": 2835,
+   "gpuMs": 1433,
+   "gpuWorst": 34.1,
+   "gpuFrames": 148,
+   "loaf": [],
+   "top": [],
+   "worstFrames": [
+    [
+     975,
+     33.4
+    ],
+    [
+     1075,
+     33.4
+    ],
+    [
+     1242,
+     33.4
+    ],
+    [
+     75,
+     33.3
+    ],
+    [
+     125,
+     33.3
+    ]
+   ],
+   "worstTop": [],
+   "worstRecalcs": []
+  }
+ ]
+}

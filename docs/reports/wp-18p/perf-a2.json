@@ -1,0 +1,260 @@
+{
+ "meta": {
+  "label": "a2",
+  "html": "work/wp18p/named-after/valheim-checkup.html",
+  "named": true,
+  "throttle": 1,
+  "tier": "high",
+  "at": "2026-11-13T00:06:06.222Z",
+  "errors": [],
+  "tierEnd": "high",
+  "qualityLog": null
+ },
+ "rows": [
+  {
+   "name": "view Carpenter · drag",
+   "frames": 286,
+   "worstMs": 16.8,
+   "over16": 0,
+   "over33": 0,
+   "mainMs": 1315,
+   "jsMs": 728,
+   "windowMs": 4778,
+   "gpuMs": 4647,
+   "gpuWorst": 82.1,
+   "gpuFrames": 275,
+   "loaf": [],
+   "top": [
+    [
+     "Paint",
+     222.6
+    ],
+    [
+     "Layerize",
+     138.6
+    ],
+    [
+     "Style recalc",
+     112.8
+    ],
+    [
+     "js three.js:updateMatrixWorld",
+     49.3
+    ],
+    [
+     "Commit",
+     37.4
+    ],
+    [
+     "js three.js:WebGLRenderer.renderBufferDirect",
+     28.4
+    ],
+    [
+     "js three.js:setProgram",
+     24.5
+    ],
+    [
+     "js three.js:projectObject",
+     22.2
+    ],
+    [
+     "Pre-paint",
+     21.5
+    ],
+    [
+     "js three.js:upload",
+     18.1
+    ]
+   ],
+   "worstFrames": [
+    [
+     1772,
+     16.8
+    ],
+    [
+     1922,
+     16.8
+    ],
+    [
+     2072,
+     16.8
+    ],
+    [
+     3388,
+     16.8
+    ],
+    [
+     4138,
+     16.8
+    ]
+   ],
+   "worstTop": [
+    [
+     "js GC (V8, in JS)",
+     0.7
+    ],
+    [
+     "Paint",
+     0.6
+    ],
+    [
+     "Style recalc",
+     0.6
+    ],
+    [
+     "Layerize",
+     0.5
+    ],
+    [
+     "js src/surfaces/title.js:show",
+     0.2
+    ],
+    [
+     "js three.js:bindFramebuffer",
+     0.2
+    ],
+    [
+     "js src/board/index.js:(anon)",
+     0.2
+    ],
+    [
+     "js three.js:refreshUniformsCommon",
+     0.2
+    ]
+   ],
+   "worstRecalcs": []
+  },
+  {
+   "name": "view Carpenter · release",
+   "frames": 164,
+   "worstMs": 133.3,
+   "over16": 6,
+   "over33": 1,
+   "mainMs": 2280,
+   "jsMs": 949,
+   "windowMs": 2950,
+   "gpuMs": 2326,
+   "gpuWorst": 46.6,
+   "gpuFrames": 144,
+   "loaf": [
+    {
+     "t": 7,
+     "d": 152,
+     "sl": 9,
+     "top": []
+    }
+   ],
+   "top": [
+    [
+     "Paint",
+     464.6
+    ],
+    [
+     "Style recalc",
+     423.5
+    ],
+    [
+     "Pre-paint",
+     191
+    ],
+    [
+     "Style recalc (forced)",
+     164.9
+    ],
+    [
+     "js native getBoundingClientRect",
+     120.5
+    ],
+    [
+     "Layerize",
+     112.5
+    ],
+    [
+     "js native querySelectorAll",
+     68
+    ],
+    [
+     "Layout (forced)",
+     52.8
+    ],
+    [
+     "Layout",
+     44
+    ],
+    [
+     "js native scrollTo",
+     36.8
+    ]
+   ],
+   "worstFrames": [
+    [
+     151,
+     133.3
+    ],
+    [
+     184,
+     33.3
+    ],
+    [
+     984,
+     33.3
+    ],
+    [
+     1051,
+     33.3
+    ],
+    [
+     1184,
+     33.3
+    ]
+   ],
+   "worstTop": [
+    [
+     "Style recalc (forced)",
+     57.6
+    ],
+    [
+     "js native scrollTo",
+     36.8
+    ],
+    [
+     "Layout (forced)",
+     29.4
+    ],
+    [
+     "js native focus",
+     28.6
+    ],
+    [
+     "js native checkVisibility",
+     18.5
+    ],
+    [
+     "Style recalc",
+     7.6
+    ],
+    [
+     "js native get scrollTop",
+     5.9
+    ],
+    [
+     "js src/app.js:renderRows",
+     5.5
+    ]
+   ],
+   "worstRecalcs": [
+    "style 3.2ms 901el @setCategory",
+    "layout 2.9ms 840el @setCategory",
+    "style 6.0ms 508el @layoutBars",
+    "style 3.9ms 723el @frame",
+    "style 3.7ms 710el @renderNav",
+    "style 12.0ms 4656el @setCategory",
+    "layout 18.5ms 7269el @setCategory",
+    "style 14.9ms 880el @layoutBars",
+    "layout 6.2ms 1240el @layoutBars",
+    "style 15.1ms 2952el @shown",
+    "style 4.3ms 341el @frame"
+   ]
+  }
+ ]
+}

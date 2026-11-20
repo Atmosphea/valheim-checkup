@@ -1,0 +1,150 @@
+{
+ "dsf": 1,
+ "html": "work/wp18p/named-after/valheim-checkup.html",
+ "rows": [
+  {
+   "name": "all on (High)",
+   "errors": [],
+   "drag": {
+    "frames": 594,
+    "late": 0,
+    "jsMean": 1.76,
+    "gpuSceneMed": 4.98,
+    "gpuVeilMed": 2.59
+   },
+   "view": {
+    "frames": 172,
+    "late": 4,
+    "worst": 83.3
+   }
+  },
+  {
+   "name": "bloom (glow on the spark and embers)",
+   "errors": [],
+   "drag": {
+    "frames": 598,
+    "late": 0,
+    "jsMean": 1.65,
+    "gpuSceneMed": 3.18,
+    "gpuVeilMed": 2.32
+   },
+   "view": {
+    "frames": 170,
+    "late": 5,
+    "worst": 83.4
+   }
+  },
+  {
+   "name": "MSAA 4× (edge smoothing of the 3D layer)",
+   "errors": [],
+   "drag": {
+    "frames": 594,
+    "late": 0,
+    "jsMean": 1.82,
+    "gpuSceneMed": 3.33,
+    "gpuVeilMed": 1.57
+   },
+   "view": {
+    "frames": 173,
+    "late": 1,
+    "worst": 83.4
+   }
+  },
+  {
+   "name": "shadow maps (lamp shadows, both 3D layers)",
+   "errors": [],
+   "drag": {
+    "frames": 594,
+    "late": 2,
+    "jsMean": 2.07,
+    "gpuSceneMed": 4.75,
+    "gpuVeilMed": 2.24
+   },
+   "view": {
+    "frames": 169,
+    "late": 6,
+    "worst": 83.4
+   }
+  },
+  {
+   "name": "gauntlet reflection cube",
+   "errors": [],
+   "drag": {
+    "frames": 596,
+    "late": 1,
+    "jsMean": 1.8,
+    "gpuSceneMed": 4.94,
+    "gpuVeilMed": 2.68
+   },
+   "view": {
+    "frames": 173,
+    "late": 2,
+    "worst": 100.1
+   }
+  },
+  {
+   "name": "veil (lamp light and shadow on the printed page)",
+   "errors": [],
+   "drag": {
+    "frames": 596,
+    "late": 0,
+    "jsMean": 1.81,
+    "gpuSceneMed": 4.35,
+    "gpuVeilMed": 0
+   },
+   "view": {
+    "frames": 173,
+    "late": 1,
+    "worst": 83.3
+   }
+  },
+  {
+   "name": "film grain and vignette overlay",
+   "errors": [],
+   "drag": {
+    "frames": 599,
+    "late": 0,
+    "jsMean": 1.82,
+    "gpuSceneMed": 4.81,
+    "gpuVeilMed": 2.56
+   },
+   "view": {
+    "frames": 172,
+    "late": 3,
+    "worst": 83.4
+   }
+  },
+  {
+   "name": "printed icons' sepia filter and multiply blend",
+   "errors": [],
+   "drag": {
+    "frames": 593,
+    "late": 0,
+    "jsMean": 1.81,
+    "gpuSceneMed": 4.71,
+    "gpuVeilMed": 2.35
+   },
+   "view": {
+    "frames": 170,
+    "late": 4,
+    "worst": 83.3
+   }
+  },
+  {
+   "name": "ink wash and other motion (reduced motion)",
+   "errors": [],
+   "drag": {
+    "frames": 597,
+    "late": 0,
+    "jsMean": 1.77,
+    "gpuSceneMed": 4.74,
+    "gpuVeilMed": 2.21
+   },
+   "view": {
+    "frames": 17,
+    "late": 0,
+    "worst": 16.8
+   }
+  }
+ ]
+}

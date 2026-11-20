@@ -1,0 +1,75 @@
+
+Running 71 tests using 1 worker
+
+[1A[2K[1/71] [chromium] › census/census.spec.js:56:3 › censuses (file 03) › string and control census: every state
+[1A[2K[2/71] [chromium] › census/census.spec.js:83:3 › censuses (file 03) › string census holds every on-screen string of template.html and app.js
+[1A[2K[3/71] [chromium] › census/census.spec.js:107:3 › censuses (file 03) › output census: progress JSON, list CSV, localStorage byte-identical
+[1A[2K[4/71] [chromium] › census/screens.spec.js:26:3 › screen 01-no-save
+[1A[2K[5/71] [chromium] › census/screens.spec.js:26:3 › screen 02-view-the-artisan
+[1A[2K[6/71] [chromium] › census/screens.spec.js:26:3 › screen 03-view-the-blacksmith
+[1A[2K[7/71] [chromium] › census/screens.spec.js:26:3 › screen 04-view-the-carpenter
+[1A[2K[8/71] [chromium] › census/screens.spec.js:26:3 › screen 05-view-the-master-chef
+[1A[2K[9/71] [chromium] › census/screens.spec.js:26:3 › screen 06-view-the-gourmet
+[1A[2K[10/71] [chromium] › census/screens.spec.js:26:3 › screen 07-view-the-trophy-collector
+[1A[2K[11/71] [chromium] › census/screens.spec.js:26:3 › screen 08-view-the-hunter
+[1A[2K[12/71] [chromium] › census/screens.spec.js:26:3 › screen 09-view-the-master-hunter
+[1A[2K[13/71] [chromium] › census/screens.spec.js:26:3 › screen 10-view-the-fisherman
+[1A[2K[14/71] [chromium] › census/screens.spec.js:26:3 › screen 11-view-are-you-alright
+[1A[2K[15/71] [chromium] › census/screens.spec.js:26:3 › screen 12-view-that-can-t-be-an-accident
+[1A[2K[16/71] [chromium] › census/screens.spec.js:26:3 › screen 13-view-highlights
+[1A[2K[17/71] [chromium] › census/screens.spec.js:26:3 › screen 14-view-skills-travel
+[1A[2K[18/71] [chromium] › census/screens.spec.js:26:3 › screen 15-lifetime-mode
+[1A[2K[19/71] [chromium] › census/screens.spec.js:26:3 › screen 16-details-open
+[1A[2K[20/71] [chromium] › census/screens.spec.js:26:3 › screen 17-help-open
+[1A[2K[21/71] [chromium] › census/screens.spec.js:26:3 › screen 18-toast
+[1A[2K[22/71] [chromium] › census/screens.spec.js:26:3 › screen 19-error-message
+[1A[2K[23/71] [chromium] › census/screens.spec.js:26:3 › screen 20-file-drag-over-load
+[1A[2K[24/71] [chromium] › specs/golden.spec.js:17:3 › golden values (file 07) › dot rule table is self-consistent with the counts
+[1A[2K[25/71] [chromium] › specs/golden.spec.js:31:5 › golden values (file 07) › all golden numbers, record mode achievement
+[1A[2K[26/71] [chromium] › specs/golden.spec.js:31:5 › golden values (file 07) › all golden numbers, record mode raw
+[1A[2K[27/71] [chromium] › specs/parity.spec.js:34:3 › parity P01–P44 › P01 page title, meta description, brand
+[1A[2K[28/71] [chromium] › specs/parity.spec.js:42:3 › parity P01–P44 › P02 character name and import line only with a save
+[1A[2K[29/71] [chromium] › specs/parity.spec.js:53:3 › parity P01–P44 › P03 lifetime records: five stats, floored, locale-formatted
+[1A[2K[30/71] [chromium] › specs/parity.spec.js:66:3 › parity P01–P44 › P04 favourite counts: open with search and All items, × removes
+[1A[2K[31/71] [chromium] › specs/parity.spec.js:94:3 › parity P01–P44 › P05 drag a row onto the header: highlight, added, duplicate, full
+[1A[2K[32/71] [chromium] › specs/parity.spec.js:112:3 › parity P01–P44 › P06 import progress JSON: size limit, validation, restore
+[1A[2K[33/71] [chromium] › specs/parity.spec.js:135:3 › parity P01–P44 › P07 export progress JSON: disabled without save, filename, exact format
+[1A[2K[34/71] [chromium] › specs/parity.spec.js:152:3 › parity P01–P44 › P08 load button text, aria-label, drag-over state
+[1A[2K[35/71] [chromium] › specs/parity.spec.js:169:3 › parity P01–P44 › P09 load flow: rejects non-.fch, busy state, errors keep previous progress
+[1A[2K[36/71] [chromium] › specs/parity.spec.js:191:3 › parity P01–P44 › P10 re-load animates counts from the old snapshot (650 ms delay, 1,800 ms), reduced motion is instant
+[1A[2K[37/71] [chromium] › specs/parity.spec.js:217:3 › parity P01–P44 › P10b reduced motion: no count animation on re-load
+[1A[2K[38/71] [chromium] › specs/parity.spec.js:228:3 › parity P01–P44 › P11 localStorage keys, restore on start, both storage-failure messages
+[1A[2K[39/71] [chromium] › specs/parity.spec.js:250:3 › parity P01–P44 › P12 collection targets: tooltip, done / 1,461 or —
+[1A[2K[40/71] [chromium] › specs/parity.spec.js:261:3 › parity P01–P44 › P13 eleven collection buttons: order, names, counts, bar, active, aria-current
+[1A[2K[41/71] [chromium] › specs/parity.spec.js:287:3 › parity P01–P44 › P14 Your Viking: Highlights ↗ and Skills & travel ↗
+[1A[2K[42/71] [chromium] › specs/parity.spec.js:300:3 › parity P01–P44 › P15 side note
+[1A[2K[43/71] [chromium] › specs/parity.spec.js:305:3 › parity P01–P44 › P16 mobile collection select lists all 13 views
+[1A[2K[44/71] [chromium] › specs/parity.spec.js:319:3 › parity P01–P44 › P17 default view is The Master Chef
+[1A[2K[45/71] [chromium] › specs/parity.spec.js:325:3 › parity P01–P44 › P18 switching view resets filters, scrolls to top, stops animation, Unverified toast
+[1A[2K[46/71] [chromium] › specs/parity.spec.js:352:3 › parity P01–P44 › P19 no-save hero
+[1A[2K[47/71] [chromium] › specs/parity.spec.js:369:3 › parity P01–P44 › P20 status and error message line
+[1A[2K[48/71] [chromium] › specs/parity.spec.js:382:3 › parity P01–P44 › P21 eyebrow labels (8 variants), titles, descriptions (11 variants)
+[1A[2K[49/71] [chromium] › specs/parity.spec.js:392:3 › parity P01–P44 › P22 six collection notes
+[1A[2K[50/71] [chromium] › specs/parity.spec.js:400:3 › parity P01–P44 › P23 record mode switch and lifetime toast
+[1A[2K[51/71] [chromium] › specs/parity.spec.js:414:3 › parity P01–P44 › P24 four stamps with labels, Unverified tooltip, — rules
+[1A[2K[52/71] [chromium] › specs/parity.spec.js:428:3 › parity P01–P44 › P25 progress bar: role, aria values, hover text
+[1A[2K[53/71] [chromium] › specs/parity.spec.js:447:3 › parity P01–P44 › P26 filters: status, discovery, biome, sort, starred, search
+[1A[2K[54/71] [chromium] › specs/parity.spec.js:515:3 › parity P01–P44 › P27 list count and Export this list CSV
+[1A[2K[55/71] [chromium] › specs/parity.spec.js:538:3 › parity P01–P44 › P28 table rows: star, name, count, correction, note, status, discovery, biome, Details, empty state
+[1A[2K[56/71] [chromium] › specs/parity.spec.js:582:3 › parity P01–P44 › P29 double-click and right-click open Details; draggable with a save; star persists
+[1A[2K[57/71] [chromium] › specs/parity.spec.js:600:3 › parity P01–P44 › P30 Details: content, corrections, favourite, note, disabled states, close, Escape
+[1A[2K[58/71] [chromium] › specs/parity.spec.js:651:3 › parity P01–P44 › P31 insight pages without a save
+[1A[2K[59/71] [chromium] › specs/parity.spec.js:661:3 › parity P01–P44 › P32 Highlights: top 20, rank, bars, ☆ adds, empty text, 35 ms stagger
+[1A[2K[60/71] [chromium] › specs/parity.spec.js:689:3 › parity P01–P44 › P33 Skills & travel: distances, work stats, skills, old snapshot, sandbox
+[1A[2K[61/71] [chromium] › specs/parity.spec.js:731:3 › parity P01–P44 › P34 help: summary, six paragraphs, links, Forget with confirm
+[1A[2K[62/71] [chromium] › specs/parity.spec.js:758:3 › parity P01–P44 › P35 resource links
+[1A[2K[63/71] [chromium] › specs/parity.spec.js:768:3 › parity P01–P44 › P36 footer disclaimer and catalog snapshot
+[1A[2K[64/71] [chromium] › specs/parity.spec.js:773:3 › parity P01–P44 › P37 toast bottom right, role=status, 10 s
+[1A[2K[65/71] [chromium] › specs/parity.spec.js:790:3 › parity P01–P44 › P38 every title tooltip text is present
+[1A[2K[66/71] [chromium] › specs/parity.spec.js:813:3 › parity P01–P44 › P39 aria-labels, live regions, hidden label, keyboard use
+[1A[2K[67/71] [chromium] › specs/parity.spec.js:845:3 › parity P01–P44 › P40 no uploads, analytics or accounts
+[1A[2K[68/71] [chromium] › specs/parity.spec.js:860:3 › parity P01–P44 › P41 scripts/test.cjs passes; core.js and catalog.json unchanged
+[1A[2K[69/71] [chromium] › specs/parity.spec.js:874:3 › parity P01–P44 › P42 version-1 exports and profile 46 and 47 saves load
+[1A[2K[70/71] [chromium] › specs/parity.spec.js:890:3 › parity P01–P44 › P43 works offline from a downloaded file
+[1A[2K[71/71] [chromium] › specs/parity.spec.js:901:3 › parity P01–P44 › P44 drag-and-drop a file onto the hero and the load button
+[1A[2K  71 passed (8.3m)

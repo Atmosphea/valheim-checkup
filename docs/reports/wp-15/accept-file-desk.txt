@@ -1,0 +1,12 @@
+
+Running 7 tests using 1 worker
+
+  ✓  1 [chromium] › specs/golden.spec.js:17:3 › golden values (file 07) › dot rule table is self-consistent with the counts (20ms)
+  ✓  2 [chromium] › specs/golden.spec.js:31:5 › golden values (file 07) › all golden numbers, record mode achievement (16.3s)
+  ✓  3 [chromium] › specs/golden.spec.js:31:5 › golden values (file 07) › all golden numbers, record mode raw (16.1s)
+  ✓  4 [chromium] › specs/parity.spec.js:53:3 › parity P01–P44 › P03 lifetime records: five stats, floored, locale-formatted (1.4s)
+  ✓  5 [chromium] › specs/parity.spec.js:397:3 › parity P01–P44 › P23 record mode switch and lifetime toast (1.2s)
+  ✓  6 [chromium] › specs/parity.spec.js:859:3 › parity P01–P44 › P42 version-1 exports and profile 46 and 47 saves load (2.4s)
+  ✓  7 [chromium] › specs/parity.spec.js:875:3 › parity P01–P44 › P43 works offline from a downloaded file (1.2s)
+
+  7 passed (39.1s)

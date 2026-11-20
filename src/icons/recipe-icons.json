@@ -1,0 +1,348 @@
+{
+ "_about": "Paul, WP-18 item 17: recipe ingredient and station icons by display name (tools/recipe-icons.mjs). \"cell\" = a cell of atlas.webp; \"extra\" = a cell of recipe-icons.webp. Images: Jötunn documentation (MIT).",
+ "cols": 8,
+ "rows": 5,
+ "icons": {
+  "Anglerfish": {
+   "token": "$animal_fish9",
+   "cell": 11
+  },
+  "Asksvin Tail": {
+   "token": "$item_asksvin_meat",
+   "extra": 0
+  },
+  "Barley": {
+   "token": "$item_barley",
+   "extra": 1
+  },
+  "Barley Flour": {
+   "token": "$item_barleyflour",
+   "extra": 2
+  },
+  "Bear Meat": {
+   "token": "$item_bjorn_meat",
+   "extra": 3
+  },
+  "Blood Clot": {
+   "token": "$item_bloodclot",
+   "extra": 4
+  },
+  "Bloodbag": {
+   "token": "$item_bloodbag",
+   "extra": 5
+  },
+  "Blueberries": {
+   "token": "$item_blueberries",
+   "cell": 167
+  },
+  "Boar Meat": {
+   "token": "$item_boar_meat",
+   "extra": 6
+  },
+  "Bonemaw Meat": {
+   "token": "$item_bonemawmeat",
+   "extra": 7
+  },
+  "Bread": {
+   "token": "$item_bread",
+   "cell": 197
+  },
+  "Bread Dough": {
+   "token": "$item_breaddough",
+   "cell": 198
+  },
+  "Carrot": {
+   "token": "$item_carrot",
+   "cell": 212
+  },
+  "Cauldron": {
+   "token": "$piece_cauldron",
+   "cell": 686
+  },
+  "Chicken Meat": {
+   "token": "$item_chicken_meat",
+   "extra": 8
+  },
+  "Cloudberries": {
+   "token": "$item_cloudberries",
+   "cell": 242
+  },
+  "Cooked Asksvin Tail": {
+   "token": "$item_asksvin_meat_cooked",
+   "cell": 126
+  },
+  "Cooked Bear Meat": {
+   "token": "$item_bjorn_meat_cooked",
+   "cell": 163
+  },
+  "Cooked Boar Meat": {
+   "token": "$item_boar_meat_cooked",
+   "cell": 168
+  },
+  "Cooked Deer Meat": {
+   "token": "$item_deer_meat_cooked",
+   "cell": 254
+  },
+  "Cooked Fish": {
+   "token": "$item_fish_cooked",
+   "cell": 277
+  },
+  "Cooked Moose Meat": {
+   "token": "$item_moose_meat_cooked",
+   "cell": 421
+  },
+  "Cooked Seeker Meat": {
+   "token": "$item_bug_meat_cooked",
+   "cell": 201
+  },
+  "Cooked Serpent Meat": {
+   "token": "$item_serpentmeatcooked",
+   "cell": 459
+  },
+  "Cooking Station": {
+   "token": "$piece_cookingstation",
+   "cell": 707
+  },
+  "Dandelion": {
+   "token": "$item_dandelion",
+   "extra": 9
+  },
+  "Deer Meat": {
+   "token": "$item_deer_meat",
+   "extra": 10
+  },
+  "Deer Stew": {
+   "token": "$item_deerstew",
+   "cell": 255
+  },
+  "Egg": {
+   "token": "$item_chicken_egg",
+   "extra": 11
+  },
+  "Entrails": {
+   "token": "$item_entrails",
+   "extra": 12
+  },
+  "Fiddlehead": {
+   "token": "$item_fiddleheadfern",
+   "cell": 269
+  },
+  "Fiery Spice Powder": {
+   "token": "$item_spiceashlands",
+   "extra": 13
+  },
+  "Food Preparation Table": {
+   "token": "$piece_preptable",
+   "cell": 838
+  },
+  "Freeze Gland": {
+   "token": "$item_freezegland",
+   "extra": 14
+  },
+  "Grasslands Herbalist Harvest": {
+   "token": "$item_spiceplains",
+   "extra": 15
+  },
+  "Greydwarf Eye": {
+   "token": "$item_greydwarfeye",
+   "extra": 16
+  },
+  "Hare Meat": {
+   "token": "$item_hare_meat",
+   "extra": 17
+  },
+  "Herbs of the Hidden Hills": {
+   "token": "$item_spicemistlands",
+   "extra": 18
+  },
+  "Honey": {
+   "token": "$item_honey",
+   "cell": 327
+  },
+  "Ice": {
+   "token": "$item_ice",
+   "extra": 19
+  },
+  "Iron cooking station": {
+   "token": "$piece_cookingstation_iron",
+   "cell": 708
+  },
+  "Jotun Puffs": {
+   "token": "$item_jotunpuffs",
+   "cell": 331
+  },
+  "Kale": {
+   "token": "$item_kale",
+   "cell": 332
+  },
+  "Lingonberries": {
+   "token": "$item_lingonberries",
+   "cell": 369
+  },
+  "Lox Meat": {
+   "token": "$item_loxmeat",
+   "extra": 20
+  },
+  "Lox Meat Pie": {
+   "token": "$item_loxpie",
+   "cell": 372
+  },
+  "Magecap": {
+   "token": "$item_magecap",
+   "cell": 390
+  },
+  "Mead Ketill": {
+   "token": "$piece_meadcauldron",
+   "cell": 829
+  },
+  "Misthare Supreme": {
+   "token": "$item_mistharesupreme",
+   "cell": 419
+  },
+  "Moose Meat": {
+   "token": "$item_moose_meat",
+   "extra": 21
+  },
+  "Mountain Peak Pepper Powder": {
+   "token": "$item_spicemountains",
+   "extra": 22
+  },
+  "Mushroom": {
+   "token": "$item_mushroomcommon",
+   "cell": 424
+  },
+  "Neck Tail": {
+   "token": "$item_necktail",
+   "extra": 23
+  },
+  "Oat Flour": {
+   "token": "$item_oatflour",
+   "extra": 24
+  },
+  "Oat Milk": {
+   "token": "$item_oatmilk",
+   "cell": 430
+  },
+  "Oats": {
+   "token": "$item_oat",
+   "cell": 428
+  },
+  "Onion": {
+   "token": "$item_onion",
+   "cell": 431
+  },
+  "Onion Soup": {
+   "token": "$item_onionsoup",
+   "cell": 432
+  },
+  "Ooze": {
+   "token": "$item_ooze",
+   "extra": 25
+  },
+  "Poteitr": {
+   "token": "$item_poteitr",
+   "cell": 443
+  },
+  "Queen's Jam": {
+   "token": "$item_queensjam",
+   "cell": 445
+  },
+  "Raspberries": {
+   "token": "$item_raspberries",
+   "cell": 446
+  },
+  "Raw Fish": {
+   "token": "$item_fish_raw",
+   "cell": 278
+  },
+  "Royal Jelly": {
+   "token": "$item_royaljelly",
+   "cell": 449
+  },
+  "Sap": {
+   "token": "$item_sap",
+   "extra": 26
+  },
+  "Sausages": {
+   "token": "$item_sausages",
+   "cell": 454
+  },
+  "Scorching Medley": {
+   "token": "$item_scorchingmedley",
+   "cell": 455
+  },
+  "Seafarer's Herbs": {
+   "token": "$item_spiceoceans",
+   "extra": 27
+  },
+  "Seal Blubber": {
+   "token": "$item_blubber",
+   "extra": 28
+  },
+  "Seasoning of the Gourd": {
+   "token": "$item_spicedeepnorth",
+   "extra": 29
+  },
+  "Seeker Meat": {
+   "token": "$item_bug_meat",
+   "extra": 30
+  },
+  "Serpent Meat": {
+   "token": "$item_serpentmeat",
+   "extra": 31
+  },
+  "Smoke Puff": {
+   "token": "$item_smokepuff",
+   "cell": 491
+  },
+  "Stone Oven": {
+   "token": "$piece_oven",
+   "cell": 832
+  },
+  "Thistle": {
+   "token": "$item_thistle",
+   "extra": 32
+  },
+  "Turnip": {
+   "token": "$item_turnip",
+   "extra": 33
+  },
+  "Turnip Stew": {
+   "token": "$item_turnipstew",
+   "cell": 581
+  },
+  "Unbaked Sweetbread": {
+   "token": "$item_vikingcupcake_uncooked",
+   "cell": 587
+  },
+  "Vineberry Cluster": {
+   "token": "$item_vineberry",
+   "cell": 588
+  },
+  "Volture Egg": {
+   "token": "$item_voltureegg",
+   "extra": 34
+  },
+  "Volture Meat": {
+   "token": "$item_volture_meat",
+   "extra": 35
+  },
+  "Wolf Meat": {
+   "token": "$item_wolf_meat",
+   "extra": 36
+  },
+  "Wolf Skewer": {
+   "token": "$item_wolf_skewer",
+   "cell": 591
+  },
+  "Woodland Herb Blend": {
+   "token": "$item_spiceforests",
+   "extra": 37
+  },
+  "Yggdrasil Porridge": {
+   "token": "$item_yggdrasilporridge",
+   "cell": 593
+  }
+ },
+ "missing": []
+}

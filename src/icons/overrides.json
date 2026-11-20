@@ -1,0 +1,153 @@
+{
+ "_about": "Hand-checked token → Jötunn image mappings (spec/wp-02-icons.md step A5). Applied after the automatic match and win over it. Every image here was looked at by the WP-02 builder before it was accepted; checked: what the builder saw.",
+ "$enemy_aspect_gdking": {
+  "name": "Aspect of the Living Forest",
+  "jotunn": "items/TrophyTheElder",
+  "treatment": "spectral",
+  "note": "Spec seed was characters/Aspect_Elder, which is blank (0.0–1.1% visible pixels). The Aspect is a spectral copy of The Elder, summoned by Kall Fimbulbringer; no wiki page exists. Uses The Elder’s trophy, tinted.",
+  "checked": "2026-11-10, WP-02 builder: The Elder’s trophy (wooden face), ghost-blue tint. Accepted."
+ },
+ "$enemy_aspect_dragon": {
+  "name": "Aspect of the Dragon Mother",
+  "jotunn": "items/TrophyDragonQueen",
+  "treatment": "spectral",
+  "note": "Spec seed was characters/Aspect_Moder, which is blank (0.0–1.1% visible pixels). The Aspect is a spectral copy of Moder, summoned by Kall Fimbulbringer; no wiki page exists. Uses Moder’s trophy, tinted.",
+  "checked": "2026-11-10, WP-02 builder: Moder’s trophy (dragon head), ghost-blue tint. Accepted."
+ },
+ "$enemy_aspect_goblinking": {
+  "name": "Aspect of the Twisted Soul",
+  "jotunn": "items/TrophyGoblinKing",
+  "treatment": "spectral",
+  "note": "Spec seed was characters/Aspect_Yagluth, which is blank (0.0–1.1% visible pixels). The Aspect is a spectral copy of Yagluth, summoned by Kall Fimbulbringer; no wiki page exists. Uses Yagluth’s trophy, tinted.",
+  "checked": "2026-11-10, WP-02 builder: Yagluth’s trophy (horned head), ghost-blue tint. Accepted."
+ },
+ "$enemy_aspect_bonemass": {
+  "name": "Aspect of the Writhing Dead",
+  "jotunn": "items/TrophyBonemass",
+  "treatment": "spectral",
+  "note": "Automatic match characters/Aspect_Bonemass is blank. The Aspect is a spectral copy of Bonemass, summoned by Kall Fimbulbringer; no wiki page exists. Uses Bonemass’s trophy, tinted.",
+  "checked": "2026-11-10, WP-02 builder: Bonemass’s trophy (blob), ghost-blue tint. Accepted."
+ },
+ "$enemy_aspect_eikthyr": {
+  "name": "Aspect of the Lightning Stag",
+  "jotunn": "items/TrophyEikthyr",
+  "treatment": "spectral",
+  "note": "Automatic match characters/Aspect_Eikthyr is blank. The Aspect is a spectral copy of Eikthyr, summoned by Kall Fimbulbringer; no wiki page exists. Uses Eikthyr’s trophy, tinted.",
+  "checked": "2026-11-10, WP-02 builder: Eikthyr’s trophy (antlered head), ghost-blue tint. Accepted."
+ },
+ "$enemy_aspect_fader": {
+  "name": "Aspect of the Emerald Flame",
+  "jotunn": "items/TrophyFader",
+  "treatment": "spectral",
+  "note": "Automatic match characters/Aspect_Fader is blank. The Aspect is a spectral copy of Fader, summoned by Kall Fimbulbringer; no wiki page exists. Uses Fader’s trophy, tinted.",
+  "checked": "2026-11-10, WP-02 builder: Fader’s trophy (horned dragon head), ghost-blue tint. Accepted."
+ },
+ "$enemy_aspect_seekerqueen": {
+  "name": "Aspect of the Crawling Matriarch",
+  "jotunn": "items/TrophySeekerQueen",
+  "treatment": "spectral",
+  "note": "Automatic match characters/Aspect_SeekerQueen is blank. The Aspect is a spectral copy of The Queen, summoned by Kall Fimbulbringer; no wiki page exists. Uses The Queen’s trophy, tinted.",
+  "checked": "2026-11-10, WP-02 builder: The Queen’s trophy (insect head), ghost-blue tint. Accepted."
+ },
+ "$enemy_root": {
+  "name": "Root",
+  "jotunn": "characters/TentaRoot",
+  "checked": "2026-11-10, WP-02 builder: a long twisted root. Accepted."
+ },
+ "$enemy_dvergr_deepnorth": {
+  "name": "Imprisoned Dvergr",
+  "jotunn": "characters/DvergerDeepNorth",
+  "checked": "2026-11-10, WP-02 builder: a blue-skinned dvergr in T-pose. Accepted."
+ },
+ "$enemy_dvergr_mage": {
+  "name": "Dvergr Mage",
+  "jotunn": "characters/DvergerMage",
+  "checked": "2026-11-10, WP-02 builder: a blue-skinned dvergr in T-pose (same model as Imprisoned Dvergr). Accepted."
+ },
+ "$enemy_goblinbrute_hildircombined": {
+  "name": "Zil & Thungr",
+  "jotunn": "items/TrophyGoblinBruteBrosBrute",
+  "note": "Spec seed was characters/GoblinBruteBros; uses Thungr’s trophy ($item_trophy_brutebro), the brute of the pair (Zil has its own row).",
+  "checked": "2026-11-10, WP-02 builder (orchestrator follow-up, DECISIONS open 3): Thungr’s trophy, a dark fuling brute head. Accepted."
+ },
+ "$enemy_goblin_hildir": {
+  "name": "Zil",
+  "jotunn": "items/TrophyGoblinBruteBrosShaman",
+  "note": "Spec seed was characters/GoblinShaman_Hildir (T-pose); trophy token is $item_trophy_shamanbro (Zil Trophy).",
+  "checked": "2026-11-10, WP-02 builder (orchestrator follow-up, DECISIONS open 3): Zil’s trophy, a pale fuling head. Accepted."
+ },
+ "$enemy_drake": {
+  "name": "Drake",
+  "jotunn": "items/TrophyHatchling",
+  "checked": "2026-11-10, WP-02 builder: drake trophy (pale blue head with swept horns). Accepted."
+ },
+ "$enemy_seal_baby": {
+  "name": "Baby Seal",
+  "jotunn": "characters/Seal_Pup",
+  "checked": "2026-11-10, WP-02 builder: white seal pup. Accepted."
+ },
+ "$enemy_babyseeker": {
+  "name": "Seeker Brood",
+  "jotunn": "characters/SeekerBrood",
+  "checked": "2026-11-10, WP-02 builder: small yellow seeker larva. Accepted."
+ },
+ "$enemy_skeleton_summoned": {
+  "name": "Skelett",
+  "jotunn": "characters/Skeleton_Friendly",
+  "checked": "2026-11-10, WP-02 builder: friendly skeleton in T-pose. Accepted."
+ },
+ "$enemy_skeletonfire": {
+  "name": "Brenna",
+  "jotunn": "items/TrophySkeletonHildir",
+  "checked": "2026-11-10, WP-02 builder: burning charred skull (Brenna’s trophy). Accepted."
+ },
+ "$enemy_summonedtroll": {
+  "name": "Summoned Troll",
+  "jotunn": "characters/Troll_Summoned",
+  "checked": "2026-11-10, WP-02 builder: fiery, ember-covered troll figure holding a log (the Trollstav summon prefab). Accepted."
+ },
+ "$item_axe2h_gold_uncooked": {
+  "name": "Cast: Nord Greataxe",
+  "jotunn": "items/BattleaxeGoldUncooked",
+  "checked": "2026-11-10, WP-02 builder: dark casting mould with gold bands. Accepted."
+ },
+ "$item_mace2h_gold": {
+  "name": "Nord Sledge",
+  "jotunn": "items/SledgeGold",
+  "checked": "2026-11-10, WP-02 builder: sledgehammer with a dark head. Accepted."
+ },
+ "$item_mace2h_gold_uncooked": {
+  "name": "Cast: Nord Sledge",
+  "jotunn": "items/SledgeGoldUncooked",
+  "checked": "2026-11-10, WP-02 builder: dark casting mould with gold bands. Accepted."
+ },
+ "$item_upgrader_tier1": {
+  "name": "Bronze",
+  "jotunn": "items/Bronze",
+  "checked": "2026-11-10, WP-02 builder: bronze ingot. Accepted."
+ },
+ "$item_staffredlightning": {
+  "name": "Dundr",
+  "jotunn": null,
+  "note": "Not in Jötunn; found by source C (Valheim wiki).",
+  "checked": "2026-11-10, WP-02 builder: red staff (wiki Dundr.png, 64 px). Accepted."
+ },
+ "$enemy_gdking": {
+  "name": "The Elder",
+  "jotunn": "items/TrophyTheElder",
+  "note": "Automatic match was the T-pose render characters/gd_king; trophy token is $item_trophy_elder.",
+  "checked": "2026-11-10, WP-02 builder (orchestrator follow-up, DECISIONS open 3): The Elder’s trophy, a mossy wooden head with a glowing mark. Accepted."
+ },
+ "$enemy_dragon": {
+  "name": "Moder",
+  "jotunn": "items/TrophyDragonQueen",
+  "note": "Automatic match was the T-pose render characters/Dragon; trophy token is $item_trophy_dragonqueen.",
+  "checked": "2026-11-10, WP-02 builder (orchestrator follow-up, DECISIONS open 3): Moder’s trophy, a pale dragon head with spread frills. Accepted."
+ },
+ "$enemy_fenringcultist_hildir": {
+  "name": "Geirrhafa",
+  "jotunn": "items/TrophyCultist_Hildir",
+  "note": "Automatic match was the render characters/Fenring_Cultist_Hildir; trophy token is $item_trophy_cultist_hildir.",
+  "checked": "2026-11-10, WP-02 builder (orchestrator follow-up, DECISIONS open 3): Geirrhafa’s trophy, a cultist head in a wolf-pelt hood. Accepted."
+ }
+}
